@@ -92,7 +92,7 @@ export function HeroVideoSlider() {
 
   return (
     <section
-      className="relative h-[calc(100vh-57px)] w-full overflow-hidden"
+      className="relative h-[calc(100vh-57px)] w-full max-w-full overflow-hidden"
       aria-label="ヒーロースライダー"
       onTouchStart={(e) => {
         touchStartX.current = e.touches[0].clientX
