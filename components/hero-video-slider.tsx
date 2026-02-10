@@ -148,7 +148,7 @@ export function HeroVideoSlider() {
               }`}
             >
               <h1
-                className={`font-serif text-4xl tracking-[0.12em] text-primary-foreground sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl transition-all duration-700 whitespace-nowrap ${
+                className={`font-serif text-4xl tracking-[0.12em] text-primary-foreground sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl transition-all duration-700 sm:whitespace-nowrap ${
                   i === current
                     ? "translate-y-0 opacity-100"
                     : "translate-y-8 opacity-0"

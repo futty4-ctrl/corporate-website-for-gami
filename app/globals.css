@@ -50,15 +50,26 @@
   * {
     @apply border-border;
   }
+  html {
+    overflow-x: hidden;
+    width: 100%;
+  }
   body {
     @apply bg-background text-foreground;
     word-break: keep-all;
     overflow-wrap: break-word;
+    overflow-x: hidden;
+    width: 100%;
     letter-spacing: 0.03em;
     line-height: 1.85;
     line-break: strict;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+  
+  main {
+    overflow-x: hidden;
+    width: 100%;
   }
   
   /* スマホでのタッチ操作を最適化 */
