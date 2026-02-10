@@ -71,7 +71,7 @@ export function EstimateCta({
 
   // default variant
   return (
-    <section className={`relative py-16 px-4 text-center sm:px-6 ${className}`}>
+    <section className={`relative py-12 px-4 text-center sm:py-16 sm:px-6 ${className}`}>
       <div className="absolute inset-0 aurora-gradient opacity-90" />
       <div className="relative z-10 mx-auto max-w-xl">
         <h2 className="font-serif text-2xl tracking-wider text-balance text-white md:text-3xl">

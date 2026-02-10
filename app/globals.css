@@ -135,6 +135,12 @@
   @media (max-width: 640px) {
     body {
       font-size: 15px;
+      line-height: 1.7;
+    }
+    
+    /* セクション間の間隔を小さく */
+    section + section {
+      margin-top: 0;
     }
   }
 }

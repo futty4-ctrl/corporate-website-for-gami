@@ -14,7 +14,7 @@ const credentials = [
 
 export function CredentialsSection() {
   return (
-    <section className="border-t border-border bg-secondary/50 py-24 px-4 sm:px-6 lg:py-32">
+    <section className="border-t border-border bg-secondary/50 py-12 px-4 sm:px-6 sm:py-24 lg:py-32">
       <div className="mx-auto max-w-4xl">
         <ScrollAnimate className="mb-10 text-center">
           <p className="text-xs font-medium tracking-[0.2em] text-gold">

@@ -64,7 +64,7 @@ export default function Page() {
         <HeroVideoSlider />
 
         {/* Business Cards */}
-        <section className="section-gradient py-16 px-4 sm:px-6 sm:py-24 lg:py-40">
+        <section className="section-gradient py-12 px-4 sm:px-6 sm:py-24 lg:py-40">
           <div className="mx-auto max-w-6xl">
             <ScrollAnimate>
               <SectionHeading

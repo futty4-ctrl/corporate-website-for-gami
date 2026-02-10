@@ -19,7 +19,7 @@ export function SectionHeading({ sub, title, catchCopy, className = "" }: Sectio
         {title}
       </h2>
       {catchCopy && (
-        <p className="mx-auto mt-5 max-w-2xl text-sm leading-loose tracking-readable text-muted-foreground">
+        <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed tracking-readable text-muted-foreground sm:mt-5 sm:leading-loose">
           {catchCopy.split("\n").map((line, i) => (
             <span key={i}>
               {i > 0 && <br className="sm:hidden" />}
