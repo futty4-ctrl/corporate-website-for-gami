@@ -96,7 +96,7 @@ export function EstimateCta({
           </Link>
           <a
             href="tel:06-6115-9935"
-            className="flex items-center gap-2 text-sm tracking-wider text-white/80 transition-colors active:opacity-80 sm:hover:text-white touch-manipulation"
+            className="flex w-full items-center justify-center gap-2 rounded-xl border-2 border-white/40 bg-white/10 px-6 py-3 text-sm font-medium tracking-wider text-white backdrop-blur-sm transition-all active:scale-95 sm:w-auto sm:hover:bg-white/20 touch-manipulation"
           >
             <Phone className="h-4 w-4" />
             <span className="hidden sm:inline">06-6115-9935</span>
