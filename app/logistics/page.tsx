@@ -262,34 +262,34 @@ export default function LogisticsPage() {
             <ScrollAnimate>
               <SectionHeading sub="実績" title="主要取扱実績" className="mb-12" />
             </ScrollAnimate>
-            <div className="grid min-h-[420px] grid-cols-2 grid-rows-[1fr_1fr] gap-6 sm:min-h-[460px]">
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6">
               {trackRecords.map((item) => (
                 <ScrollAnimate key={item.number} className="h-full min-h-0">
-                  <div className="tech-card flex h-full flex-col gap-3 rounded-2xl border-2 border-primary/10 p-5 transition-all hover:border-primary/20 hover:shadow-glass-hover sm:p-6">
-                    <div className="flex items-start justify-between gap-3">
-                      <div className="flex items-center gap-3">
-                        <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary/10">
-                          <item.icon className="h-6 w-6 text-primary" />
+                  <div className="tech-card flex h-full flex-col gap-3 rounded-2xl border-2 border-primary/10 p-4 transition-all hover:border-primary/20 hover:shadow-glass-hover sm:p-5 md:p-6">
+                    <div className="flex items-start justify-between gap-2 sm:gap-3">
+                      <div className="flex items-center gap-2 sm:gap-3">
+                        <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-primary/10 sm:h-12 sm:w-12">
+                          <item.icon className="h-5 w-5 text-primary sm:h-6 sm:w-6" />
                         </div>
-                        <span className="font-serif text-2xl font-bold tracking-wider aurora-gradient-text">
+                        <span className="font-serif text-xl font-bold tracking-wider aurora-gradient-text sm:text-2xl">
                           {item.number}
                         </span>
                       </div>
-                      <div className="flex items-center gap-2">
-                        <span className="rounded-full bg-primary/10 px-2.5 py-1 text-[10px] font-medium uppercase tracking-wider text-primary">
+                      <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
+                        <span className="rounded-full bg-primary/10 px-2 py-0.5 text-[9px] font-medium uppercase tracking-wider text-primary sm:px-2.5 sm:py-1 sm:text-[10px]">
                           {item.category}
                         </span>
                         {item.badge && (
-                          <span className="rounded-full bg-accent/20 px-2.5 py-1 text-[10px] font-bold tracking-wider text-accent">
+                          <span className="rounded-full bg-accent/20 px-2 py-0.5 text-[9px] font-bold tracking-wider text-accent sm:px-2.5 sm:py-1 sm:text-[10px]">
                             {item.badge}
                           </span>
                         )}
                       </div>
                     </div>
-                    <h3 className="text-base font-bold tracking-wider text-foreground">
+                    <h3 className="text-sm font-bold tracking-wider text-foreground sm:text-base">
                       {item.title}
                     </h3>
-                    <p className="flex-grow text-sm leading-relaxed tracking-wide text-muted-foreground">
+                    <p className="flex-grow text-xs leading-relaxed tracking-wide text-muted-foreground sm:text-sm">
                       {item.description}
                     </p>
                   </div>
