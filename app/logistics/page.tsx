@@ -158,7 +158,7 @@ export default function LogisticsPage() {
         </section>
 
         {/* Core Services */}
-        <section className="section-gradient py-24 px-4 sm:px-6 lg:py-32">
+        <section className="section-gradient py-16 px-4 sm:px-6 sm:py-24 lg:py-32">
           <div className="mx-auto max-w-6xl">
             <ScrollAnimate>
               <SectionHeading
@@ -200,7 +200,7 @@ export default function LogisticsPage() {
         </section>
 
         {/* Cosmetics Highlight Section */}
-        <section className="py-24 px-4 sm:px-6 lg:py-32">
+        <section className="py-16 px-4 sm:px-6 sm:py-24 lg:py-32">
           <ScrollAnimate>
             <div className="mx-auto max-w-4xl">
               <div className="relative overflow-hidden rounded-3xl p-[2px]" style={{ background: "linear-gradient(135deg, hsl(220 50% 28%), hsl(38 45% 48%))" }}>
@@ -216,7 +216,7 @@ export default function LogisticsPage() {
                   </p>
                   <Link
                     href="/company#contact"
-                    className="btn-glow mt-8 inline-block aurora-gradient rounded-xl px-10 py-3 text-sm font-medium tracking-widest text-white transition-all hover:shadow-glass-hover"
+                    className="btn-glow mt-8 inline-block w-full aurora-gradient rounded-xl px-8 py-3 text-sm font-medium tracking-widest text-white transition-all active:scale-95 sm:w-auto sm:px-10 sm:hover:shadow-glass-hover touch-manipulation"
                   >
                     化粧品物流のお見積り・ご相談
                   </Link>

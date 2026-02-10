@@ -164,7 +164,7 @@ export default function SeihinPage() {
         </section>
 
         {/* Values */}
-        <section className="section-gradient py-24 px-4 sm:px-6 lg:py-32">
+        <section className="section-gradient py-16 px-4 sm:px-6 sm:py-24 lg:py-32">
           <div className="mx-auto max-w-6xl">
             <ScrollAnimate>
               <SectionHeading

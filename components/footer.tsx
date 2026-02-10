@@ -8,8 +8,8 @@ export function Footer() {
 
   return (
     <footer className="border-t border-border bg-card text-foreground">
-      <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
-        <div className="grid gap-12 md:grid-cols-3">
+      <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-16">
+        <div className="grid gap-8 sm:gap-12 md:grid-cols-3">
           {/* Brand */}
           <div className="flex flex-col gap-4">
             <div className="flex items-center gap-2">
@@ -81,14 +81,14 @@ export function Footer() {
             </div>
             <Link
               href="/company#contact"
-              className="mt-4 inline-block aurora-gradient rounded-lg px-6 py-2 text-xs font-medium tracking-widest text-white transition-all hover:scale-105 hover:shadow-glass-hover"
+              className="mt-4 inline-block w-full text-center aurora-gradient rounded-lg px-6 py-2.5 text-xs font-medium tracking-widest text-white transition-all active:scale-95 sm:w-auto sm:hover:scale-105 sm:hover:shadow-glass-hover touch-manipulation"
             >
               お問い合わせ
             </Link>
           </div>
         </div>
 
-        <div className="mt-16 border-t border-border pt-8 text-center">
+        <div className="mt-12 border-t border-border pt-6 text-center sm:mt-16 sm:pt-8">
           <p className="text-xs text-muted-foreground">
             © {new Date().getFullYear()} 株式会社GAMI 無断転載を禁じます
           </p>

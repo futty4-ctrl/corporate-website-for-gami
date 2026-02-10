@@ -100,7 +100,7 @@ export default function CompanyPage() {
         </section>
 
         {/* Company Info Table */}
-        <section className="mx-auto max-w-4xl px-4 py-24 sm:px-6 lg:py-32">
+        <section className="mx-auto max-w-4xl px-4 py-16 sm:px-6 sm:py-24 lg:py-32">
           <SectionHeading
             sub="企業情報"
             title="企業情報"
@@ -111,12 +111,12 @@ export default function CompanyPage() {
             {companyInfo.map((row) => (
               <div
                 key={row.label}
-                className="flex flex-col gap-1 px-6 py-5 sm:flex-row sm:gap-8"
+                className="flex flex-col gap-2 px-4 py-4 sm:flex-row sm:gap-8 sm:px-6 sm:py-5"
               >
-                <dt className="w-40 shrink-0 text-sm font-medium text-muted-foreground">
+                <dt className="w-full shrink-0 text-xs font-medium text-muted-foreground sm:w-40 sm:text-sm">
                   {row.label}
                 </dt>
-                <dd className="text-sm leading-8 tracking-wide text-foreground">
+                <dd className="text-sm leading-relaxed tracking-wide text-foreground sm:leading-8">
                   {row.value}
                 </dd>
               </div>
@@ -125,7 +125,7 @@ export default function CompanyPage() {
         </section>
 
         {/* Mission */}
-        <section className="border-t border-border bg-secondary/50 py-24 px-4 sm:px-6 lg:py-32">
+        <section className="border-t border-border bg-secondary/50 py-16 px-4 sm:px-6 sm:py-24 lg:py-32">
           <div className="mx-auto max-w-3xl text-center">
             <SectionHeading
               sub="ミッション"
