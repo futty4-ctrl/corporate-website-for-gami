@@ -22,23 +22,24 @@ export function EstimateCta({
       <div className={`flex flex-wrap items-center justify-center gap-3 ${className}`}>
         <Link
           href="/company#contact"
-          className="btn-glow inline-flex items-center gap-2 rounded-xl bg-navy px-6 py-2.5 text-sm font-medium tracking-widest text-white shadow-lg transition-all hover:scale-105 hover:shadow-glass-hover"
+          className="btn-glow inline-flex items-center gap-2 rounded-xl bg-navy px-5 py-2.5 text-sm font-medium tracking-widest text-white shadow-lg transition-all active:scale-95 sm:px-6 sm:hover:scale-105 sm:hover:shadow-glass-hover touch-manipulation"
         >
           <FileText className="h-4 w-4" />
           お見積り
         </Link>
         <a
           href="tel:06-6115-9935"
-          className="inline-flex items-center gap-2 rounded-xl border-2 border-navy/30 bg-white px-6 py-2.5 text-sm font-medium tracking-wider text-navy transition-all hover:bg-navy/5"
+          className="inline-flex items-center gap-2 rounded-xl border-2 border-navy/30 bg-white px-5 py-2.5 text-sm font-medium tracking-wider text-navy transition-all active:scale-95 sm:px-6 sm:hover:bg-navy/5 touch-manipulation"
         >
           <Phone className="h-4 w-4" />
-          06-6115-9935
+          <span className="hidden sm:inline">06-6115-9935</span>
+          <span className="sm:hidden">電話</span>
         </a>
         <a
           href="https://lin.ee/3QGIdCY"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 rounded-xl border-2 border-green-500/30 bg-white px-6 py-2.5 text-sm font-medium tracking-wider text-green-600 transition-all hover:bg-green-50"
+          className="inline-flex items-center gap-2 rounded-xl border-2 border-green-500/30 bg-white px-5 py-2.5 text-sm font-medium tracking-wider text-green-600 transition-all active:scale-95 sm:px-6 sm:hover:bg-green-50 touch-manipulation"
         >
           <MessageCircle className="h-4 w-4" />
           LINE相談
@@ -89,22 +90,23 @@ export function EstimateCta({
         <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
           <Link
             href="/company#contact"
-            className="btn-glow rounded-xl border-2 border-white/40 bg-white/10 px-10 py-3 text-sm font-medium tracking-widest text-white backdrop-blur-sm transition-all hover:bg-white/20"
+            className="btn-glow w-full rounded-xl border-2 border-white/40 bg-white/10 px-8 py-3 text-sm font-medium tracking-widest text-white backdrop-blur-sm transition-all active:scale-95 sm:w-auto sm:px-10 sm:hover:bg-white/20 touch-manipulation"
           >
             お見積り・ご相談
           </Link>
           <a
             href="tel:06-6115-9935"
-            className="flex items-center gap-2 text-sm tracking-wider text-white/80 transition-colors hover:text-white"
+            className="flex items-center gap-2 text-sm tracking-wider text-white/80 transition-colors active:opacity-80 sm:hover:text-white touch-manipulation"
           >
             <Phone className="h-4 w-4" />
-            06-6115-9935
+            <span className="hidden sm:inline">06-6115-9935</span>
+            <span className="sm:hidden">電話をかける</span>
           </a>
           <a
             href="https://lin.ee/3QGIdCY"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 rounded-xl border-2 border-white/40 bg-white/10 px-6 py-3 text-sm font-medium tracking-wider text-white backdrop-blur-sm transition-all hover:bg-white/20"
+            className="flex w-full items-center justify-center gap-2 rounded-xl border-2 border-white/40 bg-white/10 px-6 py-3 text-sm font-medium tracking-wider text-white backdrop-blur-sm transition-all active:scale-95 sm:w-auto sm:hover:bg-white/20 touch-manipulation"
           >
             <MessageCircle className="h-4 w-4" />
             LINE相談

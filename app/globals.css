@@ -57,6 +57,23 @@
     letter-spacing: 0.03em;
     line-height: 1.85;
     line-break: strict;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* スマホでのタッチ操作を最適化 */
+  button,
+  a,
+  [role="button"] {
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  /* スマホでのテキスト選択を改善 */
+  @media (max-width: 640px) {
+    body {
+      font-size: 15px;
+    }
   }
 }
 
@@ -132,10 +149,14 @@
   /* Button hover glow */
   .btn-glow {
     transition: box-shadow 0.3s ease, transform 0.3s ease;
+    touch-action: manipulation;
   }
   .btn-glow:hover {
     box-shadow: 0 0 24px rgba(30, 58, 95, 0.25), 0 0 48px rgba(30, 58, 95, 0.15);
     transform: scale(1.05);
+  }
+  .btn-glow:active {
+    transform: scale(0.95);
   }
 
   /* Scroll-triggered fade-up animation */

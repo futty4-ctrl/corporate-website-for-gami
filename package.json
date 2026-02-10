@@ -6,7 +6,8 @@
     "dev": "next dev --turbo",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "add-image": "node scripts/add-image.js"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",

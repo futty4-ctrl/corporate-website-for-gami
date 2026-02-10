@@ -126,7 +126,7 @@ export function ContactForm() {
 
       <button
         type="submit"
-        className="mt-2 aurora-gradient rounded-xl px-8 py-3 text-sm font-medium tracking-widest text-white transition-all hover:scale-105 hover:shadow-glass-hover"
+        className="mt-2 w-full aurora-gradient rounded-xl px-8 py-3 text-sm font-medium tracking-widest text-white transition-all active:scale-95 sm:w-auto sm:hover:scale-105 sm:hover:shadow-glass-hover touch-manipulation"
       >
         送信する
       </button>

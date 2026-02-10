@@ -167,7 +167,7 @@ export function HeroVideoSlider() {
               </p>
               <Link
                 href={slide.ctaHref}
-                className="min-w-[200px] rounded-xl px-8 py-3.5 text-center text-sm font-medium tracking-widest text-white shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-glass-hover aurora-gradient sm:min-w-[220px]"
+                className="w-full min-w-[200px] rounded-xl px-8 py-3.5 text-center text-sm font-medium tracking-widest text-white shadow-lg transition-all duration-300 active:scale-95 sm:w-auto sm:min-w-[220px] sm:hover:scale-105 sm:hover:shadow-glass-hover aurora-gradient touch-manipulation"
                 tabIndex={i === current ? 0 : -1}
               >
                 {slide.cta}

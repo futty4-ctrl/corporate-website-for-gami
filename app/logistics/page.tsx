@@ -142,15 +142,15 @@ export default function LogisticsPage() {
             className="object-cover"
             priority
           />
-          <div className="relative z-10 mx-auto w-full max-w-6xl px-4 pb-16 pt-24 sm:px-6 sm:pt-32">
+          <div className="relative z-10 mx-auto w-full max-w-6xl px-4 pb-12 pt-20 sm:px-6 sm:pb-16 sm:pt-24 lg:pt-32">
             <div className="max-w-2xl [text-shadow:0_1px_2px_rgba(0,0,0,0.5),0_2px_8px_rgba(0,0,0,0.4)]">
-              <p className="font-mono text-xl font-medium uppercase tracking-[0.3em] text-white sm:text-2xl">
+              <p className="font-mono text-lg font-medium uppercase tracking-[0.3em] text-white sm:text-xl md:text-2xl">
                 Logistics
               </p>
-              <h1 className="mt-4 font-serif text-2xl font-bold tracking-wider text-white sm:text-3xl md:text-4xl">
+              <h1 className="mt-3 font-serif text-xl font-bold tracking-wider text-white sm:mt-4 sm:text-2xl md:text-3xl lg:text-4xl">
                 物流運送事業
               </h1>
-              <p className="mt-4 max-w-xl text-pretty text-sm leading-relaxed tracking-wide text-white sm:text-base">
+              <p className="mt-3 max-w-xl text-pretty text-xs leading-relaxed tracking-wide text-white sm:mt-4 sm:text-sm md:text-base">
                 利用運送・軽貨物運送を軸に、物流業務、コンサルティング、EC支援、オリジナル梱包資材の企画・製作まで。ワンストップの物流ソリューション。
               </p>
             </div>
@@ -243,12 +243,12 @@ export default function LogisticsPage() {
               <h2 className="mt-4 font-serif text-2xl tracking-wider text-white sm:text-3xl md:text-4xl text-balance">
                 オリジナル梱包資材 企画・製作
               </h2>
-              <p className="mt-6 max-w-2xl text-base font-bold leading-relaxed tracking-wide text-red-400">
+              <p className="mt-4 max-w-2xl text-sm font-bold leading-relaxed tracking-wide text-red-400 sm:mt-6 sm:text-base">
                 ※大阪近郊エリア限定。高品質低価格をご提案いたします。今お使いのダンボールを一度お見積りください。
               </p>
               <Link
                 href="/company#contact"
-                className="mt-8 inline-block rounded-xl border-2 border-white/40 bg-transparent px-10 py-3 text-sm font-medium tracking-widest text-white backdrop-blur-sm transition-all hover:bg-white/20 hover:scale-105"
+                className="mt-6 inline-block w-full rounded-xl border-2 border-white/40 bg-transparent px-8 py-3 text-sm font-medium tracking-widest text-white backdrop-blur-sm transition-all active:scale-95 sm:mt-8 sm:w-auto sm:px-10 sm:hover:bg-white/20 sm:hover:scale-105 touch-manipulation"
               >
                 梱包資材のお見積り
               </Link>

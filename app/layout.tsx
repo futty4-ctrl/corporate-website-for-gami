@@ -21,6 +21,11 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://example.com'
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 5,
+  },
   title: {
     default: "株式会社GAMI | 繋ぐ。癒す。想う。",
     template: "%s | 株式会社GAMI",

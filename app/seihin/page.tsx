@@ -148,15 +148,15 @@ export default function SeihinPage() {
             priority
             unoptimized
           />
-          <div className="relative z-10 mx-auto w-full max-w-6xl px-4 pb-16 pt-24 sm:px-6 sm:pt-32">
+          <div className="relative z-10 mx-auto w-full max-w-6xl px-4 pb-12 pt-20 sm:px-6 sm:pb-16 sm:pt-24 lg:pt-32">
             <div className="max-w-2xl [text-shadow:0_1px_2px_rgba(0,0,0,0.5),0_2px_8px_rgba(0,0,0,0.4)]">
-              <p className="font-mono text-xl font-medium uppercase tracking-[0.3em] text-white sm:text-2xl">
+              <p className="font-mono text-lg font-medium uppercase tracking-[0.3em] text-white sm:text-xl md:text-2xl">
                 Estate Organization
               </p>
-              <h1 className="mt-4 font-serif text-2xl font-bold tracking-wider text-white sm:text-3xl md:text-4xl">
+              <h1 className="mt-3 font-serif text-xl font-bold tracking-wider text-white sm:mt-4 sm:text-2xl md:text-3xl lg:text-4xl">
                 遺品整理・生前整理事業
               </h1>
-              <p className="mt-4 max-w-xl text-pretty text-sm leading-relaxed tracking-wide text-white sm:text-base">
+              <p className="mt-3 max-w-xl text-pretty text-xs leading-relaxed tracking-wide text-white sm:mt-4 sm:text-sm md:text-base">
                 大切な方の想い出に、心を込めて寄り添います。整理・片付けから供養の手配まで、安心してお任せください。
               </p>
             </div>
@@ -212,18 +212,18 @@ export default function SeihinPage() {
                 </p>
               </div>
             </ScrollAnimate>
-            <ScrollAnimate className="flex justify-center gap-4 sm:gap-6">
-              <div className="flex items-center gap-2 rounded-full border border-navy/30 bg-white px-4 py-2 shadow-sm">
+            <ScrollAnimate className="flex flex-wrap justify-center gap-3 sm:gap-4 md:gap-6">
+              <div className="flex items-center gap-2 rounded-full border border-navy/30 bg-white px-3 py-2 shadow-sm sm:px-4">
                 <BadgeCheck className="h-4 w-4 text-navy" />
-                <span className="text-sm text-foreground">見積もり無料</span>
+                <span className="text-xs text-foreground sm:text-sm">見積もり無料</span>
               </div>
-              <div className="flex items-center gap-2 rounded-full border border-navy/30 bg-white px-4 py-2 shadow-sm">
+              <div className="flex items-center gap-2 rounded-full border border-navy/30 bg-white px-3 py-2 shadow-sm sm:px-4">
                 <Lock className="h-4 w-4 text-navy" />
-                <span className="text-sm text-foreground">秘密厳守</span>
+                <span className="text-xs text-foreground sm:text-sm">秘密厳守</span>
               </div>
-              <div className="flex items-center gap-2 rounded-full border border-navy/30 bg-white px-4 py-2 shadow-sm">
+              <div className="flex items-center gap-2 rounded-full border border-navy/30 bg-white px-3 py-2 shadow-sm sm:px-4">
                 <Zap className="h-4 w-4 text-navy" />
-                <span className="text-sm text-foreground">即日対応可</span>
+                <span className="text-xs text-foreground sm:text-sm">即日対応可</span>
               </div>
             </ScrollAnimate>
             <ScrollAnimate className="mt-10">

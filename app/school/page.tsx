@@ -109,15 +109,15 @@ export default function SchoolPage() {
             priority
             unoptimized
           />
-          <div className="relative z-10 mx-auto w-full max-w-6xl px-4 pb-16 pt-24 sm:px-6 sm:pt-32">
+          <div className="relative z-10 mx-auto w-full max-w-6xl px-4 pb-12 pt-20 sm:px-6 sm:pb-16 sm:pt-24 lg:pt-32">
             <div className="max-w-2xl [text-shadow:0_1px_2px_rgba(0,0,0,0.5),0_2px_8px_rgba(0,0,0,0.4)]">
-              <p className="font-mono text-xl font-medium uppercase tracking-[0.3em] text-white sm:text-2xl">
+              <p className="font-mono text-lg font-medium uppercase tracking-[0.3em] text-white sm:text-xl md:text-2xl">
                 Head Spa
               </p>
-              <h1 className="mt-4 font-serif text-2xl font-bold tracking-wider text-white sm:text-3xl md:text-4xl">
+              <h1 className="mt-3 font-serif text-xl font-bold tracking-wider text-white sm:mt-4 sm:text-2xl md:text-3xl lg:text-4xl">
                 ヘッドスパ事業
               </h1>
-              <p className="mt-4 max-w-xl text-pretty text-sm leading-relaxed tracking-wide text-white sm:text-base">
+              <p className="mt-3 max-w-xl text-pretty text-xs leading-relaxed tracking-wide text-white sm:mt-4 sm:text-sm md:text-base">
                 店舗運営・スクール・開業支援。ヘッドスパ事業をトータルプロデュースします。
               </p>
             </div>

@@ -49,12 +49,12 @@ export function Header() {
         {/* Mobile hamburger */}
         <button
           type="button"
-          className="flex items-center justify-center lg:hidden text-foreground"
+          className="flex items-center justify-center lg:hidden text-foreground touch-manipulation p-2 -mr-2"
           onClick={() => setIsOpen(!isOpen)}
           aria-label={isOpen ? "メニューを閉じる" : "メニューを開く"}
           aria-expanded={isOpen}
         >
-          {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
         </button>
       </div>
 

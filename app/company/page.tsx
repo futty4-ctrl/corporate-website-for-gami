@@ -87,13 +87,13 @@ export default function CompanyPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="relative py-20 pt-32">
+        <section className="relative py-16 pt-24 sm:py-20 sm:pt-32">
           <div className="absolute inset-0 aurora-gradient opacity-90" />
           <div className="relative z-10 mx-auto w-full max-w-6xl px-4 sm:px-6">
             <p className="text-xs font-medium tracking-[0.2em] text-white/70">
               会社概要
             </p>
-            <h1 className="mt-3 font-serif text-3xl tracking-wider text-balance text-white sm:text-4xl md:text-5xl">
+            <h1 className="mt-3 font-serif text-2xl tracking-wider text-balance text-white sm:text-3xl md:text-4xl lg:text-5xl">
               会社概要
             </h1>
           </div>
