@@ -1,0 +1,84 @@
+"use client"
+
+import Link from "next/link"
+
+import { useState } from "react"
+import { Menu, X } from "lucide-react"
+
+const navLinks = [
+  { href: "/logistics", label: "物流運送事業" },
+  { href: "/school", label: "ヘッドスパ事業" },
+  { href: "/seihin", label: "遺品整理・生前整理事業" },
+  { href: "/company", label: "会社概要" },
+  { href: "/company#contact", label: "お問い合わせ" },
+]
+
+export function Header() {
+  const [isOpen, setIsOpen] = useState(false)
+  const [logoError, setLogoError] = useState(false)
+
+  return (
+    <header className="sticky top-0 left-0 right-0 z-50 glass-strong shadow-glass">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
+        <Link href="/" className="flex items-center gap-2" aria-label="GAMI ホーム">
+          <img
+            src={logoError ? "/placeholder-logo.svg" : "/images/logo.png"}
+            alt="GAMI"
+            width={40}
+            height={40}
+            onError={() => setLogoError(true)}
+          />
+          <span className="font-serif text-lg tracking-widest text-foreground">
+            GAMI
+          </span>
+        </Link>
+
+        {/* Desktop nav */}
+        <nav className="hidden items-center gap-6 lg:flex" aria-label="メインナビゲーション">
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="text-sm tracking-wider text-muted-foreground transition-colors hover:text-primary"
+            >
+              {link.label}
+            </Link>
+          ))}
+        </nav>
+
+        {/* Mobile hamburger */}
+        <button
+          type="button"
+          className="flex items-center justify-center lg:hidden text-foreground"
+          onClick={() => setIsOpen(!isOpen)}
+          aria-label={isOpen ? "メニューを閉じる" : "メニューを開く"}
+          aria-expanded={isOpen}
+        >
+          {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+        </button>
+      </div>
+
+      {/* Mobile menu */}
+      {isOpen && (
+        <nav
+          className="border-t border-border/50 glass-strong px-4 py-6 sm:px-6 lg:hidden"
+          aria-label="モバイルナビゲーション"
+        >
+          <ul className="flex flex-col gap-4">
+            {navLinks.map((link) => (
+              <li key={link.href}>
+                <Link
+                  href={link.href}
+                  className="block text-sm tracking-wider text-muted-foreground transition-colors hover:text-primary"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      )}
+    </header>
+  )
+}

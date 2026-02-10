@@ -1,0 +1,151 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  /* ・や、の直後での改行を防ぎ読みやすくする */
+  .text-readable {
+    line-break: strict;
+    word-break: keep-all;
+  }
+}
+
+@layer base {
+  :root {
+    /* 信頼・誠実・革新 - 清潔感のある白・深いネイビー・温かみのゴールド/ベージュ */
+    --background: 40 20% 99%;
+    --foreground: 220 40% 14%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 40% 14%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 40% 14%;
+    --primary: 220 50% 28%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 40 15% 97%;
+    --secondary-foreground: 220 40% 14%;
+    --muted: 40 12% 95%;
+    --muted-foreground: 220 15% 40%;
+    --accent: 38 45% 48%;
+    --accent-foreground: 0 0% 100%;
+    --navy: 220 45% 20%;
+    --gold: 38 45% 48%;
+    --beige: 40 25% 94%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 40 15% 90%;
+    --input: 40 15% 90%;
+    --ring: 220 50% 28%;
+    --radius: 0.75rem;
+
+    --logistics: 220 50% 28%;
+    --spa: 38 40% 45%;
+    --antiques: 38 45% 42%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    letter-spacing: 0.03em;
+    line-height: 1.85;
+    line-break: strict;
+  }
+}
+
+/* Clean Future utilities */
+@layer utilities {
+  .glass {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+  }
+  .glass-strong {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+  }
+  .aurora-gradient {
+    background: linear-gradient(135deg, hsl(220 50% 28%), hsl(220 45% 22%));
+  }
+  .aurora-gradient-text {
+    background: linear-gradient(135deg, hsl(220 50% 28%), hsl(38 45% 48%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .aurora-border {
+    border-image: linear-gradient(135deg, hsl(220 50% 28%), hsl(38 45% 48%)) 1;
+  }
+  .shadow-glass {
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06), 0 2px 8px rgba(0, 0, 0, 0.04);
+  }
+  .shadow-glass-hover {
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.1), 0 4px 16px rgba(0, 0, 0, 0.06);
+  }
+
+  /* High-end tech card */
+  .tech-card {
+    background: rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(30, 58, 95, 0.15);
+    box-shadow:
+      0 8px 32px rgba(0, 0, 0, 0.05),
+      inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .tech-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(30, 58, 95, 0.25);
+    box-shadow:
+      0 24px 48px rgba(0, 0, 0, 0.08),
+      0 0 32px rgba(30, 58, 95, 0.1),
+      inset 0 0 0 1px rgba(255, 255, 255, 0.6);
+  }
+
+  /* 高級感のある背景 - 薄いグレー・グラデーション */
+  .section-gradient {
+    background: linear-gradient(
+      165deg,
+      hsl(40 25% 99%) 0%,
+      hsl(40 15% 97%) 40%,
+      hsl(220 12% 98%) 100%
+    );
+  }
+
+  /* 古物商許可 枠囲み */
+  .license-frame {
+    border: 2px solid hsl(220 45% 22%);
+    background: hsl(40 25% 99%);
+  }
+
+  /* Button hover glow */
+  .btn-glow {
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  .btn-glow:hover {
+    box-shadow: 0 0 24px rgba(30, 58, 95, 0.25), 0 0 48px rgba(30, 58, 95, 0.15);
+    transform: scale(1.05);
+  }
+
+  /* Scroll-triggered fade-up animation */
+  .scroll-fade-up {
+    opacity: 0;
+    transform: translateY(32px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  .scroll-fade-up.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
