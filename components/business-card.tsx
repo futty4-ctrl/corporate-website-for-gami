@@ -57,14 +57,14 @@ export function BusinessCard({
             >
               {subtitle}
             </p>
-            <h3 className="mt-1.5 font-serif text-lg tracking-wider text-foreground">
+            <h3 className="mt-1.5 font-serif text-lg tracking-wider text-foreground break-words">
               {title}
             </h3>
             <ul className="mt-2 flex flex-grow flex-col gap-1.5">
               {items.map((item, i) => (
-                <li key={i} className="flex items-start gap-2 text-sm leading-7 tracking-wide text-muted-foreground">
+                <li key={i} className="flex items-start gap-2 text-sm leading-relaxed tracking-wide text-muted-foreground sm:leading-7">
                   <Check className="mt-1.5 h-4 w-4 shrink-0" style={{ color }} />
-                  <span className="text-pretty">{item}</span>
+                  <span className="text-pretty break-words">{item}</span>
                 </li>
               ))}
             </ul>

@@ -74,16 +74,16 @@ export function EstimateCta({
     <section className={`relative py-12 px-4 text-center sm:py-16 sm:px-6 ${className}`}>
       <div className="absolute inset-0 aurora-gradient opacity-90" />
       <div className="relative z-10 mx-auto max-w-xl">
-        <h2 className="font-serif text-2xl tracking-wider text-balance text-white md:text-3xl">
+        <h2 className="font-serif text-2xl tracking-wider text-balance break-words text-white md:text-3xl">
           {title || defaultTitle}
         </h2>
         {description && (
-          <p className="mt-4 text-sm leading-relaxed tracking-wide text-white/90 sm:text-base">
+          <p className="mt-4 break-words text-sm leading-relaxed tracking-wide text-white/90 sm:text-base">
             {description}
           </p>
         )}
         {!description && (
-          <p className="mt-4 text-sm leading-relaxed tracking-wide text-white/90 sm:text-base">
+          <p className="mt-4 break-words text-sm leading-relaxed tracking-wide text-white/90 sm:text-base">
             {defaultDescription}
           </p>
         )}

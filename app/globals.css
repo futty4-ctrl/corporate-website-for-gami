@@ -136,11 +136,42 @@
     body {
       font-size: 15px;
       line-height: 1.7;
+      -webkit-text-size-adjust: 100%;
+      text-size-adjust: 100%;
+      word-break: break-word;
+      overflow-wrap: anywhere;
+    }
+    
+    /* テキストが途切れないように */
+    p, span, div, li, td, th {
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      hyphens: auto;
+      -webkit-hyphens: auto;
+    }
+    
+    /* 見出しは適切に折り返す */
+    h1, h2, h3, h4, h5, h6 {
+      line-height: 1.4;
+      word-break: keep-all;
+      overflow-wrap: break-word;
     }
     
     /* セクション間の間隔を小さく */
     section + section {
       margin-top: 0;
+    }
+    
+    /* パディングを調整 */
+    section {
+      padding-left: 1rem !important;
+      padding-right: 1rem !important;
+    }
+    
+    /* コンテナの最大幅を確保 */
+    .mx-auto {
+      padding-left: 1rem;
+      padding-right: 1rem;
     }
   }
 }

@@ -15,13 +15,13 @@ export function SectionHeading({ sub, title, catchCopy, className = "" }: Sectio
       <p className="text-xs font-medium tracking-[0.2em] text-gold">
         {sub}
       </p>
-      <h2 className="mt-3 font-serif text-xl tracking-[0.08em] text-foreground sm:text-2xl md:text-3xl text-balance leading-relaxed">
+      <h2 className="mt-3 font-serif text-xl tracking-[0.08em] text-foreground sm:text-2xl md:text-3xl text-balance leading-relaxed break-words px-2">
         {title}
       </h2>
       {catchCopy && (
-        <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed tracking-readable text-muted-foreground sm:mt-5 sm:leading-loose">
+        <p className="mx-auto mt-4 max-w-2xl break-words px-2 text-sm leading-relaxed tracking-readable text-muted-foreground sm:mt-5 sm:leading-loose">
           {catchCopy.split("\n").map((line, i) => (
-            <span key={i}>
+            <span key={i} className="break-words">
               {i > 0 && <br className="sm:hidden" />}
               {line}
             </span>
