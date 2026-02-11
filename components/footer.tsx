@@ -12,7 +12,7 @@ export function Footer() {
         <div className="grid gap-8 sm:gap-12 md:grid-cols-3">
           {/* Brand */}
           <div className="flex flex-col gap-4">
-            <div className="flex items-center gap-2">
+            <Link href="/" className="flex items-center gap-2 transition-opacity hover:opacity-80">
               <img
                 src={logoError ? "/placeholder-logo.svg" : "/images/logo.png"}
                 alt="GAMI"
@@ -21,7 +21,7 @@ export function Footer() {
                 onError={() => setLogoError(true)}
               />
               <span className="font-serif text-lg tracking-widest">GAMI</span>
-            </div>
+            </Link>
             <p className="text-sm leading-8 tracking-wide text-muted-foreground">
               繋ぐ。癒す。想う。 株式会社GAMI
             </p>
@@ -33,6 +33,11 @@ export function Footer() {
               事業内容
             </h3>
             <ul className="flex flex-col gap-3">
+              <li>
+                <Link href="/" className="text-sm text-muted-foreground transition-colors hover:text-primary">
+                  ホーム
+                </Link>
+              </li>
               <li>
                 <Link href="/logistics" className="text-sm text-muted-foreground transition-colors hover:text-primary">
                   物流運送事業
