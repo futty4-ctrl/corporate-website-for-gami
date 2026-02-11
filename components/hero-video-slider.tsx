@@ -133,6 +133,27 @@ export function HeroVideoSlider() {
               loop
               playsInline
               preload="auto"
+              onLoadedMetadata={(e) => {
+                // 動画のメタデータが読み込まれたら、3秒後に開始
+                const video = e.currentTarget
+                video.currentTime = 3
+              }}
+              onTimeUpdate={(e) => {
+                // 動画が終了に近づいたら、最後の部分を確実に表示
+                const video = e.currentTarget
+                if (video.duration && video.currentTime >= video.duration - 0.5) {
+                  // 最後の0.5秒前になったら、最後の部分を確実に表示
+                  video.currentTime = Math.max(3, video.duration - 2)
+                }
+              }}
+              onEnded={(e) => {
+                // 動画が終了したら、最後の部分から再開
+                const video = e.currentTarget
+                if (video.duration) {
+                  video.currentTime = Math.max(3, video.duration - 2)
+                  video.play()
+                }
+              }}
               onError={(e) => {
                 // 動画が読み込めない場合は画像にフォールバック
                 const video = e.currentTarget
