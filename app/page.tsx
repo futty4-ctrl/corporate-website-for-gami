@@ -3,7 +3,6 @@ import { Footer } from "@/components/footer"
 import { HeroVideoSlider } from "@/components/hero-video-slider"
 import { BusinessCard } from "@/components/business-card"
 import { CredentialsSection } from "@/components/credentials-section"
-import { FloatingCta } from "@/components/floating-cta"
 import { SectionHeading } from "@/components/section-heading"
 import { ScrollAnimate } from "@/components/scroll-animate"
 import { EstimateCta } from "@/components/estimate-cta"
@@ -91,7 +90,6 @@ export default function Page() {
         />
       </main>
       <Footer />
-      <FloatingCta />
     </>
   )
 }

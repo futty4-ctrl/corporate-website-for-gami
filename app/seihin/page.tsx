@@ -1,7 +1,6 @@
 import React from "react"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { FloatingCta } from "@/components/floating-cta"
 import { SectionHeading } from "@/components/section-heading"
 import { ScrollAnimate } from "@/components/scroll-animate"
 import { EstimateCta } from "@/components/estimate-cta"
@@ -322,7 +321,6 @@ export default function SeihinPage() {
         />
       </main>
       <Footer />
-      <FloatingCta />
     </>
   )
 }
