@@ -18,6 +18,15 @@ interface Slide {
 
 const slides: Slide[] = [
   {
+    copy: "",
+    sub: "",
+    cta: "",
+    ctaHref: "/",
+    posterSrc: IMAGES.heroLogistics,
+    videoSrc: "/video/hero-logistics.mp4",
+    accentHsl: "216 54% 23%",
+  },
+  {
     copy: "繋ぐ。",
     sub: "確実な物流設計と輸送で、ビジネスを止めない。",
     cta: "物流運送事業を見る",
@@ -123,6 +132,20 @@ export function HeroVideoSlider() {
               muted
               loop
               playsInline
+              preload="auto"
+              onError={(e) => {
+                // 動画が読み込めない場合は画像にフォールバック
+                const video = e.currentTarget
+                const parent = video.parentElement
+                if (parent) {
+                  video.style.display = 'none'
+                  const img = document.createElement('img')
+                  img.src = slide.posterSrc || IMAGES.placeholder
+                  img.className = 'absolute inset-0 h-full w-full object-cover'
+                  img.alt = ''
+                  parent.appendChild(img)
+                }
+              }}
             />
           ) : (
             <Image
@@ -138,42 +161,44 @@ export function HeroVideoSlider() {
           {/* Overlay - 白文字を読みやすく */}
           <div className="absolute inset-0 bg-black/20" aria-hidden />
 
-          {/* Content */}
-          <div className="relative z-10 flex h-full flex-col items-center justify-center px-4 text-center sm:px-6">
-            <div
-              className={`flex flex-col items-center text-center transition-all duration-700 ${
-                slide.copy === "癒す。"
-                  ? "gap-3 sm:gap-4"
-                  : "gap-5 sm:gap-6 md:gap-7"
-              }`}
-            >
-              <h1
-                className={`font-serif text-4xl tracking-[0.12em] text-primary-foreground sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl transition-all duration-700 sm:whitespace-nowrap ${
-                  i === current
-                    ? "translate-y-0 opacity-100"
-                    : "translate-y-8 opacity-0"
+          {/* Content - 動画スライドの場合は非表示 */}
+          {slide.videoSrc && !slide.copy ? null : (
+            <div className="relative z-10 flex h-full flex-col items-center justify-center px-4 text-center sm:px-6">
+              <div
+                className={`flex flex-col items-center text-center transition-all duration-700 ${
+                  slide.copy === "癒す。"
+                    ? "gap-3 sm:gap-4"
+                    : "gap-5 sm:gap-6 md:gap-7"
                 }`}
               >
-                {slide.copy}
-              </h1>
-              <p
-                className={`mx-auto max-w-2xl text-center text-pretty leading-8 tracking-wide text-primary-foreground/85 transition-all duration-700 delay-150 ${
-                  slide.copy === "癒す。"
-                    ? "text-base sm:text-lg"
-                    : "min-h-[3.5rem] text-sm sm:min-h-[4rem] sm:text-base"
-                } ${i === current ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"}`}
-              >
-                {slide.sub}
-              </p>
-              <Link
-                href={slide.ctaHref}
-                className="w-full min-w-[200px] rounded-xl px-8 py-3.5 text-center text-sm font-medium tracking-widest text-white shadow-lg transition-all duration-300 active:scale-95 sm:w-auto sm:min-w-[220px] sm:hover:scale-105 sm:hover:shadow-glass-hover aurora-gradient touch-manipulation"
-                tabIndex={i === current ? 0 : -1}
-              >
-                {slide.cta}
-              </Link>
+                <h1
+                  className={`font-serif text-4xl tracking-[0.12em] text-primary-foreground sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl transition-all duration-700 sm:whitespace-nowrap ${
+                    i === current
+                      ? "translate-y-0 opacity-100"
+                      : "translate-y-8 opacity-0"
+                  }`}
+                >
+                  {slide.copy}
+                </h1>
+                <p
+                  className={`mx-auto max-w-2xl text-center text-pretty leading-8 tracking-wide text-primary-foreground/85 transition-all duration-700 delay-150 ${
+                    slide.copy === "癒す。"
+                      ? "text-base sm:text-lg"
+                      : "min-h-[3.5rem] text-sm sm:min-h-[4rem] sm:text-base"
+                  } ${i === current ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"}`}
+                >
+                  {slide.sub}
+                </p>
+                <Link
+                  href={slide.ctaHref}
+                  className="w-full min-w-[200px] rounded-xl px-8 py-3.5 text-center text-sm font-medium tracking-widest text-white shadow-lg transition-all duration-300 active:scale-95 sm:w-auto sm:min-w-[220px] sm:hover:scale-105 sm:hover:shadow-glass-hover aurora-gradient touch-manipulation"
+                  tabIndex={i === current ? 0 : -1}
+                >
+                  {slide.cta}
+                </Link>
+              </div>
             </div>
-          </div>
+          )}
         </div>
       ))}
 
