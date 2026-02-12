@@ -19,8 +19,6 @@ import Image from "next/image"
 import Link from "next/link"
 import { IMAGES } from "@/lib/images"
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://gamigami.net'
-
 export const metadata: Metadata = {
   title: "遺品整理・生前整理事業",
   description: "大切な方の想い出に、心を込めて寄り添います。遺品整理・生前整理、片付け・仕分け・整理全般、貴金属・時計等の買取対応。資格保有で安心の対応。",
@@ -104,6 +102,8 @@ const flow = [
   { step: "04", title: "完了・ご報告", description: "作業完了後、清掃まで行いご報告。必要に応じて供養の手配もいたします。" },
 ]
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://gamigami.net'
+
 const seihinServiceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
@@ -111,7 +111,7 @@ const seihinServiceSchema = {
   provider: {
     "@type": "Organization",
     name: "株式会社GAMI",
-    url: process.env.NEXT_PUBLIC_SITE_URL || "https://gamigami.net",
+    url: siteUrl,
   },
   areaServed: {
     "@type": "GeoCircle",
@@ -128,12 +128,35 @@ const seihinServiceSchema = {
   description: "大切な方の想い出に、心を込めて寄り添います。遺品整理・生前整理、片付け・仕分け・整理全般、貴金属・時計等の買取対応。",
 }
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "ホーム",
+      item: siteUrl,
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "遺品整理・生前整理事業",
+      item: `${siteUrl}/seihin`,
+    },
+  ],
+}
+
 export default function SeihinPage() {
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(seihinServiceSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       <Header />
       <main>

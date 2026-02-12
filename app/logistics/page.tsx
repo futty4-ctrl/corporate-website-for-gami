@@ -20,8 +20,6 @@ import Image from "next/image"
 import Link from "next/link"
 import { IMAGES } from "@/lib/images"
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://gamigami.net'
-
 export const metadata: Metadata = {
   title: "物流運送事業",
   description:
@@ -111,6 +109,8 @@ const trackRecords = [
   },
 ]
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://gamigami.net'
+
 const logisticsServiceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
@@ -118,10 +118,29 @@ const logisticsServiceSchema = {
   provider: {
     "@type": "Organization",
     name: "株式会社GAMI",
-    url: process.env.NEXT_PUBLIC_SITE_URL || "https://gamigami.net",
+    url: siteUrl,
   },
   description:
     "利用運送・軽貨物運送、物流業務、物流コンサルティング、EC支援・ビジネスマッチング、オリジナル梱包資材の企画・製作。",
+}
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "ホーム",
+      item: siteUrl,
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "物流運送事業",
+      item: `${siteUrl}/logistics`,
+    },
+  ],
 }
 
 export default function LogisticsPage() {
@@ -130,6 +149,10 @@ export default function LogisticsPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(logisticsServiceSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       <Header />
       <main>

@@ -18,10 +18,7 @@ const notoSerifJP = Noto_Serif_JP({
   weight: ["400", "500", "700"],
 })
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://gamigami.net'
-
 export const metadata: Metadata = {
-  metadataBase: new URL(siteUrl),
   viewport: {
     width: 'device-width',
     initialScale: 1,
@@ -51,6 +48,14 @@ export const metadata: Metadata = {
     title: "株式会社GAMI | 繋ぐ。癒す。想う。",
     description:
       "株式会社GAMIは物流運送事業・ヘッドスパ事業・遺品整理・生前整理事業を展開するコーポレートグループです。",
+    images: [
+      {
+        url: '/images/logo.png',
+        width: 1200,
+        height: 630,
+        alt: '株式会社GAMI',
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
@@ -60,6 +65,17 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: '/',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
 }
 

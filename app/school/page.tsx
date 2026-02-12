@@ -16,8 +16,6 @@ import Image from "next/image"
 import Link from "next/link"
 import { IMAGES } from "@/lib/images"
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://gamigami.net'
-
 export const metadata: Metadata = {
   title: "ヘッドスパ事業",
   description:
@@ -77,6 +75,8 @@ const shopLinks = [
   { name: "大阪店", url: "https://www.yuheadspa-osaka.net/" },
 ]
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://gamigami.net'
+
 const headSpaServiceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
@@ -84,10 +84,29 @@ const headSpaServiceSchema = {
   provider: {
     "@type": "Organization",
     name: "株式会社GAMI",
-    url: process.env.NEXT_PUBLIC_SITE_URL || "https://gamigami.net",
+    url: siteUrl,
   },
   description:
     "ヘッドスパ専門店運営（2025現在 全国3店舗）、独立開業支援・フランチャイズ支援、ヘッドスパスクール、ストアコンサルティング、出張サービス。",
+}
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "ホーム",
+      item: siteUrl,
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "ヘッドスパ事業",
+      item: `${siteUrl}/school`,
+    },
+  ],
 }
 
 export default function SchoolPage() {
@@ -96,6 +115,10 @@ export default function SchoolPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(headSpaServiceSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       <Header />
       <main>

@@ -8,6 +8,48 @@ import { ScrollAnimate } from "@/components/scroll-animate"
 import { EstimateCta } from "@/components/estimate-cta"
 import { IMAGES } from "@/lib/images"
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://gamigami.net'
+
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "株式会社GAMI",
+  url: siteUrl,
+  logo: `${siteUrl}/images/logo.png`,
+  contactPoint: {
+    "@type": "ContactPoint",
+    telephone: "+81-6-6115-9935",
+    contactType: "customer service",
+    email: "f_fuchigami@gamigami.email",
+    areaServed: "JP",
+    availableLanguage: "Japanese",
+  },
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "大日町1-8-18",
+    addressLocality: "守口市",
+    addressRegion: "大阪府",
+    postalCode: "570-0003",
+    addressCountry: "JP",
+  },
+  sameAs: [],
+}
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "株式会社GAMI",
+  url: siteUrl,
+  potentialAction: {
+    "@type": "SearchAction",
+    target: {
+      "@type": "EntryPoint",
+      urlTemplate: `${siteUrl}/company#contact`,
+    },
+    "query-input": "required name=search_term_string",
+  },
+}
+
 const businesses = [
   {
     title: "物流運送事業",
@@ -58,6 +100,14 @@ const businesses = [
 export default function Page() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+      />
       <Header />
       <main>
         <HeroVideoSlider />

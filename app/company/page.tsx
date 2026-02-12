@@ -5,8 +5,6 @@ import { SectionHeading } from "@/components/section-heading"
 import { ContactForm } from "@/components/contact-form"
 import type { Metadata } from "next"
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://gamigami.net'
-
 export const metadata: Metadata = {
   title: "会社概要",
   description: "株式会社GAMIの会社概要・お問い合わせ。物流運送事業、ヘッドスパ事業、遺品整理・生前整理事業を展開。",
@@ -52,12 +50,14 @@ const companyInfo = [
   { label: "所在地（福岡支社）", value: "〒819-0014 福岡県福岡市西区豊浜2-20-20-2" },
 ]
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://gamigami.net'
+
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: "株式会社GAMI",
-  url: process.env.NEXT_PUBLIC_SITE_URL || "https://gamigami.net",
-  logo: `${process.env.NEXT_PUBLIC_SITE_URL || "https://gamigami.net"}/images/logo.png`,
+  url: siteUrl,
+  logo: `${siteUrl}/images/logo.png`,
   contactPoint: {
     "@type": "ContactPoint",
     telephone: "+81-6-6115-9935",
@@ -77,12 +77,35 @@ const organizationSchema = {
   sameAs: [],
 }
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "ホーム",
+      item: siteUrl,
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "会社概要",
+      item: `${siteUrl}/company`,
+    },
+  ],
+}
+
 export default function CompanyPage() {
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       <Header />
       <main>
