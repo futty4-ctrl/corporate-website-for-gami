@@ -95,7 +95,7 @@ export function Footer() {
 
         <div className="mt-12 border-t border-border pt-6 text-center sm:mt-16 sm:pt-8">
           <p className="text-xs text-muted-foreground">
-            © {new Date().getFullYear()} 株式会社GAMI 無断転載を禁じます
+            © 株式会社GAMI
           </p>
         </div>
       </div>
