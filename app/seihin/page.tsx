@@ -21,7 +21,7 @@ import { IMAGES } from "@/lib/images"
 
 export const metadata: Metadata = {
   title: "遺品整理・生前整理事業",
-  description: "大切な方の想い出に、心を込めて寄り添います。遺品整理・生前整理、片付け・仕分け・整理全般、貴金属・時計等の買取対応。資格保有で安心の対応。",
+  description: "大切な方の想い出に寄り添い、真心を込めて整理いたします。遺品整理士・生前整理アドバイザーが在籍。古物商免許を活かした貴金属・時計の買取も対応可能です。",
   keywords: [
     "遺品整理",
     "生前整理",
@@ -35,8 +35,8 @@ export const metadata: Metadata = {
     "貴金属買取",
   ],
   openGraph: {
-    title: "遺品整理・生前整理事業 | 株式会社GAMI",
-    description: "大切な方の想い出に、心を込めて寄り添います。遺品整理・生前整理、片付け・仕分け・整理全般、貴金属・時計等の買取対応。",
+    title: "遺品整理・生前整理事業 | 株式会社GAMI | 遺品整理士在籍・買取対応",
+    description: "大切な方の想い出に寄り添い、真心を込めて整理いたします。遺品整理士・生前整理アドバイザーが在籍。古物商免許を活かした貴金属・時計の買取も対応可能です。",
     url: '/seihin',
     type: "website",
   },
@@ -176,7 +176,7 @@ export default function SeihinPage() {
                 Estate Organization
               </p>
               <h1 className="mt-3 font-serif text-xl font-bold tracking-wider text-white sm:mt-4 sm:text-2xl md:text-3xl lg:text-4xl">
-                遺品整理・生前整理事業
+                大阪 遺品整理・生前整理 | 株式会社GAMI
               </h1>
               <p className="mt-3 max-w-xl text-pretty text-xs leading-relaxed tracking-wide text-white sm:mt-4 sm:text-sm md:text-base">
                 大切な方の想い出に、心を込めて寄り添います。整理・片付けから供養の手配まで、安心してお任せください。

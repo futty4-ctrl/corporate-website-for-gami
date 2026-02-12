@@ -25,11 +25,11 @@ export const metadata: Metadata = {
     maximumScale: 5,
   },
   title: {
-    default: "株式会社GAMI | 繋ぐ。癒す。想う。",
-    template: "%s | 株式会社GAMI",
+    default: "株式会社GAMI | 繋ぐ・癒す・想う | 大阪の物流運送・ヘッドスパ・遺品整理",
+    template: "%s | 株式会社GAMI | 大阪の物流・スパ・遺品整理",
   },
   description:
-    "株式会社GAMIは物流運送事業・ヘッドスパ事業・遺品整理・生前整理事業を展開するコーポレートグループです。確実な物流設計、癒しの極みをプロデュース、大切な想い出に寄り添います。",
+    "大阪を拠点に、物流運送事業・ドライヘッドスパ事業・遺品整理/生前整理事業を展開する株式会社GAMI。「繋ぐ。癒す。想う。」をコンセプトに、お客様一人ひとりの生活に寄り添う確かなサービスをご提供します。",
   keywords: [
     "株式会社GAMI",
     "物流運送",
@@ -44,10 +44,10 @@ export const metadata: Metadata = {
     type: "website",
     locale: "ja_JP",
     url: '/',
-    siteName: "株式会社GAMI",
-    title: "株式会社GAMI | 繋ぐ。癒す。想う。",
+    siteName: "株式会社GAMI（ガミ）",
+    title: "株式会社GAMI | 繋ぐ・癒す・想う | 大阪の物流運送・ヘッドスパ・遺品整理",
     description:
-      "株式会社GAMIは物流運送事業・ヘッドスパ事業・遺品整理・生前整理事業を展開するコーポレートグループです。",
+      "大阪を拠点に、物流運送事業・ドライヘッドスパ事業・遺品整理/生前整理事業を展開する株式会社GAMI。「繋ぐ。癒す。想う。」をコンセプトに、お客様一人ひとりの生活に寄り添う確かなサービスをご提供します。",
     images: [
       {
         url: '/images/logo.png',
@@ -59,9 +59,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "株式会社GAMI | 繋ぐ。癒す。想う。",
+    title: "株式会社GAMI | 繋ぐ・癒す・想う | 大阪の物流運送・ヘッドスパ・遺品整理",
     description:
-      "株式会社GAMIは物流運送事業・ヘッドスパ事業・遺品整理・生前整理事業を展開するコーポレートグループです。",
+      "大阪を拠点に、物流運送事業・ドライヘッドスパ事業・遺品整理/生前整理事業を展開する株式会社GAMI。「繋ぐ。癒す。想う。」をコンセプトに、お客様一人ひとりの生活に寄り添う確かなサービスをご提供します。",
   },
   alternates: {
     canonical: '/',

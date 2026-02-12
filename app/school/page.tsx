@@ -17,9 +17,9 @@ import Link from "next/link"
 import { IMAGES } from "@/lib/images"
 
 export const metadata: Metadata = {
-  title: "ヘッドスパ事業",
+  title: "ドライヘッドスパ事業（Y'u）",
   description:
-    "ヘッドスパ専門店運営（2025現在 全国3店舗）、独立開業支援・フランチャイズ支援、ヘッドスパスクール、ストアコンサルティング、出張サービス。",
+    "完全予約制のプライベート空間で、極上の癒やしをご提供。日々の疲れをリセットし、心身ともに整えるドライヘッドスパ。",
   keywords: [
     "ヘッドスパ",
     "ヘッドスパスクール",
@@ -31,9 +31,9 @@ export const metadata: Metadata = {
     "大阪",
   ],
   openGraph: {
-    title: "ヘッドスパ事業 | 株式会社GAMI",
+    title: "ドライヘッドスパ事業（Y'u） | 株式会社GAMI | 至福の癒やし",
     description:
-      "ヘッドスパ専門店運営（2025現在 全国3店舗）、独立開業支援・フランチャイズ支援、ヘッドスパスクール、ストアコンサルティング、出張サービス。",
+      "完全予約制のプライベート空間で、極上の癒やしをご提供。日々の疲れをリセットし、心身ともに整えるドライヘッドスパ。",
     url: '/school',
     type: "website",
   },
@@ -138,7 +138,7 @@ export default function SchoolPage() {
                 Head Spa
               </p>
               <h1 className="mt-3 font-serif text-xl font-bold tracking-wider text-white sm:mt-4 sm:text-2xl md:text-3xl lg:text-4xl">
-                ヘッドスパ事業
+                大阪 ヘッドスパ・ドライヘッドスパ | 株式会社GAMI
               </h1>
               <p className="mt-3 max-w-xl text-pretty text-xs leading-relaxed tracking-wide text-white sm:mt-4 sm:text-sm md:text-base">
                 店舗運営・スクール・開業支援。ヘッドスパ事業をトータルプロデュースします。

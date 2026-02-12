@@ -23,7 +23,7 @@ import { IMAGES } from "@/lib/images"
 export const metadata: Metadata = {
   title: "物流運送事業",
   description:
-    "利用運送・軽貨物運送、物流業務、物流コンサルティング、EC支援・ビジネスマッチング、オリジナル梱包資材の企画・製作。",
+    "瓶・ガラス容器の運送から化粧品製造業許可を活かした配送まで。細やかな気配りと確実な物流で、お客様のビジネスを支えます。",
   keywords: [
     "物流運送",
     "利用運送",
@@ -38,9 +38,9 @@ export const metadata: Metadata = {
     "大阪",
   ],
   openGraph: {
-    title: "物流運送事業 | 株式会社GAMI",
+    title: "物流運送事業 | 株式会社GAMI | 化粧品製造業許可・軽貨物運送",
     description:
-      "利用運送・軽貨物運送、物流業務、物流コンサルティング、EC支援・ビジネスマッチング、オリジナル梱包資材の企画・製作。",
+      "瓶・ガラス容器の運送から化粧品製造業許可を活かした配送まで。細やかな気配りと確実な物流で、お客様のビジネスを支えます。",
     url: '/logistics',
     type: "website",
   },
@@ -171,7 +171,7 @@ export default function LogisticsPage() {
                 Logistics
               </p>
               <h1 className="mt-3 font-serif text-xl font-bold tracking-wider text-white sm:mt-4 sm:text-2xl md:text-3xl lg:text-4xl">
-                物流運送事業
+                大阪 軽貨物運送・物流業務 | 株式会社GAMI
               </h1>
               <p className="mt-3 max-w-xl text-pretty text-xs leading-relaxed tracking-wide text-white sm:mt-4 sm:text-sm md:text-base">
                 利用運送・軽貨物運送を軸に、物流業務、コンサルティング、EC支援、オリジナル梱包資材の企画・製作まで。ワンストップの物流ソリューション。

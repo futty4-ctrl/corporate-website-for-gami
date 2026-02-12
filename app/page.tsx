@@ -50,6 +50,122 @@ const websiteSchema = {
   },
 }
 
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": `${siteUrl}#business`,
+  name: "株式会社GAMI",
+  image: `${siteUrl}/images/logo.png`,
+  url: siteUrl,
+  telephone: "+81-6-6115-9935",
+  email: "f_fuchigami@gamigami.email",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "大日町1-8-18",
+    addressLocality: "守口市",
+    addressRegion: "大阪府",
+    postalCode: "570-0003",
+    addressCountry: "JP",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: 34.6937,
+    longitude: 135.5023,
+  },
+  priceRange: "$$",
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+      ],
+      opens: "09:00",
+      closes: "18:00",
+    },
+  ],
+  areaServed: {
+    "@type": "City",
+    name: "大阪",
+  },
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "サービス",
+    itemListElement: [
+      {
+        "@type": "OfferCatalog",
+        name: "物流運送事業",
+        itemListElement: [
+          {
+            "@type": "Offer",
+            itemOffered: {
+              "@type": "Service",
+              name: "利用運送・軽貨物運送",
+            },
+          },
+          {
+            "@type": "Offer",
+            itemOffered: {
+              "@type": "Service",
+              name: "物流業務",
+            },
+          },
+          {
+            "@type": "Offer",
+            itemOffered: {
+              "@type": "Service",
+              name: "物流コンサルティング",
+            },
+          },
+        ],
+      },
+      {
+        "@type": "OfferCatalog",
+        name: "ヘッドスパ事業",
+        itemListElement: [
+          {
+            "@type": "Offer",
+            itemOffered: {
+              "@type": "Service",
+              name: "ヘッドスパ専門店運営",
+            },
+          },
+          {
+            "@type": "Offer",
+            itemOffered: {
+              "@type": "Service",
+              name: "ヘッドスパスクール",
+            },
+          },
+        ],
+      },
+      {
+        "@type": "OfferCatalog",
+        name: "遺品整理・生前整理事業",
+        itemListElement: [
+          {
+            "@type": "Offer",
+            itemOffered: {
+              "@type": "Service",
+              name: "遺品整理",
+            },
+          },
+          {
+            "@type": "Offer",
+            itemOffered: {
+              "@type": "Service",
+              name: "生前整理",
+            },
+          },
+        ],
+      },
+    ],
+  },
+}
+
 const businesses = [
   {
     title: "物流運送事業",
@@ -107,6 +223,10 @@ export default function Page() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
       />
       <Header />
       <main>
