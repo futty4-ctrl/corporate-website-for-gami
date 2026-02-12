@@ -59,7 +59,7 @@ export const metadata: Metadata = {
       "株式会社GAMIは物流運送事業・ヘッドスパ事業・遺品整理・生前整理事業を展開するコーポレートグループです。",
   },
   alternates: {
-    canonical: siteUrl,
+    canonical: '/',
   },
 }
 

@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   alternates: {
-    canonical: `${siteUrl}/company`,
+    canonical: '/company',
   },
 }
 

@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   alternates: {
-    canonical: `${siteUrl}/school`,
+    canonical: '/school',
   },
 }
 
