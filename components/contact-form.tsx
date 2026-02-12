@@ -68,7 +68,7 @@ export function ContactForm() {
           type="email"
           required
           className="rounded-xl border border-border bg-card px-4 py-3 text-sm text-foreground shadow-glass outline-none transition-all focus:border-primary focus:ring-2 focus:ring-primary/20"
-          placeholder="info@example.com"
+          placeholder="info@gamigami.net"
         />
       </div>
 

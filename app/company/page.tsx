@@ -5,7 +5,7 @@ import { SectionHeading } from "@/components/section-heading"
 import { ContactForm } from "@/components/contact-form"
 import type { Metadata } from "next"
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://example.com'
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://gamigami.net'
 
 export const metadata: Metadata = {
   title: "会社概要",
@@ -56,8 +56,8 @@ const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: "株式会社GAMI",
-  url: process.env.NEXT_PUBLIC_SITE_URL || "https://example.com",
-  logo: `${process.env.NEXT_PUBLIC_SITE_URL || "https://example.com"}/images/logo.png`,
+  url: process.env.NEXT_PUBLIC_SITE_URL || "https://gamigami.net",
+  logo: `${process.env.NEXT_PUBLIC_SITE_URL || "https://gamigami.net"}/images/logo.png`,
   contactPoint: {
     "@type": "ContactPoint",
     telephone: "+81-6-6115-9935",

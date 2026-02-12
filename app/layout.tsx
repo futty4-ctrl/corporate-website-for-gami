@@ -18,7 +18,7 @@ const notoSerifJP = Noto_Serif_JP({
   weight: ["400", "500", "700"],
 })
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://example.com'
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://gamigami.net'
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

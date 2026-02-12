@@ -16,7 +16,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { IMAGES } from "@/lib/images"
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://example.com'
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://gamigami.net'
 
 export const metadata: Metadata = {
   title: "ヘッドスパ事業",
@@ -84,7 +84,7 @@ const headSpaServiceSchema = {
   provider: {
     "@type": "Organization",
     name: "株式会社GAMI",
-    url: process.env.NEXT_PUBLIC_SITE_URL || "https://example.com",
+    url: process.env.NEXT_PUBLIC_SITE_URL || "https://gamigami.net",
   },
   description:
     "ヘッドスパ専門店運営（2025現在 全国3店舗）、独立開業支援・フランチャイズ支援、ヘッドスパスクール、ストアコンサルティング、出張サービス。",

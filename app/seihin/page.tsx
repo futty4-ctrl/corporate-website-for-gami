@@ -19,7 +19,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { IMAGES } from "@/lib/images"
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://example.com'
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://gamigami.net'
 
 export const metadata: Metadata = {
   title: "遺品整理・生前整理事業",
@@ -111,7 +111,7 @@ const seihinServiceSchema = {
   provider: {
     "@type": "Organization",
     name: "株式会社GAMI",
-    url: process.env.NEXT_PUBLIC_SITE_URL || "https://example.com",
+    url: process.env.NEXT_PUBLIC_SITE_URL || "https://gamigami.net",
   },
   areaServed: {
     "@type": "GeoCircle",
