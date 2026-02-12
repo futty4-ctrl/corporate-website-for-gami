@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "会社概要 | 株式会社GAMI",
     description: "株式会社GAMIの会社概要・お問い合わせ。物流運送事業、ヘッドスパ事業、遺品整理・生前整理事業を展開。",
-    url: `${siteUrl}/company`,
+    url: '/company',
     type: "website",
   },
   alternates: {

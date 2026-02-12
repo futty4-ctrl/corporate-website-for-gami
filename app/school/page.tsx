@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     title: "ヘッドスパ事業 | 株式会社GAMI",
     description:
       "ヘッドスパ専門店運営（2025現在 全国3店舗）、独立開業支援・フランチャイズ支援、ヘッドスパスクール、ストアコンサルティング、出張サービス。",
-    url: `${siteUrl}/school`,
+    url: '/school',
     type: "website",
   },
   alternates: {

@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "ja_JP",
-    url: siteUrl,
+    url: '/',
     siteName: "株式会社GAMI",
     title: "株式会社GAMI | 繋ぐ。癒す。想う。",
     description:

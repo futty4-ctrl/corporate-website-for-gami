@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "遺品整理・生前整理事業 | 株式会社GAMI",
     description: "大切な方の想い出に、心を込めて寄り添います。遺品整理・生前整理、片付け・仕分け・整理全般、貴金属・時計等の買取対応。",
-    url: `${siteUrl}/seihin`,
+    url: '/seihin',
     type: "website",
   },
   alternates: {

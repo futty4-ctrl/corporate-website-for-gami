@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     title: "物流運送事業 | 株式会社GAMI",
     description:
       "利用運送・軽貨物運送、物流業務、物流コンサルティング、EC支援・ビジネスマッチング、オリジナル梱包資材の企画・製作。",
-    url: `${siteUrl}/logistics`,
+    url: '/logistics',
     type: "website",
   },
   alternates: {
