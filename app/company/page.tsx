@@ -117,7 +117,7 @@ export default function CompanyPage() {
               会社概要
             </p>
             <h1 className="mt-3 font-serif text-2xl tracking-wider text-balance text-white sm:text-3xl md:text-4xl lg:text-5xl">
-              会社概要 | 株式会社GAMI（大阪）
+              会社概要 | 株式会社GAMI
             </h1>
           </div>
         </section>
