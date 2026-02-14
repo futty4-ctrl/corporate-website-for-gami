@@ -128,7 +128,7 @@ export default function SchoolPage() {
             src={IMAGES.heroSpa}
             alt="ヘッドスパ"
             fill
-            className="object-cover"
+            className="object-cover object-center object-[center_top]"
             priority
             unoptimized
           />
