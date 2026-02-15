@@ -175,7 +175,7 @@ export default function LogisticsPage() {
                 <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl">物流</span>運送事業
               </h1>
               <p className="mt-3 max-w-xl text-pretty text-xs leading-relaxed tracking-wide text-white sm:mt-4 sm:text-sm md:text-base">
-                物流業務を軸に、利用運送・軽貨物運送、コンサルティング、EC支援、オリジナル梱包資材の企画・製作まで。ワンストップの物流ソリューション。
+                物流業務を軸に、コンサルティング、EC支援、利用運送・軽貨物運送、オリジナル梱包資材の企画・製作まで。ワンストップの物流ソリューション。
               </p>
             </div>
           </div>
