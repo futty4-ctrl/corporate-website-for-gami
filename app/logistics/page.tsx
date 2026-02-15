@@ -162,7 +162,7 @@ export default function LogisticsPage() {
             src={IMAGES.heroLogistics}
             alt="物流倉庫"
             fill
-            className="object-cover"
+            className="object-cover scale-95"
             priority
           />
           <div className="relative z-10 mx-auto w-full max-w-6xl px-4 pb-12 pt-20 sm:px-6 sm:pb-16 sm:pt-24 lg:pt-32">
@@ -171,7 +171,7 @@ export default function LogisticsPage() {
                 Logistics
               </p>
               <h1 className="mt-3 font-serif text-xl font-bold tracking-wider text-white sm:mt-4 sm:text-2xl md:text-3xl lg:text-4xl">
-                物流運送事業
+                <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl">物流</span>運送事業
               </h1>
               <p className="mt-3 max-w-xl text-pretty text-xs leading-relaxed tracking-wide text-white sm:mt-4 sm:text-sm md:text-base">
                 利用運送・軽貨物運送を軸に、物流業務、コンサルティング、EC支援、オリジナル梱包資材の企画・製作まで。ワンストップの物流ソリューション。
