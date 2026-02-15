@@ -164,6 +164,7 @@ export default function LogisticsPage() {
             fill
             className="object-cover scale-95"
             priority
+            unoptimized
           />
           <div className="relative z-10 mx-auto w-full max-w-6xl px-4 pb-12 pt-20 sm:px-6 sm:pb-16 sm:pt-24 lg:pt-32">
             <div className="max-w-2xl [text-shadow:0_1px_2px_rgba(0,0,0,0.5),0_2px_8px_rgba(0,0,0,0.4)]">

@@ -9,14 +9,14 @@ const q = "auto=format&fit=crop&q=85"
 
 export const IMAGES = {
   // Hero（16:9）物流: 清潔感・プロフェッショナル
-  heroLogistics: `https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1920&h=1080&${q}`,
+  heroLogistics: `/images/hero-logistics.png`,
   // Hero（16:9）スパ: リラクゼーション・ヘッドスパ施術
   heroSpa: `/images/hero-spa.png`,
   // Hero（16:9）遺品整理: まごころを込めて、大切な思い出を整理します。
   heroSeihin: `/images/hero-seihin.png`,
 
   // Card（4:3）物流: 清潔感・整理された倉庫
-  cardLogistics: `https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&h=600&${q}`,
+  cardLogistics: `/images/hero-logistics.png`,
   // Card（4:3）スパ: リラクゼーション・ヘッドスパ施術
   cardSchool: `/images/card-school.png`,
   // Card（4:3）遺品整理: まごころを込めて、大切な思い出を整理します。
