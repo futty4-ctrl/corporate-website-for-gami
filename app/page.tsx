@@ -147,11 +147,11 @@ export default function HomePage() {
                 LOGISTICS & HEAD SPA
               </p>
 
-              <h1 className="mx-auto mt-5 text-center text-[clamp(2.2rem,8vw,5.8rem)] font-bold leading-[1.05] tracking-[-0.06em] text-white sm:text-7xl lg:mx-0 lg:text-left">
-  未来より先に動く。
-</h1>
+              <h1 className="mx-auto mt-5 whitespace-nowrap text-center text-[clamp(2.05rem,8.2vw,5.8rem)] font-bold leading-[1.08] tracking-[-0.06em] text-white sm:text-7xl lg:mx-0 lg:text-left">
+                未来より先に動く。
+              </h1>
 
-              <p className="mx-auto mt-7 max-w-[32rem] text-[15px] leading-8 text-white/82 sm:text-lg sm:leading-9 lg:mx-0">
+              <p className="mx-auto mt-7 max-w-[34rem] text-[15px] leading-8 text-white/82 sm:text-lg sm:leading-9 lg:mx-0">
                 物流運送とヘッドスパを主軸に、レスポンスと現場対応力を強みに事業展開する株式会社GAMI。
                 急なご相談にもまず動き、そこから最適な形をつくります。
               </p>
@@ -176,11 +176,9 @@ export default function HomePage() {
                 <div className="rounded-2xl border border-white/10 bg-white/10 px-4 py-3 backdrop-blur">
                   24時間365日対応も相談可能
                 </div>
-
                 <div className="rounded-2xl border border-white/10 bg-white/10 px-4 py-3 backdrop-blur">
                   化粧品関連のスポット対応
                 </div>
-
                 <div className="rounded-2xl border border-white/10 bg-white/10 px-4 py-3 backdrop-blur">
                   物流と美容の2本柱
                 </div>
@@ -204,12 +202,9 @@ export default function HomePage() {
                 GAMIの2本柱。
               </h2>
 
-              <p className="mx-auto mt-6 max-w-[32rem] whitespace-pre-line text-[15px] leading-8 text-muted-foreground sm:max-w-3xl sm:text-base sm:leading-8 lg:mx-0">
-                {`株式会社GAMIは、
-物流運送事業とヘッドスパ事業を2本柱に展開しています。
-
-現場対応力とレスポンスを強みに、
-必要なタイミングで、必要な形をご提案します。`}
+              <p className="mx-auto mt-6 max-w-[34rem] text-[15px] leading-8 text-muted-foreground sm:max-w-3xl sm:text-base lg:mx-0">
+                株式会社GAMIは、物流運送事業とヘッドスパ事業を2本柱に展開しています。
+                現場対応力とレスポンスを強みに、必要なタイミングで必要な形をご提案します。
               </p>
             </div>
 
@@ -223,7 +218,7 @@ export default function HomePage() {
                   物流運送事業
                 </h3>
 
-                <p className="mt-5 text-[15px] leading-8 text-muted-foreground sm:text-sm sm:leading-8">
+                <p className="mt-5 text-[15px] leading-8 text-muted-foreground sm:text-sm">
                   発送代行、倉庫保管、検品、梱包、流通加工、スポット出荷まで一括対応。
                   お客様の要望によっては、24時間365日の発送対応も行っています。
                 </p>
@@ -256,7 +251,7 @@ export default function HomePage() {
                   ヘッドスパ事業
                 </h3>
 
-                <p className="mt-5 text-[15px] leading-8 text-muted-foreground sm:text-sm sm:leading-8">
+                <p className="mt-5 text-[15px] leading-8 text-muted-foreground sm:text-sm">
                   ヘッドスパ専門店ゆう本店の運営実績をもとに、店舗運営・技術・接客・空間づくりまで。
                   美容事業として、ヘッドスパの価値を広げています。
                 </p>
@@ -303,11 +298,9 @@ export default function HomePage() {
                   信頼になる。
                 </h2>
 
-                <p className="mx-auto mt-6 max-w-[32rem] whitespace-pre-line text-[15px] leading-8 text-white/70 sm:max-w-3xl sm:text-base sm:leading-8 lg:mx-0">
-                  {`GAMIが大切にしているのは、レスポンスの早さです。
-
-判断、現場確認、手配、実行までの速度を上げ、
-お客様の機会損失を減らします。`}
+                <p className="mx-auto mt-6 max-w-[34rem] text-[15px] leading-8 text-white/70 sm:max-w-3xl sm:text-base lg:mx-0">
+                  GAMIが大切にしているのは、レスポンスの早さです。
+                  判断、現場確認、手配、実行までの速度を上げ、お客様の機会損失を減らします。
                 </p>
               </div>
 
@@ -355,11 +348,9 @@ export default function HomePage() {
                 対応実例
               </h2>
 
-              <p className="mx-auto mt-6 max-w-[32rem] whitespace-pre-line text-[15px] leading-8 text-muted-foreground sm:max-w-3xl sm:text-base sm:leading-8 lg:mx-0">
-                {`具体的なメーカー名は伏せたうえで、
-実際に近い取扱いイメージをご紹介します。
-
-美容、アパレル、食品、返礼品、EC発送まで幅広く対応しています。`}
+              <p className="mx-auto mt-6 max-w-[34rem] text-[15px] leading-8 text-muted-foreground sm:max-w-3xl sm:text-base lg:mx-0">
+                具体的なメーカー名は伏せたうえで、実際に近い取扱いイメージをご紹介します。
+                美容、アパレル、食品、返礼品、EC発送まで幅広く対応しています。
               </p>
             </div>
 
@@ -391,11 +382,9 @@ export default function HomePage() {
                 案件に合わせて対応。
               </h2>
 
-              <p className="mx-auto mt-6 max-w-[32rem] whitespace-pre-line text-[15px] leading-8 text-muted-foreground sm:max-w-3xl sm:text-base sm:leading-8 lg:mx-0">
-                {`GAMIでは、守口倉庫と大阪南倉庫の2拠点を活用し、
-商品特性や物量に合わせた保管・出荷体制をご提案します。
-
-検品・梱包・流通加工までご相談いただけます。`}
+              <p className="mx-auto mt-6 max-w-[34rem] text-[15px] leading-8 text-muted-foreground sm:max-w-3xl sm:text-base lg:mx-0">
+                GAMIでは、守口倉庫と大阪南倉庫の2拠点を活用し、商品特性や物量に合わせた保管・出荷体制をご提案します。
+                検品・梱包・流通加工までご相談いただけます。
               </p>
             </div>
 
@@ -461,11 +450,9 @@ export default function HomePage() {
                 その他事業
               </h2>
 
-              <p className="mx-auto mt-6 max-w-[32rem] whitespace-pre-line text-[15px] leading-8 text-muted-foreground sm:max-w-3xl sm:text-base sm:leading-8 lg:mx-0">
-                {`物流・ヘッドスパを中心に、関連する複数の事業を展開しています。
-
-各事業は必要に応じてご紹介し、
-詳細は関連ページへご案内します。`}
+              <p className="mx-auto mt-6 max-w-[34rem] text-[15px] leading-8 text-muted-foreground sm:max-w-3xl sm:text-base lg:mx-0">
+                物流・ヘッドスパを中心に、関連する複数の事業を展開しています。
+                各事業は必要に応じてご紹介し、詳細は関連ページへご案内します。
               </p>
             </div>
 
@@ -509,7 +496,7 @@ export default function HomePage() {
                   許認可・資格
                 </h2>
 
-                <p className="mx-auto mt-6 max-w-[32rem] text-[15px] leading-8 text-white/70 sm:max-w-3xl sm:text-base sm:leading-8 lg:mx-0">
+                <p className="mx-auto mt-6 max-w-[34rem] text-[15px] leading-8 text-white/70 sm:max-w-3xl sm:text-base lg:mx-0">
                   物流、美容、整理買取に関わる事業を、安心してご相談いただけるように。
                   必要な許認可・資格を整えています。
                 </p>
@@ -562,12 +549,9 @@ export default function HomePage() {
               即レスで対応します。
             </h2>
 
-            <p className="mx-auto mt-6 max-w-[32rem] whitespace-pre-line text-[15px] leading-8 text-muted-foreground sm:max-w-2xl sm:text-base sm:leading-8">
-              {`物流の急なご相談、
-ヘッドスパ事業、整理買取、各種事業連携まで。
-
-まずは内容をお聞かせください。
-確認後、できるだけ早くご返信します。`}
+            <p className="mx-auto mt-6 max-w-[34rem] text-[15px] leading-8 text-muted-foreground sm:max-w-2xl sm:text-base">
+              物流の急なご相談、ヘッドスパ事業、整理買取、各種事業連携まで。
+              まずは内容をお聞かせください。確認後、できるだけ早くご返信します。
             </p>
 
             <div className="mx-auto mt-9 flex max-w-[22rem] flex-col justify-center gap-3 sm:max-w-none sm:flex-row">
