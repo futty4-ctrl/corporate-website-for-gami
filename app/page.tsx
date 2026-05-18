@@ -147,11 +147,9 @@ export default function HomePage() {
                 LOGISTICS & HEAD SPA
               </p>
 
-              <h1 className="mx-auto mt-6 max-w-[18rem] text-[clamp(2.25rem,10vw,6.4rem)] font-bold leading-[1.18] tracking-[-0.04em] sm:max-w-none sm:leading-[1.08] lg:mx-0">
-                未来より
-                <br className="sm:hidden" />
-                先に動く。
-              </h1>
+              <h1 className="mx-auto mt-5 text-[clamp(2.9rem,11vw,5.8rem)] font-bold leading-none tracking-[-0.06em] sm:text-7xl lg:mx-0">
+  未来より先に動く。
+</h1>
 
               <p className="mx-auto mt-7 max-w-[20rem] text-[15px] leading-[2] text-white/82 sm:max-w-2xl sm:text-lg sm:leading-9 lg:mx-0">
                 物流運送とヘッドスパを主軸に、
