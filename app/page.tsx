@@ -379,7 +379,7 @@ export default function HomePage() {
               <h2 className="mt-4 text-3xl font-bold leading-[1.35] tracking-tight sm:text-5xl sm:leading-tight">
                 2つの倉庫で、
                 <br />
-                案件に合わせて対応。
+                案件ベースで対応。
               </h2>
 
               <p className="mx-auto mt-6 max-w-[34rem] text-[15px] leading-8 text-muted-foreground sm:max-w-3xl sm:text-base lg:mx-0">
