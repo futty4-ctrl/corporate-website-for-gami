@@ -221,7 +221,7 @@ export default function CompanyPage() {
 事業を前へ進める。"
   className="mb-10"
 />
-            <p className="text-sm leading-loose tracking-readable text-muted-foreground">
+            <p className="mx-auto max-w-2xl text-[15px] leading-[2.2] tracking-readable text-muted-foreground sm:text-sm">
   株式会社GAMIは、物流運送事業とヘッドスパ事業を主軸に展開しています。
   急なご相談にも素早く反応し、現場確認・手配・実行までスピーディーに対応。
   レスポンスと現場対応力を強みに、お客様の事業を支えています。
