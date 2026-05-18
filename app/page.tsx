@@ -1,5 +1,6 @@
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import Image from "next/image"
 import Link from "next/link"
 
 export const metadata = {
@@ -24,6 +25,25 @@ const logisticsCases = [
   "スパイス商品の全国発送",
   "化粧品関連商品の急なスポット対応",
   "セット組み・シール貼り・封入作業",
+]
+
+const warehouses = [
+  {
+    title: "守口倉庫",
+    lead: "小規模案件・機密性の高い保管に対応",
+    body:
+      "細かな管理が必要な商品や、柔軟な運用が求められる案件に適した倉庫です。入出庫、検品、保管、流通加工まで、現場に合わせて対応します。",
+    image: "/images/warehouse-moriguchi.jpg",
+    subImage: "/images/warehouse-moriguchi-inside.jpg",
+  },
+  {
+    title: "大阪南倉庫",
+    lead: "大量保管・パレット運用に対応",
+    body:
+      "物量のある案件や、長期保管・まとめ出荷に適した倉庫です。案件規模に応じて、守口倉庫と使い分けながら最適な物流体制をご提案します。",
+    image: "/images/warehouse-osaka.jpg",
+    subImage: "/images/warehouse-osaka-inside.jpg",
+  },
 ]
 
 const headSpaLinks = [
@@ -350,6 +370,85 @@ export default function HomePage() {
                   <p className="text-sm font-bold leading-7 text-foreground">
                     {item}
                   </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="section-gradient py-20 sm:py-28">
+          <div className="mx-auto max-w-6xl px-5 sm:px-6">
+            <div className="max-w-3xl">
+              <p className="text-sm font-semibold tracking-[0.24em] text-gold">
+                WAREHOUSE NETWORK
+              </p>
+
+              <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-5xl">
+                2つの倉庫で、
+                <br className="sm:hidden" />
+                案件に合わせて対応。
+              </h2>
+
+              <p className="mt-6 text-[15px] leading-[2.05] text-muted-foreground sm:text-base sm:leading-8">
+                GAMIでは、
+                <br className="sm:hidden" />
+                守口倉庫と大阪南倉庫の2拠点を活用し、
+                <br />
+                商品特性や物量に合わせた
+                <br className="sm:hidden" />
+                保管・出荷体制をご提案します。
+                <br />
+                保管だけでなく、
+                <br className="sm:hidden" />
+                検品・梱包・流通加工までご相談いただけます。
+              </p>
+            </div>
+
+            <div className="mt-12 grid gap-8 lg:grid-cols-2">
+              {warehouses.map((warehouse) => (
+                <div
+                  key={warehouse.title}
+                  className="overflow-hidden rounded-[2rem] border border-border bg-white shadow-glass"
+                >
+                  <div className="grid gap-2 p-2">
+                    <div className="relative aspect-[16/9] overflow-hidden rounded-[1.5rem] bg-muted">
+                      <Image
+                        src={warehouse.image}
+                        alt={warehouse.title}
+                        fill
+                        sizes="(max-width: 1024px) 100vw, 50vw"
+                        className="object-cover"
+                      />
+                    </div>
+
+                    <div className="relative aspect-[16/9] overflow-hidden rounded-[1.5rem] bg-muted">
+                      <Image
+                        src={warehouse.subImage}
+                        alt={`${warehouse.title} 内観`}
+                        fill
+                        sizes="(max-width: 1024px) 100vw, 50vw"
+                        className="object-cover"
+                      />
+                    </div>
+                  </div>
+
+                  <div className="p-7">
+                    <p className="text-xs font-bold tracking-[0.22em] text-gold">
+                      WAREHOUSE
+                    </p>
+
+                    <h3 className="mt-4 text-2xl font-bold text-foreground">
+                      {warehouse.title}
+                    </h3>
+
+                    <p className="mt-3 text-sm font-bold leading-7 text-primary">
+                      {warehouse.lead}
+                    </p>
+
+                    <p className="mt-4 text-sm leading-8 text-muted-foreground">
+                      {warehouse.body}
+                    </p>
+                  </div>
                 </div>
               ))}
             </div>
