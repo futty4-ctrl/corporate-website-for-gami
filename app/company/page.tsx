@@ -188,9 +188,15 @@ export default function CompanyPage() {
                 <dt className="w-full shrink-0 text-xs font-medium text-muted-foreground sm:w-40 sm:text-sm">
                   {row.label}
                 </dt>
-                <dd className="text-sm leading-relaxed tracking-wide text-foreground sm:leading-8">
-                  {row.value}
-                </dd>
+               <dd
+  className={`text-sm tracking-wide sm:leading-8 ${
+    row.label === "主要事業"
+      ? "text-base font-bold text-foreground"
+      : "leading-relaxed text-muted-foreground"
+  }`}
+>
+  {row.value}
+</dd>
               </div>
             ))}
           </div>
