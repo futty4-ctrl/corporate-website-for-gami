@@ -19,21 +19,9 @@ export default function Loading() {
         </h1>
 
         <div className="mt-8 h-[2px] w-40 overflow-hidden rounded-full bg-white/10">
-          <div className="h-full w-1/2 animate-[loading_1.4s_ease-in-out_infinite] rounded-full bg-amber-400" />
+          <div className="h-full w-1/2 animate-pulse rounded-full bg-amber-400" />
         </div>
       </div>
-
-      <style jsx global>{`
-        @keyframes loading {
-          0% {
-            transform: translateX(-100%);
-          }
-
-          100% {
-            transform: translateX(220%);
-          }
-        }
-      `}</style>
     </main>
   )
 }
