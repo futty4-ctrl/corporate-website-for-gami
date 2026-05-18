@@ -30,10 +30,15 @@ const companyInfo = [
   { label: "会社名", value: "株式会社GAMI" },
   { label: "代表取締役", value: "淵上 和博" },
   { label: "設立", value: "2025年6月17日" },
-  {
-    label: "事業内容",
-    value: "物流運送事業、ヘッドスパ事業、整理買取事業",
-  },
+ {
+  label: "主要事業",
+  value: "物流運送事業、ヘッドスパ事業",
+},
+{
+  label: "関連事業",
+  value:
+    "車事業、遺品整理・生前整理事業、リユース買取事業、アミューズメント業界向け卸事業、ホームページ制作事業、ビジネスマッチング事業",
+},
 
   { label: "メールアドレス", value: "k_fuchigami@gamigami.email" },
   { label: "TEL", value: "06-6115-9935" },
