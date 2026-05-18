@@ -29,7 +29,7 @@ const logisticsCases = [
 const headSpaLinks = [
   {
     title: "ヘッドスパ専門店ゆう 本店",
-    body: "完全個室・完全予約制のヘッドスパ専門店。実店舗で培った技術・接客・空間設計がGAMIの美容事業の核です。",
+    body: "完全個室・完全予約制のヘッドスパ専門店。実店舗で培った技術・接客・空間設計が、GAMIの美容事業の核です。",
     href: "https://www.yuheadspa.net/",
     button: "本店サイトを見る",
   },
@@ -62,7 +62,7 @@ const otherBusinesses = [
   },
   {
     title: "アミューズメント卸事業",
-    body: "主にパチンコ業界向けに、仕入れ先開拓と商品の卸を行っています。",
+    body: "主にパチンコ業界向けに、商品の卸を行っています。",
     href: "/company#contact",
     button: "相談する",
   },
@@ -106,7 +106,7 @@ export default function HomePage() {
       <Header />
 
       <main>
-        <section className="relative min-h-[680px] overflow-hidden bg-zinc-950 text-white">
+        <section className="relative min-h-[620px] overflow-hidden bg-zinc-950 text-white sm:min-h-[680px]">
           <video
             autoPlay
             loop
@@ -117,22 +117,30 @@ export default function HomePage() {
             <source src="/video/hero-logistics.mp4" type="video/mp4" />
           </video>
 
-          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/80" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/75 via-black/60 to-black/85" />
 
-          <div className="relative z-10 mx-auto flex min-h-[680px] max-w-6xl items-center px-5 py-24 sm:px-6">
+          <div className="relative z-10 mx-auto flex min-h-[620px] max-w-6xl items-center px-5 py-20 sm:min-h-[680px] sm:px-6 sm:py-24">
             <div className="max-w-4xl">
-              <p className="text-xs font-semibold tracking-[0.28em] text-amber-300 sm:text-sm">
+              <p className="text-[11px] font-semibold tracking-[0.24em] text-amber-300 sm:text-sm">
                 GAMI INC. / LOGISTICS & HEAD SPA
               </p>
 
-              <h1 className="mt-6 text-[clamp(2.6rem,8vw,6.4rem)] font-bold leading-[1.05] tracking-[-0.06em]">
-                未来より先に動く。
+              <h1 className="mt-6 text-[clamp(2.55rem,12vw,6.4rem)] font-bold leading-[1.08] tracking-[-0.06em]">
+                未来より
+                <br className="sm:hidden" />
+                先に動く。
               </h1>
 
-              <p className="mt-7 max-w-2xl text-base leading-8 text-white/82 sm:text-lg">
+              <p className="mt-7 max-w-2xl text-[15px] leading-[2.05] text-white/82 sm:text-lg sm:leading-9">
                 物流運送とヘッドスパを主軸に、
-                レスポンスと現場対応力を強みに事業展開する株式会社GAMI。
-                急なご相談にも、まず動く。そこから最適な形をつくります。
+                <br className="sm:hidden" />
+                レスポンスと現場対応力を強みに、
+                <br className="sm:hidden" />
+                事業展開する株式会社GAMI。
+                <br />
+                急なご相談にも、まず動く。
+                <br className="sm:hidden" />
+                そこから最適な形をつくります。
               </p>
 
               <div className="mt-9 flex flex-col gap-3 sm:flex-row">
@@ -150,7 +158,7 @@ export default function HomePage() {
                 </Link>
               </div>
 
-              <div className="mt-10 grid gap-3 text-xs text-white/75 sm:grid-cols-3">
+              <div className="mt-10 grid gap-3 text-xs text-white/80 sm:grid-cols-3">
                 <div className="rounded-2xl border border-white/10 bg-white/10 px-4 py-3 backdrop-blur">
                   24時間365日対応も相談可能
                 </div>
@@ -172,28 +180,44 @@ export default function HomePage() {
                 MAIN BUSINESS
               </p>
               <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-5xl">
-                物流運送事業とヘッドスパ事業。
-                <br className="hidden sm:block" />
+                物流運送事業と
+                <br className="sm:hidden" />
+                ヘッドスパ事業。
+                <br />
                 GAMIの2本柱。
               </h2>
-              <p className="mt-6 text-sm leading-8 text-muted-foreground sm:text-base">
-                株式会社GAMIは、現場で動ける物流体制と、実店舗で培った美容事業を軸に展開しています。
-                その他事業も含め、必要なタイミングで必要な形を提案できることが強みです。
+              <p className="mt-6 text-[15px] leading-[2.05] text-muted-foreground sm:text-base sm:leading-8">
+                株式会社GAMIは、
+                <br className="sm:hidden" />
+                現場で動ける物流体制と、
+                <br className="sm:hidden" />
+                実店舗で培った美容事業を軸に展開しています。
+                <br />
+                必要なタイミングで、必要な形を提案できることが強みです。
               </p>
             </div>
 
             <div className="mt-12 grid gap-6 lg:grid-cols-2">
               <div className="tech-card rounded-[2rem] p-7 sm:p-9">
-                <p className="text-xs font-bold tracking-[0.24em] text-gold">01 / LOGISTICS</p>
-                <h3 className="mt-4 text-2xl font-bold sm:text-3xl">物流運送事業</h3>
-                <p className="mt-5 text-sm leading-8 text-muted-foreground">
-                  発送代行、倉庫保管、検品、梱包、流通加工、スポット出荷まで一括対応。
+                <p className="text-xs font-bold tracking-[0.24em] text-gold">
+                  01 / LOGISTICS
+                </p>
+                <h3 className="mt-4 text-2xl font-bold sm:text-3xl">
+                  物流運送事業
+                </h3>
+                <p className="mt-5 text-[15px] leading-[2.05] text-muted-foreground sm:text-sm sm:leading-8">
+                  発送代行、倉庫保管、検品、梱包、流通加工、
+                  スポット出荷まで一括対応。
+                  <br />
                   お客様の要望によっては、24時間365日の発送対応も行っています。
                 </p>
 
                 <div className="mt-7 grid gap-3 sm:grid-cols-2">
                   {logisticsFeatures.map((item) => (
-                    <div key={item} className="rounded-2xl bg-white/70 px-4 py-3 text-sm shadow-sm">
+                    <div
+                      key={item}
+                      className="rounded-2xl bg-white/70 px-4 py-3 text-sm leading-7 shadow-sm"
+                    >
                       {item}
                     </div>
                   ))}
@@ -208,18 +232,29 @@ export default function HomePage() {
               </div>
 
               <div className="tech-card rounded-[2rem] p-7 sm:p-9">
-                <p className="text-xs font-bold tracking-[0.24em] text-gold">02 / HEAD SPA</p>
-                <h3 className="mt-4 text-2xl font-bold sm:text-3xl">ヘッドスパ事業</h3>
-                <p className="mt-5 text-sm leading-8 text-muted-foreground">
-                  ヘッドスパ専門店ゆう本店の運営実績をもとに、店舗運営・技術・接客・空間づくり・
-                  フランチャイズ展開まで、美容事業として育てています。
+                <p className="text-xs font-bold tracking-[0.24em] text-gold">
+                  02 / HEAD SPA
+                </p>
+                <h3 className="mt-4 text-2xl font-bold sm:text-3xl">
+                  ヘッドスパ事業
+                </h3>
+                <p className="mt-5 text-[15px] leading-[2.05] text-muted-foreground sm:text-sm sm:leading-8">
+                  ヘッドスパ専門店ゆう本店の運営実績をもとに、
+                  店舗運営・技術・接客・空間づくりまで。
+                  <br />
+                  美容事業として、ヘッドスパの価値を広げています。
                 </p>
 
                 <div className="mt-7 grid gap-4">
                   {headSpaLinks.map((item) => (
-                    <div key={item.title} className="rounded-2xl border border-border bg-white/70 p-5">
+                    <div
+                      key={item.title}
+                      className="rounded-2xl border border-border bg-white/70 p-5"
+                    >
                       <h4 className="font-bold">{item.title}</h4>
-                      <p className="mt-2 text-sm leading-7 text-muted-foreground">{item.body}</p>
+                      <p className="mt-2 text-sm leading-7 text-muted-foreground">
+                        {item.body}
+                      </p>
                       <a
                         href={item.href}
                         target={item.href.startsWith("http") ? "_blank" : undefined}
@@ -248,9 +283,12 @@ export default function HomePage() {
                   <br />
                   信頼になる。
                 </h2>
-                <p className="mt-6 text-sm leading-8 text-white/70 sm:text-base">
-                  GAMIが大切にしているのは、レスポンスの早さです。
-                  できる・できないの判断、現場確認、手配、実行までの速度を上げることで、
+                <p className="mt-6 text-[15px] leading-[2.05] text-white/70 sm:text-base sm:leading-8">
+                  GAMIが大切にしているのは、
+                  <br className="sm:hidden" />
+                  レスポンスの早さです。
+                  <br />
+                  判断、現場確認、手配、実行までの速度を上げ、
                   お客様の機会損失を減らします。
                 </p>
               </div>
@@ -294,16 +332,24 @@ export default function HomePage() {
               <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-5xl">
                 対応実例
               </h2>
-              <p className="mt-6 text-sm leading-8 text-muted-foreground sm:text-base">
-                具体的なメーカー名は伏せたうえで、実際に近い取扱いイメージをご紹介します。
+              <p className="mt-6 text-[15px] leading-[2.05] text-muted-foreground sm:text-base sm:leading-8">
+                具体的なメーカー名は伏せたうえで、
+                <br className="sm:hidden" />
+                実際に近い取扱いイメージをご紹介します。
+                <br />
                 美容、アパレル、食品、返礼品、EC発送まで幅広く対応しています。
               </p>
             </div>
 
             <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {logisticsCases.map((item) => (
-                <div key={item} className="rounded-3xl border border-border bg-card p-6 shadow-glass">
-                  <p className="text-sm font-bold text-foreground">{item}</p>
+                <div
+                  key={item}
+                  className="rounded-3xl border border-border bg-card p-6 shadow-glass"
+                >
+                  <p className="text-sm font-bold leading-7 text-foreground">
+                    {item}
+                  </p>
                 </div>
               ))}
             </div>
@@ -319,17 +365,25 @@ export default function HomePage() {
               <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-5xl">
                 その他事業
               </h2>
-              <p className="mt-6 text-sm leading-8 text-muted-foreground sm:text-base">
-                GAMIでは、物流・ヘッドスパを中心に、関連する複数の事業を展開しています。
+              <p className="mt-6 text-[15px] leading-[2.05] text-muted-foreground sm:text-base sm:leading-8">
+                物流・ヘッドスパを中心に、
+                <br className="sm:hidden" />
+                関連する複数の事業を展開しています。
+                <br />
                 各事業は必要に応じて軽くご紹介し、詳細は関連ページへご案内します。
               </p>
             </div>
 
             <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
               {otherBusinesses.map((item) => (
-                <div key={item.title} className="rounded-3xl border border-border bg-white/80 p-6 shadow-sm">
+                <div
+                  key={item.title}
+                  className="rounded-3xl border border-border bg-white/80 p-6 shadow-sm"
+                >
                   <h3 className="text-lg font-bold">{item.title}</h3>
-                  <p className="mt-3 text-sm leading-7 text-muted-foreground">{item.body}</p>
+                  <p className="mt-3 text-sm leading-7 text-muted-foreground">
+                    {item.body}
+                  </p>
                   <a
                     href={item.href}
                     target={item.href.startsWith("http") ? "_blank" : undefined}
@@ -356,8 +410,10 @@ export default function HomePage() {
                   <br />
                   許認可・資格
                 </h2>
-                <p className="mt-6 text-sm leading-8 text-white/70 sm:text-base">
-                  物流、美容、整理買取に関わる事業を安心してご相談いただけるよう、
+                <p className="mt-6 text-[15px] leading-[2.05] text-white/70 sm:text-base sm:leading-8">
+                  物流、美容、整理買取に関わる事業を、
+                  安心してご相談いただけるように。
+                  <br />
                   必要な許認可・資格を整えています。
                 </p>
               </div>
@@ -367,7 +423,10 @@ export default function HomePage() {
                   <h3 className="text-xl font-bold text-amber-300">許認可</h3>
                   <ul className="mt-6 space-y-4">
                     {licenses.map((item) => (
-                      <li key={item} className="border-b border-white/10 pb-3 text-sm text-white/80">
+                      <li
+                        key={item}
+                        className="border-b border-white/10 pb-3 text-sm leading-7 text-white/80"
+                      >
                         {item}
                       </li>
                     ))}
@@ -378,7 +437,10 @@ export default function HomePage() {
                   <h3 className="text-xl font-bold text-amber-300">資格</h3>
                   <ul className="mt-6 space-y-4">
                     {qualifications.map((item) => (
-                      <li key={item} className="border-b border-white/10 pb-3 text-sm text-white/80">
+                      <li
+                        key={item}
+                        className="border-b border-white/10 pb-3 text-sm leading-7 text-white/80"
+                      >
                         {item}
                       </li>
                     ))}
@@ -395,11 +457,18 @@ export default function HomePage() {
               CONTACT
             </p>
             <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-5xl">
-              まずは、即レスで対応します。
+              まずは、
+              <br className="sm:hidden" />
+              即レスで対応します。
             </h2>
-            <p className="mx-auto mt-6 max-w-2xl text-sm leading-8 text-muted-foreground sm:text-base">
-              物流の急なご相談、ヘッドスパ事業、整理買取、各種事業連携まで。
-              まずは内容をお聞かせください。確認後、できるだけ早くご返信します。
+            <p className="mx-auto mt-6 max-w-2xl text-[15px] leading-[2.05] text-muted-foreground sm:text-base sm:leading-8">
+              物流の急なご相談、ヘッドスパ事業、
+              <br className="sm:hidden" />
+              整理買取、各種事業連携まで。
+              <br />
+              まずは内容をお聞かせください。
+              <br className="sm:hidden" />
+              確認後、できるだけ早くご返信します。
             </p>
 
             <div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
