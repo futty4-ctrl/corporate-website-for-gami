@@ -255,20 +255,21 @@ export default function CompanyPage() {
         <CredentialsSection />
 
         <section id="contact" className="mx-auto max-w-3xl px-4 py-24 sm:px-6 lg:py-32">
-          <SectionHeading
-            sub="お問い合わせ"
-            title="お問い合わせ"
-            description={
-  <>
+          <div className="mb-16 text-center">
+  <SectionHeading
+    sub="お問い合わせ"
+    title="お問い合わせ"
+    className="mb-6"
+  />
+
+  <p className="text-sm leading-8 text-muted-foreground sm:text-base">
     物流の急ぎ案件から、
     <br className="sm:hidden" />
     各種事業相談まで。
     <br />
     まずはお気軽にご相談ください。
-  </>
-}
-            className="mb-16"
-          />
+  </p>
+</div>
           <ContactForm />
         </section>
       </main>
