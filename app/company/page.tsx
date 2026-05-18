@@ -168,10 +168,16 @@ export default function CompanyPage() {
             <p className="text-xs font-medium tracking-[0.2em] text-white/70">
               会社概要
             </p>
-            <h1 className="mt-3 font-serif text-2xl tracking-wider text-balance text-white sm:text-3xl md:text-4xl lg:text-5xl">
-  未来より先に動く。<br />
+            <h1 className="mt-4 font-serif text-[2rem] leading-[1.35] tracking-[0.08em] text-white sm:text-4xl md:text-5xl lg:text-6xl">
+  未来より先に動く。
+  <br />
   株式会社GAMI
 </h1>
+            <p className="mt-6 max-w-2xl text-sm leading-8 tracking-wide text-white/80 sm:text-base">
+  物流運送事業とヘッドスパ事業を軸に、
+  <br className="sm:hidden" />
+  レスポンスと現場対応力で事業を支える。
+</p>
           </div>
         </section>
 
@@ -252,7 +258,15 @@ export default function CompanyPage() {
           <SectionHeading
             sub="お問い合わせ"
             title="お問い合わせ"
-            catchCopy="ご質問・ご相談はお気軽にどうぞ。担当者より折り返しご連絡します。"
+            description={
+  <>
+    物流の急ぎ案件から、
+    <br className="sm:hidden" />
+    各種事業相談まで。
+    <br />
+    まずはお気軽にご相談ください。
+  </>
+}
             className="mb-16"
           />
           <ContactForm />
