@@ -150,13 +150,15 @@ export default function LogisticsPage() {
           </div>
 
           <div className="relative mx-auto max-w-7xl px-5 py-20 sm:px-6 lg:px-12 lg:py-28">
-            <div className="grid gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:items-center">
+            <div className="grid gap-10 text-center lg:grid-cols-[1.15fr_0.85fr] lg:items-center lg:text-left">
               <div>
                 <p className="text-[11px] font-semibold tracking-[0.24em] text-amber-300 sm:text-sm">
-                  LOGISTICS / WAREHOUSE / TRANSPORTATION
+                  LOGISTICS
+                  <br className="sm:hidden" />
+                  WAREHOUSE / TRANSPORTATION
                 </p>
 
-                <h1 className="mt-5 text-[clamp(2.25rem,9vw,5.4rem)] font-bold leading-[1.12] tracking-[-0.04em]">
+                <h1 className="mx-auto mt-5 max-w-[21rem] text-[clamp(2.25rem,10vw,5.4rem)] font-bold leading-[1.18] tracking-[-0.04em] sm:max-w-none sm:leading-[1.12] lg:mx-0">
                   急ぎの物流も、
                   <br />
                   保管も加工も。
@@ -164,25 +166,26 @@ export default function LogisticsPage() {
                   まず動く。
                 </h1>
 
-                <p className="mt-7 max-w-3xl text-[15px] leading-[2.05] text-white/78 sm:text-lg sm:leading-9">
+                <p className="mx-auto mt-7 max-w-[21rem] text-[15px] leading-[2.05] text-white/78 sm:max-w-3xl sm:text-lg sm:leading-9 lg:mx-0">
                   株式会社GAMIは、
-                  <br className="sm:hidden" />
+                  <br />
                   倉庫保管・流通加工・発送代行・利用運送まで、
                   <br />
                   現場に合わせて一括対応する物流パートナーです。
                   <br />
                   レスポンスの早さと現場対応力で、
-                  <br className="sm:hidden" />
+                  <br />
                   定期案件からスポット案件まで支えます。
                 </p>
 
-                <div className="mt-9 flex flex-col gap-3 sm:flex-row">
+                <div className="mx-auto mt-9 flex max-w-[22rem] flex-col gap-3 sm:max-w-none sm:flex-row sm:justify-center lg:mx-0 lg:justify-start">
                   <Link
                     href="/company#contact"
                     className="rounded-full bg-amber-500 px-7 py-4 text-center text-sm font-bold tracking-wide text-white shadow-lg transition hover:bg-amber-400"
                   >
                     即レスで相談する
                   </Link>
+
                   <a
                     href="tel:0661159935"
                     className="rounded-full border border-white/25 px-7 py-4 text-center text-sm font-bold tracking-wide text-white transition hover:bg-white/10"
@@ -192,7 +195,7 @@ export default function LogisticsPage() {
                 </div>
               </div>
 
-              <div className="rounded-[2rem] border border-white/10 bg-white/[0.08] p-6 backdrop-blur">
+              <div className="rounded-[2rem] border border-white/10 bg-white/[0.08] p-6 text-left backdrop-blur">
                 <p className="text-sm font-bold tracking-[0.18em] text-amber-300">
                   こんなご相談に対応
                 </p>
@@ -213,28 +216,30 @@ export default function LogisticsPage() {
         </section>
 
         <section className="section-gradient py-20 sm:py-28">
-          <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-12">
-            <div className="max-w-3xl">
+          <div className="mx-auto max-w-7xl px-5 text-center sm:px-6 lg:px-12 lg:text-left">
+            <div className="mx-auto max-w-3xl lg:mx-0">
               <p className="text-sm font-semibold tracking-[0.24em] text-gold">
                 SERVICE
               </p>
-              <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-5xl">
+
+              <h2 className="mt-4 text-3xl font-bold leading-[1.45] tracking-tight sm:text-5xl sm:leading-tight">
                 物流業務を、
-                <br className="sm:hidden" />
+                <br />
                 丸ごと任せられる体制。
               </h2>
-              <p className="mt-6 text-[15px] leading-[2.05] text-muted-foreground sm:text-base sm:leading-8">
+
+              <p className="mx-auto mt-6 max-w-[21rem] text-[15px] leading-[2.05] text-muted-foreground sm:max-w-3xl sm:text-base sm:leading-8 lg:mx-0">
                 配送だけではなく、
-                <br className="sm:hidden" />
+                <br />
                 保管・検品・流通加工・内職・発送代行まで。
                 <br />
                 複数業者に分けず、
-                <br className="sm:hidden" />
+                <br />
                 必要な工程をまとめてご相談いただけます。
               </p>
             </div>
 
-            <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+            <div className="mt-10 grid gap-6 text-left md:grid-cols-2 xl:grid-cols-4">
               {coreServices.map((service) => (
                 <div
                   key={service.title}
@@ -253,31 +258,33 @@ export default function LogisticsPage() {
         </section>
 
         <section className="bg-zinc-950 py-20 text-white sm:py-28">
-          <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-12">
+          <div className="mx-auto max-w-7xl px-5 text-center sm:px-6 lg:px-12 lg:text-left">
             <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
               <div>
                 <p className="text-sm font-semibold tracking-[0.24em] text-amber-300">
                   RESPONSE / SPOT
                 </p>
-                <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-5xl">
+
+                <h2 className="mt-4 text-3xl font-bold leading-[1.45] tracking-tight sm:text-5xl sm:leading-tight">
                   急な案件にも、
                   <br />
                   まず反応する。
                 </h2>
-                <p className="mt-6 text-[15px] leading-[2.05] text-white/70 sm:text-base sm:leading-8">
+
+                <p className="mx-auto mt-6 max-w-[21rem] text-[15px] leading-[2.05] text-white/70 sm:max-w-3xl sm:text-base sm:leading-8 lg:mx-0">
                   GAMIが大切にしているのは、
-                  <br className="sm:hidden" />
+                  <br />
                   レスポンスの早さです。
                   <br />
                   お客様のご要望によっては、
-                  <br className="sm:hidden" />
+                  <br />
                   24時間365日の発送対応も行っています。
                   <br />
                   化粧品関連の急なスポット対応もご相談ください。
                 </p>
               </div>
 
-              <div className="grid gap-4 sm:grid-cols-2">
+              <div className="grid gap-4 text-left sm:grid-cols-2">
                 <div className="rounded-3xl border border-white/10 bg-white/[0.06] p-6">
                   <p className="text-3xl font-bold text-amber-300">24/365</p>
                   <p className="mt-3 text-sm leading-7 text-white/70">
@@ -311,25 +318,28 @@ export default function LogisticsPage() {
         </section>
 
         <section className="py-20 sm:py-28">
-          <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-12">
-            <div className="max-w-3xl">
+          <div className="mx-auto max-w-7xl px-5 text-center sm:px-6 lg:px-12 lg:text-left">
+            <div className="mx-auto max-w-3xl lg:mx-0">
               <p className="text-sm font-semibold tracking-[0.24em] text-gold">
                 ACHIEVEMENTS
               </p>
+
               <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-5xl">
                 取扱実績・対応分野
               </h2>
-              <p className="mt-6 text-[15px] leading-[2.05] text-muted-foreground sm:text-base sm:leading-8">
+
+              <p className="mx-auto mt-6 max-w-[21rem] text-[15px] leading-[2.05] text-muted-foreground sm:max-w-3xl sm:text-base sm:leading-8 lg:mx-0">
                 具体的なメーカー名は伏せたうえで、
-                <br className="sm:hidden" />
+                <br />
                 取扱いイメージをご紹介します。
                 <br />
                 美容商材、アパレル、食品、返礼品、EC発送まで、
+                <br className="hidden sm:block" />
                 商材ごとの特性に合わせて対応します。
               </p>
             </div>
 
-            <div className="mt-10 flex flex-wrap gap-3">
+            <div className="mt-10 flex flex-wrap justify-center gap-3 lg:justify-start">
               {achievements.map((item) => (
                 <span
                   key={item}
@@ -343,34 +353,33 @@ export default function LogisticsPage() {
         </section>
 
         <section className="section-gradient py-20 sm:py-28">
-          <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-12">
-            <div className="max-w-3xl">
+          <div className="mx-auto max-w-7xl px-5 text-center sm:px-6 lg:px-12 lg:text-left">
+            <div className="mx-auto max-w-3xl lg:mx-0">
               <p className="text-sm font-semibold tracking-[0.24em] text-gold">
                 WAREHOUSE NETWORK
               </p>
 
-              <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-5xl">
+              <h2 className="mt-4 text-3xl font-bold leading-[1.45] tracking-tight sm:text-5xl sm:leading-tight">
                 2つの倉庫で、
-                <br className="sm:hidden" />
+                <br />
                 案件に合わせて対応。
               </h2>
 
-              <p className="mt-6 text-[15px] leading-[2.05] text-muted-foreground sm:text-base sm:leading-8">
+              <p className="mx-auto mt-6 max-w-[21rem] text-[15px] leading-[2.05] text-muted-foreground sm:max-w-3xl sm:text-base sm:leading-8 lg:mx-0">
                 GAMIでは、
-                <br className="sm:hidden" />
+                <br />
                 守口倉庫と大阪南倉庫の2拠点を活用し、
                 <br />
                 商品特性や物量に合わせた
-                <br className="sm:hidden" />
+                <br />
                 保管・出荷体制をご提案します。
                 <br />
                 保管だけでなく、
-                <br className="sm:hidden" />
                 検品・梱包・流通加工までご相談いただけます。
               </p>
             </div>
 
-            <div className="mt-12 grid gap-8 lg:grid-cols-2">
+            <div className="mt-12 grid gap-8 text-left lg:grid-cols-2">
               {warehousePoints.map((warehouse) => (
                 <div
                   key={warehouse.title}
@@ -419,17 +428,22 @@ export default function LogisticsPage() {
         <section className="py-20 sm:py-28">
           <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-12">
             <div className="grid gap-8 lg:grid-cols-2">
-              <div className="rounded-[2rem] bg-zinc-950 p-7 text-white sm:p-9">
+              <div className="rounded-[2rem] bg-zinc-950 p-7 text-left text-white sm:p-9">
                 <p className="text-sm font-semibold tracking-[0.24em] text-amber-300">
                   LIGHT WORK
                 </p>
-                <h2 className="mt-4 text-3xl font-bold tracking-tight">
-                  内職・流通加工の外注も対応
+
+                <h2 className="mt-4 text-3xl font-bold leading-[1.45] tracking-tight">
+                  内職・流通加工の
+                  <br className="sm:hidden" />
+                  外注も対応
                 </h2>
+
                 <p className="mt-5 text-sm leading-8 text-white/70">
                   セット組み、シール貼り、封入、梱包など、手作業が必要な工程にも対応。
                   小ロットから大量ロットまで、物流と合わせて効率的に運用できます。
                 </p>
+
                 <Link
                   href="/naishoku"
                   className="mt-8 inline-flex rounded-full bg-amber-500 px-6 py-3 text-sm font-bold text-white transition hover:bg-amber-400"
@@ -438,13 +452,17 @@ export default function LogisticsPage() {
                 </Link>
               </div>
 
-              <div className="rounded-[2rem] border border-border bg-card p-7 shadow-glass sm:p-9">
+              <div className="rounded-[2rem] border border-border bg-card p-7 text-left shadow-glass sm:p-9">
                 <p className="text-sm font-semibold tracking-[0.24em] text-gold">
                   DANBOARD
                 </p>
-                <h2 className="mt-4 text-3xl font-bold tracking-tight">
-                  梱包資材の見直しも相談可能
+
+                <h2 className="mt-4 text-3xl font-bold leading-[1.45] tracking-tight">
+                  梱包資材の見直しも
+                  <br className="sm:hidden" />
+                 相談可能
                 </h2>
+
                 <p className="mt-5 text-sm leading-8 text-muted-foreground">
                   段ボールや梱包資材のコスト見直しもご相談いただけます。
                   商品サイズや発送方法に合わせて、物流全体の改善につながるご提案を行います。
@@ -473,35 +491,40 @@ export default function LogisticsPage() {
         </section>
 
         <section className="section-gradient py-20 sm:py-28">
-          <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-12">
+          <div className="mx-auto max-w-7xl px-5 text-center sm:px-6 lg:px-12 lg:text-left">
             <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
               <div>
                 <p className="text-sm font-semibold tracking-[0.24em] text-gold">
                   FLOW
                 </p>
-                <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-5xl">
+
+                <h2 className="mt-4 text-3xl font-bold leading-[1.45] tracking-tight sm:text-5xl sm:leading-tight">
                   ご相談から
                   <br />
                   運用開始まで。
                 </h2>
-                <p className="mt-6 text-[15px] leading-[2.05] text-muted-foreground sm:text-base sm:leading-8">
+
+                <p className="mx-auto mt-6 max-w-[21rem] text-[15px] leading-[2.05] text-muted-foreground sm:max-w-3xl sm:text-base sm:leading-8 lg:mx-0">
                   ざっくりした相談段階でも大丈夫です。
                   <br />
                   現状をお聞きし、必要な工程を整理したうえで、
+                  <br className="hidden sm:block" />
                   最適な物流体制をご提案します。
                 </p>
               </div>
 
-              <div className="grid gap-4">
+              <div className="grid gap-4 text-left">
                 {processSteps.map((item) => (
                   <div
                     key={item.step}
                     className="rounded-3xl border border-border bg-white/80 p-6 shadow-sm"
                   >
                     <p className="text-sm font-bold text-gold">{item.step}</p>
+
                     <h3 className="mt-2 text-lg font-bold text-foreground">
                       {item.title}
                     </h3>
+
                     <p className="mt-2 text-sm leading-8 text-muted-foreground">
                       {item.body}
                     </p>
@@ -513,23 +536,25 @@ export default function LogisticsPage() {
         </section>
 
         <section className="py-20 sm:py-28">
-          <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-12">
+          <div className="mx-auto max-w-7xl px-5 text-center sm:px-6 lg:px-12 lg:text-left">
             <div>
               <p className="text-sm font-semibold tracking-[0.24em] text-gold">
                 STRENGTH
               </p>
-              <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-5xl">
+
+              <h2 className="mt-4 text-3xl font-bold leading-[1.45] tracking-tight sm:text-5xl sm:leading-tight">
                 GAMIが選ばれる理由
               </h2>
-              <p className="mt-6 max-w-3xl text-[15px] leading-[2.05] text-muted-foreground sm:text-base sm:leading-8">
+
+              <p className="mx-auto mt-6 max-w-[21rem] text-[15px] leading-[2.05] text-muted-foreground sm:max-w-3xl sm:text-base sm:leading-8 lg:mx-0">
                 単なる運送ではなく、
-                <br className="sm:hidden" />
+                <br />
                 物流全体を最適化するパートナーとして。
                 <br />
                 現場に寄り添った提案とスピード対応で選ばれています。
               </p>
 
-              <div className="mt-10 grid gap-6 sm:grid-cols-2">
+              <div className="mt-10 grid gap-6 text-left sm:grid-cols-2">
                 {strengths.map((strength) => (
                   <div
                     key={strength.title}
@@ -538,6 +563,7 @@ export default function LogisticsPage() {
                     <h3 className="text-xl font-bold text-foreground">
                       {strength.title}
                     </h3>
+
                     <p className="mt-3 text-sm leading-8 text-muted-foreground">
                       {strength.body}
                     </p>
@@ -554,23 +580,23 @@ export default function LogisticsPage() {
               CONTACT
             </p>
 
-            <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-5xl">
+            <h2 className="mt-4 text-3xl font-bold leading-[1.45] tracking-tight sm:text-5xl sm:leading-tight">
               物流の急ぎ案件も、
-              <br className="sm:hidden" />
+              <br />
               まずはご相談ください。
             </h2>
 
-            <p className="mx-auto mt-6 max-w-2xl text-[15px] leading-[2.05] text-white/70 sm:text-base sm:leading-8">
+            <p className="mx-auto mt-6 max-w-[21rem] text-[15px] leading-[2.05] text-white/70 sm:max-w-2xl sm:text-base sm:leading-8">
               定期案件・スポット案件を問わず、
-              <br className="sm:hidden" />
+              <br />
               最適な物流体制をご提案します。
               <br />
               どこまで任せられるか相談したい、
-              <br className="sm:hidden" />
+              <br />
               という段階でも問題ありません。
             </p>
 
-            <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:justify-center">
+            <div className="mx-auto mt-10 flex max-w-[22rem] flex-col gap-4 sm:max-w-none sm:flex-row sm:justify-center">
               <Link
                 href="/company#contact"
                 className="rounded-full bg-amber-500 px-8 py-4 text-sm font-bold text-white transition hover:bg-amber-400"
