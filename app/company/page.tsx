@@ -185,9 +185,17 @@ export default function CompanyPage() {
           <div className="divide-y divide-border rounded-2xl border border-border/60 bg-card p-2 shadow-glass">
             {companyInfo.map((row) => (
               <div key={row.label} className="flex flex-col gap-2 px-4 py-4 sm:flex-row sm:gap-8 sm:px-6 sm:py-5">
-                <dt className="w-full shrink-0 text-xs font-medium text-muted-foreground sm:w-40 sm:text-sm">
-                  {row.label}
-                </dt>
+                <dt
+  className={`w-full shrink-0 text-xs sm:w-40 sm:text-sm ${
+    row.label === "主要事業"
+      ? "font-bold text-foreground"
+      : row.label === "関連事業"
+      ? "font-medium text-zinc-400"
+      : "font-medium text-muted-foreground"
+  }`}
+>
+  {row.label}
+</dt>
                <dd
   className={`text-sm tracking-wide sm:leading-8 ${
     row.label === "主要事業"
