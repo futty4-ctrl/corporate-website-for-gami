@@ -147,20 +147,13 @@ export default function HomePage() {
                 LOGISTICS & HEAD SPA
               </p>
 
-              <h1 className="mx-auto mt-5 text-[clamp(2.9rem,11vw,5.8rem)] font-bold leading-none tracking-[-0.06em] sm:text-7xl lg:mx-0">
-  未来より先に動く。
-</h1>
+              <h1 className="mx-auto mt-5 max-w-[22rem] text-[clamp(2.5rem,10vw,5.8rem)] font-bold leading-[1.08] tracking-[-0.05em] sm:max-w-none sm:text-7xl lg:mx-0">
+                未来より先に動く。
+              </h1>
 
-              <p className="mx-auto mt-7 max-w-[20rem] text-[15px] leading-[2] text-white/82 sm:max-w-2xl sm:text-lg sm:leading-9 lg:mx-0">
-                物流運送とヘッドスパを主軸に、
-                <br />
-                レスポンスと現場対応力を強みに、
-                <br />
-                事業展開する株式会社GAMI。
-                <br />
-                急なご相談にも、まず動く。
-                <br />
-                そこから最適な形をつくります。
+              <p className="mx-auto mt-7 max-w-[32rem] text-[15px] leading-8 text-white/82 sm:text-lg sm:leading-9 lg:mx-0">
+                物流運送とヘッドスパを主軸に、レスポンスと現場対応力を強みに事業展開する株式会社GAMI。
+                急なご相談にもまず動き、そこから最適な形をつくります。
               </p>
 
               <div className="mx-auto mt-9 flex max-w-[22rem] flex-col gap-3 sm:max-w-none sm:flex-row sm:justify-center lg:mx-0 lg:justify-start">
@@ -170,6 +163,7 @@ export default function HomePage() {
                 >
                   即レスで相談する
                 </Link>
+
                 <Link
                   href="/logistics"
                   className="rounded-full border border-white/30 px-7 py-4 text-center text-sm font-bold tracking-wide text-white transition hover:bg-white/10"
@@ -182,9 +176,11 @@ export default function HomePage() {
                 <div className="rounded-2xl border border-white/10 bg-white/10 px-4 py-3 backdrop-blur">
                   24時間365日対応も相談可能
                 </div>
+
                 <div className="rounded-2xl border border-white/10 bg-white/10 px-4 py-3 backdrop-blur">
                   化粧品関連のスポット対応
                 </div>
+
                 <div className="rounded-2xl border border-white/10 bg-white/10 px-4 py-3 backdrop-blur">
                   物流と美容の2本柱
                 </div>
@@ -199,23 +195,21 @@ export default function HomePage() {
               <p className="text-sm font-semibold tracking-[0.24em] text-gold">
                 MAIN BUSINESS
               </p>
-              <h2 className="mt-4 text-3xl font-bold leading-[1.45] tracking-tight sm:text-5xl sm:leading-tight">
+
+              <h2 className="mt-4 text-3xl font-bold leading-[1.35] tracking-tight sm:text-5xl sm:leading-tight">
                 物流運送事業と
                 <br />
                 ヘッドスパ事業。
                 <br />
                 GAMIの2本柱。
               </h2>
-              <p className="mx-auto mt-6 max-w-[21rem] text-[15px] leading-[2.05] text-muted-foreground sm:max-w-3xl sm:text-base sm:leading-8 lg:mx-0">
-                株式会社GAMIは、
-                <br />
-                現場で動ける物流体制と、
-                <br />
-                実店舗で培った美容事業を軸に展開しています。
-                <br />
-                必要なタイミングで、
-                <br className="sm:hidden" />
-                必要な形を提案できることが強みです。
+
+              <p className="mx-auto mt-6 max-w-[32rem] whitespace-pre-line text-[15px] leading-8 text-muted-foreground sm:max-w-3xl sm:text-base sm:leading-8 lg:mx-0">
+                {`株式会社GAMIは、
+物流運送事業とヘッドスパ事業を2本柱に展開しています。
+
+現場対応力とレスポンスを強みに、
+必要なタイミングで、必要な形をご提案します。`}
               </p>
             </div>
 
@@ -224,15 +218,14 @@ export default function HomePage() {
                 <p className="text-xs font-bold tracking-[0.24em] text-gold">
                   01 / LOGISTICS
                 </p>
+
                 <h3 className="mt-4 text-2xl font-bold sm:text-3xl">
                   物流運送事業
                 </h3>
-                <p className="mt-5 text-[15px] leading-[2.05] text-muted-foreground sm:text-sm sm:leading-8">
-                  発送代行、倉庫保管、検品、梱包、流通加工、
-                  スポット出荷まで一括対応。
-                  <br />
-                  お客様の要望によっては、
-                  24時間365日の発送対応も行っています。
+
+                <p className="mt-5 text-[15px] leading-8 text-muted-foreground sm:text-sm sm:leading-8">
+                  発送代行、倉庫保管、検品、梱包、流通加工、スポット出荷まで一括対応。
+                  お客様の要望によっては、24時間365日の発送対応も行っています。
                 </p>
 
                 <div className="mt-7 grid gap-3 sm:grid-cols-2">
@@ -258,13 +251,13 @@ export default function HomePage() {
                 <p className="text-xs font-bold tracking-[0.24em] text-gold">
                   02 / HEAD SPA
                 </p>
+
                 <h3 className="mt-4 text-2xl font-bold sm:text-3xl">
                   ヘッドスパ事業
                 </h3>
-                <p className="mt-5 text-[15px] leading-[2.05] text-muted-foreground sm:text-sm sm:leading-8">
-                  ヘッドスパ専門店ゆう本店の運営実績をもとに、
-                  店舗運営・技術・接客・空間づくりまで。
-                  <br />
+
+                <p className="mt-5 text-[15px] leading-8 text-muted-foreground sm:text-sm sm:leading-8">
+                  ヘッドスパ専門店ゆう本店の運営実績をもとに、店舗運営・技術・接客・空間づくりまで。
                   美容事業として、ヘッドスパの価値を広げています。
                 </p>
 
@@ -275,9 +268,11 @@ export default function HomePage() {
                       className="rounded-2xl border border-border bg-white/70 p-5"
                     >
                       <h4 className="font-bold">{item.title}</h4>
+
                       <p className="mt-2 text-sm leading-7 text-muted-foreground">
                         {item.body}
                       </p>
+
                       <a
                         href={item.href}
                         target={item.href.startsWith("http") ? "_blank" : undefined}
@@ -301,19 +296,18 @@ export default function HomePage() {
                 <p className="text-sm font-semibold tracking-[0.24em] text-amber-300">
                   RESPONSE FIRST
                 </p>
-                <h2 className="mt-4 text-3xl font-bold leading-[1.45] tracking-tight sm:text-5xl sm:leading-tight">
+
+                <h2 className="mt-4 text-3xl font-bold leading-[1.35] tracking-tight sm:text-5xl sm:leading-tight">
                   速さは、
                   <br />
                   信頼になる。
                 </h2>
-                <p className="mx-auto mt-6 max-w-[21rem] text-[15px] leading-[2.05] text-white/70 sm:max-w-3xl sm:text-base sm:leading-8 lg:mx-0">
-                  GAMIが大切にしているのは、
-                  <br />
-                  レスポンスの早さです。
-                  <br />
-                  判断、現場確認、手配、実行までの速度を上げ、
-                  <br className="hidden sm:block" />
-                  お客様の機会損失を減らします。
+
+                <p className="mx-auto mt-6 max-w-[32rem] whitespace-pre-line text-[15px] leading-8 text-white/70 sm:max-w-3xl sm:text-base sm:leading-8 lg:mx-0">
+                  {`GAMIが大切にしているのは、レスポンスの早さです。
+
+判断、現場確認、手配、実行までの速度を上げ、
+お客様の機会損失を減らします。`}
                 </p>
               </div>
 
@@ -324,18 +318,21 @@ export default function HomePage() {
                     ご要望に応じて、24時間365日の発送対応も相談可能。
                   </p>
                 </div>
+
                 <div className="rounded-3xl border border-white/10 bg-white/[0.06] p-6">
                   <p className="text-3xl font-bold text-amber-300">SPOT</p>
                   <p className="mt-3 text-sm leading-7 text-white/70">
                     急な出荷、繁忙期、短納期、化粧品関連のスポット対応にも対応。
                   </p>
                 </div>
+
                 <div className="rounded-3xl border border-white/10 bg-white/[0.06] p-6">
                   <p className="text-3xl font-bold text-amber-300">EC</p>
                   <p className="mt-3 text-sm leading-7 text-white/70">
                     EC商品、食品、返礼品、美容商材など幅広い発送実績。
                   </p>
                 </div>
+
                 <div className="rounded-3xl border border-white/10 bg-white/[0.06] p-6">
                   <p className="text-3xl font-bold text-amber-300">ONE STOP</p>
                   <p className="mt-3 text-sm leading-7 text-white/70">
@@ -353,15 +350,16 @@ export default function HomePage() {
               <p className="text-sm font-semibold tracking-[0.24em] text-gold">
                 LOGISTICS CASE
               </p>
+
               <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-5xl">
                 対応実例
               </h2>
-              <p className="mx-auto mt-6 max-w-[21rem] text-[15px] leading-[2.05] text-muted-foreground sm:max-w-3xl sm:text-base sm:leading-8 lg:mx-0">
-                具体的なメーカー名は伏せたうえで、
-                <br />
-                実際に近い取扱いイメージをご紹介します。
-                <br />
-                美容、アパレル、食品、返礼品、EC発送まで幅広く対応しています。
+
+              <p className="mx-auto mt-6 max-w-[32rem] whitespace-pre-line text-[15px] leading-8 text-muted-foreground sm:max-w-3xl sm:text-base sm:leading-8 lg:mx-0">
+                {`具体的なメーカー名は伏せたうえで、
+実際に近い取扱いイメージをご紹介します。
+
+美容、アパレル、食品、返礼品、EC発送まで幅広く対応しています。`}
               </p>
             </div>
 
@@ -387,23 +385,17 @@ export default function HomePage() {
                 WAREHOUSE NETWORK
               </p>
 
-              <h2 className="mt-4 text-3xl font-bold leading-[1.45] tracking-tight sm:text-5xl sm:leading-tight">
+              <h2 className="mt-4 text-3xl font-bold leading-[1.35] tracking-tight sm:text-5xl sm:leading-tight">
                 2つの倉庫で、
                 <br />
                 案件に合わせて対応。
               </h2>
 
-              <p className="mx-auto mt-6 max-w-[21rem] text-[15px] leading-[2.05] text-muted-foreground sm:max-w-3xl sm:text-base sm:leading-8 lg:mx-0">
-                GAMIでは、
-                <br />
-                守口倉庫と大阪南倉庫の2拠点を活用し、
-                <br />
-                商品特性や物量に合わせた
-                <br />
-                保管・出荷体制をご提案します。
-                <br />
-                保管だけでなく、
-                検品・梱包・流通加工までご相談いただけます。
+              <p className="mx-auto mt-6 max-w-[32rem] whitespace-pre-line text-[15px] leading-8 text-muted-foreground sm:max-w-3xl sm:text-base sm:leading-8 lg:mx-0">
+                {`GAMIでは、守口倉庫と大阪南倉庫の2拠点を活用し、
+商品特性や物量に合わせた保管・出荷体制をご提案します。
+
+検品・梱包・流通加工までご相談いただけます。`}
               </p>
             </div>
 
@@ -464,17 +456,16 @@ export default function HomePage() {
               <p className="text-sm font-semibold tracking-[0.24em] text-gold">
                 OTHER BUSINESS
               </p>
+
               <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-5xl">
                 その他事業
               </h2>
-              <p className="mx-auto mt-6 max-w-[21rem] text-[15px] leading-[2.05] text-muted-foreground sm:max-w-3xl sm:text-base sm:leading-8 lg:mx-0">
-                物流・ヘッドスパを中心に、
-                <br />
-                関連する複数の事業を展開しています。
-                <br />
-                各事業は必要に応じて軽くご紹介し、
-                <br className="sm:hidden" />
-                詳細は関連ページへご案内します。
+
+              <p className="mx-auto mt-6 max-w-[32rem] whitespace-pre-line text-[15px] leading-8 text-muted-foreground sm:max-w-3xl sm:text-base sm:leading-8 lg:mx-0">
+                {`物流・ヘッドスパを中心に、関連する複数の事業を展開しています。
+
+各事業は必要に応じてご紹介し、
+詳細は関連ページへご案内します。`}
               </p>
             </div>
 
@@ -485,9 +476,11 @@ export default function HomePage() {
                   className="rounded-3xl border border-border bg-white/80 p-6 shadow-sm"
                 >
                   <h3 className="text-lg font-bold">{item.title}</h3>
+
                   <p className="mt-3 text-sm leading-7 text-muted-foreground">
                     {item.body}
                   </p>
+
                   <a
                     href={item.href}
                     target={item.href.startsWith("http") ? "_blank" : undefined}
@@ -509,16 +502,15 @@ export default function HomePage() {
                 <p className="text-sm font-semibold tracking-[0.24em] text-amber-300">
                   LICENSE / QUALIFICATION
                 </p>
-                <h2 className="mt-4 text-3xl font-bold leading-[1.45] tracking-tight sm:text-5xl sm:leading-tight">
+
+                <h2 className="mt-4 text-3xl font-bold leading-[1.35] tracking-tight sm:text-5xl sm:leading-tight">
                   信頼を支える
                   <br />
                   許認可・資格
                 </h2>
-                <p className="mx-auto mt-6 max-w-[21rem] text-[15px] leading-[2.05] text-white/70 sm:max-w-3xl sm:text-base sm:leading-8 lg:mx-0">
-                  物流、美容、整理買取に関わる事業を、
-                  <br />
-                  安心してご相談いただけるように。
-                  <br />
+
+                <p className="mx-auto mt-6 max-w-[32rem] text-[15px] leading-8 text-white/70 sm:max-w-3xl sm:text-base sm:leading-8 lg:mx-0">
+                  物流、美容、整理買取に関わる事業を、安心してご相談いただけるように。
                   必要な許認可・資格を整えています。
                 </p>
               </div>
@@ -526,6 +518,7 @@ export default function HomePage() {
               <div className="grid gap-6 text-left sm:grid-cols-2">
                 <div className="rounded-[2rem] border border-amber-300/20 bg-white/[0.06] p-7">
                   <h3 className="text-xl font-bold text-amber-300">許認可</h3>
+
                   <ul className="mt-6 space-y-4">
                     {licenses.map((item) => (
                       <li
@@ -540,6 +533,7 @@ export default function HomePage() {
 
                 <div className="rounded-[2rem] border border-amber-300/20 bg-white/[0.06] p-7">
                   <h3 className="text-xl font-bold text-amber-300">資格</h3>
+
                   <ul className="mt-6 space-y-4">
                     {qualifications.map((item) => (
                       <li
@@ -561,21 +555,19 @@ export default function HomePage() {
             <p className="text-sm font-semibold tracking-[0.24em] text-gold">
               CONTACT
             </p>
-            <h2 className="mt-4 text-3xl font-bold leading-[1.45] tracking-tight sm:text-5xl sm:leading-tight">
+
+            <h2 className="mt-4 text-3xl font-bold leading-[1.35] tracking-tight sm:text-5xl sm:leading-tight">
               まずは、
               <br />
               即レスで対応します。
             </h2>
-            <p className="mx-auto mt-6 max-w-[21rem] text-[15px] leading-[2.05] text-muted-foreground sm:max-w-2xl sm:text-base sm:leading-8">
-              物流の急なご相談、
-              <br />
-              ヘッドスパ事業、整理買取、
-              <br />
-              各種事業連携まで。
-              <br />
-              まずは内容をお聞かせください。
-              <br />
-              確認後、できるだけ早くご返信します。
+
+            <p className="mx-auto mt-6 max-w-[32rem] whitespace-pre-line text-[15px] leading-8 text-muted-foreground sm:max-w-2xl sm:text-base sm:leading-8">
+              {`物流の急なご相談、
+ヘッドスパ事業、整理買取、各種事業連携まで。
+
+まずは内容をお聞かせください。
+確認後、できるだけ早くご返信します。`}
             </p>
 
             <div className="mx-auto mt-9 flex max-w-[22rem] flex-col justify-center gap-3 sm:max-w-none sm:flex-row">
@@ -585,6 +577,7 @@ export default function HomePage() {
               >
                 お問い合わせする
               </Link>
+
               <a
                 href="tel:0661159935"
                 className="rounded-full border border-border px-8 py-4 text-sm font-bold text-foreground transition hover:bg-muted"
