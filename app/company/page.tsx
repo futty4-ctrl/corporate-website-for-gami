@@ -217,8 +217,13 @@ export default function CompanyPage() {
             <SectionHeading
   sub="スローガン"
   title="未来より先に動く。"
-  catchCopy="レスポンスと現場対応力で、
-事業を前へ進める。"
+  description={
+    <>
+      レスポンスと現場対応力で、
+      <br className="sm:hidden" />
+      事業を前へ進める。
+    </>
+  }
   className="mb-10"
 />
             <p className="mx-auto max-w-2xl text-[15px] leading-[2.2] tracking-readable text-muted-foreground sm:text-sm">
