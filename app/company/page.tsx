@@ -32,47 +32,38 @@ const companyInfo = [
   { label: "会社名", value: "株式会社GAMI" },
   { label: "代表取締役", value: "淵上 和博" },
   { label: "設立", value: "2025年6月17日" },
-
   {
     label: "主要事業",
     value: "物流運送事業、ヘッドスパ事業",
   },
-
   {
     label: "関連事業",
     value:
-      "車事業、遺品整理・生前整理事業、リユース買取事業、アミューズメント業界向け卸事業、ホームページ制作事業、ビジネスマッチング事業",
+      "車事業、遺品整理・生前整理事業、リユース買取事業、\nアミューズメント業界向け卸事業、ホームページ制作事業、\nビジネスマッチング事業",
   },
-
   { label: "メールアドレス", value: "k_fuchigami@gamigami.email" },
   { label: "TEL", value: "06-6115-9935" },
   { label: "FAX", value: "06-6115-9936" },
-
   {
     label: "古物商許可",
     value: "大阪府公安委員会許可 第62229R076690号",
   },
-
   {
     label: "化粧品製造業許可",
     value: "認証倉庫 許可番号 27CZ201072",
   },
-
   {
     label: "第一種貨物利用運送事業",
     value: "貨物自動車運送（近運自貨第1190号）",
   },
-
   {
     label: "インボイス登録番号",
     value: "T9120001277055",
   },
-
   {
     label: "所在地（大阪本社）",
     value: "〒570-0003 大阪府守口市大日町1-8-18",
   },
-
   {
     label: "所在地（福岡支社）",
     value: "〒819-0014 福岡県福岡市西区豊浜2-20-20-2",
@@ -90,7 +81,6 @@ const organizationSchema = {
   logo: `${siteUrl}/images/logo.png`,
   description:
     "株式会社GAMIは大阪・福岡を拠点に物流運送、発送代行、内職・軽作業、ヘッドスパ、整理買取事業を展開しています。",
-
   contactPoint: {
     "@type": "ContactPoint",
     telephone: "+81-6-6115-9935",
@@ -99,7 +89,6 @@ const organizationSchema = {
     areaServed: "JP",
     availableLanguage: "Japanese",
   },
-
   address: {
     "@type": "PostalAddress",
     streetAddress: "大日町1-8-18",
@@ -108,7 +97,6 @@ const organizationSchema = {
     postalCode: "570-0003",
     addressCountry: "JP",
   },
-
   knowsAbout: [
     "物流運送",
     "発送代行",
@@ -117,7 +105,6 @@ const organizationSchema = {
     "ヘッドスパ",
     "整理買取",
   ],
-
   hasCredential: [
     {
       "@type": "EducationalOccupationalCredential",
@@ -130,14 +117,12 @@ const organizationSchema = {
       identifier: "近運自貨第1190号",
       description: "運送機関の種類：貨物自動車運送",
     },
-
     {
       "@type": "EducationalOccupationalCredential",
       name: "古物商許可",
       credentialCategory: "許認可",
       identifier: "大阪府公安委員会許可 第62229R076690号",
     },
-
     {
       "@type": "EducationalOccupationalCredential",
       name: "化粧品製造業許可",
@@ -145,14 +130,12 @@ const organizationSchema = {
       identifier: "27CZ201072",
     },
   ],
-
   sameAs: [],
 }
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
-
   itemListElement: [
     {
       "@type": "ListItem",
@@ -160,7 +143,6 @@ const breadcrumbSchema = {
       name: "ホーム",
       item: siteUrl,
     },
-
     {
       "@type": "ListItem",
       position: 2,
@@ -193,18 +175,18 @@ export default function CompanyPage() {
         <section className="relative overflow-hidden py-16 pt-24 sm:py-20 sm:pt-32">
           <div className="absolute inset-0 aurora-gradient opacity-90" />
 
-          <div className="relative z-10 mx-auto w-full max-w-6xl px-4 sm:px-6">
+          <div className="relative z-10 mx-auto w-full max-w-6xl px-4 text-center sm:px-6 lg:text-left">
             <p className="text-xs font-medium tracking-[0.2em] text-white/70">
               会社概要
             </p>
 
-            <h1 className="mt-4 font-serif text-[2rem] leading-[1.35] tracking-[0.08em] text-white sm:text-4xl md:text-5xl lg:text-6xl">
+            <h1 className="mx-auto mt-4 max-w-[15rem] font-serif text-[2rem] leading-[1.35] tracking-[0.08em] text-white sm:max-w-none sm:text-4xl md:text-5xl lg:mx-0 lg:text-6xl">
               未来より先に動く。
               <br />
               株式会社GAMI
             </h1>
 
-            <p className="mt-6 max-w-2xl text-sm leading-8 tracking-wide text-white/80 sm:text-base">
+            <p className="mx-auto mt-6 max-w-[20rem] text-sm leading-8 tracking-wide text-white/80 sm:max-w-2xl sm:text-base lg:mx-0">
               物流運送事業とヘッドスパ事業を軸に、
               <br className="sm:hidden" />
               レスポンスと現場対応力で事業を支える。
@@ -231,7 +213,7 @@ export default function CompanyPage() {
             {companyInfo.map((row) => (
               <div
                 key={row.label}
-                className="flex flex-col gap-2 px-4 py-4 sm:flex-row sm:gap-8 sm:px-6 sm:py-5"
+                className="flex flex-col gap-2 px-4 py-5 sm:flex-row sm:gap-8 sm:px-6 sm:py-5"
               >
                 <dt
                   className={`w-full shrink-0 text-xs sm:w-40 sm:text-sm ${
@@ -246,7 +228,7 @@ export default function CompanyPage() {
                 </dt>
 
                 <dd
-                  className={`tracking-wide ${
+                  className={`whitespace-pre-line tracking-wide ${
                     row.label === "主要事業"
                       ? "text-[15px] font-bold leading-8 text-foreground sm:text-base"
                       : row.label === "関連事業"
@@ -277,7 +259,7 @@ export default function CompanyPage() {
               </p>
             </div>
 
-            <p className="mx-auto max-w-2xl text-[15px] leading-[2.2] tracking-readable text-muted-foreground sm:text-sm">
+            <p className="mx-auto max-w-[21rem] text-[15px] leading-[2.2] tracking-readable text-muted-foreground sm:max-w-2xl sm:text-sm">
               株式会社GAMIは、
               物流運送事業とヘッドスパ事業を主軸に展開しています。
               急なご相談にも素早く反応し、
@@ -302,7 +284,7 @@ export default function CompanyPage() {
 
         <section
           id="contact"
-          className="mx-auto max-w-3xl px-4 py-24 sm:px-6 lg:py-32"
+          className="mx-auto max-w-3xl px-4 py-20 sm:px-6 sm:py-24 lg:py-32"
         >
           <div className="mb-16 text-center">
             <SectionHeading
