@@ -177,11 +177,17 @@ export default function CompanyPage() {
 
         <section className="mx-auto max-w-4xl px-4 py-16 sm:px-6 sm:py-24 lg:py-32">
           <SectionHeading
-            sub="企業情報"
-            title="企業情報"
-            catchCopy="株式会社GAMIの基本情報です。ご不明点はお気軽にお問い合わせください。"
-            className="mb-16"
-          />
+  sub="企業情報"
+  title="企業情報"
+  description={
+    <>
+      株式会社GAMIの基本情報です。
+      <br className="sm:hidden" />
+      ご不明点はお気軽にお問い合わせください。
+    </>
+  }
+  className="mb-16"
+/>
           <div className="divide-y divide-border rounded-2xl border border-border/60 bg-card p-2 shadow-glass">
             {companyInfo.map((row) => (
               <div key={row.label} className="flex flex-col gap-2 px-4 py-4 sm:flex-row sm:gap-8 sm:px-6 sm:py-5">
