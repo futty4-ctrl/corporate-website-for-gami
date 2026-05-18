@@ -197,10 +197,12 @@ export default function CompanyPage() {
   {row.label}
 </dt>
                <dd
-  className={`text-sm tracking-wide sm:leading-8 ${
+  className={`tracking-wide ${
     row.label === "主要事業"
-      ? "text-base font-bold text-foreground"
-      : "leading-relaxed text-muted-foreground"
+      ? "text-[15px] font-bold leading-8 text-foreground sm:text-base"
+      : row.label === "関連事業"
+      ? "text-xs leading-7 text-zinc-500 sm:text-sm"
+      : "text-sm leading-relaxed text-muted-foreground sm:leading-8"
   }`}
 >
   {row.value}
