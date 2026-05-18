@@ -210,9 +210,16 @@ export function Footer() {
               </a>
             </div>
 
-            <p className="mt-4 text-sm text-muted-foreground">
-              FAX：06-6115-9936
-            </p>
+            <a href="fax:0661159936" className={`${footerLinkClass} mt-2`}>
+  <span>FAX：06-6115-9936</span>
+
+  <span
+    aria-hidden="true"
+    className="transition-transform duration-300 group-hover:translate-x-1"
+  >
+    →
+  </span>
+</a>
 
             <Link
               href="/company#contact"
