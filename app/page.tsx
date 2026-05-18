@@ -145,13 +145,13 @@ export default function HomePage() {
                 GAMI INC. / LOGISTICS & HEAD SPA
               </p>
 
-              <h1 className="mt-6 text-[clamp(2.55rem,12vw,6.4rem)] font-bold leading-[1.08] tracking-[-0.06em]">
-                未来より
-                <br className="sm:hidden" />
-                先に動く。
-              </h1>
+              <h1 className="mt-6 text-[clamp(2.35rem,10.4vw,6.4rem)] font-bold leading-[1.14] tracking-[-0.055em] sm:leading-[1.08]">
+  未来より
+  <br className="sm:hidden" />
+  先に動く。
+</h1>
 
-              <p className="mt-7 max-w-2xl text-[15px] leading-[2.05] text-white/82 sm:text-lg sm:leading-9">
+              <p className="mt-7 max-w-[19.5rem] text-[15px] leading-[2] text-white/82 sm:max-w-2xl sm:text-lg sm:leading-9">
                 物流運送とヘッドスパを主軸に、
                 <br className="sm:hidden" />
                 レスポンスと現場対応力を強みに、
