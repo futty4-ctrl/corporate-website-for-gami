@@ -198,11 +198,11 @@ export default function CompanyPage() {
         <section className="border-t border-border bg-secondary/50 py-16 px-4 sm:px-6 sm:py-24 lg:py-32">
           <div className="mx-auto max-w-3xl text-center">
             <SectionHeading
-              sub="ミッション"
-              title="繋ぐ。届ける。支える。"
-              catchCopy={"物流で、企業の成長を加速させる。"}
-              className="mb-10"
-            />
+  sub="スローガン"
+  title="未来より先に動く。"
+  catchCopy="レスポンスと現場対応力で、事業を前へ進める。"
+  className="mb-10"
+/>
             <p className="text-sm leading-loose tracking-readable text-muted-foreground">
               株式会社GAMIは、大阪・福岡を中心に物流代行・発送代行・内職・軽作業の外注まで一括対応する物流会社です。
               企業様の業務効率化・コスト削減を実現し、「任せてよかった」と思える物流パートナーとして成長を支えます。
