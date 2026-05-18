@@ -147,9 +147,9 @@ export default function HomePage() {
                 LOGISTICS & HEAD SPA
               </p>
 
-              <h1 className="mx-auto mt-5 max-w-[22rem] text-[clamp(2.5rem,10vw,5.8rem)] font-bold leading-[1.08] tracking-[-0.05em] sm:max-w-none sm:text-7xl lg:mx-0">
-                未来より先に動く。
-              </h1>
+              <h1 className="mx-auto mt-5 text-center text-[clamp(2.2rem,8vw,5.8rem)] font-bold leading-[1.05] tracking-[-0.06em] text-white sm:text-7xl lg:mx-0 lg:text-left">
+  未来より先に動く。
+</h1>
 
               <p className="mx-auto mt-7 max-w-[32rem] text-[15px] leading-8 text-white/82 sm:text-lg sm:leading-9 lg:mx-0">
                 物流運送とヘッドスパを主軸に、レスポンスと現場対応力を強みに事業展開する株式会社GAMI。
