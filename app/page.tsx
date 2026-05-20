@@ -135,9 +135,9 @@ export default function HomePage() {
                 LOGISTICS COMPANY / OSAKA
               </p>
 
-              <h1 className="mx-auto mt-5 max-w-[7.5em] text-center text-[clamp(2rem,10vw,5.4rem)] font-bold leading-[1.12] tracking-[-0.045em] text-white sm:max-w-none sm:leading-[1.06] sm:tracking-[-0.06em] lg:mx-0 lg:text-left">
-                未来より先に動く。
-              </h1>
+             <h1 className="mt-5 text-center text-[clamp(2rem,6vw,5rem)] font-bold leading-none tracking-[-0.06em] whitespace-nowrap text-white lg:text-left">
+  未来より先に動く。
+</h1>
 
               <p className="mx-auto mt-7 max-w-[34rem] text-[15px] leading-8 text-white/84 sm:max-w-[42rem] sm:text-lg sm:leading-9 lg:mx-0">
                 物流運送を主軸に、倉庫保管・発送代行・流通加工まで一括対応。
