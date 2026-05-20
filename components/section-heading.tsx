@@ -9,23 +9,25 @@ interface SectionHeadingProps {
   className?: string
 }
 
-export function SectionHeading({ sub, title, catchCopy, className = "" }: SectionHeadingProps) {
+export function SectionHeading({
+  sub,
+  title,
+  catchCopy,
+  className = "",
+}: SectionHeadingProps) {
   return (
     <ScrollAnimate className={`text-center ${className}`}>
-      <p className="text-xs font-medium tracking-[0.2em] text-gold">
+      <p className="text-[11px] font-semibold tracking-[0.16em] text-gold sm:text-xs sm:tracking-[0.2em]">
         {sub}
       </p>
-      <h2 className="mt-3 font-serif text-xl tracking-[0.08em] text-foreground sm:text-2xl md:text-3xl text-balance leading-relaxed break-words px-2">
+
+      <h2 className="mx-auto mt-3 max-w-[34rem] text-[1.85rem] font-bold leading-[1.28] tracking-[-0.03em] text-foreground sm:text-4xl sm:leading-tight md:text-5xl">
         {title}
       </h2>
+
       {catchCopy && (
-        <p className="mx-auto mt-4 max-w-2xl break-words px-2 text-sm leading-relaxed tracking-readable text-muted-foreground sm:mt-5 sm:leading-loose">
-          {catchCopy.split("\n").map((line, i) => (
-            <span key={i} className="break-words">
-              {i > 0 && <br className="sm:hidden" />}
-              {line}
-            </span>
-          ))}
+        <p className="mx-auto mt-5 max-w-2xl text-sm leading-8 text-muted-foreground sm:text-base">
+          {catchCopy}
         </p>
       )}
     </ScrollAnimate>
