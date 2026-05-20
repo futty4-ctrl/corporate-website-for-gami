@@ -8,8 +8,6 @@ import { Menu, X } from "lucide-react"
 const navLinks = [
   { href: "/", label: "ホーム" },
   { href: "/logistics", label: "物流運送事業" },
-  { href: "https://www.yuheadspa.net/", label: "ヘッドスパ事業" },
-  { href: "/seihin", label: "整理買取事業" },
   { href: "https://styling-garage.jp", label: "車事業" },
   { href: "https://gamistore.base.shop/", label: "オンラインショップ" },
   { href: "/company", label: "会社概要" },
