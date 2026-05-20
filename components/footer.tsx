@@ -14,7 +14,11 @@ export function Footer() {
       <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
         <div className="grid gap-14 text-center md:grid-cols-[1.15fr_1fr_1fr] md:gap-12 md:text-left">
           <div className="flex flex-col items-center gap-6 md:items-start">
-            <Link href="/" className="flex items-center gap-3 transition-opacity hover:opacity-80" aria-label="GAMI ホームへ戻る">
+            <Link
+              href="/"
+              className="flex items-center gap-3 transition-opacity hover:opacity-80"
+              aria-label="GAMI ホームへ戻る"
+            >
               <img
                 src={logoError ? "/placeholder-logo.svg" : "/images/logo.png"}
                 alt="GAMI"
@@ -23,7 +27,10 @@ export function Footer() {
                 onError={() => setLogoError(true)}
                 className="rounded-full"
               />
-              <span className="font-serif text-2xl tracking-[0.22em]">GAMI</span>
+
+              <span className="font-serif text-2xl tracking-[0.22em]">
+                GAMI
+              </span>
             </Link>
 
             <p className="max-w-[24rem] text-sm leading-8 tracking-wide text-black/60 md:max-w-none">
@@ -41,7 +48,7 @@ export function Footer() {
             </p>
 
             <div className="flex flex-wrap justify-center gap-2 md:justify-start">
-              {["物流運送", "発送代行", "倉庫保管", "ヘッドスパFC"].map((item) => (
+              {["物流運送", "発送代行", "倉庫保管", "流通加工"].map((item) => (
                 <span
                   key={item}
                   className="rounded-full border border-black/5 bg-white px-4 py-1.5 text-[11px] font-medium text-black/60 shadow-sm"
@@ -61,42 +68,75 @@ export function Footer() {
               <li>
                 <Link href="/logistics" className={footerLinkClass}>
                   <span>物流運送事業</span>
-                  <span aria-hidden="true" className="transition-transform duration-300 group-hover:translate-x-1">→</span>
+                  <span
+                    aria-hidden="true"
+                    className="transition-transform duration-300 group-hover:translate-x-1"
+                  >
+                    →
+                  </span>
                 </Link>
+              </li>
+
+              <li>
+                <a
+                  href="https://www.yuheadspa.net/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className={footerLinkClass}
+                >
+                  <span>ヘッドスパ事業</span>
+                  <span
+                    aria-hidden="true"
+                    className="transition-transform duration-300 group-hover:translate-x-1"
+                  >
+                    →
+                  </span>
+                </a>
               </li>
 
               <li>
                 <Link href="/headspa-franchise" className={footerLinkClass}>
                   <span>ヘッドスパFC</span>
-                  <span aria-hidden="true" className="transition-transform duration-300 group-hover:translate-x-1">→</span>
+                  <span
+                    aria-hidden="true"
+                    className="transition-transform duration-300 group-hover:translate-x-1"
+                  >
+                    →
+                  </span>
                 </Link>
               </li>
 
               <li>
-                <a href="https://www.yuheadspa.net/" target="_blank" rel="noreferrer" className={footerLinkClass}>
-                  <span>ヘッドスパ専門店ゆう本店</span>
-                  <span aria-hidden="true" className="transition-transform duration-300 group-hover:translate-x-1">→</span>
-                </a>
-              </li>
-
-              <li>
-                <Link href="/seihin" className={footerLinkClass}>
-                  <span>整理買取事業</span>
-                  <span aria-hidden="true" className="transition-transform duration-300 group-hover:translate-x-1">→</span>
-                </Link>
-              </li>
-
-              <li>
-                <a href="https://styling-garage.jp" target="_blank" rel="noreferrer" className={footerLinkClass}>
+                <a
+                  href="https://styling-garage.jp"
+                  target="_blank"
+                  rel="noreferrer"
+                  className={footerLinkClass}
+                >
                   <span>車事業</span>
-                  <span aria-hidden="true" className="transition-transform duration-300 group-hover:translate-x-1">→</span>
+                  <span
+                    aria-hidden="true"
+                    className="transition-transform duration-300 group-hover:translate-x-1"
+                  >
+                    →
+                  </span>
                 </a>
               </li>
 
               <li>
-                <a href="https://gamistore.base.shop/" target="_blank" rel="noreferrer" className={footerLinkClass}>
+                <a
+                  href="https://gamistore.base.shop/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className={footerLinkClass}
+                >
                   <span>オンラインショップ</span>
-                  <span aria-hidden="true" className="transition-transform duration-300 group-hover:translate-x-1">→</span>
+                  <span
+                    aria-hidden="true"
+                    className="transition-transform duration-300 group-hover:translate-x-1"
+                  >
+                    →
+                  </span>
                 </a>
               </li>
             </ul>
@@ -118,19 +158,27 @@ export function Footer() {
             </p>
 
             <div className="mt-6 flex flex-col gap-3 text-left">
-              <a href="mailto:k_fuchigami@gamigami.email" className={footerLinkClass}>
+              <a
+                href="mailto:k_fuchigami@gamigami.email"
+                className={footerLinkClass}
+              >
                 <span>メールで相談する</span>
-                <span aria-hidden="true" className="transition-transform duration-300 group-hover:translate-x-1">→</span>
+                <span
+                  aria-hidden="true"
+                  className="transition-transform duration-300 group-hover:translate-x-1"
+                >
+                  →
+                </span>
               </a>
 
               <a href="tel:0661159935" className={footerLinkClass}>
                 <span>TEL：06-6115-9935</span>
-                <span aria-hidden="true" className="transition-transform duration-300 group-hover:translate-x-1">→</span>
-              </a>
-
-              <a href="fax:0661159936" className={footerLinkClass}>
-                <span>FAX：06-6115-9936</span>
-                <span aria-hidden="true" className="transition-transform duration-300 group-hover:translate-x-1">→</span>
+                <span
+                  aria-hidden="true"
+                  className="transition-transform duration-300 group-hover:translate-x-1"
+                >
+                  →
+                </span>
               </a>
             </div>
 
@@ -138,7 +186,7 @@ export function Footer() {
               href="/company#contact"
               className="mt-7 inline-flex w-full items-center justify-center rounded-full bg-amber-500 px-6 py-4 text-center text-sm font-bold tracking-[0.12em] text-white shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:bg-amber-600 hover:shadow-xl active:scale-95"
             >
-              即レスで相談する
+              物流を相談する
             </Link>
           </div>
         </div>
