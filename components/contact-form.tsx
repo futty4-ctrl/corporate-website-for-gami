@@ -5,10 +5,11 @@ import { useState } from "react"
 const CONTACT_EMAIL = "k_fuchigami@gamigami.email"
 
 const inquiryTypes = [
-  "物流に関するお問い合わせ",
+  "物流・発送代行に関するお問い合わせ",
+  "倉庫保管・流通加工に関するお問い合わせ",
+  "スポット出荷・急ぎ案件のご相談",
   "ヘッドスパ事業に関するお問い合わせ",
-  "整理買取事業に関するお問い合わせ",
-  "梱包資材に関するお問い合わせ",
+  "ヘッドスパFCに関するお問い合わせ",
   "その他",
 ]
 
@@ -17,18 +18,19 @@ export function ContactForm() {
 
   if (submitted) {
     return (
-      <div className="rounded-2xl border border-border/60 bg-card p-10 text-center shadow-glass">
-        <p className="font-serif text-xl tracking-wider text-foreground">
+      <div className="rounded-[2rem] border border-black/5 bg-white p-10 text-center shadow-[0_18px_50px_rgba(0,0,0,0.06)]">
+        <p className="font-serif text-2xl tracking-[0.08em] text-black">
           送信ありがとうございます
         </p>
-        <p className="mt-3 text-sm text-muted-foreground">
+
+        <p className="mt-4 text-sm leading-8 text-black/60">
           内容を確認のうえ、担当よりご連絡します。
         </p>
-        <p className="mt-2 text-xs text-muted-foreground">
-          送信先: {CONTACT_EMAIL}
-        </p>
-        <p className="mt-1 text-xs text-muted-foreground">
-          TEL: 06-6115-9935 / FAX: 06-6115-9936
+
+        <p className="mt-4 text-xs leading-6 text-black/45">
+          送信先：{CONTACT_EMAIL}
+          <br />
+          TEL：06-6115-9935 / FAX：06-6115-9936
         </p>
       </div>
     )
@@ -40,96 +42,130 @@ export function ContactForm() {
         e.preventDefault()
         setSubmitted(true)
       }}
-      className="flex flex-col gap-6"
+      className="rounded-[2rem] border border-black/5 bg-white p-6 shadow-[0_18px_50px_rgba(0,0,0,0.06)] sm:p-8"
     >
-      {/* Name */}
-      <div className="flex flex-col gap-2">
-        <label htmlFor="name" className="text-sm font-medium text-foreground">
-          お名前 <span className="text-destructive">*</span>
-        </label>
-        <input
-          id="name"
-          name="name"
-          type="text"
-          required
-          className="rounded-xl border border-border bg-card px-4 py-3 text-sm text-foreground shadow-glass outline-none transition-all focus:border-primary focus:ring-2 focus:ring-primary/20"
-          placeholder="山田 太郎"
-        />
+      <div className="mb-8 rounded-2xl bg-[#fbfaf7] p-5">
+        <p className="text-sm font-bold text-black">
+          物流のご相談を中心に受け付けています
+        </p>
+
+        <p className="mt-2 text-xs leading-6 text-black/55">
+          倉庫保管、発送代行、流通加工、スポット出荷など、
+          まずは現在の状況をお聞かせください。
+        </p>
       </div>
 
-      {/* Email */}
-      <div className="flex flex-col gap-2">
-        <label htmlFor="email" className="text-sm font-medium text-foreground">
-          メールアドレス <span className="text-destructive">*</span>
-        </label>
-        <input
-          id="email"
-          name="email"
-          type="email"
-          required
-          className="rounded-xl border border-border bg-card px-4 py-3 text-sm text-foreground shadow-glass outline-none transition-all focus:border-primary focus:ring-2 focus:ring-primary/20"
-          placeholder="info@gamigami.net"
-        />
-      </div>
+      <div className="grid gap-5">
+        <div className="flex flex-col gap-2">
+          <label htmlFor="name" className="text-sm font-medium text-black/70">
+            お名前 <span className="text-amber-500">*</span>
+          </label>
 
-      {/* Phone */}
-      <div className="flex flex-col gap-2">
-        <label htmlFor="phone" className="text-sm font-medium text-foreground">
-          お電話番号
-        </label>
-        <input
-          id="phone"
-          name="phone"
-          type="tel"
-          className="rounded-xl border border-border bg-card px-4 py-3 text-sm text-foreground shadow-glass outline-none transition-all focus:border-primary focus:ring-2 focus:ring-primary/20"
-          placeholder="090-0000-0000"
-        />
-      </div>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            required
+            className="rounded-2xl border border-black/10 bg-white px-4 py-3 text-sm text-black outline-none transition focus:border-amber-500 focus:ring-2 focus:ring-amber-500/10"
+            placeholder="山田 太郎"
+          />
+        </div>
 
-      {/* Inquiry Type */}
-      <div className="flex flex-col gap-2">
-        <label htmlFor="type" className="text-sm font-medium text-foreground">
-          お問い合わせ種別 <span className="text-destructive">*</span>
-        </label>
-        <select
-          id="type"
-          name="type"
-          required
-          className="rounded-xl border border-border bg-card px-4 py-3 text-sm text-foreground shadow-glass outline-none transition-all focus:border-primary focus:ring-2 focus:ring-primary/20"
-          defaultValue=""
-        >
-          <option value="" disabled>
-            選択してください
-          </option>
-          {inquiryTypes.map((t) => (
-            <option key={t} value={t}>
-              {t}
+        <div className="flex flex-col gap-2">
+          <label htmlFor="company" className="text-sm font-medium text-black/70">
+            会社名 / 屋号
+          </label>
+
+          <input
+            id="company"
+            name="company"
+            type="text"
+            className="rounded-2xl border border-black/10 bg-white px-4 py-3 text-sm text-black outline-none transition focus:border-amber-500 focus:ring-2 focus:ring-amber-500/10"
+            placeholder="株式会社〇〇"
+          />
+        </div>
+
+        <div className="grid gap-5 sm:grid-cols-2">
+          <div className="flex flex-col gap-2">
+            <label htmlFor="email" className="text-sm font-medium text-black/70">
+              メールアドレス <span className="text-amber-500">*</span>
+            </label>
+
+            <input
+              id="email"
+              name="email"
+              type="email"
+              required
+              className="rounded-2xl border border-black/10 bg-white px-4 py-3 text-sm text-black outline-none transition focus:border-amber-500 focus:ring-2 focus:ring-amber-500/10"
+              placeholder="example@gamigami.net"
+            />
+          </div>
+
+          <div className="flex flex-col gap-2">
+            <label htmlFor="phone" className="text-sm font-medium text-black/70">
+              お電話番号
+            </label>
+
+            <input
+              id="phone"
+              name="phone"
+              type="tel"
+              className="rounded-2xl border border-black/10 bg-white px-4 py-3 text-sm text-black outline-none transition focus:border-amber-500 focus:ring-2 focus:ring-amber-500/10"
+              placeholder="090-0000-0000"
+            />
+          </div>
+        </div>
+
+        <div className="flex flex-col gap-2">
+          <label htmlFor="type" className="text-sm font-medium text-black/70">
+            お問い合わせ種別 <span className="text-amber-500">*</span>
+          </label>
+
+          <select
+            id="type"
+            name="type"
+            required
+            className="rounded-2xl border border-black/10 bg-white px-4 py-3 text-sm text-black outline-none transition focus:border-amber-500 focus:ring-2 focus:ring-amber-500/10"
+            defaultValue=""
+          >
+            <option value="" disabled>
+              選択してください
             </option>
-          ))}
-        </select>
-      </div>
 
-      {/* Message */}
-      <div className="flex flex-col gap-2">
-        <label htmlFor="message" className="text-sm font-medium text-foreground">
-          お問い合わせ内容 <span className="text-destructive">*</span>
-        </label>
-        <textarea
-          id="message"
-          name="message"
-          required
-          rows={5}
-          className="resize-none rounded-xl border border-border bg-card px-4 py-3 text-sm text-foreground shadow-glass outline-none transition-all focus:border-primary focus:ring-2 focus:ring-primary/20"
-          placeholder="お問い合わせ内容をご記入ください"
-        />
-      </div>
+            {inquiryTypes.map((type) => (
+              <option key={type} value={type}>
+                {type}
+              </option>
+            ))}
+          </select>
+        </div>
 
-      <button
-        type="submit"
-        className="mt-2 w-full aurora-gradient rounded-xl px-8 py-3 text-sm font-medium tracking-widest text-white transition-all active:scale-95 sm:w-auto sm:hover:scale-105 sm:hover:shadow-glass-hover touch-manipulation"
-      >
-        送信する
-      </button>
+        <div className="flex flex-col gap-2">
+          <label htmlFor="message" className="text-sm font-medium text-black/70">
+            お問い合わせ内容 <span className="text-amber-500">*</span>
+          </label>
+
+          <textarea
+            id="message"
+            name="message"
+            required
+            rows={6}
+            className="resize-none rounded-2xl border border-black/10 bg-white px-4 py-3 text-sm text-black outline-none transition focus:border-amber-500 focus:ring-2 focus:ring-amber-500/10"
+            placeholder="例：EC商品の発送代行を相談したいです。月間出荷数は〇件ほどで、保管と梱包もお願いできるか確認したいです。"
+          />
+        </div>
+
+        <button
+          type="submit"
+          className="mt-2 inline-flex w-full items-center justify-center rounded-full bg-[#111111] px-8 py-4 text-sm font-bold tracking-[0.12em] text-white shadow-[0_18px_50px_rgba(0,0,0,0.16)] transition hover:-translate-y-0.5 hover:bg-black active:scale-95 sm:w-auto"
+        >
+          送信する
+        </button>
+
+        <p className="text-xs leading-6 text-black/45">
+          ※送信できない場合は、直接メールまたはお電話でご連絡ください。
+        </p>
+      </div>
     </form>
   )
 }
