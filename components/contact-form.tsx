@@ -18,15 +18,13 @@ export function ContactForm() {
 
   if (submitted) {
     return (
-      <div className="rounded-[2rem] border border-black/5 bg-white p-10 text-center shadow-[0_18px_50px_rgba(0,0,0,0.06)]">
-        <p className="font-serif text-2xl tracking-[0.08em] text-black">
+      <div className="rounded-[2rem] border border-black/5 bg-white p-6 text-center shadow-[0_18px_50px_rgba(0,0,0,0.06)] sm:p-10">
+        <p className="text-2xl font-bold leading-snug tracking-[-0.03em] text-black">
           送信ありがとうございます
         </p>
 
         <p className="mt-4 text-sm leading-8 text-black/60">
-          内容を確認のうえ、
-          <br className="sm:hidden" />
-          担当よりご連絡します。
+          内容を確認のうえ、担当よりご連絡します。
         </p>
 
         <div className="mt-6 rounded-2xl bg-[#fbfaf7] p-5">
@@ -48,10 +46,10 @@ export function ContactForm() {
         e.preventDefault()
         setSubmitted(true)
       }}
-      className="rounded-[2rem] border border-black/5 bg-white p-6 shadow-[0_18px_50px_rgba(0,0,0,0.06)] sm:p-8"
+      className="rounded-[2rem] border border-black/5 bg-white p-5 shadow-[0_18px_50px_rgba(0,0,0,0.06)] sm:p-8"
     >
-      <div className="mb-8 rounded-2xl border border-amber-500/10 bg-[#fbfaf7] p-5">
-        <p className="text-sm font-bold text-black">
+      <div className="mb-7 rounded-2xl border border-amber-500/10 bg-[#fbfaf7] p-5">
+        <p className="text-sm font-bold leading-7 text-black">
           物流のご相談を中心に受け付けています
         </p>
 
@@ -72,16 +70,13 @@ export function ContactForm() {
             name="name"
             type="text"
             required
-            className="rounded-2xl border border-black/10 bg-white px-4 py-3 text-sm text-black outline-none transition focus:border-amber-500 focus:ring-2 focus:ring-amber-500/10"
+            className="rounded-2xl border border-black/10 bg-white px-4 py-3.5 text-base text-black outline-none transition focus:border-amber-500 focus:ring-2 focus:ring-amber-500/10 sm:text-sm"
             placeholder="山田 太郎"
           />
         </div>
 
         <div className="flex flex-col gap-2">
-          <label
-            htmlFor="company"
-            className="text-sm font-medium text-black/70"
-          >
+          <label htmlFor="company" className="text-sm font-medium text-black/70">
             会社名 / 屋号
           </label>
 
@@ -89,17 +84,14 @@ export function ContactForm() {
             id="company"
             name="company"
             type="text"
-            className="rounded-2xl border border-black/10 bg-white px-4 py-3 text-sm text-black outline-none transition focus:border-amber-500 focus:ring-2 focus:ring-amber-500/10"
+            className="rounded-2xl border border-black/10 bg-white px-4 py-3.5 text-base text-black outline-none transition focus:border-amber-500 focus:ring-2 focus:ring-amber-500/10 sm:text-sm"
             placeholder="株式会社〇〇"
           />
         </div>
 
         <div className="grid gap-5 sm:grid-cols-2">
           <div className="flex flex-col gap-2">
-            <label
-              htmlFor="email"
-              className="text-sm font-medium text-black/70"
-            >
+            <label htmlFor="email" className="text-sm font-medium text-black/70">
               メールアドレス <span className="text-amber-500">*</span>
             </label>
 
@@ -108,16 +100,13 @@ export function ContactForm() {
               name="email"
               type="email"
               required
-              className="rounded-2xl border border-black/10 bg-white px-4 py-3 text-sm text-black outline-none transition focus:border-amber-500 focus:ring-2 focus:ring-amber-500/10"
+              className="rounded-2xl border border-black/10 bg-white px-4 py-3.5 text-base text-black outline-none transition focus:border-amber-500 focus:ring-2 focus:ring-amber-500/10 sm:text-sm"
               placeholder="example@gamigami.net"
             />
           </div>
 
           <div className="flex flex-col gap-2">
-            <label
-              htmlFor="phone"
-              className="text-sm font-medium text-black/70"
-            >
+            <label htmlFor="phone" className="text-sm font-medium text-black/70">
               お電話番号
             </label>
 
@@ -125,7 +114,7 @@ export function ContactForm() {
               id="phone"
               name="phone"
               type="tel"
-              className="rounded-2xl border border-black/10 bg-white px-4 py-3 text-sm text-black outline-none transition focus:border-amber-500 focus:ring-2 focus:ring-amber-500/10"
+              className="rounded-2xl border border-black/10 bg-white px-4 py-3.5 text-base text-black outline-none transition focus:border-amber-500 focus:ring-2 focus:ring-amber-500/10 sm:text-sm"
               placeholder="090-0000-0000"
             />
           </div>
@@ -140,7 +129,7 @@ export function ContactForm() {
             id="type"
             name="type"
             required
-            className="rounded-2xl border border-black/10 bg-white px-4 py-3 text-sm text-black outline-none transition focus:border-amber-500 focus:ring-2 focus:ring-amber-500/10"
+            className="rounded-2xl border border-black/10 bg-white px-4 py-3.5 text-base text-black outline-none transition focus:border-amber-500 focus:ring-2 focus:ring-amber-500/10 sm:text-sm"
             defaultValue=""
           >
             <option value="" disabled>
@@ -156,10 +145,7 @@ export function ContactForm() {
         </div>
 
         <div className="flex flex-col gap-2">
-          <label
-            htmlFor="message"
-            className="text-sm font-medium text-black/70"
-          >
+          <label htmlFor="message" className="text-sm font-medium text-black/70">
             お問い合わせ内容 <span className="text-amber-500">*</span>
           </label>
 
@@ -168,22 +154,20 @@ export function ContactForm() {
             name="message"
             required
             rows={6}
-            className="resize-none rounded-2xl border border-black/10 bg-white px-4 py-3 text-sm text-black outline-none transition focus:border-amber-500 focus:ring-2 focus:ring-amber-500/10"
+            className="resize-none rounded-2xl border border-black/10 bg-white px-4 py-3.5 text-base leading-7 text-black outline-none transition focus:border-amber-500 focus:ring-2 focus:ring-amber-500/10 sm:text-sm"
             placeholder="例：EC商品の発送代行を相談したいです。月間出荷数は〇件ほどで、保管と梱包もお願いできるか確認したいです。"
           />
         </div>
 
         <button
           type="submit"
-          className="mt-2 inline-flex w-full items-center justify-center rounded-full bg-amber-500 px-8 py-4 text-sm font-bold tracking-[0.12em] text-white shadow-[0_18px_50px_rgba(0,0,0,0.16)] transition hover:-translate-y-0.5 hover:bg-amber-400 active:scale-95"
+          className="mt-2 inline-flex w-full items-center justify-center rounded-full bg-amber-500 px-8 py-4 text-sm font-bold tracking-[0.04em] text-white shadow-[0_18px_50px_rgba(0,0,0,0.16)] transition hover:-translate-y-0.5 hover:bg-amber-400 active:scale-95"
         >
           物流を相談する
         </button>
 
         <p className="text-center text-xs leading-6 text-black/45">
-          ※送信できない場合は、
-          <br className="sm:hidden" />
-          直接メールまたはお電話でご連絡ください。
+          ※送信できない場合は、直接メールまたはお電話でご連絡ください。
         </p>
       </div>
     </form>
