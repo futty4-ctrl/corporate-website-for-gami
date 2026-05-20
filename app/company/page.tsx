@@ -34,55 +34,44 @@ const companyInfo = [
   { label: "会社名", value: "株式会社GAMI" },
   { label: "代表取締役", value: "淵上 和博" },
   { label: "設立", value: "2025年6月17日" },
-
   {
     label: "主要事業",
-    value:
-      "物流運送事業\n倉庫保管\n発送代行\n流通加工\nヘッドスパ事業",
+    value: "物流運送事業\n倉庫保管\n発送代行\n流通加工\nヘッドスパ事業",
   },
-
   {
     label: "関連事業",
     value: "ヘッドスパFC\n車事業\nオンラインショップ運営",
   },
-
   { label: "メールアドレス", value: "k_fuchigami@gamigami.email" },
   { label: "TEL", value: "06-6115-9935" },
   { label: "FAX", value: "06-6115-9936" },
-
   {
     label: "古物商許可",
     value: "大阪府公安委員会許可 第62229R076690号",
   },
-
   {
     label: "化粧品製造業許可",
     value: "認証倉庫 許可番号 27CZ201072",
   },
-
   {
     label: "第一種貨物利用運送事業",
     value: "貨物自動車運送（近運自貨第1190号）",
   },
-
   {
     label: "インボイス登録番号",
     value: "T9120001277055",
   },
-
   {
     label: "所在地（大阪本社）",
     value: "〒570-0003 大阪府守口市大日町1-8-18",
   },
-
   {
     label: "所在地（福岡支社）",
     value: "〒819-0014 福岡県福岡市西区豊浜2-20-20-2",
   },
 ]
 
-const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL || "https://gamigami.net"
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://gamigami.net"
 
 const organizationSchema = {
   "@context": "https://schema.org",
@@ -90,10 +79,8 @@ const organizationSchema = {
   name: "株式会社GAMI",
   url: siteUrl,
   logo: `${siteUrl}/images/logo.png`,
-
   description:
     "株式会社GAMIは大阪・福岡を拠点に、物流運送、発送代行、倉庫保管、流通加工、ヘッドスパ事業を展開しています。",
-
   contactPoint: {
     "@type": "ContactPoint",
     telephone: "+81-6-6115-9935",
@@ -102,7 +89,6 @@ const organizationSchema = {
     areaServed: "JP",
     availableLanguage: "Japanese",
   },
-
   address: {
     "@type": "PostalAddress",
     streetAddress: "大日町1-8-18",
@@ -111,22 +97,13 @@ const organizationSchema = {
     postalCode: "570-0003",
     addressCountry: "JP",
   },
-
-  knowsAbout: [
-    "物流運送",
-    "発送代行",
-    "倉庫保管",
-    "流通加工",
-    "ヘッドスパ",
-  ],
-
+  knowsAbout: ["物流運送", "発送代行", "倉庫保管", "流通加工", "ヘッドスパ"],
   sameAs: [],
 }
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
-
   itemListElement: [
     {
       "@type": "ListItem",
@@ -134,7 +111,6 @@ const breadcrumbSchema = {
       name: "ホーム",
       item: siteUrl,
     },
-
     {
       "@type": "ListItem",
       position: 2,
@@ -170,43 +146,38 @@ export default function CompanyPage() {
             <div className="absolute right-0 top-10 h-96 w-96 rounded-full bg-orange-400 blur-3xl" />
           </div>
 
-          <div className="relative z-10 mx-auto w-full max-w-6xl px-4 text-center sm:px-6 lg:text-left">
-            <p className="text-xs font-semibold tracking-[0.24em] text-amber-300">
+          <div className="relative z-10 mx-auto w-full max-w-6xl px-5 text-center sm:px-6 lg:text-left">
+            <p className="text-[10px] font-semibold tracking-[0.18em] text-amber-300 sm:text-sm sm:tracking-[0.22em]">
               COMPANY
             </p>
 
-            <h1 className="mx-auto mt-5 max-w-[20rem] font-serif text-[2.5rem] leading-[1.15] tracking-[0.02em] text-white sm:max-w-none sm:text-5xl md:text-6xl lg:mx-0">
+            <h1 className="mx-auto mt-5 max-w-[8em] text-[clamp(2.1rem,9vw,5rem)] font-bold leading-[1.1] tracking-[-0.045em] text-white sm:max-w-none sm:leading-[1.06] lg:mx-0">
               未来より先に動く。
             </h1>
 
-            <p className="mx-auto mt-7 max-w-[32rem] text-[15px] leading-[2.05] text-white/80 sm:max-w-2xl sm:text-base sm:leading-8 lg:mx-0">
-              物流運送を主軸に、
-              倉庫保管・発送代行・流通加工まで一括対応。
-              <br />
-              スピードと現場対応力で、
-              企業の物流を支える株式会社GAMI。
+            <p className="mx-auto mt-7 max-w-[34rem] text-[15px] leading-8 text-white/80 sm:max-w-2xl sm:text-base sm:leading-8 lg:mx-0">
+              物流運送を主軸に、倉庫保管・発送代行・流通加工まで一括対応。
+              <br className="hidden sm:block" />
+              スピードと現場対応力で、企業の物流を支える株式会社GAMIです。
             </p>
 
-            <div className="mt-8 flex flex-wrap justify-center gap-3 lg:justify-start">
-              {[
-                "倉庫保管",
-                "発送代行",
-                "流通加工",
-                "スポット出荷",
-              ].map((item) => (
-                <div
-                  key={item}
-                  className="rounded-full border border-white/10 bg-white/10 px-4 py-2 text-xs font-bold tracking-wide text-white/85 backdrop-blur"
-                >
-                  {item}
-                </div>
-              ))}
+            <div className="mx-auto mt-8 grid max-w-[24rem] grid-cols-2 gap-3 sm:max-w-xl sm:grid-cols-4 lg:mx-0">
+              {["倉庫保管", "発送代行", "流通加工", "スポット出荷"].map(
+                (item) => (
+                  <div
+                    key={item}
+                    className="rounded-full border border-white/10 bg-white/10 px-4 py-3 text-center text-xs font-bold leading-5 tracking-[0.03em] text-white/85 backdrop-blur"
+                  >
+                    {item}
+                  </div>
+                ),
+              )}
             </div>
           </div>
         </section>
 
-        <section className="mx-auto max-w-5xl px-4 py-20 sm:px-6 sm:py-28">
-          <div className="mb-16 text-center">
+        <section className="mx-auto max-w-5xl px-5 py-20 sm:px-6 sm:py-28">
+          <div className="mb-14 text-center sm:mb-16">
             <SectionHeading
               sub="COMPANY INFO"
               title="企業情報"
@@ -215,52 +186,52 @@ export default function CompanyPage() {
 
             <p className="text-sm leading-8 text-muted-foreground sm:text-base">
               株式会社GAMIの会社概要です。
-              <br />
+              <br className="hidden sm:block" />
               ご不明点はお気軽にお問い合わせください。
             </p>
           </div>
 
-          <div className="overflow-hidden rounded-[2rem] border border-black/5 bg-white shadow-[0_8px_32px_rgba(0,0,0,0.04)]">
+          <dl className="overflow-hidden rounded-[2rem] border border-black/5 bg-white shadow-[0_8px_32px_rgba(0,0,0,0.04)]">
             {companyInfo.map((row, index) => (
               <div
                 key={row.label}
-                className={`flex flex-col gap-2 px-5 py-6 sm:flex-row sm:gap-10 sm:px-8 ${
+                className={`flex flex-col gap-2 px-5 py-5 sm:flex-row sm:gap-10 sm:px-8 sm:py-6 ${
                   index !== companyInfo.length - 1
                     ? "border-b border-black/5"
                     : ""
                 }`}
               >
                 <dt
-                  className={`w-full shrink-0 text-xs tracking-wide sm:w-48 sm:text-sm ${
+                  className={`w-full shrink-0 text-xs leading-6 tracking-[0.04em] sm:w-48 sm:text-sm ${
                     row.label === "主要事業"
                       ? "font-bold text-black"
                       : row.label === "関連事業"
-                      ? "font-medium text-zinc-400"
-                      : "font-medium text-black/50"
+                        ? "font-medium text-zinc-400"
+                        : "font-medium text-black/50"
                   }`}
                 >
                   {row.label}
                 </dt>
 
                 <dd
-                  className={`whitespace-pre-line tracking-wide ${
+                  className={`whitespace-pre-line break-words ${
                     row.label === "主要事業"
                       ? "text-[15px] font-bold leading-8 text-black sm:text-base"
                       : row.label === "関連事業"
-                      ? "text-sm leading-8 text-zinc-500"
-                      : "text-sm leading-8 text-black/70"
+                        ? "text-sm leading-8 text-zinc-500"
+                        : "text-sm leading-8 text-black/70"
                   }`}
                 >
                   {row.value}
                 </dd>
               </div>
             ))}
-          </div>
+          </dl>
         </section>
 
-        <section className="border-t border-black/5 bg-[#f8f8f6] px-4 py-20 sm:px-6 sm:py-28">
+        <section className="border-t border-black/5 bg-[#f8f8f6] px-5 py-20 sm:px-6 sm:py-28">
           <div className="mx-auto max-w-3xl text-center">
-            <div className="mb-10 text-center">
+            <div className="mb-10">
               <SectionHeading
                 sub="PHILOSOPHY"
                 title="未来より先に動く。"
@@ -268,24 +239,16 @@ export default function CompanyPage() {
               />
 
               <p className="text-sm leading-8 text-muted-foreground sm:text-base">
-                レスポンスと現場対応力で、
-                <br className="sm:hidden" />
-                企業の物流を前へ進める。
+                レスポンスと現場対応力で、企業の物流を前へ進める。
               </p>
             </div>
 
-            <p className="mx-auto max-w-[22rem] text-[15px] leading-[2.2] tracking-wide text-muted-foreground sm:max-w-2xl sm:text-base">
-              株式会社GAMIは、
-              物流運送事業を主軸に展開しています。
-              <br />
-              <br />
-              倉庫保管、発送代行、流通加工、
-              スポット対応まで、
-              現場に合わせて柔軟に対応。
-              <br />
-              <br />
-              ヘッドスパ事業やFC展開など、
-              物流以外の関連事業も展開しながら、
+            <p className="mx-auto max-w-[34rem] text-[15px] leading-[1.95] text-muted-foreground sm:max-w-2xl sm:text-base">
+              株式会社GAMIは、物流運送事業を主軸に展開しています。
+              倉庫保管、発送代行、流通加工、スポット対応まで、
+              現場に合わせて柔軟に対応します。
+              <br className="hidden sm:block" />
+              ヘッドスパ事業やFC展開など、関連事業も展開しながら、
               現場起点で事業を成長させています。
             </p>
           </div>
@@ -295,9 +258,9 @@ export default function CompanyPage() {
 
         <section
           id="contact"
-          className="mx-auto max-w-3xl px-4 py-20 sm:px-6 sm:py-28"
+          className="mx-auto max-w-3xl px-5 py-20 sm:px-6 sm:py-28"
         >
-          <div className="mb-16 text-center">
+          <div className="mb-14 text-center sm:mb-16">
             <SectionHeading
               sub="CONTACT"
               title="物流を相談する"
@@ -305,10 +268,8 @@ export default function CompanyPage() {
             />
 
             <p className="text-sm leading-8 text-muted-foreground sm:text-base">
-              倉庫保管、発送代行、
-              <br className="sm:hidden" />
-              スポット出荷、流通加工まで。
-              <br />
+              倉庫保管、発送代行、スポット出荷、流通加工まで。
+              <br className="hidden sm:block" />
               まずはお気軽にご相談ください。
             </p>
           </div>
