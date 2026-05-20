@@ -131,9 +131,7 @@ export default function HomePage() {
               </p>
 
               <h1 className="mx-auto mt-5 text-center text-[clamp(2.4rem,8vw,6rem)] font-bold leading-[1.05] tracking-[-0.06em] text-white sm:text-7xl lg:mx-0 lg:text-left">
-                未来より
-                <br />
-                先に動く。
+                未来より先に動く。
               </h1>
 
               <p className="mx-auto mt-7 max-w-[38rem] text-[15px] leading-8 text-white/84 sm:text-lg sm:leading-9 lg:mx-0">
