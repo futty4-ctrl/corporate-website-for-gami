@@ -140,7 +140,9 @@ export default function LogisticsPage() {
                 </p>
 
                 <h1 className="mx-auto mt-5 max-w-[7.4em] text-[clamp(2rem,9vw,5.2rem)] font-bold leading-[1.1] tracking-[-0.045em] sm:max-w-none sm:leading-[1.06] lg:mx-0">
-                  物流業務をまとめて任せる。
+                  物流運送業務を
+                  <br />
+                  一括で任せる。
                 </h1>
 
                 <p className="mx-auto mt-7 max-w-[34rem] text-[15px] leading-8 text-white/82 sm:max-w-3xl sm:text-lg sm:leading-9 lg:mx-0">
