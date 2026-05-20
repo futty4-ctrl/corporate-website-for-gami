@@ -66,17 +66,17 @@ export function Footer() {
               </li>
 
               <li>
-                <a href="https://www.yuheadspa.net/" target="_blank" rel="noreferrer" className={footerLinkClass}>
-                  <span>ヘッドスパ事業</span>
-                  <span aria-hidden="true" className="transition-transform duration-300 group-hover:translate-x-1">→</span>
-                </a>
-              </li>
-
-              <li>
                 <Link href="/headspa-franchise" className={footerLinkClass}>
                   <span>ヘッドスパFC</span>
                   <span aria-hidden="true" className="transition-transform duration-300 group-hover:translate-x-1">→</span>
                 </Link>
+              </li>
+
+              <li>
+                <a href="https://www.yuheadspa.net/" target="_blank" rel="noreferrer" className={footerLinkClass}>
+                  <span>ヘッドスパ専門店ゆう本店</span>
+                  <span aria-hidden="true" className="transition-transform duration-300 group-hover:translate-x-1">→</span>
+                </a>
               </li>
 
               <li>
