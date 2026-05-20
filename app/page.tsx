@@ -116,7 +116,7 @@ export default function HomePage() {
       <Header />
 
       <main>
-        <section className="relative min-h-[680px] overflow-hidden bg-zinc-900 text-white sm:min-h-[720px]">
+        <section className="relative min-h-[650px] overflow-hidden bg-zinc-900 text-white sm:min-h-[720px]">
           <video
             autoPlay
             loop
@@ -127,19 +127,19 @@ export default function HomePage() {
             <source src="/video/hero-logistics.mp4" type="video/mp4" />
           </video>
 
-          <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/38 to-black/70" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/42 to-black/75" />
 
-          <div className="relative z-10 mx-auto flex min-h-[680px] max-w-6xl items-center justify-center px-5 py-20 text-center sm:min-h-[720px] sm:px-6 lg:justify-start lg:text-left">
+          <div className="relative z-10 mx-auto flex min-h-[650px] max-w-6xl items-center justify-center px-5 py-20 text-center sm:min-h-[720px] sm:px-6 lg:justify-start lg:text-left">
             <div className="mx-auto max-w-4xl lg:mx-0">
-              <p className="text-[10px] font-semibold tracking-[0.28em] text-amber-300 sm:text-sm">
+              <p className="text-[10px] font-semibold tracking-[0.22em] text-amber-300 sm:text-sm sm:tracking-[0.28em]">
                 LOGISTICS COMPANY / OSAKA
               </p>
 
-              <h1 className="mx-auto mt-5 max-w-[9em] text-center text-[clamp(2.1rem,9vw,5.4rem)] font-bold leading-[1.08] tracking-[-0.055em] text-balance text-white lg:mx-0 lg:text-left">
+              <h1 className="mx-auto mt-5 max-w-[7.5em] text-center text-[clamp(2rem,10vw,5.4rem)] font-bold leading-[1.12] tracking-[-0.045em] text-white sm:max-w-none sm:leading-[1.06] sm:tracking-[-0.06em] lg:mx-0 lg:text-left">
                 未来より先に動く。
               </h1>
 
-              <p className="mx-auto mt-7 max-w-[38rem] text-[15px] leading-8 text-white/84 sm:text-lg sm:leading-9 lg:mx-0">
+              <p className="mx-auto mt-7 max-w-[34rem] text-[15px] leading-8 text-white/84 sm:max-w-[42rem] sm:text-lg sm:leading-9 lg:mx-0">
                 物流運送を主軸に、倉庫保管・発送代行・流通加工まで一括対応。
                 <br className="hidden sm:block" />
                 スピードと現場対応力で、企業の物流を支える株式会社GAMIです。
@@ -172,7 +172,7 @@ export default function HomePage() {
                 </Link>
               </div>
 
-              <p className="mt-5 text-xs leading-6 text-white/65">
+              <p className="mx-auto mt-5 max-w-[19rem] text-xs leading-6 text-white/65 sm:max-w-none">
                 急な出荷・保管・発送代行も、まずは状況をお聞かせください。
               </p>
 
@@ -180,7 +180,7 @@ export default function HomePage() {
                 {heroStats.map((item) => (
                   <div
                     key={item}
-                    className="rounded-2xl border border-white/10 bg-white/5 px-4 py-4 text-center text-xs font-bold tracking-wide text-white/80 backdrop-blur"
+                    className="rounded-2xl border border-white/10 bg-white/5 px-3 py-4 text-center text-xs font-bold leading-5 tracking-wide text-white/80 backdrop-blur sm:px-4"
                   >
                     {item}
                   </div>
@@ -193,11 +193,11 @@ export default function HomePage() {
         <section className="section-gradient py-20 sm:py-28">
           <div className="mx-auto max-w-6xl px-5 text-center sm:px-6 lg:text-left">
             <div className="mx-auto max-w-3xl lg:mx-0">
-              <p className="text-sm font-semibold tracking-[0.24em] text-gold">
+              <p className="text-sm font-semibold tracking-[0.2em] text-gold sm:tracking-[0.24em]">
                 MAIN BUSINESS
               </p>
 
-              <h2 className="mt-4 text-3xl font-bold leading-[1.35] tracking-tight text-balance sm:text-5xl sm:leading-tight">
+              <h2 className="mt-4 text-[1.9rem] font-bold leading-[1.38] tracking-[-0.03em] sm:text-5xl sm:leading-tight">
                 メインは物流運送。
                 <br />
                 次にヘッドスパ事業。
@@ -212,15 +212,15 @@ export default function HomePage() {
 
             <div className="mt-12 grid gap-6 lg:grid-cols-[1.15fr_0.85fr]">
               <div className="tech-card rounded-[2rem] p-7 text-left sm:p-9">
-                <p className="text-xs font-bold tracking-[0.24em] text-gold">
+                <p className="text-xs font-bold tracking-[0.2em] text-gold sm:tracking-[0.24em]">
                   01 / MAIN BUSINESS
                 </p>
 
-                <h3 className="mt-4 text-2xl font-bold sm:text-3xl">
+                <h3 className="mt-4 text-2xl font-bold leading-snug sm:text-3xl">
                   物流運送事業
                 </h3>
 
-                <p className="mt-5 text-[15px] leading-8 text-muted-foreground sm:text-sm">
+                <p className="mt-5 text-[15px] leading-8 text-muted-foreground">
                   GAMIの中心事業です。発送代行、倉庫保管、検品、梱包、流通加工、スポット出荷まで一括対応。
                   お客様の要望によっては、24時間365日の発送対応も行っています。
                 </p>
@@ -245,15 +245,15 @@ export default function HomePage() {
               </div>
 
               <div className="tech-card rounded-[2rem] p-7 text-left sm:p-9">
-                <p className="text-xs font-bold tracking-[0.24em] text-gold">
+                <p className="text-xs font-bold tracking-[0.2em] text-gold sm:tracking-[0.24em]">
                   02 / BEAUTY BUSINESS
                 </p>
 
-                <h3 className="mt-4 text-2xl font-bold sm:text-3xl">
+                <h3 className="mt-4 text-2xl font-bold leading-snug sm:text-3xl">
                   ヘッドスパ事業
                 </h3>
 
-                <p className="mt-5 text-[15px] leading-8 text-muted-foreground sm:text-sm">
+                <p className="mt-5 text-[15px] leading-8 text-muted-foreground">
                   ヘッドスパ専門店ゆう本店の運営実績をもとに、店舗運営・技術・接客・空間づくりまで。
                   美容事業として、ヘッドスパの価値を広げています。
                 </p>
@@ -264,7 +264,7 @@ export default function HomePage() {
                       key={item.title}
                       className="rounded-2xl border border-border bg-white/70 p-5"
                     >
-                      <h4 className="font-bold">{item.title}</h4>
+                      <h4 className="font-bold leading-snug">{item.title}</h4>
 
                       <p className="mt-2 text-sm leading-7 text-muted-foreground">
                         {item.body}
@@ -290,11 +290,11 @@ export default function HomePage() {
           <div className="mx-auto max-w-6xl px-5 text-center sm:px-6 lg:text-left">
             <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
               <div>
-                <p className="text-sm font-semibold tracking-[0.24em] text-amber-300">
+                <p className="text-sm font-semibold tracking-[0.2em] text-amber-300 sm:tracking-[0.24em]">
                   RESPONSE FIRST
                 </p>
 
-                <h2 className="mt-4 text-3xl font-bold leading-[1.35] tracking-tight text-balance sm:text-5xl sm:leading-tight">
+                <h2 className="mt-4 text-[1.9rem] font-bold leading-[1.38] tracking-[-0.03em] sm:text-5xl sm:leading-tight">
                   速さは、
                   <br />
                   信頼になる。
@@ -341,11 +341,11 @@ export default function HomePage() {
 
         <section className="py-20 sm:py-28">
           <div className="mx-auto max-w-6xl px-5 text-center sm:px-6 lg:text-left">
-            <p className="text-sm font-semibold tracking-[0.24em] text-gold">
+            <p className="text-sm font-semibold tracking-[0.2em] text-gold sm:tracking-[0.24em]">
               LOGISTICS CASE
             </p>
 
-            <h2 className="mt-4 text-3xl font-bold tracking-tight text-balance sm:text-5xl">
+            <h2 className="mt-4 text-[1.9rem] font-bold leading-[1.38] tracking-[-0.03em] sm:text-5xl sm:leading-tight">
               物流対応実例
             </h2>
 
@@ -371,11 +371,11 @@ export default function HomePage() {
 
         <section className="section-gradient py-20 sm:py-28">
           <div className="mx-auto max-w-6xl px-5 text-center sm:px-6 lg:text-left">
-            <p className="text-sm font-semibold tracking-[0.24em] text-gold">
+            <p className="text-sm font-semibold tracking-[0.2em] text-gold sm:tracking-[0.24em]">
               WAREHOUSE NETWORK
             </p>
 
-            <h2 className="mt-4 text-3xl font-bold leading-[1.35] tracking-tight text-balance sm:text-5xl sm:leading-tight">
+            <h2 className="mt-4 text-[1.9rem] font-bold leading-[1.38] tracking-[-0.03em] sm:text-5xl sm:leading-tight">
               2つの倉庫で、
               <br />
               案件ベースで対応。
@@ -416,11 +416,11 @@ export default function HomePage() {
                   </div>
 
                   <div className="p-7">
-                    <p className="text-xs font-bold tracking-[0.22em] text-gold">
+                    <p className="text-xs font-bold tracking-[0.2em] text-gold sm:tracking-[0.22em]">
                       WAREHOUSE
                     </p>
 
-                    <h3 className="mt-4 text-2xl font-bold text-foreground">
+                    <h3 className="mt-4 text-2xl font-bold leading-snug text-foreground">
                       {warehouse.title}
                     </h3>
 
@@ -440,11 +440,11 @@ export default function HomePage() {
 
         <section className="py-20 sm:py-28">
           <div className="mx-auto max-w-6xl px-5 text-center sm:px-6 lg:text-left">
-            <p className="text-sm font-semibold tracking-[0.24em] text-gold">
+            <p className="text-sm font-semibold tracking-[0.2em] text-gold sm:tracking-[0.24em]">
               OTHER BUSINESS
             </p>
 
-            <h2 className="mt-4 text-3xl font-bold tracking-tight text-balance sm:text-5xl">
+            <h2 className="mt-4 text-[1.9rem] font-bold leading-[1.38] tracking-[-0.03em] sm:text-5xl sm:leading-tight">
               その他事業
             </h2>
 
@@ -459,7 +459,7 @@ export default function HomePage() {
                   key={item.title}
                   className="rounded-3xl border border-border bg-white/80 p-6 shadow-sm"
                 >
-                  <h3 className="text-lg font-bold">{item.title}</h3>
+                  <h3 className="text-lg font-bold leading-snug">{item.title}</h3>
 
                   <p className="mt-3 text-sm leading-7 text-muted-foreground">
                     {item.body}
@@ -483,11 +483,11 @@ export default function HomePage() {
           <div className="mx-auto max-w-6xl px-5 text-center sm:px-6 lg:text-left">
             <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
               <div>
-                <p className="text-sm font-semibold tracking-[0.24em] text-amber-300">
+                <p className="text-sm font-semibold tracking-[0.2em] text-amber-300 sm:tracking-[0.24em]">
                   LICENSE / QUALIFICATION
                 </p>
 
-                <h2 className="mt-4 text-3xl font-bold leading-[1.35] tracking-tight text-balance sm:text-5xl sm:leading-tight">
+                <h2 className="mt-4 text-[1.9rem] font-bold leading-[1.38] tracking-[-0.03em] sm:text-5xl sm:leading-tight">
                   信頼を支える
                   <br />
                   許認可・資格
@@ -536,11 +536,11 @@ export default function HomePage() {
 
         <section className="py-20 sm:py-28">
           <div className="mx-auto max-w-5xl px-5 text-center sm:px-6">
-            <p className="text-sm font-semibold tracking-[0.24em] text-gold">
+            <p className="text-sm font-semibold tracking-[0.2em] text-gold sm:tracking-[0.24em]">
               CONTACT
             </p>
 
-            <h2 className="mt-4 text-3xl font-bold leading-[1.35] tracking-tight text-balance sm:text-5xl sm:leading-tight">
+            <h2 className="mt-4 text-[1.9rem] font-bold leading-[1.38] tracking-[-0.03em] sm:text-5xl sm:leading-tight">
               物流のご相談は、
               <br />
               まずはGAMIへ。
