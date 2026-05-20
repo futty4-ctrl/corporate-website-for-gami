@@ -8,18 +8,20 @@ import type { Metadata } from "next"
 export const metadata: Metadata = {
   title: "会社概要",
   description:
-    "株式会社GAMIの会社概要・お問い合わせ。物流運送事業を中心に、ヘッドスパ事業、整理買取事業を展開。",
+    "株式会社GAMIの会社概要・お問い合わせ。物流運送事業を中心に、倉庫保管・発送代行・流通加工・ヘッドスパ事業を展開。",
   keywords: [
     "株式会社GAMI",
     "会社概要",
     "物流会社",
+    "発送代行",
+    "倉庫保管",
     "大阪",
     "お問い合わせ",
   ],
   openGraph: {
     title: "会社概要 | 株式会社GAMI",
     description:
-      "株式会社GAMIの会社概要・お問い合わせ。物流運送事業を中心に、ヘッドスパ事業、整理買取事業を展開。",
+      "株式会社GAMIの会社概要・お問い合わせ。物流運送事業を中心に、倉庫保管・発送代行・流通加工・ヘッドスパ事業を展開。",
     url: "/company",
     type: "website",
   },
@@ -35,14 +37,12 @@ const companyInfo = [
 
   {
     label: "主要事業",
-    value:
-      "物流運送事業\nヘッドスパ事業",
+    value: "物流運送事業\nヘッドスパ事業",
   },
 
   {
     label: "関連事業",
-    value:
-      "整理買取事業\n車事業\nオンラインショップ運営",
+    value: "車事業\nオンラインショップ運営",
   },
 
   { label: "メールアドレス", value: "k_fuchigami@gamigami.email" },
@@ -117,7 +117,6 @@ const organizationSchema = {
     "倉庫保管",
     "流通加工",
     "ヘッドスパ",
-    "整理買取",
   ],
 
   hasCredential: [
@@ -203,18 +202,16 @@ export default function CompanyPage() {
               COMPANY
             </p>
 
-            <h1 className="mx-auto mt-5 max-w-[18rem] font-serif text-[2.3rem] leading-[1.3] tracking-[0.04em] text-white sm:max-w-none sm:text-5xl md:text-6xl lg:mx-0">
-              物流を軸に、
-              <br />
-              事業を支える。
+            <h1 className="mx-auto mt-5 max-w-[20rem] font-serif text-[2.5rem] leading-[1.15] tracking-[0.02em] text-white sm:max-w-none sm:text-5xl md:text-6xl lg:mx-0">
+              未来より先に動く。
             </h1>
 
-            <p className="mx-auto mt-7 max-w-[22rem] text-[15px] leading-[2.05] text-white/80 sm:max-w-2xl sm:text-base sm:leading-8 lg:mx-0">
-              株式会社GAMIは、
+            <p className="mx-auto mt-7 max-w-[32rem] text-[15px] leading-[2.05] text-white/80 sm:max-w-2xl sm:text-base sm:leading-8 lg:mx-0">
+              物流運送を主軸に、
+              倉庫保管・発送代行・流通加工まで一括対応。
               <br />
-              物流運送事業を中心に、
-              <br />
-              ヘッドスパ事業や関連事業を展開しています。
+              スピードと現場対応力で、
+              企業の物流を支える株式会社GAMI。
             </p>
           </div>
         </section>
@@ -284,7 +281,7 @@ export default function CompanyPage() {
               <p className="text-sm leading-8 text-muted-foreground sm:text-base">
                 レスポンスと現場対応力で、
                 <br className="sm:hidden" />
-                事業を前へ進める。
+                企業の物流を前へ進める。
               </p>
             </div>
 
@@ -298,11 +295,9 @@ export default function CompanyPage() {
               現場に合わせて柔軟に対応。
               <br />
               <br />
-              また、
-              ヘッドスパ事業、
-              整理買取事業、
-              車事業など、
-              関連事業も展開しています。
+              ヘッドスパ事業やFC展開など、
+              物流以外の関連事業も展開しながら、
+              現場起点で事業を成長させています。
             </p>
           </div>
         </section>
