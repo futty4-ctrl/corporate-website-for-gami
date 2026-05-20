@@ -148,7 +148,10 @@ export default function LogisticsPage() {
                 <p className="mx-auto mt-7 max-w-[34rem] text-[15px] leading-8 text-white/82 sm:max-w-3xl sm:text-lg sm:leading-9 lg:mx-0">
                   倉庫保管・発送代行・流通加工・利用運送まで。
                   <br className="hidden sm:block" />
-                  企業の物流業務を一括対応する、大阪の物流パートナーです。
+                  <br />
+                  企業の物流業務を一括対応する、
+                  <br />
+                  大阪の物流パートナーです。
                 </p>
 
                 <div className="mx-auto mt-9 flex max-w-[22rem] flex-col gap-3 sm:max-w-none sm:flex-row sm:justify-center lg:mx-0 lg:justify-start">
