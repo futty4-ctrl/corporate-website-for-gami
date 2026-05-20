@@ -143,8 +143,8 @@ export default function LogisticsPage() {
       <Header />
 
       <main>
-        <section className="relative overflow-hidden bg-zinc-950 text-white">
-          <div className="absolute inset-0 opacity-25">
+        <section className="relative overflow-hidden bg-[#111111] text-white">
+          <div className="absolute inset-0 opacity-45">
             <div className="absolute -left-16 top-0 h-72 w-72 rounded-full bg-amber-500 blur-3xl" />
             <div className="absolute right-0 top-10 h-96 w-96 rounded-full bg-orange-400 blur-3xl" />
           </div>
@@ -158,24 +158,21 @@ export default function LogisticsPage() {
                   WAREHOUSE / TRANSPORTATION
                 </p>
 
-                <h1 className="mx-auto mt-5 max-w-[21rem] text-[clamp(2.25rem,10vw,5.4rem)] font-bold leading-[1.18] tracking-[-0.04em] sm:max-w-none sm:leading-[1.12] lg:mx-0">
-                  急ぎの物流も、
+                <h1 className="mx-auto mt-5 max-w-[21rem] text-[clamp(2.45rem,10vw,5.6rem)] font-bold leading-[1.18] tracking-[-0.04em] sm:max-w-none sm:leading-[1.12] lg:mx-0">
+                  物流を、
                   <br />
-                  保管も加工も。
-                  <br />
-                  まず動く。
+                  もっとスムーズに。
                 </h1>
 
-                <p className="mx-auto mt-7 max-w-[21rem] text-[15px] leading-[2.05] text-white/78 sm:max-w-3xl sm:text-lg sm:leading-9 lg:mx-0">
-                  株式会社GAMIは、
+                <p className="mx-auto mt-7 max-w-[21rem] text-[15px] leading-[2.05] text-white/82 sm:max-w-3xl sm:text-lg sm:leading-9 lg:mx-0">
+                  倉庫保管・流通加工・発送代行・利用運送まで。
                   <br />
-                  倉庫保管・流通加工・発送代行・利用運送まで、
+                  物流業務を一括対応する、大阪の物流会社です。
                   <br />
-                  現場に合わせて一括対応する物流パートナーです。
                   <br />
-                  レスポンスの早さと現場対応力で、
+                  定期案件から急なスポット案件まで、
                   <br />
-                  定期案件からスポット案件まで支えます。
+                  現場に合わせて柔軟に対応します。
                 </p>
 
                 <div className="mx-auto mt-9 flex max-w-[22rem] flex-col gap-3 sm:max-w-none sm:flex-row sm:justify-center lg:mx-0 lg:justify-start">
@@ -204,7 +201,7 @@ export default function LogisticsPage() {
                   {transportCases.map((item) => (
                     <div
                       key={item}
-                      className="rounded-2xl border border-white/10 bg-black/20 px-4 py-4 text-sm leading-7 text-white/85"
+                      className="rounded-[1.7rem] border border-white/10 bg-white/[0.08] px-5 py-5 text-sm leading-7 text-white/90 backdrop-blur"
                     >
                       {item}
                     </div>
@@ -248,6 +245,7 @@ export default function LogisticsPage() {
                   <h3 className="text-xl font-bold text-foreground">
                     {service.title}
                   </h3>
+
                   <p className="mt-4 text-sm leading-8 text-muted-foreground">
                     {service.body}
                   </p>
@@ -460,7 +458,7 @@ export default function LogisticsPage() {
                 <h2 className="mt-4 text-3xl font-bold leading-[1.45] tracking-tight">
                   梱包資材の見直しも
                   <br className="sm:hidden" />
-                 相談可能
+                  相談可能
                 </h2>
 
                 <p className="mt-5 text-sm leading-8 text-muted-foreground">
@@ -581,19 +579,20 @@ export default function LogisticsPage() {
             </p>
 
             <h2 className="mt-4 text-3xl font-bold leading-[1.45] tracking-tight sm:text-5xl sm:leading-tight">
-              物流の急ぎ案件も、
+              物流業務の外注先を、
               <br />
-              まずはご相談ください。
+              お探しの企業様へ。
             </h2>
 
             <p className="mx-auto mt-6 max-w-[21rem] text-[15px] leading-[2.05] text-white/70 sm:max-w-2xl sm:text-base sm:leading-8">
-              定期案件・スポット案件を問わず、
+              発送代行、倉庫保管、流通加工、
               <br />
-              最適な物流体制をご提案します。
+              スポット配送まで一括対応。
               <br />
-              どこまで任せられるか相談したい、
               <br />
-              という段階でも問題ありません。
+              まずは現在の課題や状況を
+              <br />
+              お気軽にご相談ください。
             </p>
 
             <div className="mx-auto mt-10 flex max-w-[22rem] flex-col gap-4 sm:max-w-none sm:flex-row sm:justify-center">
