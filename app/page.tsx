@@ -9,11 +9,13 @@ export const metadata = {
     "株式会社GAMIは物流運送事業を中心に、倉庫保管、発送代行、検品、梱包、流通加工、スポット出荷に対応。ヘッドスパ事業をはじめ、複数事業を展開しています。",
 }
 
-const heroBadges = [
-  "倉庫保管",
-  "発送代行",
-  "流通加工",
-  "スポット出荷",
+const heroBadges = ["倉庫保管", "発送代行", "流通加工", "スポット出荷"]
+
+const heroStats = [
+  "全国対応",
+  "365日相談対応",
+  "スポット出荷対応",
+  "物流・発送・倉庫対応",
 ]
 
 const logisticsFeatures = [
@@ -172,6 +174,17 @@ export default function HomePage() {
               <p className="mt-5 text-xs leading-6 text-white/65">
                 急な出荷・保管・発送代行も、まずは状況をお聞かせください。
               </p>
+
+              <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-4">
+                {heroStats.map((item) => (
+                  <div
+                    key={item}
+                    className="rounded-2xl border border-white/10 bg-white/5 px-4 py-4 text-center text-xs font-bold tracking-wide text-white/80 backdrop-blur"
+                  >
+                    {item}
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </section>
@@ -528,7 +541,7 @@ export default function HomePage() {
             <h2 className="mt-4 text-3xl font-bold leading-[1.35] tracking-tight sm:text-5xl sm:leading-tight">
               物流のご相談は、
               <br />
-              まず即レスで。
+              まずはGAMIへ。
             </h2>
 
             <p className="mx-auto mt-6 max-w-[34rem] text-[15px] leading-8 text-muted-foreground sm:max-w-2xl sm:text-base">
@@ -541,7 +554,7 @@ export default function HomePage() {
                 href="/company#contact"
                 className="rounded-full aurora-gradient px-8 py-4 text-sm font-bold text-white shadow-glass transition hover:opacity-90"
               >
-                お問い合わせする
+                物流を相談する
               </Link>
 
               <a
