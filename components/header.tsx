@@ -8,8 +8,8 @@ import { Menu, X } from "lucide-react"
 const navLinks = [
   { href: "/", label: "ホーム" },
   { href: "/logistics", label: "物流運送事業" },
+  { href: "https://www.yuheadspa.net/", label: "ヘッドスパ事業" },
   { href: "/headspa-franchise", label: "ヘッドスパFC" },
-  { href: "https://www.yuheadspa.net/", label: "ヘッドスパ専門店ゆう本店" },
   { href: "https://styling-garage.jp", label: "車事業" },
   { href: "https://gamistore.base.shop/", label: "オンラインショップ" },
   { href: "/company", label: "会社概要" },
@@ -116,7 +116,7 @@ export function Header() {
             href="/company#contact"
             className="group relative overflow-hidden rounded-full bg-amber-500 px-6 py-3 text-xs font-bold tracking-[0.16em] text-white shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:bg-amber-600 hover:shadow-xl active:scale-95"
           >
-            <span className="relative z-10">即レスで相談する</span>
+            <span className="relative z-10">物流を相談する</span>
 
             <span className="absolute inset-0 bg-white/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
           </Link>
@@ -149,7 +149,7 @@ export function Header() {
             className="mb-5 flex items-center justify-center rounded-full bg-amber-500 px-4 py-5 text-center text-base font-bold tracking-[0.08em] text-white shadow-lg transition-all duration-300 hover:bg-amber-600 active:scale-95"
             onClick={() => setIsOpen(false)}
           >
-            即レスで相談する
+            物流を相談する
           </Link>
 
           <ul className="flex flex-col gap-4">
