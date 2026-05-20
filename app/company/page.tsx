@@ -37,12 +37,13 @@ const companyInfo = [
 
   {
     label: "主要事業",
-    value: "物流運送事業\nヘッドスパ事業",
+    value:
+      "物流運送事業\n倉庫保管\n発送代行\n流通加工\nヘッドスパ事業",
   },
 
   {
     label: "関連事業",
-    value: "車事業\nオンラインショップ運営",
+    value: "ヘッドスパFC\n車事業\nオンラインショップ運営",
   },
 
   { label: "メールアドレス", value: "k_fuchigami@gamigami.email" },
@@ -119,34 +120,6 @@ const organizationSchema = {
     "ヘッドスパ",
   ],
 
-  hasCredential: [
-    {
-      "@type": "EducationalOccupationalCredential",
-      name: "第一種貨物利用運送事業",
-      credentialCategory: "許認可",
-      recognizedBy: {
-        "@type": "Organization",
-        name: "近畿運輸局",
-      },
-      identifier: "近運自貨第1190号",
-      description: "運送機関の種類：貨物自動車運送",
-    },
-
-    {
-      "@type": "EducationalOccupationalCredential",
-      name: "古物商許可",
-      credentialCategory: "許認可",
-      identifier: "大阪府公安委員会許可 第62229R076690号",
-    },
-
-    {
-      "@type": "EducationalOccupationalCredential",
-      name: "化粧品製造業許可",
-      credentialCategory: "許認可",
-      identifier: "27CZ201072",
-    },
-  ],
-
   sameAs: [],
 }
 
@@ -213,6 +186,22 @@ export default function CompanyPage() {
               スピードと現場対応力で、
               企業の物流を支える株式会社GAMI。
             </p>
+
+            <div className="mt-8 flex flex-wrap justify-center gap-3 lg:justify-start">
+              {[
+                "倉庫保管",
+                "発送代行",
+                "流通加工",
+                "スポット出荷",
+              ].map((item) => (
+                <div
+                  key={item}
+                  className="rounded-full border border-white/10 bg-white/10 px-4 py-2 text-xs font-bold tracking-wide text-white/85 backdrop-blur"
+                >
+                  {item}
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 
@@ -311,14 +300,14 @@ export default function CompanyPage() {
           <div className="mb-16 text-center">
             <SectionHeading
               sub="CONTACT"
-              title="お問い合わせ"
+              title="物流を相談する"
               className="mb-6"
             />
 
             <p className="text-sm leading-8 text-muted-foreground sm:text-base">
-              物流の急ぎ案件から、
+              倉庫保管、発送代行、
               <br className="sm:hidden" />
-              各種事業相談まで。
+              スポット出荷、流通加工まで。
               <br />
               まずはお気軽にご相談ください。
             </p>
