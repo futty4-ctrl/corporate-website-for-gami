@@ -8,13 +8,15 @@ import { Menu, X } from "lucide-react"
 const navLinks = [
   { href: "/", label: "ホーム" },
   { href: "/logistics", label: "物流運送事業" },
-  { href: "/headspa-franchise", label: "ヘッドスパ事業" },
+  { href: "https://www.yuheadspa.net/", label: "ヘッドスパ事業" },
   { href: "/seihin", label: "整理買取事業" },
+  { href: "https://styling-garage.jp", label: "車事業" },
+  { href: "https://gamistore.base.shop/", label: "オンラインショップ" },
   { href: "/company", label: "会社概要" },
 ]
 
 const mobileLinkClass =
-  "group flex items-center justify-between rounded-2xl border border-border/60 bg-white/70 px-4 py-4 text-sm tracking-wide text-foreground shadow-sm transition-all duration-300 hover:border-gold/40 hover:bg-muted hover:shadow-md active:scale-[0.98]"
+  "group flex items-center justify-between rounded-[1.7rem] border border-black/5 bg-white px-5 py-5 text-[15px] font-medium tracking-wide text-foreground shadow-[0_2px_12px_rgba(0,0,0,0.04)] transition-all duration-300 hover:border-amber-300/40 hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] active:scale-[0.99]"
 
 export function Header() {
   const pathname = usePathname()
@@ -22,11 +24,6 @@ export function Header() {
   const [isOpen, setIsOpen] = useState(false)
   const [logoError, setLogoError] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
-
-  const ctaLabel =
-    pathname === "/seihin"
-      ? "無料査定はこちら"
-      : "即レスで相談する"
 
   useEffect(() => {
     const onScroll = () => {
@@ -48,8 +45,8 @@ export function Header() {
     <header
       className={`sticky left-0 right-0 top-0 z-50 border-b transition-all duration-500 ${
         isScrolled
-          ? "border-white/10 bg-background/88 shadow-2xl backdrop-blur-2xl"
-          : "border-transparent bg-background/72 backdrop-blur-xl"
+          ? "border-black/5 bg-white/92 shadow-xl backdrop-blur-2xl"
+          : "border-transparent bg-white/72 backdrop-blur-xl"
       }`}
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
@@ -58,23 +55,23 @@ export function Header() {
           className="group flex items-center gap-3 transition-opacity hover:opacity-90"
           aria-label="GAMI ホーム"
         >
-          <div className="overflow-hidden rounded-full border border-border/50 bg-white/80 p-1 shadow-sm transition-all duration-300 group-hover:scale-[1.03] group-hover:shadow-md">
+          <div className="overflow-hidden rounded-full border border-black/5 bg-white p-1 shadow-sm transition-all duration-300 group-hover:scale-[1.03] group-hover:shadow-md">
             <img
               src={logoError ? "/placeholder-logo.svg" : "/images/logo.png"}
               alt="GAMI"
-              width={40}
-              height={40}
+              width={42}
+              height={42}
               onError={() => setLogoError(true)}
               className="rounded-full object-cover"
             />
           </div>
 
           <div className="leading-none">
-            <span className="block font-serif text-lg tracking-[0.24em] text-foreground sm:text-xl">
+            <span className="block font-serif text-lg tracking-[0.24em] text-black sm:text-xl">
               GAMI
             </span>
 
-            <span className="mt-1 block text-[10px] tracking-[0.18em] text-muted-foreground">
+            <span className="mt-1 block text-[10px] tracking-[0.18em] text-black/50">
               未来より先に動く。
             </span>
           </div>
@@ -90,14 +87,18 @@ export function Header() {
               pathname === link.href ||
               (link.href !== "/" && pathname.startsWith(link.href))
 
+            const external = link.href.startsWith("http")
+
             return (
               <Link
                 key={link.href}
                 href={link.href}
+                target={external ? "_blank" : undefined}
+                rel={external ? "noreferrer" : undefined}
                 className={`relative text-sm tracking-[0.08em] transition-all duration-300 ${
                   active
-                    ? "font-semibold text-foreground"
-                    : "text-muted-foreground hover:text-primary"
+                    ? "font-semibold text-black"
+                    : "text-black/60 hover:text-black"
                 }`}
               >
                 {link.label}
@@ -111,38 +112,11 @@ export function Header() {
             )
           })}
 
-          <a
-            href="https://www.yuheadspa.net/"
-            target="_blank"
-            rel="noreferrer"
-            className="text-sm tracking-[0.08em] text-muted-foreground transition-colors hover:text-primary"
-          >
-            ゆう本店
-          </a>
-
-          <a
-            href="https://styling-garage.jp"
-            target="_blank"
-            rel="noreferrer"
-            className="text-sm tracking-[0.08em] text-muted-foreground transition-colors hover:text-primary"
-          >
-            車事業
-          </a>
-
-          <a
-            href="https://gamistore.base.shop/"
-            target="_blank"
-            rel="noreferrer"
-            className="text-sm tracking-[0.08em] text-muted-foreground transition-colors hover:text-primary"
-          >
-            STORE
-          </a>
-
           <Link
             href="/company#contact"
-            className="group relative overflow-hidden rounded-full bg-amber-500 px-5 py-3 text-xs font-bold tracking-[0.16em] text-white shadow-md transition-all duration-300 hover:-translate-y-0.5 hover:bg-amber-600 hover:shadow-xl active:scale-95"
+            className="group relative overflow-hidden rounded-full bg-amber-500 px-6 py-3 text-xs font-bold tracking-[0.16em] text-white shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:bg-amber-600 hover:shadow-xl active:scale-95"
           >
-            <span className="relative z-10">{ctaLabel}</span>
+            <span className="relative z-10">即レスで相談する</span>
 
             <span className="absolute inset-0 bg-white/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
           </Link>
@@ -151,7 +125,7 @@ export function Header() {
         {/* Mobile button */}
         <button
           type="button"
-          className="flex h-11 w-11 touch-manipulation items-center justify-center rounded-full border border-border/50 bg-white/70 text-foreground shadow-sm transition-all duration-300 hover:bg-white hover:shadow-md lg:hidden"
+          className="flex h-11 w-11 touch-manipulation items-center justify-center rounded-full border border-black/5 bg-white text-black shadow-sm transition-all duration-300 hover:bg-white hover:shadow-md lg:hidden"
           onClick={() => setIsOpen(!isOpen)}
           aria-label={isOpen ? "メニューを閉じる" : "メニューを開く"}
           aria-expanded={isOpen}
@@ -167,98 +141,49 @@ export function Header() {
       {/* Mobile Menu */}
       {isOpen && (
         <nav
-          className="border-t border-border/50 bg-background/96 px-4 py-5 shadow-2xl backdrop-blur-2xl sm:px-6 lg:hidden"
+          className="border-t border-black/5 bg-[#f8f8f6] px-4 py-5 shadow-2xl backdrop-blur-2xl sm:px-6 lg:hidden"
           aria-label="モバイルナビゲーション"
         >
           <Link
             href="/company#contact"
-            className="mb-5 flex items-center justify-center rounded-full bg-amber-500 px-4 py-4 text-center text-sm font-bold tracking-[0.14em] text-white shadow-md transition-all duration-300 hover:bg-amber-600 active:scale-95"
+            className="mb-5 flex items-center justify-center rounded-full bg-amber-500 px-4 py-5 text-center text-base font-bold tracking-[0.08em] text-white shadow-lg transition-all duration-300 hover:bg-amber-600 active:scale-95"
             onClick={() => setIsOpen(false)}
           >
-            {ctaLabel}
+            即レスで相談する
           </Link>
 
-          <ul className="flex flex-col gap-3">
-            {navLinks.map((link) => (
-              <li key={link.href}>
-                <Link
-                  href={link.href}
-                  className={mobileLinkClass}
-                  onClick={() => setIsOpen(false)}
-                >
-                  <span>{link.label}</span>
+          <ul className="flex flex-col gap-4">
+            {navLinks.map((link) => {
+              const external = link.href.startsWith("http")
 
-                  <span
-                    aria-hidden="true"
-                    className="transition-transform duration-300 group-hover:translate-x-1"
+              return (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    target={external ? "_blank" : undefined}
+                    rel={external ? "noreferrer" : undefined}
+                    className={mobileLinkClass}
+                    onClick={() => setIsOpen(false)}
                   >
-                    →
-                  </span>
-                </Link>
-              </li>
-            ))}
+                    <span>{link.label}</span>
 
-            <li>
-              <a
-                href="https://www.yuheadspa.net/"
-                target="_blank"
-                rel="noreferrer"
-                className={mobileLinkClass}
-                onClick={() => setIsOpen(false)}
-              >
-                <span>
-                  ヘッドスパ専門店ゆう
-                  <br className="sm:hidden" />
-                  本店
-                </span>
-
-                <span
-                  aria-hidden="true"
-                  className="transition-transform duration-300 group-hover:translate-x-1"
-                >
-                  →
-                </span>
-              </a>
-            </li>
-
-            <li>
-              <a
-                href="https://styling-garage.jp"
-                target="_blank"
-                rel="noreferrer"
-                className={mobileLinkClass}
-                onClick={() => setIsOpen(false)}
-              >
-                <span>車事業</span>
-
-                <span
-                  aria-hidden="true"
-                  className="transition-transform duration-300 group-hover:translate-x-1"
-                >
-                  →
-                </span>
-              </a>
-            </li>
-
-            <li>
-              <a
-                href="https://gamistore.base.shop/"
-                target="_blank"
-                rel="noreferrer"
-                className={mobileLinkClass}
-                onClick={() => setIsOpen(false)}
-              >
-                <span>オンラインショップ</span>
-
-                <span
-                  aria-hidden="true"
-                  className="transition-transform duration-300 group-hover:translate-x-1"
-                >
-                  →
-                </span>
-              </a>
-            </li>
+                    <span
+                      aria-hidden="true"
+                      className="text-lg transition-transform duration-300 group-hover:translate-x-1"
+                    >
+                      →
+                    </span>
+                  </Link>
+                </li>
+              )
+            })}
           </ul>
+
+          <div className="mt-10 flex justify-center">
+            <div className="rounded-full bg-white px-6 py-3 text-sm font-semibold tracking-wide text-black shadow-sm">
+              gamigami.net
+            </div>
+          </div>
         </nav>
       )}
     </header>
