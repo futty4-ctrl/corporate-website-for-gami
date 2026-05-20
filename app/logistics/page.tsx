@@ -205,6 +205,7 @@ export default function LogisticsPage() {
 
             <p className="mx-auto mt-6 max-w-[34rem] text-[15px] leading-[1.95] text-muted-foreground sm:max-w-3xl sm:text-base lg:mx-0">
               複数業者に分けず、倉庫保管・検品・加工・梱包・配送までまとめて相談できます。
+              <br />
               現場の負担を減らし、事業のスピードを止めない物流体制をご提案します。
             </p>
 
