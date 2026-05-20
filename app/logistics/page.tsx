@@ -60,7 +60,9 @@ const warehousePoints = [
     title: "守口倉庫",
     lead: "小規模案件・機密性の高い保管に対応",
     body:
-      "細かな管理が必要な商品や、柔軟な運用が求められる案件に適した倉庫です。入出庫、検品、保管、流通加工まで、現場に合わせて対応します。",
+      "細かな管理が必要な商品や、柔軟な運用が求められる案件に適した倉庫です。
+      <br />
+      入出庫、検品、保管、流通加工まで、現場に合わせて対応します。",
     images: [
       { src: "/images/moriguchi-warehouse.jpg", alt: "守口倉庫 外観" },
       { src: "/images/moriguchi-inside.jpg", alt: "守口倉庫 内観" },
@@ -70,7 +72,9 @@ const warehousePoints = [
     title: "大阪南倉庫",
     lead: "大量保管・パレット運用に対応",
     body:
-      "物量のある案件や、長期保管・まとめ出荷に適した倉庫です。案件規模に応じて、守口倉庫と使い分けながら最適な物流体制をご提案します。",
+      "物量のある案件や、長期保管・まとめ出荷に適した倉庫です。
+      <br />
+      案件規模に応じて、守口倉庫と使い分けながら最適な物流体制をご提案します。",
     images: [
       { src: "/images/osaka-minami-warehouse.jpg", alt: "大阪南倉庫 外観" },
       { src: "/images/osaka-minami-inside.jpg", alt: "大阪南倉庫 内観" },
