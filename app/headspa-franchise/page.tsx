@@ -37,8 +37,7 @@ const pageUrl = `${siteUrl}${pagePath}`
 
 const YUU_INTERIOR_IMAGE =
   "https://www.yuheadspa.net/images/about-interior.png"
-const YUU_LOGO_IMAGE =
-  "https://www.yuheadspa.net/images/about-portrait.png"
+const YUU_LOGO_IMAGE = "https://www.yuheadspa.net/images/about-portrait.png"
 
 export const metadata: Metadata = {
   title: "ヘッドスパ専門店ゆう フランチャイズ募集｜開業支援・経営支援｜株式会社GAMI",
@@ -330,7 +329,7 @@ function PrimaryButton({
   return (
     <Link
       href={href}
-      className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-7 py-4 text-sm font-bold tracking-[0.08em] text-[#111111] shadow-[0_12px_30px_rgba(255,255,255,0.18)] transition-all hover:-translate-y-0.5 hover:bg-white/90 sm:px-8"
+      className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-7 py-3.5 text-sm font-bold tracking-[0.04em] text-[#111111] shadow-[0_12px_30px_rgba(255,255,255,0.18)] transition-all hover:-translate-y-0.5 hover:bg-white/90 sm:px-8"
     >
       {children}
       <ArrowRight className="h-4 w-4" />
@@ -368,39 +367,35 @@ export default function HeadSpaFranchisePage() {
               className="scale-[1.04] object-cover object-[50%_28%]"
             />
 
-            <div className="absolute inset-0 bg-gradient-to-r from-black/88 via-black/68 to-black/38" />
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(245,158,11,0.22),transparent_30%),linear-gradient(to_bottom,rgba(8,8,8,0.08),rgba(8,8,8,0.68))]" />
+            <div className="absolute inset-0 bg-gradient-to-r from-black/88 via-black/70 to-black/42" />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(245,158,11,0.22),transparent_30%),linear-gradient(to_bottom,rgba(8,8,8,0.08),rgba(8,8,8,0.72))]" />
 
-            <div className="relative z-10 mx-auto flex min-h-[82vh] max-w-6xl items-center px-4 py-20 sm:px-6 lg:px-8">
+            <div className="relative z-10 mx-auto flex min-h-[82vh] max-w-6xl items-center px-5 py-20 sm:px-6 lg:px-8">
               <div className="max-w-3xl text-white">
-                <p className="inline-flex items-center rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-xs tracking-[0.22em] text-white/90 backdrop-blur">
+                <p className="inline-flex items-center rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-[11px] tracking-[0.14em] text-white/90 backdrop-blur sm:text-xs sm:tracking-[0.18em]">
                   HEAD SPA FRANCHISE
                 </p>
 
-                <h1 className="mt-6 font-serif text-4xl font-semibold leading-[1.22] tracking-[0.05em] sm:text-5xl lg:text-6xl">
+                <h1 className="mt-6 text-[clamp(2.1rem,9vw,5.2rem)] font-bold leading-[1.12] tracking-[-0.045em] text-white sm:leading-[1.08]">
                   ヘッドスパ専門店ゆう
                   <br />
                   フランチャイズ募集
                 </h1>
 
-                <p className="mt-5 inline-flex rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-xs tracking-[0.15em] text-white/90">
+                <p className="mt-5 inline-flex rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-xs tracking-[0.04em] text-white/90">
                   先着5社限定で個別相談を受付中
                 </p>
 
                 <p className="mt-7 max-w-2xl text-[15px] leading-8 text-white/90 sm:text-base">
                   技術指導は
-                  <span className="font-medium text-white">
+                  <span className="font-semibold text-white">
                     ヘッドスパ専門店ゆう本店
                   </span>
                   、運営・経営支援は
-                  <span className="font-medium text-white">株式会社GAMI</span>。
-                  <br />
-                  <br />
+                  <span className="font-semibold text-white">株式会社GAMI</span>。
                   実店舗で培った高単価ヘッドスパモデルを、全国へ。
-                  <br />
                   技術・空間・経営・導線設計まで含め、
-                  “価格競争に巻き込まれない”
-                  ヘッドスパブランド展開を支援します。
+                  価格競争に巻き込まれないヘッドスパブランド展開を支援します。
                 </p>
 
                 <div className="mt-9 flex flex-wrap gap-3">
@@ -417,7 +412,7 @@ export default function HeadSpaFranchisePage() {
           </div>
         </section>
 
-        <section className="px-4 py-12 sm:px-6 lg:px-8">
+        <section className="px-5 py-12 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-6xl">
             <ScrollAnimate>
               <div className="grid gap-4 md:grid-cols-3">
@@ -426,7 +421,7 @@ export default function HeadSpaFranchisePage() {
                     key={item}
                     className="tech-card rounded-[30px] p-6 shadow-[0_18px_50px_rgba(15,23,42,0.08)] sm:p-7"
                   >
-                    <p className="text-xs tracking-[0.18em] text-accent">
+                    <p className="text-xs tracking-[0.14em] text-accent">
                       RECOMMENDED
                     </p>
 
@@ -440,16 +435,14 @@ export default function HeadSpaFranchisePage() {
           </div>
         </section>
 
-        <section className="px-4 py-20 sm:px-6 lg:px-8">
+        <section className="px-5 py-20 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-6xl">
-            <ScrollAnimate>
-              <SectionHeading
-                sub="BRAND MESSAGE"
-                title="“日常に静かな贅沢を”という価値を広げる。"
-                catchCopy="ただの施術ではなく、空間・技術・体験まで含めたブランド設計。"
-                className="mb-16"
-              />
-            </ScrollAnimate>
+            <SectionHeading
+              sub="BRAND MESSAGE"
+              title="“日常に静かな贅沢を”という価値を広げる。"
+              catchCopy="ただの施術ではなく、空間・技術・体験まで含めたブランド設計。"
+              className="mb-16"
+            />
 
             <div className="grid gap-6 md:grid-cols-3">
               {brandProofs.map((item) => (
@@ -459,7 +452,7 @@ export default function HeadSpaFranchisePage() {
                       <item.icon className="h-5 w-5 text-accent" />
                     </div>
 
-                    <h3 className="mt-5 text-lg font-medium tracking-[0.04em]">
+                    <h3 className="mt-5 text-lg font-bold leading-snug tracking-[-0.02em]">
                       {item.title}
                     </h3>
 
@@ -473,16 +466,14 @@ export default function HeadSpaFranchisePage() {
           </div>
         </section>
 
-        <section className="section-gradient px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-28">
+        <section className="section-gradient px-5 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-28">
           <div className="mx-auto max-w-6xl">
-            <ScrollAnimate>
-              <SectionHeading
-                sub="FRANCHISE CONCEPT"
-                title="技術と経営の両輪で、全国に広げる。"
-                catchCopy="ヘッドスパ専門店の強みを活かした、再現性の高いヘッドスパ事業モデル。"
-                className="mb-16"
-              />
-            </ScrollAnimate>
+            <SectionHeading
+              sub="FRANCHISE CONCEPT"
+              title="技術と経営の両輪で、全国に広げる。"
+              catchCopy="ヘッドスパ専門店の強みを活かした、再現性の高いヘッドスパ事業モデル。"
+              className="mb-16"
+            />
 
             <div className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
               <ScrollAnimate>
@@ -490,47 +481,45 @@ export default function HeadSpaFranchisePage() {
                   <div className="grid gap-6 md:grid-cols-2">
                     <div className="rounded-[28px] border border-border/70 bg-background/70 p-5">
                       <div className="flex items-center gap-3">
-                        <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-accent/10">
+                        <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-accent/10">
                           <Store className="h-5 w-5 text-accent" />
                         </div>
 
                         <div>
-                          <p className="text-xs tracking-[0.18em] text-muted-foreground">
+                          <p className="text-xs tracking-[0.12em] text-muted-foreground">
                             BRAND / FIELD
                           </p>
 
-                          <h3 className="mt-1 text-lg font-medium">
+                          <h3 className="mt-1 text-lg font-bold leading-snug">
                             ヘッドスパ専門店ゆう本店
                           </h3>
                         </div>
                       </div>
 
                       <p className="mt-4 text-sm leading-7 text-muted-foreground">
-                        完全個室・1日3名限定の高付加価値モデルを実店舗で運営しながら、
-                        技術・接客・空間づくり・継続来店につながる実践的なノウハウを伝えます。
+                        完全個室・1日3名限定の高付加価値モデルを実店舗で運営しながら、技術・接客・空間づくり・継続来店につながる実践的なノウハウを伝えます。
                       </p>
                     </div>
 
                     <div className="rounded-[28px] border border-border/70 bg-background/70 p-5">
                       <div className="flex items-center gap-3">
-                        <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-accent/10">
+                        <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-accent/10">
                           <Building2 className="h-5 w-5 text-accent" />
                         </div>
 
                         <div>
-                          <p className="text-xs tracking-[0.18em] text-muted-foreground">
+                          <p className="text-xs tracking-[0.12em] text-muted-foreground">
                             MANAGEMENT / STRATEGY
                           </p>
 
-                          <h3 className="mt-1 text-lg font-medium">
+                          <h3 className="mt-1 text-lg font-bold leading-snug">
                             株式会社GAMI
                           </h3>
                         </div>
                       </div>
 
                       <p className="mt-4 text-sm leading-7 text-muted-foreground">
-                        FCページ制作、導線設計、ホームページ制作、SEO・MEO、
-                        予約導線、経営相談まで一括で支援します。
+                        FCページ制作、導線設計、ホームページ制作、SEO・MEO、予約導線、経営相談まで一括で支援します。
                       </p>
                     </div>
                   </div>
@@ -540,13 +529,12 @@ export default function HeadSpaFranchisePage() {
                       <HeartHandshake className="mt-0.5 h-5 w-5 shrink-0 text-amber-300" />
 
                       <div>
-                        <h3 className="text-base font-medium tracking-[0.04em]">
+                        <h3 className="text-base font-bold tracking-[-0.01em]">
                           このFCモデルの核
                         </h3>
 
                         <p className="mt-3 text-sm leading-7 text-white/85">
-                          「現場でできること」と「事業として伸ばすこと」を分けずに設計している点が強みです。
-                          技術だけ、集客だけに偏らず、開業後に売上へつなげるための支援まで一体で行います。
+                          「現場でできること」と「事業として伸ばすこと」を分けずに設計している点が強みです。技術だけ、集客だけに偏らず、開業後に売上へつなげるための支援まで一体で行います。
                         </p>
                       </div>
                     </div>
@@ -568,19 +556,18 @@ export default function HeadSpaFranchisePage() {
                     <div className="absolute inset-0 bg-gradient-to-t from-[#0f1726]/80 via-[#0f1726]/20 to-transparent" />
 
                     <div className="absolute bottom-0 p-6 text-white sm:p-8">
-                      <p className="text-xs tracking-[0.2em] text-white/70">
+                      <p className="text-xs tracking-[0.14em] text-white/70">
                         FRANCHISE VISION
                       </p>
 
-                      <h3 className="mt-2 font-serif text-2xl tracking-[0.05em]">
+                      <h3 className="mt-2 text-2xl font-bold leading-tight tracking-[-0.03em]">
                         ブランドを広げ、
                         <br />
                         本店の価値も高める。
                       </h3>
 
                       <p className="mt-3 text-sm leading-7 text-white/85">
-                        フランチャイズ展開を通じて、ヘッドスパ専門店ゆうの認知と信頼を広げ、
-                        ブランド全体の価値向上につなげていきます。
+                        フランチャイズ展開を通じて、ヘッドスパ専門店ゆうの認知と信頼を広げ、ブランド全体の価値向上につなげていきます。
                       </p>
                     </div>
                   </div>
@@ -590,16 +577,14 @@ export default function HeadSpaFranchisePage() {
           </div>
         </section>
 
-        <section className="px-4 py-20 sm:px-6 lg:px-8">
+        <section className="px-5 py-20 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-6xl">
-            <ScrollAnimate>
-              <SectionHeading
-                sub="PROOF / BRAND"
-                title="実在する店舗の空気感を、そのまま強みに。"
-                catchCopy="実店舗として成立している空間・世界観・ブランド感があるから、言葉だけで終わらない。"
-                className="mb-16"
-              />
-            </ScrollAnimate>
+            <SectionHeading
+              sub="PROOF / BRAND"
+              title="実在する店舗の空気感を、そのまま強みに。"
+              catchCopy="実店舗として成立している空間・世界観・ブランド感があるから、言葉だけで終わらない。"
+              className="mb-16"
+            />
 
             <div className="grid gap-6 lg:grid-cols-[1.15fr_0.85fr]">
               <ScrollAnimate>
@@ -611,14 +596,12 @@ export default function HeadSpaFranchisePage() {
                   />
 
                   <div className="p-6 sm:p-8">
-                    <h3 className="text-xl font-medium tracking-[0.04em]">
+                    <h3 className="text-xl font-bold leading-snug tracking-[-0.02em]">
                       完全個室の施術空間
                     </h3>
 
                     <p className="mt-4 text-sm leading-7 text-muted-foreground">
-                      実際の本店では、完全個室・完全予約制・1日3名限定という運営設計で、
-                      高付加価値な体験を提供しています。価格競争ではなく、
-                      “ここで受けたい”と思われる空間づくりそのものが武器になります。
+                      実際の本店では、完全個室・完全予約制・1日3名限定という運営設計で、高付加価値な体験を提供しています。価格競争ではなく、“ここで受けたい”と思われる空間づくりそのものが武器になります。
                     </p>
                   </div>
                 </div>
@@ -631,30 +614,29 @@ export default function HeadSpaFranchisePage() {
                       <img
                         src={YUU_LOGO_IMAGE}
                         alt="ヘッドスパ専門店ゆう本店ロゴ"
-                        className="h-20 w-20 rounded-full object-cover"
+                        className="h-20 w-20 shrink-0 rounded-full object-cover"
                       />
 
                       <div>
-                        <p className="text-xs tracking-[0.18em] text-accent">
+                        <p className="text-xs tracking-[0.14em] text-accent">
                           OFFICIAL BRAND
                         </p>
 
-                        <h3 className="mt-2 text-lg font-medium tracking-[0.04em]">
+                        <h3 className="mt-2 text-lg font-bold leading-snug tracking-[-0.02em]">
                           ヘッドスパ専門店ゆう本店
                         </h3>
                       </div>
                     </div>
 
                     <p className="mt-4 text-sm leading-7 text-muted-foreground">
-                      福岡市西区豊浜で運営されている、完全個室・1日3名限定のヘッドスパ専門店。
-                      実在店舗の世界観があるからこそ、加盟検討者にも安心感を与えやすくなります。
+                      福岡市西区豊浜で運営されている、完全個室・1日3名限定のヘッドスパ専門店。実在店舗の世界観があるからこそ、加盟検討者にも安心感を与えやすくなります。
                     </p>
                   </div>
                 </ScrollAnimate>
 
                 <ScrollAnimate>
                   <div className="rounded-[30px] bg-[#111111] p-6 text-white shadow-[0_24px_60px_rgba(15,23,42,0.18)] sm:p-8">
-                    <p className="text-xs tracking-[0.18em] text-white/65">
+                    <p className="text-xs tracking-[0.14em] text-white/65">
                       STORE PROFILE
                     </p>
 
@@ -681,15 +663,15 @@ export default function HeadSpaFranchisePage() {
           </div>
         </section>
 
-        <section className="px-4 py-20 sm:px-6 sm:py-24 lg:px-8 lg:py-28">
+        <section className="px-5 py-20 sm:px-6 sm:py-24 lg:px-8 lg:py-28">
           <div className="mx-auto max-w-6xl">
             <ScrollAnimate>
               <div className="mb-10">
-                <p className="inline-flex rounded-full bg-accent/5 px-4 py-1.5 text-xs font-medium text-accent">
+                <p className="inline-flex rounded-full bg-accent/5 px-4 py-1.5 text-xs font-semibold text-accent">
                   実際の店舗実績に基づいたフランチャイズモデル
                 </p>
 
-                <h2 className="mt-5 font-serif text-2xl tracking-[0.05em] sm:text-3xl">
+                <h2 className="mt-5 text-2xl font-bold leading-[1.28] tracking-[-0.03em] sm:text-4xl">
                   なぜヘッドスパ専門店ゆうなのか
                 </h2>
 
@@ -711,19 +693,18 @@ export default function HeadSpaFranchisePage() {
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0c1423]/85 via-transparent to-transparent" />
 
                   <div className="absolute bottom-0 p-5 text-white sm:p-8">
-                    <p className="text-[11px] tracking-[0.18em] text-white/65 sm:text-xs">
+                    <p className="text-[11px] tracking-[0.14em] text-white/65 sm:text-xs">
                       LUXURY × PRIVATE
                     </p>
 
-                    <h3 className="mt-2 text-2xl font-medium leading-[1.35] tracking-[0.03em] sm:text-2xl">
+                    <h3 className="mt-2 text-2xl font-bold leading-[1.28] tracking-[-0.03em]">
                       完全予約制・完全個室
                       <br />
                       1日3名限定モデル
                     </h3>
 
                     <p className="mt-3 text-sm leading-6 text-white/82 sm:leading-7">
-                      高級感・特別感・再来店につながる体験価値を重視し、
-                      少人数でも売上を作りやすい設計を目指します。
+                      高級感・特別感・再来店につながる体験価値を重視し、少人数でも売上を作りやすい設計を目指します。
                     </p>
                   </div>
                 </div>
@@ -737,7 +718,7 @@ export default function HeadSpaFranchisePage() {
                         <item.icon className="h-5 w-5 text-accent" />
                       </div>
 
-                      <h3 className="mt-5 text-lg font-medium tracking-[0.04em]">
+                      <h3 className="mt-5 text-lg font-bold leading-snug tracking-[-0.02em]">
                         {item.title}
                       </h3>
 
@@ -752,16 +733,14 @@ export default function HeadSpaFranchisePage() {
           </div>
         </section>
 
-        <section className="px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-28">
+        <section className="px-5 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-28">
           <div className="mx-auto max-w-6xl">
-            <ScrollAnimate>
-              <SectionHeading
-                sub="WHY CHOOSE US"
-                title="選ばれる4つの理由"
-                catchCopy="技術・ブランド・経営・集客を、別々ではなく一体で支援します。"
-                className="mb-16"
-              />
-            </ScrollAnimate>
+            <SectionHeading
+              sub="WHY CHOOSE US"
+              title="選ばれる4つの理由"
+              catchCopy="技術・ブランド・経営・集客を、別々ではなく一体で支援します。"
+              className="mb-16"
+            />
 
             <div className="grid gap-6 sm:grid-cols-2">
               {strengths.map((item) => (
@@ -771,7 +750,7 @@ export default function HeadSpaFranchisePage() {
                       <item.icon className="h-5 w-5 text-accent" />
                     </div>
 
-                    <h3 className="mt-5 text-lg font-medium tracking-[0.04em]">
+                    <h3 className="mt-5 text-lg font-bold leading-snug tracking-[-0.02em]">
                       {item.title}
                     </h3>
 
@@ -785,27 +764,25 @@ export default function HeadSpaFranchisePage() {
           </div>
         </section>
 
-        <section className="border-y border-border bg-secondary/40 px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-28">
+        <section className="border-y border-border bg-secondary/40 px-5 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-28">
           <div className="mx-auto max-w-6xl">
-            <ScrollAnimate>
-              <SectionHeading
-                sub="WET / DRY"
-                title="導入形態は2パターン"
-                catchCopy="事業規模・設備・資格・目指す単価に応じて選べる設計です。"
-                className="mb-16"
-              />
-            </ScrollAnimate>
+            <SectionHeading
+              sub="WET / DRY"
+              title="導入形態は2パターン"
+              catchCopy="事業規模・設備・資格・目指す単価に応じて選べる設計です。"
+              className="mb-16"
+            />
 
             <div className="grid gap-6 lg:grid-cols-2">
               {formatTypes.map((type) => (
                 <ScrollAnimate key={type.title}>
                   <div className="tech-card h-full rounded-[30px] p-6 shadow-[0_18px_50px_rgba(15,23,42,0.08)] sm:p-8">
-                    <div className="flex items-center justify-between gap-4">
-                      <h3 className="text-xl font-medium tracking-[0.04em]">
+                    <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                      <h3 className="text-xl font-bold leading-snug tracking-[-0.02em]">
                         {type.title}
                       </h3>
 
-                      <span className="rounded-full bg-accent/10 px-3 py-1 text-xs font-medium text-accent">
+                      <span className="w-fit rounded-full bg-accent/10 px-3 py-1 text-xs font-semibold text-accent">
                         {type.label}
                       </span>
                     </div>
@@ -828,16 +805,14 @@ export default function HeadSpaFranchisePage() {
           </div>
         </section>
 
-        <section className="px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-28">
+        <section className="px-5 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-28">
           <div className="mx-auto max-w-6xl">
-            <ScrollAnimate>
-              <SectionHeading
-                sub="PLAN / PRICE"
-                title="料金体系は2プラン設計"
-                catchCopy="加盟しやすさを残しつつ、必要に応じてサポートを広げられる形に。"
-                className="mb-16"
-              />
-            </ScrollAnimate>
+            <SectionHeading
+              sub="PLAN / PRICE"
+              title="料金体系は2プラン設計"
+              catchCopy="加盟しやすさを残しつつ、必要に応じてサポートを広げられる形に。"
+              className="mb-16"
+            />
 
             <div className="grid gap-6 lg:grid-cols-2">
               {plans.map((plan, index) => (
@@ -852,7 +827,7 @@ export default function HeadSpaFranchisePage() {
                     <div className="flex items-start justify-between gap-4">
                       <div>
                         <p
-                          className={`text-xs tracking-[0.18em] ${
+                          className={`text-xs tracking-[0.14em] ${
                             index === 1
                               ? "text-white/65"
                               : "text-muted-foreground"
@@ -861,7 +836,7 @@ export default function HeadSpaFranchisePage() {
                           {index === 0 ? "STANDARD" : "FULL SUPPORT"}
                         </p>
 
-                        <h3 className="mt-2 text-2xl font-medium tracking-[0.04em]">
+                        <h3 className="mt-2 text-2xl font-bold leading-tight tracking-[-0.03em]">
                           {plan.name}
                         </h3>
                       </div>
@@ -874,7 +849,7 @@ export default function HeadSpaFranchisePage() {
                     </div>
 
                     <p
-                      className={`mt-5 text-lg font-medium ${
+                      className={`mt-5 text-lg font-bold leading-7 ${
                         index === 1 ? "text-white" : "text-foreground"
                       }`}
                     >
@@ -926,7 +901,7 @@ export default function HeadSpaFranchisePage() {
             <div className="mt-8 grid gap-6 lg:grid-cols-[1fr_0.95fr]">
               <ScrollAnimate>
                 <div className="tech-card rounded-[30px] p-6 shadow-[0_18px_50px_rgba(15,23,42,0.08)] sm:p-8">
-                  <h3 className="text-xl font-medium tracking-[0.04em]">
+                  <h3 className="text-xl font-bold leading-snug tracking-[-0.02em]">
                     オプション提案
                   </h3>
 
@@ -934,7 +909,7 @@ export default function HeadSpaFranchisePage() {
                     {options.map((option) => (
                       <div
                         key={option}
-                        className="rounded-2xl border border-border/70 bg-background/70 px-4 py-3 text-sm text-muted-foreground"
+                        className="rounded-2xl border border-border/70 bg-background/70 px-4 py-3 text-sm leading-6 text-muted-foreground"
                       >
                         {option}
                       </div>
@@ -945,19 +920,18 @@ export default function HeadSpaFranchisePage() {
 
               <ScrollAnimate>
                 <div className="rounded-[30px] bg-[#111111] p-6 text-white shadow-[0_24px_60px_rgba(15,23,42,0.18)] sm:p-8">
-                  <p className="text-xs tracking-[0.18em] text-white/65">
+                  <p className="text-xs tracking-[0.14em] text-white/65">
                     LIMITED OFFER
                   </p>
 
-                  <h3 className="mt-3 text-2xl font-medium tracking-[0.04em]">
+                  <h3 className="mt-3 text-2xl font-bold leading-tight tracking-[-0.03em]">
                     初期展開につき、
                     <br />
                     先着5社限定で個別相談を受付中
                   </h3>
 
                   <p className="mt-4 text-sm leading-7 text-white/82">
-                    初期フェーズのため、エリアや導入形態を踏まえて個別にご案内しています。
-                    ご希望地域によっては優先的にご相談を進められる場合があります。
+                    初期フェーズのため、エリアや導入形態を踏まえて個別にご案内しています。ご希望地域によっては優先的にご相談を進められる場合があります。
                   </p>
                 </div>
               </ScrollAnimate>
@@ -965,7 +939,7 @@ export default function HeadSpaFranchisePage() {
           </div>
         </section>
 
-        <section className="px-4 py-20 sm:px-6 sm:py-24 lg:px-8 lg:py-28">
+        <section className="px-5 py-20 sm:px-6 sm:py-24 lg:px-8 lg:py-28">
           <div className="mx-auto max-w-5xl">
             <ScrollAnimate>
               <div className="mb-10 overflow-hidden rounded-[32px] shadow-[0_24px_60px_rgba(15,23,42,0.18)]">
@@ -979,11 +953,11 @@ export default function HeadSpaFranchisePage() {
 
             <ScrollAnimate>
               <div className="rounded-[30px] bg-[#111111] p-6 text-white shadow-[0_24px_60px_rgba(15,23,42,0.18)] sm:p-10">
-                <p className="text-xs tracking-[0.2em] text-white/60">
+                <p className="text-xs tracking-[0.14em] text-white/60">
                   REVENUE MODEL
                 </p>
 
-                <h2 className="mt-3 font-serif text-3xl tracking-[0.05em]">
+                <h2 className="mt-3 text-3xl font-bold leading-tight tracking-[-0.03em]">
                   売上イメージ
                 </h2>
 
@@ -1017,14 +991,12 @@ export default function HeadSpaFranchisePage() {
                 </div>
 
                 <div className="mt-8 rounded-[28px] border border-white/10 bg-white/5 p-5 sm:p-6">
-                  <h3 className="text-xl font-medium tracking-[0.04em]">
+                  <h3 className="text-xl font-bold leading-snug tracking-[-0.02em]">
                     小規模でも売上を作りやすい設計
                   </h3>
 
                   <p className="mt-4 text-sm leading-7 text-white/82">
-                    条件が整えば、少人数・短時間でも売上を構築可能。
-                    高単価設計と再来店導線を組み合わせることで、
-                    無理のない運営モデルを目指せます。
+                    条件が整えば、少人数・短時間でも売上を構築可能。高単価設計と再来店導線を組み合わせることで、無理のない運営モデルを目指せます。
                   </p>
                 </div>
 
@@ -1036,7 +1008,7 @@ export default function HeadSpaFranchisePage() {
           </div>
         </section>
 
-        <section className="relative overflow-hidden bg-[#111111] px-4 py-16 text-white sm:px-6 sm:py-24 lg:px-8 lg:py-28">
+        <section className="relative overflow-hidden bg-[#111111] px-5 py-16 text-white sm:px-6 sm:py-24 lg:px-8 lg:py-28">
           <div className="absolute inset-0 opacity-20">
             <Image
               src={IMAGES.heroSpa}
@@ -1050,51 +1022,37 @@ export default function HeadSpaFranchisePage() {
           <div className="absolute inset-0 bg-[#111111]/90" />
 
           <div className="relative z-10 mx-auto max-w-6xl">
-            <ScrollAnimate>
-              <SectionHeading
-                sub="TRAINING SYSTEM"
-                title="技術研修は実店舗ベースで進める"
-                catchCopy="現場の流れに近い状態で学べるから、導入後も再現しやすい。"
-                className="mb-16 text-white [&_*]:text-white"
-              />
-            </ScrollAnimate>
+            <SectionHeading
+              sub="TRAINING SYSTEM"
+              title="技術研修は実店舗ベースで進める"
+              catchCopy="現場の流れに近い状態で学べるから、導入後も再現しやすい。"
+              className="mb-16 text-white [&_*]:text-white"
+            />
 
             <div className="grid gap-6 lg:grid-cols-[1.15fr_0.85fr]">
               <ScrollAnimate>
                 <div className="rounded-[30px] border border-white/12 bg-white/10 p-6 shadow-[0_24px_60px_rgba(15,23,42,0.18)] backdrop-blur sm:p-8">
                   <div className="space-y-5">
-                    <div className="flex gap-3">
-                      <ChevronRight className="mt-0.5 h-5 w-5 shrink-0 text-amber-300" />
+                    {[
+                      "実店舗の流れ・接客・カウンセリング・空間演出まで含めて学べるため、単なる技術講習で終わりにくいのが特徴です。",
+                      "加盟検討者にとって「誰から、どこで学べるのか」が明確で、安心して導入判断しやすくなります。",
+                      "技術だけでなく、価格設計やリピート導線につながる考え方まで共有します。",
+                    ].map((item) => (
+                      <div key={item} className="flex gap-3">
+                        <ChevronRight className="mt-0.5 h-5 w-5 shrink-0 text-amber-300" />
 
-                      <p className="text-sm leading-7 text-white/85">
-                        実店舗の流れ・接客・カウンセリング・空間演出まで含めて学べるため、
-                        単なる技術講習で終わりにくいのが特徴です。
-                      </p>
-                    </div>
-
-                    <div className="flex gap-3">
-                      <ChevronRight className="mt-0.5 h-5 w-5 shrink-0 text-amber-300" />
-
-                      <p className="text-sm leading-7 text-white/85">
-                        加盟検討者にとって「誰から、どこで学べるのか」が明確で、
-                        安心して導入判断しやすくなります。
-                      </p>
-                    </div>
-
-                    <div className="flex gap-3">
-                      <ChevronRight className="mt-0.5 h-5 w-5 shrink-0 text-amber-300" />
-
-                      <p className="text-sm leading-7 text-white/85">
-                        技術だけでなく、価格設計やリピート導線につながる考え方まで共有します。
-                      </p>
-                    </div>
+                        <p className="text-sm leading-7 text-white/85">
+                          {item}
+                        </p>
+                      </div>
+                    ))}
                   </div>
                 </div>
               </ScrollAnimate>
 
               <ScrollAnimate>
                 <div className="rounded-[30px] border border-white/12 bg-white/10 p-6 shadow-[0_24px_60px_rgba(15,23,42,0.18)] backdrop-blur sm:p-8">
-                  <h3 className="text-xl font-medium tracking-[0.04em]">
+                  <h3 className="text-xl font-bold leading-snug tracking-[-0.02em]">
                     研修でカバーしたい項目
                   </h3>
 
@@ -1122,26 +1080,24 @@ export default function HeadSpaFranchisePage() {
           </div>
         </section>
 
-        <section className="px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-28">
+        <section className="px-5 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-28">
           <div className="mx-auto max-w-6xl">
-            <ScrollAnimate>
-              <SectionHeading
-                sub="FLOW"
-                title="加盟までの流れ"
-                catchCopy="相談から開業後フォローまで、段階的に進められる設計です。"
-                className="mb-16"
-              />
-            </ScrollAnimate>
+            <SectionHeading
+              sub="FLOW"
+              title="加盟までの流れ"
+              catchCopy="相談から開業後フォローまで、段階的に進められる設計です。"
+              className="mb-16"
+            />
 
             <div className="grid gap-6 lg:grid-cols-5">
               {flow.map((item) => (
                 <ScrollAnimate key={item.step}>
                   <div className="tech-card h-full rounded-[30px] p-5 shadow-[0_18px_50px_rgba(15,23,42,0.08)] sm:p-6">
-                    <p className="text-xs tracking-[0.2em] text-accent">
+                    <p className="text-xs tracking-[0.14em] text-accent">
                       STEP {item.step}
                     </p>
 
-                    <h3 className="mt-3 text-lg font-medium tracking-[0.04em]">
+                    <h3 className="mt-3 text-lg font-bold leading-snug tracking-[-0.02em]">
                       {item.title}
                     </h3>
 
@@ -1155,22 +1111,20 @@ export default function HeadSpaFranchisePage() {
           </div>
         </section>
 
-        <section className="px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-28">
+        <section className="px-5 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-28">
           <div className="mx-auto max-w-5xl">
-            <ScrollAnimate>
-              <SectionHeading
-                sub="FAQ"
-                title="よくあるご質問"
-                catchCopy="問い合わせ前に不安を解消しやすい内容を先回りで掲載。"
-                className="mb-16"
-              />
-            </ScrollAnimate>
+            <SectionHeading
+              sub="FAQ"
+              title="よくあるご質問"
+              catchCopy="問い合わせ前に不安を解消しやすい内容を先回りで掲載。"
+              className="mb-16"
+            />
 
             <div className="space-y-4">
               {faqs.map((faq) => (
                 <ScrollAnimate key={faq.q}>
                   <div className="tech-card rounded-[30px] p-6 shadow-[0_18px_50px_rgba(15,23,42,0.08)] sm:p-7">
-                    <h3 className="text-base font-medium tracking-[0.03em]">
+                    <h3 className="text-base font-bold leading-snug tracking-[-0.02em]">
                       {faq.q}
                     </h3>
 
@@ -1184,16 +1138,14 @@ export default function HeadSpaFranchisePage() {
           </div>
         </section>
 
-        <section className="border-t border-border bg-secondary/40 px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-28">
+        <section className="border-t border-border bg-secondary/40 px-5 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-28">
           <div className="mx-auto max-w-4xl">
-            <ScrollAnimate>
-              <SectionHeading
-                sub="SHOP / BRAND"
-                title="ブランドサイト"
-                catchCopy="技術指導の背景となる店舗・ブランドの空気感もご確認いただけます。"
-                className="mb-16"
-              />
-            </ScrollAnimate>
+            <SectionHeading
+              sub="SHOP / BRAND"
+              title="ブランドサイト"
+              catchCopy="技術指導の背景となる店舗・ブランドの空気感もご確認いただけます。"
+              className="mb-16"
+            />
 
             <div className="flex justify-center">
               {shopLinks.map((shop) => (
@@ -1205,11 +1157,11 @@ export default function HeadSpaFranchisePage() {
                   className="tech-card group flex w-full max-w-md flex-col gap-3 rounded-[30px] p-5 shadow-[0_18px_50px_rgba(15,23,42,0.08)] transition-all hover:translate-y-[-2px] sm:flex-row sm:items-center sm:justify-between sm:p-6"
                 >
                   <div>
-                    <p className="text-xs tracking-[0.18em] text-muted-foreground">
+                    <p className="text-xs tracking-[0.14em] text-muted-foreground">
                       OFFICIAL SITE
                     </p>
 
-                    <p className="mt-2 text-lg font-medium tracking-[0.04em] text-foreground">
+                    <p className="mt-2 text-lg font-bold leading-snug tracking-[-0.02em] text-foreground">
                       {shop.name}
                     </p>
                   </div>
@@ -1221,33 +1173,30 @@ export default function HeadSpaFranchisePage() {
           </div>
         </section>
 
-        <section className="bg-[#111111] px-4 py-16 text-center text-white sm:px-6 sm:py-20 lg:px-8">
+        <section className="bg-[#111111] px-5 py-16 text-center text-white sm:px-6 sm:py-20 lg:px-8">
           <div className="mx-auto max-w-4xl">
-            <p className="text-xs tracking-[0.22em] text-white/70">
+            <p className="text-xs tracking-[0.16em] text-white/70">
               HEAD SPA FRANCHISE CONTACT
             </p>
 
-            <p className="mt-3 text-xs tracking-[0.18em] text-white/70">
+            <p className="mt-3 text-xs tracking-[0.12em] text-white/70">
               ※先着5社限定でのご案内となります
             </p>
 
-            <h2 className="mt-4 font-serif text-3xl tracking-[0.05em] sm:text-4xl">
+            <h2 className="mt-4 text-3xl font-bold leading-[1.25] tracking-[-0.03em] sm:text-4xl">
               まずは無料相談で、
               <br className="sm:hidden" />
               導入の可能性を整理できます
             </h2>
 
             <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-white/80 sm:text-base">
-              ウェット・ドライのどちらが合うか、必要な初期費用、
-              導入までの流れを個別にご案内します。
-              技術だけでなく、経営・導線・ホームページ・集客まで含めて、
-              事業として成り立つヘッドスパ展開を一緒に設計します。
+              ウェット・ドライのどちらが合うか、必要な初期費用、導入までの流れを個別にご案内します。技術だけでなく、経営・導線・ホームページ・集客まで含めて、事業として成り立つヘッドスパ展開を一緒に設計します。
             </p>
 
             <div className="mt-8 flex justify-center">
               <Link
                 href="/franchise-contact"
-                className="inline-flex items-center gap-2 rounded-full bg-white px-8 py-4 text-sm font-bold tracking-[0.08em] text-[#111111] shadow-[0_12px_30px_rgba(255,255,255,0.18)] transition-all hover:bg-white/90"
+                className="inline-flex items-center gap-2 rounded-full bg-white px-8 py-3.5 text-sm font-bold tracking-[0.04em] text-[#111111] shadow-[0_12px_30px_rgba(255,255,255,0.18)] transition-all hover:bg-white/90"
               >
                 無料で開業相談をする
                 <ArrowRight className="h-4 w-4" />
