@@ -16,7 +16,7 @@ const navLinks = [
 ]
 
 const mobileLinkClass =
-  "group flex items-center justify-between rounded-[1.7rem] border border-black/5 bg-white px-5 py-5 text-[15px] font-medium tracking-wide text-foreground shadow-[0_2px_12px_rgba(0,0,0,0.04)] transition-all duration-300 hover:border-amber-300/40 hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] active:scale-[0.99]"
+  "group flex items-center justify-between rounded-[1.3rem] border border-black/5 bg-white px-4 py-4 text-[14px] font-medium leading-6 tracking-[0.02em] text-foreground shadow-[0_2px_10px_rgba(0,0,0,0.04)] transition-all duration-300 hover:border-amber-300/40 hover:shadow-[0_8px_20px_rgba(0,0,0,0.06)] active:scale-[0.99]"
 
 export function Header() {
   const pathname = usePathname()
@@ -49,29 +49,29 @@ export function Header() {
           : "border-transparent bg-white/72 backdrop-blur-xl"
       }`}
     >
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-2.5 sm:px-6 sm:py-3">
         <Link
           href="/"
-          className="group flex items-center gap-3 transition-opacity hover:opacity-90"
+          className="group flex items-center gap-2.5 transition-opacity hover:opacity-90"
           aria-label="GAMI ホーム"
         >
           <div className="overflow-hidden rounded-full border border-black/5 bg-white p-1 shadow-sm transition-all duration-300 group-hover:scale-[1.03] group-hover:shadow-md">
             <img
               src={logoError ? "/placeholder-logo.svg" : "/images/logo.png"}
               alt="GAMI"
-              width={42}
-              height={42}
+              width={38}
+              height={38}
               onError={() => setLogoError(true)}
-              className="rounded-full object-cover"
+              className="rounded-full object-cover sm:h-[42px] sm:w-[42px]"
             />
           </div>
 
           <div className="leading-none">
-            <span className="block font-serif text-lg tracking-[0.24em] text-black sm:text-xl">
+            <span className="block text-[15px] font-semibold tracking-[0.14em] text-black sm:text-lg sm:tracking-[0.2em]">
               GAMI
             </span>
 
-            <span className="mt-1 block text-[10px] tracking-[0.18em] text-black/50">
+            <span className="mt-1 block text-[9px] tracking-[0.08em] text-black/50 sm:text-[10px] sm:tracking-[0.14em]">
               未来より先に動く。
             </span>
           </div>
@@ -79,7 +79,7 @@ export function Header() {
 
         {/* Desktop */}
         <nav
-          className="hidden items-center gap-6 lg:flex"
+          className="hidden items-center gap-5 lg:flex"
           aria-label="メインナビゲーション"
         >
           {navLinks.map((link) => {
@@ -95,7 +95,7 @@ export function Header() {
                 href={link.href}
                 target={external ? "_blank" : undefined}
                 rel={external ? "noreferrer" : undefined}
-                className={`relative text-sm tracking-[0.08em] transition-all duration-300 ${
+                className={`relative text-sm tracking-[0.04em] transition-all duration-300 ${
                   active
                     ? "font-semibold text-black"
                     : "text-black/60 hover:text-black"
@@ -114,7 +114,7 @@ export function Header() {
 
           <Link
             href="/company#contact"
-            className="group relative overflow-hidden rounded-full bg-amber-500 px-6 py-3 text-xs font-bold tracking-[0.16em] text-white shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:bg-amber-600 hover:shadow-xl active:scale-95"
+            className="group relative overflow-hidden rounded-full bg-amber-500 px-5 py-3 text-xs font-bold tracking-[0.08em] text-white shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:bg-amber-600 hover:shadow-xl active:scale-95"
           >
             <span className="relative z-10">物流を相談する</span>
 
@@ -125,7 +125,7 @@ export function Header() {
         {/* Mobile button */}
         <button
           type="button"
-          className="flex h-11 w-11 touch-manipulation items-center justify-center rounded-full border border-black/5 bg-white text-black shadow-sm transition-all duration-300 hover:bg-white hover:shadow-md lg:hidden"
+          className="flex h-10 w-10 touch-manipulation items-center justify-center rounded-full border border-black/5 bg-white text-black shadow-sm transition-all duration-300 hover:bg-white hover:shadow-md lg:hidden"
           onClick={() => setIsOpen(!isOpen)}
           aria-label={isOpen ? "メニューを閉じる" : "メニューを開く"}
           aria-expanded={isOpen}
@@ -141,18 +141,18 @@ export function Header() {
       {/* Mobile Menu */}
       {isOpen && (
         <nav
-          className="border-t border-black/5 bg-[#f8f8f6] px-4 py-5 shadow-2xl backdrop-blur-2xl sm:px-6 lg:hidden"
+          className="border-t border-black/5 bg-[#f8f8f6] px-4 py-4 shadow-2xl backdrop-blur-2xl sm:px-6 lg:hidden"
           aria-label="モバイルナビゲーション"
         >
           <Link
             href="/company#contact"
-            className="mb-5 flex items-center justify-center rounded-full bg-amber-500 px-4 py-5 text-center text-base font-bold tracking-[0.08em] text-white shadow-lg transition-all duration-300 hover:bg-amber-600 active:scale-95"
+            className="mb-4 flex items-center justify-center rounded-full bg-amber-500 px-4 py-4 text-center text-sm font-bold tracking-[0.04em] text-white shadow-lg transition-all duration-300 hover:bg-amber-600 active:scale-95"
             onClick={() => setIsOpen(false)}
           >
             物流を相談する
           </Link>
 
-          <ul className="flex flex-col gap-4">
+          <ul className="flex flex-col gap-3">
             {navLinks.map((link) => {
               const external = link.href.startsWith("http")
 
@@ -169,7 +169,7 @@ export function Header() {
 
                     <span
                       aria-hidden="true"
-                      className="text-lg transition-transform duration-300 group-hover:translate-x-1"
+                      className="text-base transition-transform duration-300 group-hover:translate-x-1"
                     >
                       →
                     </span>
@@ -179,8 +179,8 @@ export function Header() {
             })}
           </ul>
 
-          <div className="mt-10 flex justify-center">
-            <div className="rounded-full bg-white px-6 py-3 text-sm font-semibold tracking-wide text-black shadow-sm">
+          <div className="mt-8 flex justify-center">
+            <div className="rounded-full bg-white px-5 py-2.5 text-xs font-semibold tracking-[0.08em] text-black shadow-sm">
               gamigami.net
             </div>
           </div>
