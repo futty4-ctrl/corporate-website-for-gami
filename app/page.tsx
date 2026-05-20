@@ -130,7 +130,7 @@ export default function HomePage() {
                 LOGISTICS COMPANY / OSAKA
               </p>
 
-              <h1 className="mt-5 text-center text-[clamp(2.8rem,7vw,6.5rem)] font-bold leading-none tracking-[-0.08em] whitespace-nowrap text-white lg:text-left">
+              <h1 className="mt-5 text-center text-[clamp(2rem,6vw,5rem)] font-bold leading-none tracking-[-0.06em] whitespace-nowrap text-white lg:text-left">
   未来より先に動く。
 </h1>
 
