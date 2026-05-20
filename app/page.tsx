@@ -4,9 +4,9 @@ import Image from "next/image"
 import Link from "next/link"
 
 export const metadata = {
-  title: "株式会社GAMI｜未来より先に動く。物流運送・ヘッドスパ事業",
+  title: "株式会社GAMI｜物流運送・倉庫保管・発送代行",
   description:
-    "株式会社GAMIは物流運送事業とヘッドスパ事業を軸に、レスポンスと現場対応力を強みに事業展開しています。発送代行、倉庫保管、流通加工、化粧品関連のスポット対応、ヘッドスパ専門店運営、フランチャイズ展開まで対応。",
+    "株式会社GAMIは物流運送事業を中心に、倉庫保管、発送代行、検品、梱包、流通加工、スポット出荷に対応。ヘッドスパ事業をはじめ、整理買取、車事業、オンラインショップも展開しています。",
 }
 
 const logisticsFeatures = [
@@ -63,44 +63,20 @@ const headSpaLinks = [
 
 const otherBusinesses = [
   {
+    title: "整理買取事業",
+    body: "遺品整理・生前整理・買取まで一括対応。ご家族の想いに寄り添い、丁寧に対応します。",
+    href: "/seihin",
+    button: "詳細を見る",
+  },
+  {
     title: "車事業",
-    body: "車両販売・カスタム・関連サービスを展開。",
+    body: "車両販売・カスタム・関連サービスを展開。暮らしと事業を支える車まわりの相談に対応します。",
     href: "https://styling-garage.jp",
-    button: "関連サイトを見る",
-  },
-  {
-    title: "遺品整理・生前整理事業",
-    body: "ご家族の想いに寄り添い、整理から買取まで対応。",
-    href: "/seihin",
-    button: "整理買取を見る",
-  },
-  {
-    title: "リユース買取事業",
-    body: "不用品・リユース品の買取相談に対応。",
-    href: "/seihin",
-    button: "買取相談を見る",
-  },
-  {
-    title: "アミューズメント卸事業",
-    body: "主にパチンコ業界向けに、商品の卸を行っています。",
-    href: "/company#contact",
-    button: "相談する",
-  },
-  {
-    title: "ホームページ制作事業",
-    body: "事業導線を考えたWebサイト制作をサポート。",
-    href: "/company#contact",
-    button: "相談する",
-  },
-  {
-    title: "ビジネスマッチング事業",
-    body: "事業者同士の連携・紹介・案件相談に対応。",
-    href: "/company#contact",
-    button: "相談する",
+    button: "詳細を見る",
   },
   {
     title: "オンラインショップ",
-    body: "ギフト商品や関連商品をオンラインで販売。",
+    body: "ギフト商品や関連商品をオンラインで販売。GAMIの関連サービスをWebからご利用いただけます。",
     href: "https://gamistore.base.shop/",
     button: "ショップを見る",
   },
@@ -126,34 +102,37 @@ export default function HomePage() {
       <Header />
 
       <main>
-        <section className="relative min-h-[640px] overflow-hidden bg-zinc-950 text-white sm:min-h-[680px]">
+        <section className="relative min-h-[640px] overflow-hidden bg-zinc-900 text-white sm:min-h-[680px]">
           <video
             autoPlay
             loop
             muted
             playsInline
-            className="absolute inset-0 h-full w-full object-cover opacity-45"
+            className="absolute inset-0 h-full w-full object-cover opacity-70"
           >
             <source src="/video/hero-logistics.mp4" type="video/mp4" />
           </video>
 
-          <div className="absolute inset-0 bg-gradient-to-b from-black/75 via-black/60 to-black/85" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/45 via-black/35 to-black/55" />
 
           <div className="relative z-10 mx-auto flex min-h-[640px] max-w-6xl items-center justify-center px-5 py-20 text-center sm:min-h-[680px] sm:px-6 lg:justify-start lg:text-left">
             <div className="mx-auto max-w-4xl lg:mx-0">
               <p className="text-[10px] font-semibold tracking-[0.24em] text-amber-300 sm:text-sm">
                 GAMI INC.
                 <br className="sm:hidden" />
-                LOGISTICS & HEAD SPA
+                LOGISTICS COMPANY
               </p>
 
-              <h1 className="mx-auto mt-5 whitespace-nowrap text-center text-[clamp(2.05rem,8.2vw,5.8rem)] font-bold leading-[1.08] tracking-[-0.06em] text-white sm:text-7xl lg:mx-0 lg:text-left">
-                未来より先に動く。
+              <h1 className="mx-auto mt-5 text-center text-[clamp(2.2rem,8.2vw,5.8rem)] font-bold leading-[1.08] tracking-[-0.06em] text-white sm:text-7xl lg:mx-0 lg:text-left">
+                物流で、
+                <br />
+                事業を前へ。
               </h1>
 
-              <p className="mx-auto mt-7 max-w-[34rem] text-[15px] leading-8 text-white/82 sm:text-lg sm:leading-9 lg:mx-0">
-                物流運送とヘッドスパを主軸に、レスポンスと現場対応力を強みに事業展開する株式会社GAMI。
-                急なご相談にもまず動き、そこから最適な形をつくります。
+              <p className="mx-auto mt-7 max-w-[34rem] text-[15px] leading-8 text-white/88 sm:text-lg sm:leading-9 lg:mx-0">
+                物流運送事業を中心に、倉庫保管・発送代行・流通加工まで対応。
+                <br />
+                ヘッドスパ事業をはじめ、複数事業を展開する株式会社GAMI。
               </p>
 
               <div className="mx-auto mt-9 flex max-w-[22rem] flex-col gap-3 sm:max-w-none sm:flex-row sm:justify-center lg:mx-0 lg:justify-start">
@@ -166,21 +145,21 @@ export default function HomePage() {
 
                 <Link
                   href="/logistics"
-                  className="rounded-full border border-white/30 px-7 py-4 text-center text-sm font-bold tracking-wide text-white transition hover:bg-white/10"
+                  className="rounded-full border border-white/40 bg-white/10 px-7 py-4 text-center text-sm font-bold tracking-wide text-white backdrop-blur transition hover:bg-white/20"
                 >
                   物流運送事業を見る
                 </Link>
               </div>
 
-              <div className="mx-auto mt-10 grid max-w-[22rem] gap-3 text-xs text-white/80 sm:max-w-none sm:grid-cols-3">
-                <div className="rounded-2xl border border-white/10 bg-white/10 px-4 py-3 backdrop-blur">
-                  24時間365日対応も相談可能
+              <div className="mx-auto mt-10 grid max-w-[22rem] gap-3 text-xs text-white/90 sm:max-w-none sm:grid-cols-3">
+                <div className="rounded-2xl border border-white/15 bg-white/15 px-4 py-3 backdrop-blur">
+                  倉庫保管・発送代行
                 </div>
-                <div className="rounded-2xl border border-white/10 bg-white/10 px-4 py-3 backdrop-blur">
-                  化粧品関連のスポット対応
+                <div className="rounded-2xl border border-white/15 bg-white/15 px-4 py-3 backdrop-blur">
+                  スポット出荷に対応
                 </div>
-                <div className="rounded-2xl border border-white/10 bg-white/10 px-4 py-3 backdrop-blur">
-                  物流と美容の2本柱
+                <div className="rounded-2xl border border-white/15 bg-white/15 px-4 py-3 backdrop-blur">
+                  物流を主軸に事業展開
                 </div>
               </div>
             </div>
@@ -195,23 +174,22 @@ export default function HomePage() {
               </p>
 
               <h2 className="mt-4 text-3xl font-bold leading-[1.35] tracking-tight sm:text-5xl sm:leading-tight">
-                物流運送事業と
+                メインは物流運送。
                 <br />
-                ヘッドスパ事業。
-                <br />
-                GAMIの2本柱。
+                次にヘッドスパ事業。
               </h2>
 
               <p className="mx-auto mt-6 max-w-[34rem] text-[15px] leading-8 text-muted-foreground sm:max-w-3xl sm:text-base lg:mx-0">
-                株式会社GAMIは、物流運送事業とヘッドスパ事業を2本柱に展開しています。
-                現場対応力とレスポンスを強みに、必要なタイミングで必要な形をご提案します。
+                株式会社GAMIは、物流運送事業を主軸に展開しています。
+                発送代行、倉庫保管、検品、梱包、流通加工まで、現場に合わせて柔軟に対応。
+                ヘッドスパ事業では、実店舗運営とフランチャイズ展開を行っています。
               </p>
             </div>
 
-            <div className="mt-12 grid gap-6 lg:grid-cols-2">
+            <div className="mt-12 grid gap-6 lg:grid-cols-[1.15fr_0.85fr]">
               <div className="tech-card rounded-[2rem] p-7 text-left sm:p-9">
                 <p className="text-xs font-bold tracking-[0.24em] text-gold">
-                  01 / LOGISTICS
+                  01 / MAIN BUSINESS
                 </p>
 
                 <h3 className="mt-4 text-2xl font-bold sm:text-3xl">
@@ -219,7 +197,7 @@ export default function HomePage() {
                 </h3>
 
                 <p className="mt-5 text-[15px] leading-8 text-muted-foreground sm:text-sm">
-                  発送代行、倉庫保管、検品、梱包、流通加工、スポット出荷まで一括対応。
+                  GAMIの中心事業です。発送代行、倉庫保管、検品、梱包、流通加工、スポット出荷まで一括対応。
                   お客様の要望によっては、24時間365日の発送対応も行っています。
                 </p>
 
@@ -244,7 +222,7 @@ export default function HomePage() {
 
               <div className="tech-card rounded-[2rem] p-7 text-left sm:p-9">
                 <p className="text-xs font-bold tracking-[0.24em] text-gold">
-                  02 / HEAD SPA
+                  02 / BEAUTY BUSINESS
                 </p>
 
                 <h3 className="mt-4 text-2xl font-bold sm:text-3xl">
@@ -345,7 +323,7 @@ export default function HomePage() {
               </p>
 
               <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-5xl">
-                対応実例
+                物流対応実例
               </h2>
 
               <p className="mx-auto mt-6 max-w-[34rem] text-[15px] leading-8 text-muted-foreground sm:max-w-3xl sm:text-base lg:mx-0">
@@ -439,7 +417,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section className="section-gradient py-20 sm:py-28">
+        <section className="py-20 sm:py-28">
           <div className="mx-auto max-w-6xl px-5 text-center sm:px-6 lg:text-left">
             <div className="mx-auto max-w-3xl lg:mx-0">
               <p className="text-sm font-semibold tracking-[0.24em] text-gold">
@@ -451,8 +429,8 @@ export default function HomePage() {
               </h2>
 
               <p className="mx-auto mt-6 max-w-[34rem] text-[15px] leading-8 text-muted-foreground sm:max-w-3xl sm:text-base lg:mx-0">
-                物流・ヘッドスパを中心に、関連する複数の事業を展開しています。
-                各事業は必要に応じてご紹介し、詳細は関連ページへご案内します。
+                物流運送事業とヘッドスパ事業を中心に、関連する事業を展開しています。
+                こちらでは主な関連事業のみを簡潔にご紹介します。
               </p>
             </div>
 
@@ -544,13 +522,13 @@ export default function HomePage() {
             </p>
 
             <h2 className="mt-4 text-3xl font-bold leading-[1.35] tracking-tight sm:text-5xl sm:leading-tight">
-              まずは、
+              物流のご相談は、
               <br />
-              即レスで対応します。
+              まず即レスで。
             </h2>
 
             <p className="mx-auto mt-6 max-w-[34rem] text-[15px] leading-8 text-muted-foreground sm:max-w-2xl sm:text-base">
-              物流の急なご相談、ヘッドスパ事業、整理買取、各種事業連携まで。
+              倉庫保管、発送代行、スポット出荷、流通加工、ヘッドスパ事業、整理買取まで。
               まずは内容をお聞かせください。確認後、できるだけ早くご返信します。
             </p>
 
