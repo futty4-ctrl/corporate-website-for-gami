@@ -60,9 +60,7 @@ const warehousePoints = [
     title: "守口倉庫",
     lead: "小規模案件・機密性の高い保管に対応",
     body:
-  "細かな管理が必要な商品や、柔軟な運用が求められる案件に適した倉庫です。入出庫、検品、保管、流通加工まで、現場に合わせて対応します。",
-      <br />
-      入出庫、検品、保管、流通加工まで、現場に合わせて対応します。",
+      "細かな管理が必要な商品や、柔軟な運用が求められる案件に適した倉庫です。入出庫、検品、保管、流通加工まで、現場に合わせて対応します。",
     images: [
       { src: "/images/moriguchi-warehouse.jpg", alt: "守口倉庫 外観" },
       { src: "/images/moriguchi-inside.jpg", alt: "守口倉庫 内観" },
@@ -72,9 +70,7 @@ const warehousePoints = [
     title: "大阪南倉庫",
     lead: "大量保管・パレット運用に対応",
     body:
-  "物量のある案件や、長期保管・まとめ出荷に適した倉庫です。案件規模に応じて、守口倉庫と使い分けながら最適な物流体制をご提案します。",
-      <br />
-      案件規模に応じて、守口倉庫と使い分けながら最適な物流体制をご提案します。",
+      "物量のある案件や、長期保管・まとめ出荷に適した倉庫です。案件規模に応じて、守口倉庫と使い分けながら最適な物流体制をご提案します。",
     images: [
       { src: "/images/osaka-minami-warehouse.jpg", alt: "大阪南倉庫 外観" },
       { src: "/images/osaka-minami-inside.jpg", alt: "大阪南倉庫 内観" },
@@ -152,10 +148,7 @@ export default function LogisticsPage() {
                 <p className="mx-auto mt-7 max-w-[34rem] text-[15px] leading-8 text-white/82 sm:max-w-3xl sm:text-lg sm:leading-9 lg:mx-0">
                   倉庫保管・発送代行・流通加工・利用運送まで。
                   <br className="hidden sm:block" />
-                  <br />
-                  企業の物流業務を一括対応する、
-                  <br />
-                  大阪の物流パートナーです。
+                  企業の物流業務を一括対応する、大阪の物流パートナーです。
                 </p>
 
                 <div className="mx-auto mt-9 flex max-w-[22rem] flex-col gap-3 sm:max-w-none sm:flex-row sm:justify-center lg:mx-0 lg:justify-start">
@@ -209,13 +202,15 @@ export default function LogisticsPage() {
 
             <p className="mx-auto mt-6 max-w-[34rem] text-[15px] leading-[1.95] text-muted-foreground sm:max-w-3xl sm:text-base lg:mx-0">
               複数業者に分けず、倉庫保管・検品・加工・梱包・配送までまとめて相談できます。
-              <br />
               現場の負担を減らし、事業のスピードを止めない物流体制をご提案します。
             </p>
 
             <div className="mt-10 grid gap-6 text-left md:grid-cols-2 xl:grid-cols-4">
               {serviceCards.map((service) => (
-                <div key={service.title} className="tech-card rounded-[2rem] p-6 sm:p-7">
+                <div
+                  key={service.title}
+                  className="tech-card rounded-[2rem] p-6 sm:p-7"
+                >
                   <h3 className="text-xl font-bold leading-snug text-foreground">
                     {service.title}
                   </h3>
@@ -281,10 +276,7 @@ export default function LogisticsPage() {
 
             <p className="mx-auto mt-6 max-w-[34rem] text-[15px] leading-[1.95] text-muted-foreground sm:max-w-3xl sm:text-base lg:mx-0">
               美容商材、アパレル、食品、返礼品、EC発送まで。
-              <br />
-              商材ごとの特性に合わせ、
-              <br />
-              保管・加工・出荷を柔軟に対応します。
+              商材ごとの特性に合わせ、保管・加工・出荷を柔軟に対応します。
             </p>
 
             <div className="mt-10 flex flex-wrap justify-center gap-3 lg:justify-start">
@@ -380,7 +372,9 @@ export default function LogisticsPage() {
                   key={item.step}
                   className="rounded-3xl border border-border bg-white/80 p-6 shadow-sm"
                 >
-                  <p className="text-sm font-bold text-gold">STEP {item.step}</p>
+                  <p className="text-sm font-bold text-gold">
+                    STEP {item.step}
+                  </p>
 
                   <h3 className="mt-2 text-lg font-bold leading-snug text-foreground">
                     {item.title}
