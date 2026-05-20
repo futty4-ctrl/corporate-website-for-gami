@@ -6,8 +6,15 @@ import Link from "next/link"
 export const metadata = {
   title: "株式会社GAMI｜物流運送・倉庫保管・発送代行",
   description:
-    "株式会社GAMIは物流運送事業を中心に、倉庫保管、発送代行、検品、梱包、流通加工、スポット出荷に対応。ヘッドスパ事業をはじめ、整理買取、車事業、オンラインショップも展開しています。",
+    "株式会社GAMIは物流運送事業を中心に、倉庫保管、発送代行、検品、梱包、流通加工、スポット出荷に対応。ヘッドスパ事業をはじめ、複数事業を展開しています。",
 }
+
+const heroBadges = [
+  "倉庫保管",
+  "発送代行",
+  "流通加工",
+  "スポット出荷",
+]
 
 const logisticsFeatures = [
   "24時間365日の発送対応も相談可能",
@@ -102,68 +109,69 @@ export default function HomePage() {
       <Header />
 
       <main>
-        <section className="relative min-h-[640px] overflow-hidden bg-zinc-900 text-white sm:min-h-[680px]">
+        <section className="relative min-h-[680px] overflow-hidden bg-zinc-900 text-white sm:min-h-[720px]">
           <video
             autoPlay
             loop
             muted
             playsInline
-            className="absolute inset-0 h-full w-full object-cover opacity-70"
+            className="absolute inset-0 h-full w-full object-cover opacity-75"
           >
             <source src="/video/hero-logistics.mp4" type="video/mp4" />
           </video>
 
-          <div className="absolute inset-0 bg-gradient-to-b from-black/45 via-black/35 to-black/55" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/38 to-black/70" />
 
-          <div className="relative z-10 mx-auto flex min-h-[640px] max-w-6xl items-center justify-center px-5 py-20 text-center sm:min-h-[680px] sm:px-6 lg:justify-start lg:text-left">
+          <div className="relative z-10 mx-auto flex min-h-[680px] max-w-6xl items-center justify-center px-5 py-20 text-center sm:min-h-[720px] sm:px-6 lg:justify-start lg:text-left">
             <div className="mx-auto max-w-4xl lg:mx-0">
-              <p className="text-[10px] font-semibold tracking-[0.24em] text-amber-300 sm:text-sm">
-                GAMI INC.
-                <br className="sm:hidden" />
-                LOGISTICS COMPANY
+              <p className="text-[10px] font-semibold tracking-[0.28em] text-amber-300 sm:text-sm">
+                LOGISTICS COMPANY / OSAKA
               </p>
 
               <h1 className="mx-auto mt-5 text-center text-[clamp(2.4rem,8vw,6rem)] font-bold leading-[1.05] tracking-[-0.06em] text-white sm:text-7xl lg:mx-0 lg:text-left">
-  未来より
-  <br />
-  先に動く。
-</h1>
+                未来より
+                <br />
+                先に動く。
+              </h1>
 
-              <p className="mx-auto mt-7 max-w-[38rem] text-[15px] leading-8 text-white/82 sm:text-lg sm:leading-9 lg:mx-0">
-  物流運送を主軸に、
-  倉庫保管・発送代行・流通加工まで一括対応。
-  <br />
-  スピードと現場対応力で、
-  企業の物流を支える株式会社GAMI。
-</p>
+              <p className="mx-auto mt-7 max-w-[38rem] text-[15px] leading-8 text-white/84 sm:text-lg sm:leading-9 lg:mx-0">
+                物流運送を主軸に、
+                倉庫保管・発送代行・流通加工まで一括対応。
+                <br />
+                スピードと現場対応力で、
+                企業の物流を支える株式会社GAMI。
+              </p>
+
+              <div className="mx-auto mt-8 grid max-w-[24rem] grid-cols-2 gap-3 sm:max-w-xl sm:grid-cols-4 lg:mx-0">
+                {heroBadges.map((item) => (
+                  <div
+                    key={item}
+                    className="rounded-full border border-white/15 bg-white/12 px-4 py-3 text-center text-xs font-bold tracking-wide text-white/90 backdrop-blur"
+                  >
+                    {item}
+                  </div>
+                ))}
+              </div>
 
               <div className="mx-auto mt-9 flex max-w-[22rem] flex-col gap-3 sm:max-w-none sm:flex-row sm:justify-center lg:mx-0 lg:justify-start">
                 <Link
                   href="/company#contact"
-                  className="rounded-full bg-amber-500 px-7 py-4 text-center text-sm font-bold tracking-wide text-white shadow-lg transition hover:bg-amber-400"
+                  className="rounded-full bg-amber-500 px-8 py-4 text-center text-sm font-bold tracking-wide text-white shadow-lg transition hover:-translate-y-0.5 hover:bg-amber-400"
                 >
-                  即レスで相談する
+                  物流を相談する
                 </Link>
 
                 <Link
                   href="/logistics"
-                  className="rounded-full border border-white/40 bg-white/10 px-7 py-4 text-center text-sm font-bold tracking-wide text-white backdrop-blur transition hover:bg-white/20"
+                  className="rounded-full border border-white/40 bg-white/10 px-8 py-4 text-center text-sm font-bold tracking-wide text-white backdrop-blur transition hover:bg-white/20"
                 >
                   物流運送事業を見る
                 </Link>
               </div>
 
-              <div className="mx-auto mt-10 grid max-w-[22rem] gap-3 text-xs text-white/90 sm:max-w-none sm:grid-cols-3">
-                <div className="rounded-2xl border border-white/15 bg-white/15 px-4 py-3 backdrop-blur">
-                  倉庫保管・発送代行
-                </div>
-                <div className="rounded-2xl border border-white/15 bg-white/15 px-4 py-3 backdrop-blur">
-                  スポット出荷に対応
-                </div>
-                <div className="rounded-2xl border border-white/15 bg-white/15 px-4 py-3 backdrop-blur">
-                  物流を主軸に事業展開
-                </div>
-              </div>
+              <p className="mt-5 text-xs leading-6 text-white/65">
+                急な出荷・保管・発送代行も、まずは状況をお聞かせください。
+              </p>
             </div>
           </div>
         </section>
@@ -319,20 +327,18 @@ export default function HomePage() {
 
         <section className="py-20 sm:py-28">
           <div className="mx-auto max-w-6xl px-5 text-center sm:px-6 lg:text-left">
-            <div className="mx-auto max-w-3xl lg:mx-0">
-              <p className="text-sm font-semibold tracking-[0.24em] text-gold">
-                LOGISTICS CASE
-              </p>
+            <p className="text-sm font-semibold tracking-[0.24em] text-gold">
+              LOGISTICS CASE
+            </p>
 
-              <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-5xl">
-                物流対応実例
-              </h2>
+            <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-5xl">
+              物流対応実例
+            </h2>
 
-              <p className="mx-auto mt-6 max-w-[34rem] text-[15px] leading-8 text-muted-foreground sm:max-w-3xl sm:text-base lg:mx-0">
-                具体的なメーカー名は伏せたうえで、実際に近い取扱いイメージをご紹介します。
-                美容、アパレル、食品、返礼品、EC発送まで幅広く対応しています。
-              </p>
-            </div>
+            <p className="mx-auto mt-6 max-w-[34rem] text-[15px] leading-8 text-muted-foreground sm:max-w-3xl sm:text-base lg:mx-0">
+              具体的なメーカー名は伏せたうえで、実際に近い取扱いイメージをご紹介します。
+              美容、アパレル、食品、返礼品、EC発送まで幅広く対応しています。
+            </p>
 
             <div className="mt-10 grid gap-4 text-left sm:grid-cols-2 lg:grid-cols-3">
               {logisticsCases.map((item) => (
@@ -351,22 +357,20 @@ export default function HomePage() {
 
         <section className="section-gradient py-20 sm:py-28">
           <div className="mx-auto max-w-6xl px-5 text-center sm:px-6 lg:text-left">
-            <div className="mx-auto max-w-3xl lg:mx-0">
-              <p className="text-sm font-semibold tracking-[0.24em] text-gold">
-                WAREHOUSE NETWORK
-              </p>
+            <p className="text-sm font-semibold tracking-[0.24em] text-gold">
+              WAREHOUSE NETWORK
+            </p>
 
-              <h2 className="mt-4 text-3xl font-bold leading-[1.35] tracking-tight sm:text-5xl sm:leading-tight">
-                2つの倉庫で、
-                <br />
-                案件ベースで対応。
-              </h2>
+            <h2 className="mt-4 text-3xl font-bold leading-[1.35] tracking-tight sm:text-5xl sm:leading-tight">
+              2つの倉庫で、
+              <br />
+              案件ベースで対応。
+            </h2>
 
-              <p className="mx-auto mt-6 max-w-[34rem] text-[15px] leading-8 text-muted-foreground sm:max-w-3xl sm:text-base lg:mx-0">
-                GAMIでは、守口倉庫と大阪南倉庫の2拠点を活用し、商品特性や物量に合わせた保管・出荷体制をご提案します。
-                検品・梱包・流通加工までご相談いただけます。
-              </p>
-            </div>
+            <p className="mx-auto mt-6 max-w-[34rem] text-[15px] leading-8 text-muted-foreground sm:max-w-3xl sm:text-base lg:mx-0">
+              GAMIでは、守口倉庫と大阪南倉庫の2拠点を活用し、商品特性や物量に合わせた保管・出荷体制をご提案します。
+              検品・梱包・流通加工までご相談いただけます。
+            </p>
 
             <div className="mt-12 grid gap-8 text-left lg:grid-cols-2">
               {warehouses.map((warehouse) => (
@@ -421,20 +425,18 @@ export default function HomePage() {
 
         <section className="py-20 sm:py-28">
           <div className="mx-auto max-w-6xl px-5 text-center sm:px-6 lg:text-left">
-            <div className="mx-auto max-w-3xl lg:mx-0">
-              <p className="text-sm font-semibold tracking-[0.24em] text-gold">
-                OTHER BUSINESS
-              </p>
+            <p className="text-sm font-semibold tracking-[0.24em] text-gold">
+              OTHER BUSINESS
+            </p>
 
-              <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-5xl">
-                その他事業
-              </h2>
+            <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-5xl">
+              その他事業
+            </h2>
 
-              <p className="mx-auto mt-6 max-w-[34rem] text-[15px] leading-8 text-muted-foreground sm:max-w-3xl sm:text-base lg:mx-0">
-                物流運送事業とヘッドスパ事業を中心に、関連する事業を展開しています。
-                こちらでは主な関連事業のみを簡潔にご紹介します。
-              </p>
-            </div>
+            <p className="mx-auto mt-6 max-w-[34rem] text-[15px] leading-8 text-muted-foreground sm:max-w-3xl sm:text-base lg:mx-0">
+              物流運送事業とヘッドスパ事業を中心に、関連する事業を展開しています。
+              こちらでは主な関連事業のみを簡潔にご紹介します。
+            </p>
 
             <div className="mt-10 grid gap-5 text-left sm:grid-cols-2 lg:grid-cols-3">
               {otherBusinesses.map((item) => (
