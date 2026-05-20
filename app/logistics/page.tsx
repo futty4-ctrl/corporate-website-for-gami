@@ -277,7 +277,10 @@ export default function LogisticsPage() {
 
             <p className="mx-auto mt-6 max-w-[34rem] text-[15px] leading-[1.95] text-muted-foreground sm:max-w-3xl sm:text-base lg:mx-0">
               美容商材、アパレル、食品、返礼品、EC発送まで。
-              商材ごとの特性に合わせ、保管・加工・出荷を柔軟に対応します。
+              <br />
+              商材ごとの特性に合わせ、
+              <br />
+              保管・加工・出荷を柔軟に対応します。
             </p>
 
             <div className="mt-10 flex flex-wrap justify-center gap-3 lg:justify-start">
