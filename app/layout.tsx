@@ -22,43 +22,40 @@ export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   maximumScale: 5,
-  themeColor: "#000000",
+  themeColor: "#111111",
 }
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://gamigami.net"),
 
   title: {
-    default: "株式会社GAMI｜未来より先に動く。",
+    default: "株式会社GAMI｜大阪の物流会社・発送代行・倉庫保管",
     template: "%s｜株式会社GAMI",
   },
 
   description:
-    "株式会社GAMIは、大阪を拠点に物流運送事業・ヘッドスパ事業を中心に展開。レスポンスと現場対応力を強みに、発送代行・倉庫保管・流通加工・美容事業まで幅広く対応しています。",
+    "株式会社GAMIは大阪を拠点に、物流運送事業を中心として発送代行・倉庫保管・流通加工・スポット出荷に対応。ヘッドスパ事業、整理買取事業、車事業、オンラインショップも展開しています。",
 
   keywords: [
     "株式会社GAMI",
     "物流会社 大阪",
-    "発送代行",
-    "倉庫保管",
-    "流通加工",
+    "大阪 物流会社",
+    "発送代行 大阪",
+    "倉庫保管 大阪",
+    "流通加工 大阪",
     "EC発送代行",
     "物流運送",
-    "ヘッドスパ",
-    "ヘッドスパ専門店",
-    "リユース買取",
-    "生前整理",
+    "スポット出荷",
+    "利用運送",
+    "ヘッドスパ事業",
+    "整理買取",
     "遺品整理",
+    "生前整理",
+    "車事業",
   ],
 
-  authors: [
-    {
-      name: "株式会社GAMI",
-    },
-  ],
-
+  authors: [{ name: "株式会社GAMI" }],
   creator: "株式会社GAMI",
-
   publisher: "株式会社GAMI",
 
   alternates: {
@@ -68,7 +65,6 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
-
     googleBot: {
       index: true,
       follow: true,
@@ -89,30 +85,24 @@ export const metadata: Metadata = {
     locale: "ja_JP",
     url: "https://gamigami.net",
     siteName: "株式会社GAMI",
-
-    title: "株式会社GAMI｜未来より先に動く。",
-
+    title: "株式会社GAMI｜大阪の物流会社・発送代行・倉庫保管",
     description:
-      "物流運送事業とヘッドスパ事業を軸に、レスポンスと現場対応力で事業を支える株式会社GAMI。発送代行・倉庫保管・流通加工・スポット出荷まで対応。",
-
+      "大阪を拠点に、発送代行・倉庫保管・流通加工・スポット出荷まで対応する株式会社GAMI。物流運送事業を中心に、ヘッドスパ事業なども展開しています。",
     images: [
       {
         url: "/ogp.jpg",
         width: 1200,
         height: 630,
-        alt: "株式会社GAMI",
+        alt: "株式会社GAMI｜大阪の物流会社",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-
-    title: "株式会社GAMI｜未来より先に動く。",
-
+    title: "株式会社GAMI｜大阪の物流会社・発送代行・倉庫保管",
     description:
-      "物流運送事業とヘッドスパ事業を軸に、レスポンスと現場対応力で事業を支える株式会社GAMI。",
-
+      "発送代行・倉庫保管・流通加工・スポット出荷まで対応する大阪の物流会社、株式会社GAMI。",
     images: ["/ogp.jpg"],
   },
 }
@@ -125,7 +115,7 @@ export default function RootLayout({
   return (
     <html lang="ja" suppressHydrationWarning>
       <body
-        className={`${notoSansJP.variable} ${notoSerifJP.variable} font-sans antialiased bg-white text-[#0f172a]`}
+        className={`${notoSansJP.variable} ${notoSerifJP.variable} bg-[#fbfaf7] font-sans text-[#111111] antialiased`}
       >
         {children}
       </body>
