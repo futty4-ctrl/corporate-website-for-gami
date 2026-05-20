@@ -15,16 +15,16 @@ const heroStats = [
   "全国対応",
   "365日相談対応",
   "スポット出荷対応",
-  "物流・発送・倉庫対応",
+  "物流・倉庫対応",
 ]
 
 const logisticsFeatures = [
   "24時間365日の発送対応も相談可能",
   "急なスポット出荷・短納期案件に対応",
-  "化粧品製造業許可を活かした化粧品関連対応",
+  "化粧品製造業許可を活かした関連対応",
   "倉庫保管・検品・梱包・流通加工まで一括対応",
   "EC発送・返礼品発送・食品発送にも対応",
-  "レスポンス重視で確認から実行までが速い",
+  "確認から実行までのレスポンスが速い",
 ]
 
 const logisticsCases = [
@@ -58,13 +58,15 @@ const warehouses = [
 const headSpaLinks = [
   {
     title: "ヘッドスパ専門店ゆう 本店",
-    body: "完全個室・完全予約制のヘッドスパ専門店。実店舗で培った技術・接客・空間設計が、GAMIの美容事業の核です。",
+    body:
+      "完全個室・完全予約制のヘッドスパ専門店。実店舗で培った技術・接客・空間設計が、GAMIの美容事業の核です。",
     href: "https://www.yuheadspa.net/",
     button: "本店サイトを見る",
   },
   {
     title: "ヘッドスパフランチャイズ",
-    body: "店舗運営、技術研修、メニュー設計、開業支援まで。実店舗の経験をもとに、ヘッドスパ事業の展開を支援します。",
+    body:
+      "店舗運営、技術研修、メニュー設計、開業支援まで。実店舗の経験をもとに、ヘッドスパ事業の展開を支援します。",
     href: "/headspa-franchise",
     button: "FC事業を見る",
   },
@@ -73,19 +75,22 @@ const headSpaLinks = [
 const otherBusinesses = [
   {
     title: "整理買取事業",
-    body: "遺品整理・生前整理・買取まで一括対応。ご家族の想いに寄り添い、丁寧に対応します。",
+    body:
+      "遺品整理・生前整理・買取まで一括対応。ご家族の想いに寄り添い、丁寧に対応します。",
     href: "/seihin",
     button: "詳細を見る",
   },
   {
     title: "車事業",
-    body: "車両販売・カスタム・関連サービスを展開。暮らしと事業を支える車まわりの相談に対応します。",
+    body:
+      "車両販売・カスタム・関連サービスを展開。暮らしと事業を支える車まわりの相談に対応します。",
     href: "https://styling-garage.jp",
     button: "詳細を見る",
   },
   {
     title: "オンラインショップ",
-    body: "ギフト商品や関連商品をオンラインで販売。GAMIの関連サービスをWebからご利用いただけます。",
+    body:
+      "ギフト商品や関連商品をオンラインで販売。GAMIの関連サービスをWebからご利用いただけます。",
     href: "https://gamistore.base.shop/",
     button: "ショップを見る",
   },
@@ -130,16 +135,14 @@ export default function HomePage() {
                 LOGISTICS COMPANY / OSAKA
               </p>
 
-              <h1 className="mt-5 text-center text-[clamp(2rem,6vw,5rem)] font-bold leading-none tracking-[-0.06em] whitespace-nowrap text-white lg:text-left">
-  未来より先に動く。
-</h1>
+              <h1 className="mx-auto mt-5 max-w-[9em] text-center text-[clamp(2.1rem,9vw,5.4rem)] font-bold leading-[1.08] tracking-[-0.055em] text-balance text-white lg:mx-0 lg:text-left">
+                未来より先に動く。
+              </h1>
 
               <p className="mx-auto mt-7 max-w-[38rem] text-[15px] leading-8 text-white/84 sm:text-lg sm:leading-9 lg:mx-0">
-                物流運送を主軸に、
-                倉庫保管・発送代行・流通加工まで一括対応。
-                <br />
-                スピードと現場対応力で、
-                企業の物流を支える株式会社GAMI。
+                物流運送を主軸に、倉庫保管・発送代行・流通加工まで一括対応。
+                <br className="hidden sm:block" />
+                スピードと現場対応力で、企業の物流を支える株式会社GAMIです。
               </p>
 
               <div className="mx-auto mt-8 grid max-w-[24rem] grid-cols-2 gap-3 sm:max-w-xl sm:grid-cols-4 lg:mx-0">
@@ -194,7 +197,7 @@ export default function HomePage() {
                 MAIN BUSINESS
               </p>
 
-              <h2 className="mt-4 text-3xl font-bold leading-[1.35] tracking-tight sm:text-5xl sm:leading-tight">
+              <h2 className="mt-4 text-3xl font-bold leading-[1.35] tracking-tight text-balance sm:text-5xl sm:leading-tight">
                 メインは物流運送。
                 <br />
                 次にヘッドスパ事業。
@@ -291,7 +294,7 @@ export default function HomePage() {
                   RESPONSE FIRST
                 </p>
 
-                <h2 className="mt-4 text-3xl font-bold leading-[1.35] tracking-tight sm:text-5xl sm:leading-tight">
+                <h2 className="mt-4 text-3xl font-bold leading-[1.35] tracking-tight text-balance sm:text-5xl sm:leading-tight">
                   速さは、
                   <br />
                   信頼になる。
@@ -307,28 +310,28 @@ export default function HomePage() {
                 <div className="rounded-3xl border border-white/10 bg-white/[0.06] p-6">
                   <p className="text-3xl font-bold text-amber-300">24/365</p>
                   <p className="mt-3 text-sm leading-7 text-white/70">
-                    ご要望に応じて、24時間365日の発送対応も相談可能。
+                    ご要望に応じて、24時間365日の発送対応も相談可能です。
                   </p>
                 </div>
 
                 <div className="rounded-3xl border border-white/10 bg-white/[0.06] p-6">
                   <p className="text-3xl font-bold text-amber-300">SPOT</p>
                   <p className="mt-3 text-sm leading-7 text-white/70">
-                    急な出荷、繁忙期、短納期、化粧品関連のスポット対応にも対応。
+                    急な出荷、繁忙期、短納期、化粧品関連のスポット対応にも対応します。
                   </p>
                 </div>
 
                 <div className="rounded-3xl border border-white/10 bg-white/[0.06] p-6">
                   <p className="text-3xl font-bold text-amber-300">EC</p>
                   <p className="mt-3 text-sm leading-7 text-white/70">
-                    EC商品、食品、返礼品、美容商材など幅広い発送実績。
+                    EC商品、食品、返礼品、美容商材など、幅広い発送実績があります。
                   </p>
                 </div>
 
                 <div className="rounded-3xl border border-white/10 bg-white/[0.06] p-6">
                   <p className="text-3xl font-bold text-amber-300">ONE STOP</p>
                   <p className="mt-3 text-sm leading-7 text-white/70">
-                    保管、検品、梱包、加工、配送までまとめて相談可能。
+                    保管、検品、梱包、加工、配送まで、まとめてご相談いただけます。
                   </p>
                 </div>
               </div>
@@ -342,13 +345,13 @@ export default function HomePage() {
               LOGISTICS CASE
             </p>
 
-            <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-5xl">
+            <h2 className="mt-4 text-3xl font-bold tracking-tight text-balance sm:text-5xl">
               物流対応実例
             </h2>
 
             <p className="mx-auto mt-6 max-w-[34rem] text-[15px] leading-8 text-muted-foreground sm:max-w-3xl sm:text-base lg:mx-0">
               具体的なメーカー名は伏せたうえで、実際に近い取扱いイメージをご紹介します。
-              美容、アパレル、食品、返礼品、EC発送まで幅広く対応しています。
+              美容、アパレル、食品、返礼品、EC発送まで、幅広く対応しています。
             </p>
 
             <div className="mt-10 grid gap-4 text-left sm:grid-cols-2 lg:grid-cols-3">
@@ -372,14 +375,15 @@ export default function HomePage() {
               WAREHOUSE NETWORK
             </p>
 
-            <h2 className="mt-4 text-3xl font-bold leading-[1.35] tracking-tight sm:text-5xl sm:leading-tight">
+            <h2 className="mt-4 text-3xl font-bold leading-[1.35] tracking-tight text-balance sm:text-5xl sm:leading-tight">
               2つの倉庫で、
               <br />
               案件ベースで対応。
             </h2>
 
             <p className="mx-auto mt-6 max-w-[34rem] text-[15px] leading-8 text-muted-foreground sm:max-w-3xl sm:text-base lg:mx-0">
-              GAMIでは、守口倉庫と大阪南倉庫の2拠点を活用し、商品特性や物量に合わせた保管・出荷体制をご提案します。
+              GAMIでは、守口倉庫と大阪南倉庫の2拠点を活用。
+              商品特性や物量に合わせた、保管・出荷体制をご提案します。
               検品・梱包・流通加工までご相談いただけます。
             </p>
 
@@ -440,13 +444,13 @@ export default function HomePage() {
               OTHER BUSINESS
             </p>
 
-            <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-5xl">
+            <h2 className="mt-4 text-3xl font-bold tracking-tight text-balance sm:text-5xl">
               その他事業
             </h2>
 
             <p className="mx-auto mt-6 max-w-[34rem] text-[15px] leading-8 text-muted-foreground sm:max-w-3xl sm:text-base lg:mx-0">
               物流運送事業とヘッドスパ事業を中心に、関連する事業を展開しています。
-              こちらでは主な関連事業のみを簡潔にご紹介します。
+              こちらでは、主な関連事業のみを簡潔にご紹介します。
             </p>
 
             <div className="mt-10 grid gap-5 text-left sm:grid-cols-2 lg:grid-cols-3">
@@ -483,7 +487,7 @@ export default function HomePage() {
                   LICENSE / QUALIFICATION
                 </p>
 
-                <h2 className="mt-4 text-3xl font-bold leading-[1.35] tracking-tight sm:text-5xl sm:leading-tight">
+                <h2 className="mt-4 text-3xl font-bold leading-[1.35] tracking-tight text-balance sm:text-5xl sm:leading-tight">
                   信頼を支える
                   <br />
                   許認可・資格
@@ -536,7 +540,7 @@ export default function HomePage() {
               CONTACT
             </p>
 
-            <h2 className="mt-4 text-3xl font-bold leading-[1.35] tracking-tight sm:text-5xl sm:leading-tight">
+            <h2 className="mt-4 text-3xl font-bold leading-[1.35] tracking-tight text-balance sm:text-5xl sm:leading-tight">
               物流のご相談は、
               <br />
               まずはGAMIへ。
