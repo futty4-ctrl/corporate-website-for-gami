@@ -4,17 +4,17 @@ import Link from "next/link"
 import { useState } from "react"
 
 const footerLinkClass =
-  "group flex items-center justify-between rounded-2xl border border-border/70 bg-white/60 px-4 py-3 text-sm text-muted-foreground shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-gold/40 hover:bg-muted hover:text-primary hover:shadow-md active:scale-[0.98]"
+  "group flex items-center justify-between rounded-[1.6rem] border border-black/5 bg-white px-5 py-4 text-sm text-black/70 shadow-[0_2px_12px_rgba(0,0,0,0.04)] transition-all duration-300 hover:-translate-y-0.5 hover:border-amber-300/40 hover:text-black hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] active:scale-[0.98]"
 
 export function Footer() {
   const [logoError, setLogoError] = useState(false)
 
   return (
-    <footer className="border-t border-border bg-card text-foreground">
-      <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-16">
-        <div className="grid gap-12 text-center md:grid-cols-[1.15fr_1fr_1fr] md:gap-10 md:text-left">
+    <footer className="border-t border-black/5 bg-[#f8f8f6] text-black">
+      <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
+        <div className="grid gap-14 text-center md:grid-cols-[1.15fr_1fr_1fr] md:gap-12 md:text-left">
           {/* Brand */}
-          <div className="flex flex-col items-center gap-5 md:items-start">
+          <div className="flex flex-col items-center gap-6 md:items-start">
             <Link
               href="/"
               className="flex items-center gap-3 transition-opacity hover:opacity-80"
@@ -23,70 +23,65 @@ export function Footer() {
               <img
                 src={logoError ? "/placeholder-logo.svg" : "/images/logo.png"}
                 alt="GAMI"
-                width={38}
-                height={38}
+                width={42}
+                height={42}
                 onError={() => setLogoError(true)}
                 className="rounded-full"
               />
 
-              <span className="font-serif text-xl tracking-[0.18em]">
+              <span className="font-serif text-2xl tracking-[0.22em]">
                 GAMI
               </span>
             </Link>
 
-            <p className="max-w-[20rem] text-sm leading-8 tracking-wide text-muted-foreground md:max-w-none">
-              <span className="text-base font-semibold text-foreground">
-                未来より先に動く。
+            <p className="max-w-[24rem] text-sm leading-8 tracking-wide text-black/60 md:max-w-none">
+              <span className="text-base font-semibold text-black">
+                物流で、事業を前へ。
               </span>
 
               <br />
 
-              物流運送事業と
-              <br className="sm:hidden" />
-              ヘッドスパ事業を軸に、
+              株式会社GAMIは、
               <br />
-              レスポンスと現場対応力を強みに
-              <br className="sm:hidden" />
-              展開する株式会社GAMI。
+              物流運送事業を中心に、
+              <br />
+              倉庫保管・発送代行・流通加工まで対応。
+              <br />
+              ヘッドスパ事業をはじめ、
+              <br />
+              複数事業を展開しています。
             </p>
 
             <div className="flex flex-wrap justify-center gap-2 md:justify-start">
-              <span className="rounded-full border border-border bg-white px-3 py-1 text-[11px] font-medium text-muted-foreground shadow-sm">
+              <span className="rounded-full border border-black/5 bg-white px-4 py-1.5 text-[11px] font-medium text-black/60 shadow-sm">
                 物流運送
               </span>
 
-              <span className="rounded-full border border-border bg-white px-3 py-1 text-[11px] font-medium text-muted-foreground shadow-sm">
-                ヘッドスパ
+              <span className="rounded-full border border-black/5 bg-white px-4 py-1.5 text-[11px] font-medium text-black/60 shadow-sm">
+                発送代行
               </span>
 
-              <span className="rounded-full border border-border bg-white px-3 py-1 text-[11px] font-medium text-muted-foreground shadow-sm">
-                発送代行
+              <span className="rounded-full border border-black/5 bg-white px-4 py-1.5 text-[11px] font-medium text-black/60 shadow-sm">
+                倉庫保管
+              </span>
+
+              <span className="rounded-full border border-black/5 bg-white px-4 py-1.5 text-[11px] font-medium text-black/60 shadow-sm">
+                ヘッドスパ
               </span>
             </div>
           </div>
 
           {/* Business */}
           <div>
-            <h3 className="mb-5 text-xs font-medium tracking-[0.28em] text-gold">
-              事業内容
+            <h3 className="mb-6 text-xs font-semibold tracking-[0.30em] text-amber-500">
+              BUSINESS
             </h3>
 
-            <ul className="flex flex-col gap-2 text-left">
+            <ul className="flex flex-col gap-3 text-left">
               <li>
                 <Link href="/logistics" className={footerLinkClass}>
                   <span>物流運送事業</span>
-                  <span
-                    aria-hidden="true"
-                    className="transition-transform duration-300 group-hover:translate-x-1"
-                  >
-                    →
-                  </span>
-                </Link>
-              </li>
 
-              <li>
-                <Link href="/headspa-franchise" className={footerLinkClass}>
-                  <span>ヘッドスパフランチャイズ</span>
                   <span
                     aria-hidden="true"
                     className="transition-transform duration-300 group-hover:translate-x-1"
@@ -103,24 +98,8 @@ export function Footer() {
                   rel="noreferrer"
                   className={footerLinkClass}
                 >
-                  <span>ヘッドスパ専門店ゆう 本店</span>
-                  <span
-                    aria-hidden="true"
-                    className="transition-transform duration-300 group-hover:translate-x-1"
-                  >
-                    →
-                  </span>
-                </a>
-              </li>
+                  <span>ヘッドスパ事業</span>
 
-              <li>
-                <a
-                  href="https://styling-garage.jp"
-                  target="_blank"
-                  rel="noreferrer"
-                  className={footerLinkClass}
-                >
-                  <span>車事業</span>
                   <span
                     aria-hidden="true"
                     className="transition-transform duration-300 group-hover:translate-x-1"
@@ -132,11 +111,7 @@ export function Footer() {
 
               <li>
                 <Link href="/seihin" className={footerLinkClass}>
-                  <span>
-                    遺品整理・生前整理
-                    <br className="sm:hidden" />
-                    / リユース買取
-                  </span>
+                  <span>整理買取事業</span>
 
                   <span
                     aria-hidden="true"
@@ -145,6 +120,24 @@ export function Footer() {
                     →
                   </span>
                 </Link>
+              </li>
+
+              <li>
+                <a
+                  href="https://styling-garage.jp"
+                  target="_blank"
+                  rel="noreferrer"
+                  className={footerLinkClass}
+                >
+                  <span>車事業</span>
+
+                  <span
+                    aria-hidden="true"
+                    className="transition-transform duration-300 group-hover:translate-x-1"
+                  >
+                    →
+                  </span>
+                </a>
               </li>
 
               <li>
@@ -169,21 +162,21 @@ export function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="mb-5 text-xs font-medium tracking-[0.28em] text-gold">
-              お問い合わせ
+            <h3 className="mb-6 text-xs font-semibold tracking-[0.30em] text-amber-500">
+              CONTACT
             </h3>
 
-            <p className="mx-auto max-w-[20rem] text-sm leading-8 tracking-wide text-muted-foreground md:mx-0 md:max-w-none">
-              物流の急ぎ案件、
+            <p className="mx-auto max-w-[22rem] text-sm leading-8 tracking-wide text-black/60 md:mx-0 md:max-w-none">
+              倉庫保管、発送代行、
               <br />
-              化粧品関連のスポット対応、
+              スポット出荷、流通加工、
               <br />
-              各種事業相談まで
-              <br className="sm:hidden" />
-              お気軽にご連絡ください。
+              ヘッドスパ事業まで。
+              <br />
+              まずはお気軽にご相談ください。
             </p>
 
-            <div className="mt-5 flex flex-col gap-2 text-left">
+            <div className="mt-6 flex flex-col gap-3 text-left">
               <a
                 href="mailto:k_fuchigami@gamigami.email"
                 className={footerLinkClass}
@@ -199,7 +192,18 @@ export function Footer() {
               </a>
 
               <a href="tel:0661159935" className={footerLinkClass}>
-                <span>電話：06-6115-9935</span>
+                <span>TEL：06-6115-9935</span>
+
+                <span
+                  aria-hidden="true"
+                  className="transition-transform duration-300 group-hover:translate-x-1"
+                >
+                  →
+                </span>
+              </a>
+
+              <a href="fax:0661159936" className={footerLinkClass}>
+                <span>FAX：06-6115-9936</span>
 
                 <span
                   aria-hidden="true"
@@ -210,29 +214,18 @@ export function Footer() {
               </a>
             </div>
 
-            <a href="fax:0661159936" className={`${footerLinkClass} mt-2`}>
-  <span>FAX：06-6115-9936</span>
-
-  <span
-    aria-hidden="true"
-    className="transition-transform duration-300 group-hover:translate-x-1"
-  >
-    →
-  </span>
-</a>
-
             <Link
               href="/company#contact"
-              className="mt-6 inline-flex w-full items-center justify-center rounded-full bg-amber-500 px-6 py-3 text-center text-xs font-bold tracking-[0.18em] text-white shadow-md transition-all duration-300 hover:-translate-y-0.5 hover:bg-amber-600 hover:shadow-lg active:scale-95"
+              className="mt-7 inline-flex w-full items-center justify-center rounded-full bg-amber-500 px-6 py-4 text-center text-sm font-bold tracking-[0.12em] text-white shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:bg-amber-600 hover:shadow-xl active:scale-95"
             >
               即レスで相談する
             </Link>
           </div>
         </div>
 
-        <div className="mt-14 border-t border-border pt-6 text-center sm:mt-16 sm:pt-8">
-          <p className="text-[11px] tracking-wide text-muted-foreground">
-            © 株式会社GAMI
+        <div className="mt-16 border-t border-black/5 pt-8 text-center">
+          <p className="text-[11px] tracking-[0.12em] text-black/40">
+            © GAMI INC.
           </p>
         </div>
       </div>
