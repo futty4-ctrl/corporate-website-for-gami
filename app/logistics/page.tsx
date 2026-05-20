@@ -156,7 +156,7 @@ export default function LogisticsPage() {
                     href="/company#contact"
                     className="rounded-full bg-amber-500 px-7 py-4 text-center text-sm font-bold tracking-wide text-white shadow-lg transition hover:bg-amber-400"
                   >
-                    即レスで相談する
+                    物流を相談する
                   </Link>
 
                   <a
@@ -250,6 +250,7 @@ export default function LogisticsPage() {
                     <p className="text-xl font-bold text-amber-300">
                       {item.title}
                     </p>
+
                     <p className="mt-3 text-sm leading-7 text-white/70">
                       {item.body}
                     </p>
@@ -369,9 +370,11 @@ export default function LogisticsPage() {
                   className="rounded-3xl border border-border bg-white/80 p-6 shadow-sm"
                 >
                   <p className="text-sm font-bold text-gold">STEP {item.step}</p>
+
                   <h3 className="mt-2 text-lg font-bold text-foreground">
                     {item.title}
                   </h3>
+
                   <p className="mt-2 text-sm leading-8 text-muted-foreground">
                     {item.body}
                   </p>
@@ -388,9 +391,9 @@ export default function LogisticsPage() {
             </p>
 
             <h2 className="mt-4 text-3xl font-bold leading-[1.45] tracking-tight sm:text-5xl sm:leading-tight">
-              物流業務の外注先を、
+              物流のご相談は、
               <br />
-              お探しの企業様へ。
+              まずはGAMIへ。
             </h2>
 
             <p className="mx-auto mt-6 max-w-[34rem] text-[15px] leading-8 text-white/70 sm:text-base">
@@ -403,7 +406,7 @@ export default function LogisticsPage() {
                 href="/company#contact"
                 className="rounded-full bg-amber-500 px-8 py-4 text-sm font-bold text-white transition hover:bg-amber-400"
               >
-                即レスで相談する
+                物流を相談する
               </Link>
 
               <a
