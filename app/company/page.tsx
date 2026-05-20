@@ -8,18 +8,18 @@ import type { Metadata } from "next"
 export const metadata: Metadata = {
   title: "会社概要",
   description:
-    "株式会社GAMIの会社概要・お問い合わせ。物流運送事業、ヘッドスパ事業、整理買取事業を展開。",
+    "株式会社GAMIの会社概要・お問い合わせ。物流運送事業を中心に、ヘッドスパ事業、整理買取事業を展開。",
   keywords: [
     "株式会社GAMI",
     "会社概要",
-    "お問い合わせ",
-    "企業情報",
+    "物流会社",
     "大阪",
+    "お問い合わせ",
   ],
   openGraph: {
     title: "会社概要 | 株式会社GAMI",
     description:
-      "株式会社GAMIの会社概要・お問い合わせ。物流運送事業、ヘッドスパ事業、整理買取事業を展開。",
+      "株式会社GAMIの会社概要・お問い合わせ。物流運送事業を中心に、ヘッドスパ事業、整理買取事業を展開。",
     url: "/company",
     type: "website",
   },
@@ -32,38 +32,48 @@ const companyInfo = [
   { label: "会社名", value: "株式会社GAMI" },
   { label: "代表取締役", value: "淵上 和博" },
   { label: "設立", value: "2025年6月17日" },
+
   {
     label: "主要事業",
-    value: "物流運送事業、ヘッドスパ事業",
+    value:
+      "物流運送事業\nヘッドスパ事業",
   },
+
   {
     label: "関連事業",
     value:
-      "車事業、遺品整理・生前整理事業、リユース買取事業、\nアミューズメント業界向け卸事業、ホームページ制作事業、\nビジネスマッチング事業",
+      "整理買取事業\n車事業\nオンラインショップ運営",
   },
+
   { label: "メールアドレス", value: "k_fuchigami@gamigami.email" },
   { label: "TEL", value: "06-6115-9935" },
   { label: "FAX", value: "06-6115-9936" },
+
   {
     label: "古物商許可",
     value: "大阪府公安委員会許可 第62229R076690号",
   },
+
   {
     label: "化粧品製造業許可",
     value: "認証倉庫 許可番号 27CZ201072",
   },
+
   {
     label: "第一種貨物利用運送事業",
     value: "貨物自動車運送（近運自貨第1190号）",
   },
+
   {
     label: "インボイス登録番号",
     value: "T9120001277055",
   },
+
   {
     label: "所在地（大阪本社）",
     value: "〒570-0003 大阪府守口市大日町1-8-18",
   },
+
   {
     label: "所在地（福岡支社）",
     value: "〒819-0014 福岡県福岡市西区豊浜2-20-20-2",
@@ -79,8 +89,10 @@ const organizationSchema = {
   name: "株式会社GAMI",
   url: siteUrl,
   logo: `${siteUrl}/images/logo.png`,
+
   description:
-    "株式会社GAMIは大阪・福岡を拠点に物流運送、発送代行、内職・軽作業、ヘッドスパ、整理買取事業を展開しています。",
+    "株式会社GAMIは大阪・福岡を拠点に、物流運送、発送代行、倉庫保管、流通加工、ヘッドスパ事業を展開しています。",
+
   contactPoint: {
     "@type": "ContactPoint",
     telephone: "+81-6-6115-9935",
@@ -89,6 +101,7 @@ const organizationSchema = {
     areaServed: "JP",
     availableLanguage: "Japanese",
   },
+
   address: {
     "@type": "PostalAddress",
     streetAddress: "大日町1-8-18",
@@ -97,14 +110,16 @@ const organizationSchema = {
     postalCode: "570-0003",
     addressCountry: "JP",
   },
+
   knowsAbout: [
     "物流運送",
     "発送代行",
-    "内職",
-    "軽作業",
+    "倉庫保管",
+    "流通加工",
     "ヘッドスパ",
     "整理買取",
   ],
+
   hasCredential: [
     {
       "@type": "EducationalOccupationalCredential",
@@ -117,12 +132,14 @@ const organizationSchema = {
       identifier: "近運自貨第1190号",
       description: "運送機関の種類：貨物自動車運送",
     },
+
     {
       "@type": "EducationalOccupationalCredential",
       name: "古物商許可",
       credentialCategory: "許認可",
       identifier: "大阪府公安委員会許可 第62229R076690号",
     },
+
     {
       "@type": "EducationalOccupationalCredential",
       name: "化粧品製造業許可",
@@ -130,12 +147,14 @@ const organizationSchema = {
       identifier: "27CZ201072",
     },
   ],
+
   sameAs: [],
 }
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
+
   itemListElement: [
     {
       "@type": "ListItem",
@@ -143,6 +162,7 @@ const breadcrumbSchema = {
       name: "ホーム",
       item: siteUrl,
     },
+
     {
       "@type": "ListItem",
       position: 2,
@@ -172,56 +192,65 @@ export default function CompanyPage() {
       <Header />
 
       <main>
-        <section className="relative overflow-hidden py-16 pt-24 sm:py-20 sm:pt-32">
-          <div className="absolute inset-0 aurora-gradient opacity-90" />
+        <section className="relative overflow-hidden bg-[#111111] py-20 pt-28 text-white sm:py-24 sm:pt-36">
+          <div className="absolute inset-0 opacity-40">
+            <div className="absolute -left-16 top-0 h-72 w-72 rounded-full bg-amber-500 blur-3xl" />
+            <div className="absolute right-0 top-10 h-96 w-96 rounded-full bg-orange-400 blur-3xl" />
+          </div>
 
           <div className="relative z-10 mx-auto w-full max-w-6xl px-4 text-center sm:px-6 lg:text-left">
-            <p className="text-xs font-medium tracking-[0.2em] text-white/70">
-              会社概要
+            <p className="text-xs font-semibold tracking-[0.24em] text-amber-300">
+              COMPANY
             </p>
 
-            <h1 className="mx-auto mt-4 max-w-[15rem] font-serif text-[2rem] leading-[1.35] tracking-[0.08em] text-white sm:max-w-none sm:text-4xl md:text-5xl lg:mx-0 lg:text-6xl">
-              未来より先に動く。
+            <h1 className="mx-auto mt-5 max-w-[18rem] font-serif text-[2.3rem] leading-[1.3] tracking-[0.04em] text-white sm:max-w-none sm:text-5xl md:text-6xl lg:mx-0">
+              物流を軸に、
               <br />
-              株式会社GAMI
+              事業を支える。
             </h1>
 
-            <p className="mx-auto mt-6 max-w-[20rem] text-sm leading-8 tracking-wide text-white/80 sm:max-w-2xl sm:text-base lg:mx-0">
-              物流運送事業とヘッドスパ事業を軸に、
-              <br className="sm:hidden" />
-              レスポンスと現場対応力で事業を支える。
+            <p className="mx-auto mt-7 max-w-[22rem] text-[15px] leading-[2.05] text-white/80 sm:max-w-2xl sm:text-base sm:leading-8 lg:mx-0">
+              株式会社GAMIは、
+              <br />
+              物流運送事業を中心に、
+              <br />
+              ヘッドスパ事業や関連事業を展開しています。
             </p>
           </div>
         </section>
 
-        <section className="mx-auto max-w-4xl px-4 py-16 sm:px-6 sm:py-24 lg:py-32">
+        <section className="mx-auto max-w-5xl px-4 py-20 sm:px-6 sm:py-28">
           <div className="mb-16 text-center">
             <SectionHeading
-              sub="企業情報"
+              sub="COMPANY INFO"
               title="企業情報"
               className="mb-6"
             />
 
             <p className="text-sm leading-8 text-muted-foreground sm:text-base">
-              株式会社GAMIの基本情報です。
-              <br className="sm:hidden" />
+              株式会社GAMIの会社概要です。
+              <br />
               ご不明点はお気軽にお問い合わせください。
             </p>
           </div>
 
-          <div className="divide-y divide-border rounded-2xl border border-border/60 bg-card p-2 shadow-glass">
-            {companyInfo.map((row) => (
+          <div className="overflow-hidden rounded-[2rem] border border-black/5 bg-white shadow-[0_8px_32px_rgba(0,0,0,0.04)]">
+            {companyInfo.map((row, index) => (
               <div
                 key={row.label}
-                className="flex flex-col gap-2 px-4 py-5 sm:flex-row sm:gap-8 sm:px-6 sm:py-5"
+                className={`flex flex-col gap-2 px-5 py-6 sm:flex-row sm:gap-10 sm:px-8 ${
+                  index !== companyInfo.length - 1
+                    ? "border-b border-black/5"
+                    : ""
+                }`}
               >
                 <dt
-                  className={`w-full shrink-0 text-xs sm:w-40 sm:text-sm ${
+                  className={`w-full shrink-0 text-xs tracking-wide sm:w-48 sm:text-sm ${
                     row.label === "主要事業"
-                      ? "font-bold text-foreground"
+                      ? "font-bold text-black"
                       : row.label === "関連事業"
                       ? "font-medium text-zinc-400"
-                      : "font-medium text-muted-foreground"
+                      : "font-medium text-black/50"
                   }`}
                 >
                   {row.label}
@@ -230,10 +259,10 @@ export default function CompanyPage() {
                 <dd
                   className={`whitespace-pre-line tracking-wide ${
                     row.label === "主要事業"
-                      ? "text-[15px] font-bold leading-8 text-foreground sm:text-base"
+                      ? "text-[15px] font-bold leading-8 text-black sm:text-base"
                       : row.label === "関連事業"
-                      ? "text-xs leading-7 text-zinc-500 sm:text-sm"
-                      : "text-sm leading-relaxed text-muted-foreground sm:leading-8"
+                      ? "text-sm leading-8 text-zinc-500"
+                      : "text-sm leading-8 text-black/70"
                   }`}
                 >
                   {row.value}
@@ -243,11 +272,11 @@ export default function CompanyPage() {
           </div>
         </section>
 
-        <section className="border-t border-border bg-secondary/50 px-4 py-16 sm:px-6 sm:py-24 lg:py-32">
+        <section className="border-t border-black/5 bg-[#f8f8f6] px-4 py-20 sm:px-6 sm:py-28">
           <div className="mx-auto max-w-3xl text-center">
             <div className="mb-10 text-center">
               <SectionHeading
-                sub="スローガン"
+                sub="PHILOSOPHY"
                 title="未来より先に動く。"
                 className="mb-6"
               />
@@ -259,22 +288,20 @@ export default function CompanyPage() {
               </p>
             </div>
 
-            <p className="mx-auto max-w-[21rem] text-[15px] leading-[2.2] tracking-readable text-muted-foreground sm:max-w-2xl sm:text-sm">
+            <p className="mx-auto max-w-[22rem] text-[15px] leading-[2.2] tracking-wide text-muted-foreground sm:max-w-2xl sm:text-base">
               株式会社GAMIは、
-              物流運送事業とヘッドスパ事業を主軸に展開しています。
-              急なご相談にも素早く反応し、
-              現場確認・手配・実行までスピーディーに対応。
-              レスポンスと現場対応力を強みに、
-              お客様の事業を支えています。
+              物流運送事業を主軸に展開しています。
+              <br />
+              <br />
+              倉庫保管、発送代行、流通加工、
+              スポット対応まで、
+              現場に合わせて柔軟に対応。
               <br />
               <br />
               また、
-              車事業、
-              遺品整理・生前整理事業、
-              リユース買取事業、
-              アミューズメント業界向け卸事業、
-              ホームページ制作事業、
-              ビジネスマッチング事業など、
+              ヘッドスパ事業、
+              整理買取事業、
+              車事業など、
               関連事業も展開しています。
             </p>
           </div>
@@ -284,11 +311,11 @@ export default function CompanyPage() {
 
         <section
           id="contact"
-          className="mx-auto max-w-3xl px-4 py-20 sm:px-6 sm:py-24 lg:py-32"
+          className="mx-auto max-w-3xl px-4 py-20 sm:px-6 sm:py-28"
         >
           <div className="mb-16 text-center">
             <SectionHeading
-              sub="お問い合わせ"
+              sub="CONTACT"
               title="お問い合わせ"
               className="mb-6"
             />
