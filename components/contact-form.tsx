@@ -24,14 +24,20 @@ export function ContactForm() {
         </p>
 
         <p className="mt-4 text-sm leading-8 text-black/60">
-          内容を確認のうえ、担当よりご連絡します。
+          内容を確認のうえ、
+          <br className="sm:hidden" />
+          担当よりご連絡します。
         </p>
 
-        <p className="mt-4 text-xs leading-6 text-black/45">
-          送信先：{CONTACT_EMAIL}
-          <br />
-          TEL：06-6115-9935 / FAX：06-6115-9936
-        </p>
+        <div className="mt-6 rounded-2xl bg-[#fbfaf7] p-5">
+          <p className="text-xs leading-7 text-black/55">
+            送信先：{CONTACT_EMAIL}
+            <br />
+            TEL：06-6115-9935
+            <br />
+            FAX：06-6115-9936
+          </p>
+        </div>
       </div>
     )
   }
@@ -44,7 +50,7 @@ export function ContactForm() {
       }}
       className="rounded-[2rem] border border-black/5 bg-white p-6 shadow-[0_18px_50px_rgba(0,0,0,0.06)] sm:p-8"
     >
-      <div className="mb-8 rounded-2xl bg-[#fbfaf7] p-5">
+      <div className="mb-8 rounded-2xl border border-amber-500/10 bg-[#fbfaf7] p-5">
         <p className="text-sm font-bold text-black">
           物流のご相談を中心に受け付けています
         </p>
@@ -72,7 +78,10 @@ export function ContactForm() {
         </div>
 
         <div className="flex flex-col gap-2">
-          <label htmlFor="company" className="text-sm font-medium text-black/70">
+          <label
+            htmlFor="company"
+            className="text-sm font-medium text-black/70"
+          >
             会社名 / 屋号
           </label>
 
@@ -87,7 +96,10 @@ export function ContactForm() {
 
         <div className="grid gap-5 sm:grid-cols-2">
           <div className="flex flex-col gap-2">
-            <label htmlFor="email" className="text-sm font-medium text-black/70">
+            <label
+              htmlFor="email"
+              className="text-sm font-medium text-black/70"
+            >
               メールアドレス <span className="text-amber-500">*</span>
             </label>
 
@@ -102,7 +114,10 @@ export function ContactForm() {
           </div>
 
           <div className="flex flex-col gap-2">
-            <label htmlFor="phone" className="text-sm font-medium text-black/70">
+            <label
+              htmlFor="phone"
+              className="text-sm font-medium text-black/70"
+            >
               お電話番号
             </label>
 
@@ -141,7 +156,10 @@ export function ContactForm() {
         </div>
 
         <div className="flex flex-col gap-2">
-          <label htmlFor="message" className="text-sm font-medium text-black/70">
+          <label
+            htmlFor="message"
+            className="text-sm font-medium text-black/70"
+          >
             お問い合わせ内容 <span className="text-amber-500">*</span>
           </label>
 
@@ -157,13 +175,15 @@ export function ContactForm() {
 
         <button
           type="submit"
-          className="mt-2 inline-flex w-full items-center justify-center rounded-full bg-[#111111] px-8 py-4 text-sm font-bold tracking-[0.12em] text-white shadow-[0_18px_50px_rgba(0,0,0,0.16)] transition hover:-translate-y-0.5 hover:bg-black active:scale-95 sm:w-auto"
+          className="mt-2 inline-flex w-full items-center justify-center rounded-full bg-amber-500 px-8 py-4 text-sm font-bold tracking-[0.12em] text-white shadow-[0_18px_50px_rgba(0,0,0,0.16)] transition hover:-translate-y-0.5 hover:bg-amber-400 active:scale-95"
         >
-          送信する
+          物流を相談する
         </button>
 
-        <p className="text-xs leading-6 text-black/45">
-          ※送信できない場合は、直接メールまたはお電話でご連絡ください。
+        <p className="text-center text-xs leading-6 text-black/45">
+          ※送信できない場合は、
+          <br className="sm:hidden" />
+          直接メールまたはお電話でご連絡ください。
         </p>
       </div>
     </form>
