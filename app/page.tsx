@@ -198,9 +198,9 @@ export default function HomePage() {
               </p>
 
               <h2 className="mt-4 text-[1.9rem] font-bold leading-[1.38] tracking-[-0.03em] sm:text-5xl sm:leading-tight">
-                メインは物流運送。
+                １に物流運送。
                 <br />
-                次にヘッドスパ事業。
+                ２にヘッドスパ。
               </h2>
 
               <p className="mx-auto mt-6 max-w-[34rem] text-[15px] leading-8 text-muted-foreground sm:max-w-3xl sm:text-base lg:mx-0">
