@@ -123,17 +123,19 @@ export default function HomePage() {
                 LOGISTICS COMPANY
               </p>
 
-              <h1 className="mx-auto mt-5 text-center text-[clamp(2.2rem,8.2vw,5.8rem)] font-bold leading-[1.08] tracking-[-0.06em] text-white sm:text-7xl lg:mx-0 lg:text-left">
-                物流で、
-                <br />
-                事業を前へ。
-              </h1>
+              <h1 className="mx-auto mt-5 text-center text-[clamp(2.4rem,8vw,6rem)] font-bold leading-[1.05] tracking-[-0.06em] text-white sm:text-7xl lg:mx-0 lg:text-left">
+  未来より
+  <br />
+  先に動く。
+</h1>
 
-              <p className="mx-auto mt-7 max-w-[34rem] text-[15px] leading-8 text-white/88 sm:text-lg sm:leading-9 lg:mx-0">
-                物流運送事業を中心に、倉庫保管・発送代行・流通加工まで対応。
-                <br />
-                ヘッドスパ事業をはじめ、複数事業を展開する株式会社GAMI。
-              </p>
+              <p className="mx-auto mt-7 max-w-[38rem] text-[15px] leading-8 text-white/82 sm:text-lg sm:leading-9 lg:mx-0">
+  物流運送を主軸に、
+  倉庫保管・発送代行・流通加工まで一括対応。
+  <br />
+  スピードと現場対応力で、
+  企業の物流を支える株式会社GAMI。
+</p>
 
               <div className="mx-auto mt-9 flex max-w-[22rem] flex-col gap-3 sm:max-w-none sm:flex-row sm:justify-center lg:mx-0 lg:justify-start">
                 <Link
