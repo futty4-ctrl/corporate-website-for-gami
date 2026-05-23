@@ -257,25 +257,29 @@ export default function CompanyPage() {
         <CredentialsSection />
 
         <section
-          id="contact"
-          className="mx-auto max-w-3xl px-5 py-20 sm:px-6 sm:py-28"
-        >
-          <div className="mb-14 text-center sm:mb-16">
-            <SectionHeading
-              sub="CONTACT"
-              title="物流を相談する"
-              className="mb-6"
-            />
+  id="contact"
+  className="overflow-hidden px-4 py-20 sm:px-6 sm:py-28"
+>
+  <div className="mx-auto w-full max-w-3xl">
+    <div className="mb-14 text-center sm:mb-16">
+      <SectionHeading
+        sub="CONTACT"
+        title="物流を相談する"
+        className="mb-6"
+      />
 
-            <p className="text-sm leading-8 text-muted-foreground sm:text-base">
-              倉庫保管、発送代行、スポット出荷、流通加工まで。
-              <br className="hidden sm:block" />
-              まずはお気軽にご相談ください。
-            </p>
-          </div>
+      <p className="text-sm leading-8 text-muted-foreground sm:text-base">
+        倉庫保管、発送代行、スポット出荷、流通加工まで。
+        <br className="hidden sm:block" />
+        まずはお気軽にご相談ください。
+      </p>
+    </div>
 
-          <ContactForm />
-        </section>
+    <div className="w-full overflow-hidden rounded-[2rem]">
+      <ContactForm />
+    </div>
+  </div>
+</section>
       </main>
 
       <Footer />
