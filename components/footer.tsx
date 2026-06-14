@@ -17,7 +17,7 @@ export function Footer() {
             <Link
               href="/"
               className="flex items-center gap-2.5 transition-opacity hover:opacity-80"
-              aria-label="GAMI ホームへ戻る"
+              aria-label="GAMI 物流トップへ戻る"
             >
               <img
                 src={logoError ? "/placeholder-logo.svg" : "/images/logo.png"}
@@ -35,18 +35,18 @@ export function Footer() {
 
             <p className="max-w-[21rem] text-sm leading-7 tracking-[0.01em] text-black/60 md:max-w-none">
               <span className="text-[15px] font-semibold leading-7 text-black">
-                未来より先に動く。
+                大阪の物流倉庫・発送代行ならGAMI。
               </span>
               <br />
-              株式会社GAMIは、物流運送事業を中心に、
+              守口市大日町の約100坪倉庫を拠点に、
               <br />
-              倉庫保管・発送代行・流通加工まで対応。
+              保管・発送代行・流通加工・内職作業まで対応。
               <br />
-              ヘッドスパ事業・FC展開も行っています。
+              福岡・神戸の提携倉庫も活用できます。
             </p>
 
             <div className="flex flex-wrap justify-center gap-2 md:justify-start">
-              {["物流運送", "発送代行", "倉庫保管", "流通加工"].map((item) => (
+              {["発送代行", "倉庫保管", "流通加工", "内職作業"].map((item) => (
                 <span
                   key={item}
                   className="rounded-full border border-black/5 bg-white px-3 py-1.5 text-[10px] font-medium tracking-[0.02em] text-black/60 shadow-sm sm:px-4 sm:text-[11px]"
@@ -59,18 +59,32 @@ export function Footer() {
 
           <div>
             <h3 className="mb-5 text-[11px] font-semibold tracking-[0.18em] text-amber-500 sm:tracking-[0.24em]">
-              BUSINESS
+              LOGISTICS
             </h3>
 
             <ul className="flex flex-col gap-2.5 text-left">
               <li>
                 <Link href="/logistics" className={footerLinkClass}>
-                  <span>物流運送事業</span>
+                  <span>物流サービス</span>
+                  <span className="text-sm transition-transform duration-300 group-hover:translate-x-1">
+                    →
+                  </span>
+                </Link>
+              </li>
 
-                  <span
-                    aria-hidden="true"
-                    className="text-sm transition-transform duration-300 group-hover:translate-x-1"
-                  >
+              <li>
+                <Link href="/company" className={footerLinkClass}>
+                  <span>会社概要</span>
+                  <span className="text-sm transition-transform duration-300 group-hover:translate-x-1">
+                    →
+                  </span>
+                </Link>
+              </li>
+
+              <li>
+                <Link href="/other-business" className={footerLinkClass}>
+                  <span>その他事業</span>
+                  <span className="text-sm transition-transform duration-300 group-hover:translate-x-1">
                     →
                   </span>
                 </Link>
@@ -84,60 +98,7 @@ export function Footer() {
                   className={footerLinkClass}
                 >
                   <span>ヘッドスパ事業</span>
-
-                  <span
-                    aria-hidden="true"
-                    className="text-sm transition-transform duration-300 group-hover:translate-x-1"
-                  >
-                    →
-                  </span>
-                </a>
-              </li>
-
-              <li>
-                <Link href="/headspa-franchise" className={footerLinkClass}>
-                  <span>ヘッドスパFC</span>
-
-                  <span
-                    aria-hidden="true"
-                    className="text-sm transition-transform duration-300 group-hover:translate-x-1"
-                  >
-                    →
-                  </span>
-                </Link>
-              </li>
-
-              <li>
-                <a
-                  href="https://styling-garage.jp"
-                  target="_blank"
-                  rel="noreferrer"
-                  className={footerLinkClass}
-                >
-                  <span>車事業</span>
-
-                  <span
-                    aria-hidden="true"
-                    className="text-sm transition-transform duration-300 group-hover:translate-x-1"
-                  >
-                    →
-                  </span>
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="https://gamistore.base.shop/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className={footerLinkClass}
-                >
-                  <span className="pr-3">オンラインショップ</span>
-
-                  <span
-                    aria-hidden="true"
-                    className="shrink-0 text-sm transition-transform duration-300 group-hover:translate-x-1"
-                  >
+                  <span className="text-sm transition-transform duration-300 group-hover:translate-x-1">
                     →
                   </span>
                 </a>
@@ -151,8 +112,8 @@ export function Footer() {
             </h3>
 
             <p className="mx-auto max-w-[21rem] text-sm leading-7 tracking-[0.01em] text-black/60 md:mx-0 md:max-w-none">
-              倉庫保管、発送代行、スポット出荷、
-              流通加工、ヘッドスパFC相談まで。
+              発送代行、倉庫保管、検品、梱包、
+              シール貼り、セット組み、内職作業、流通加工まで。
               まずはお気軽にご相談ください。
             </p>
 
@@ -162,22 +123,14 @@ export function Footer() {
                 className={footerLinkClass}
               >
                 <span className="pr-3">メールで相談する</span>
-
-                <span
-                  aria-hidden="true"
-                  className="shrink-0 text-sm transition-transform duration-300 group-hover:translate-x-1"
-                >
+                <span className="shrink-0 text-sm transition-transform duration-300 group-hover:translate-x-1">
                   →
                 </span>
               </a>
 
               <a href="tel:0661159935" className={footerLinkClass}>
                 <span>電話で相談する</span>
-
-                <span
-                  aria-hidden="true"
-                  className="text-sm transition-transform duration-300 group-hover:translate-x-1"
-                >
+                <span className="text-sm transition-transform duration-300 group-hover:translate-x-1">
                   →
                 </span>
               </a>
@@ -187,7 +140,7 @@ export function Footer() {
               href="/company#contact"
               className="mt-6 inline-flex w-full items-center justify-center rounded-full bg-amber-500 px-6 py-3.5 text-center text-sm font-bold tracking-[0.04em] text-white shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:bg-amber-600 hover:shadow-xl active:scale-95"
             >
-              物流を相談する
+              物流を無料相談する
             </Link>
           </div>
         </div>
