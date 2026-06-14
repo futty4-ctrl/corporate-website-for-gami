@@ -13,11 +13,10 @@ const navLinks = [
 ]
 
 const mobileLinkClass =
-  "group flex items-center justify-between rounded-[1.3rem] border border-black/5 bg-white px-4 py-4 text-[14px] font-medium leading-6 tracking-[0.02em] text-foreground shadow-[0_2px_10px_rgba(0,0,0,0.04)] transition-all duration-300 hover:border-amber-300/40 hover:shadow-[0_8px_20px_rgba(0,0,0,0.06)] active:scale-[0.99]"
+  "group flex items-center justify-between rounded-2xl border border-black/5 bg-white px-4 py-4 text-[14px] font-semibold leading-6 text-black/75 shadow-sm transition-all duration-300 active:scale-[0.98]"
 
 export function Header() {
   const pathname = usePathname()
-
   const [isOpen, setIsOpen] = useState(false)
   const [logoError, setLogoError] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
@@ -35,35 +34,35 @@ export function Header() {
 
   return (
     <header
-      className={`sticky left-0 right-0 top-0 z-50 border-b transition-all duration-500 ${
+      className={`sticky left-0 right-0 top-0 z-50 border-b transition-all duration-300 ${
         isScrolled
-          ? "border-black/5 bg-white/92 shadow-xl backdrop-blur-2xl"
-          : "border-transparent bg-white/72 backdrop-blur-xl"
+          ? "border-black/5 bg-white/95 shadow-lg backdrop-blur-2xl"
+          : "border-transparent bg-white/82 backdrop-blur-xl"
       }`}
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-2.5 sm:px-6 sm:py-3">
         <Link
           href="/"
-          className="group flex items-center gap-2.5 transition-opacity hover:opacity-90"
+          className="flex min-w-0 items-center gap-2.5"
           aria-label="GAMI 物流トップ"
         >
-          <div className="overflow-hidden rounded-full border border-black/5 bg-white p-1 shadow-sm transition-all duration-300 group-hover:scale-[1.03] group-hover:shadow-md">
+          <div className="shrink-0 overflow-hidden rounded-full border border-black/5 bg-white p-1 shadow-sm">
             <img
               src={logoError ? "/placeholder-logo.svg" : "/images/logo.png"}
               alt="GAMI"
               width={38}
               height={38}
               onError={() => setLogoError(true)}
-              className="rounded-full object-cover sm:h-[42px] sm:w-[42px]"
+              className="h-[38px] w-[38px] rounded-full object-cover sm:h-[42px] sm:w-[42px]"
             />
           </div>
 
-          <div className="leading-none">
-            <span className="block text-[15px] font-semibold tracking-[0.14em] text-black sm:text-lg sm:tracking-[0.2em]">
+          <div className="min-w-0 leading-none">
+            <span className="block text-[15px] font-bold tracking-[0.14em] text-black sm:text-lg sm:tracking-[0.2em]">
               GAMI
             </span>
 
-            <span className="mt-1 block text-[9px] tracking-[0.08em] text-black/50 sm:text-[10px] sm:tracking-[0.14em]">
+            <span className="mt-1 block max-w-[9.5rem] truncate text-[9px] tracking-[0.04em] text-black/50 sm:max-w-none sm:text-[10px] sm:tracking-[0.14em]">
               大阪の物流倉庫・発送代行
             </span>
           </div>
@@ -89,7 +88,6 @@ export function Header() {
                 }`}
               >
                 {link.label}
-
                 <span
                   className={`absolute -bottom-2 left-0 h-[2px] rounded-full bg-amber-500 transition-all duration-300 ${
                     active ? "w-full" : "w-0"
@@ -108,31 +106,40 @@ export function Header() {
 
           <Link
             href="/company#contact"
-            className="group relative overflow-hidden rounded-full bg-amber-500 px-5 py-3 text-xs font-bold tracking-[0.08em] text-white shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:bg-amber-600 hover:shadow-xl active:scale-95"
+            className="rounded-full bg-amber-500 px-5 py-3 text-xs font-bold tracking-[0.08em] text-white shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:bg-amber-600"
           >
-            <span className="relative z-10">物流を無料相談</span>
+            物流を無料相談
           </Link>
         </nav>
 
-        <button
-          type="button"
-          className="flex h-10 w-10 touch-manipulation items-center justify-center rounded-full border border-black/5 bg-white text-black shadow-sm transition-all duration-300 hover:bg-white hover:shadow-md lg:hidden"
-          onClick={() => setIsOpen(!isOpen)}
-          aria-label={isOpen ? "メニューを閉じる" : "メニューを開く"}
-          aria-expanded={isOpen}
-        >
-          {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-        </button>
+        <div className="flex items-center gap-2 lg:hidden">
+          <a
+            href="tel:0661159935"
+            className="hidden rounded-full border border-black/10 bg-white px-4 py-2.5 text-xs font-bold text-black shadow-sm xs:inline-flex"
+          >
+            電話
+          </a>
+
+          <button
+            type="button"
+            className="flex h-10 w-10 items-center justify-center rounded-full border border-black/5 bg-white text-black shadow-sm"
+            onClick={() => setIsOpen(!isOpen)}
+            aria-label={isOpen ? "メニューを閉じる" : "メニューを開く"}
+            aria-expanded={isOpen}
+          >
+            {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          </button>
+        </div>
       </div>
 
       {isOpen && (
         <nav
-          className="border-t border-black/5 bg-[#f8f8f6] px-4 py-4 shadow-2xl backdrop-blur-2xl sm:px-6 lg:hidden"
+          className="border-t border-black/5 bg-[#f8f8f6] px-4 py-4 shadow-2xl sm:px-6 lg:hidden"
           aria-label="モバイルナビゲーション"
         >
           <Link
             href="/company#contact"
-            className="mb-3 flex items-center justify-center rounded-full bg-amber-500 px-4 py-4 text-center text-sm font-bold tracking-[0.04em] text-white shadow-lg transition-all duration-300 hover:bg-amber-600 active:scale-95"
+            className="mb-3 flex items-center justify-center rounded-full bg-amber-500 px-4 py-4 text-center text-sm font-bold text-white shadow-lg active:scale-95"
             onClick={() => setIsOpen(false)}
           >
             物流を無料相談する
@@ -140,7 +147,7 @@ export function Header() {
 
           <a
             href="tel:0661159935"
-            className="mb-4 flex items-center justify-center rounded-full border border-black/10 bg-white px-4 py-4 text-center text-sm font-bold tracking-[0.04em] text-black shadow-sm active:scale-95"
+            className="mb-4 flex items-center justify-center rounded-full border border-black/10 bg-white px-4 py-4 text-center text-sm font-bold text-black shadow-sm active:scale-95"
             onClick={() => setIsOpen(false)}
           >
             電話で相談する
@@ -155,21 +162,14 @@ export function Header() {
                   onClick={() => setIsOpen(false)}
                 >
                   <span>{link.label}</span>
-                  <span
-                    aria-hidden="true"
-                    className="text-base transition-transform duration-300 group-hover:translate-x-1"
-                  >
-                    →
-                  </span>
+                  <span>→</span>
                 </Link>
               </li>
             ))}
           </ul>
 
-          <div className="mt-8 flex justify-center">
-            <div className="rounded-full bg-white px-5 py-2.5 text-xs font-semibold tracking-[0.08em] text-black shadow-sm">
-              発送代行・流通加工・内職作業
-            </div>
+          <div className="mt-6 rounded-2xl bg-white px-4 py-4 text-center text-xs font-semibold leading-6 text-black/60 shadow-sm">
+            発送代行・流通加工・内職作業・倉庫保管に対応
           </div>
         </nav>
       )}
