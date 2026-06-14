@@ -8,6 +8,7 @@ import { Menu, X } from "lucide-react"
 const navLinks = [
   { href: "/", label: "物流トップ" },
   { href: "/logistics", label: "物流サービス" },
+  { href: "/warehouse", label: "倉庫紹介" },
   { href: "/company", label: "会社概要" },
   { href: "/other-business", label: "その他事業" },
 ]
@@ -41,11 +42,7 @@ export function Header() {
       }`}
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-2.5 sm:px-6 sm:py-3">
-        <Link
-          href="/"
-          className="flex min-w-0 items-center gap-2.5"
-          aria-label="GAMI 物流トップ"
-        >
+        <Link href="/" className="flex min-w-0 items-center gap-2.5">
           <div className="shrink-0 overflow-hidden rounded-full border border-black/5 bg-white p-1 shadow-sm">
             <img
               src={logoError ? "/placeholder-logo.svg" : "/images/logo.png"}
@@ -68,10 +65,7 @@ export function Header() {
           </div>
         </Link>
 
-        <nav
-          className="hidden items-center gap-5 lg:flex"
-          aria-label="メインナビゲーション"
-        >
+        <nav className="hidden items-center gap-5 lg:flex">
           {navLinks.map((link) => {
             const active =
               pathname === link.href ||
@@ -99,44 +93,31 @@ export function Header() {
 
           <a
             href="tel:0661159935"
-            className="rounded-full border border-black/10 px-5 py-3 text-xs font-bold tracking-[0.08em] text-black transition-all duration-300 hover:bg-black hover:text-white"
+            className="rounded-full border border-black/10 px-5 py-3 text-xs font-bold tracking-[0.08em] text-black transition hover:bg-black hover:text-white"
           >
             電話相談
           </a>
 
           <Link
             href="/company#contact"
-            className="rounded-full bg-amber-500 px-5 py-3 text-xs font-bold tracking-[0.08em] text-white shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:bg-amber-600"
+            className="rounded-full bg-amber-500 px-5 py-3 text-xs font-bold tracking-[0.08em] text-white shadow-lg transition hover:-translate-y-0.5 hover:bg-amber-600"
           >
             物流を無料相談
           </Link>
         </nav>
 
-        <div className="flex items-center gap-2 lg:hidden">
-          <a
-            href="tel:0661159935"
-            className="hidden rounded-full border border-black/10 bg-white px-4 py-2.5 text-xs font-bold text-black shadow-sm xs:inline-flex"
-          >
-            電話
-          </a>
-
-          <button
-            type="button"
-            className="flex h-10 w-10 items-center justify-center rounded-full border border-black/5 bg-white text-black shadow-sm"
-            onClick={() => setIsOpen(!isOpen)}
-            aria-label={isOpen ? "メニューを閉じる" : "メニューを開く"}
-            aria-expanded={isOpen}
-          >
-            {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-          </button>
-        </div>
+        <button
+          type="button"
+          className="flex h-10 w-10 items-center justify-center rounded-full border border-black/5 bg-white text-black shadow-sm lg:hidden"
+          onClick={() => setIsOpen(!isOpen)}
+          aria-label={isOpen ? "メニューを閉じる" : "メニューを開く"}
+        >
+          {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+        </button>
       </div>
 
       {isOpen && (
-        <nav
-          className="border-t border-black/5 bg-[#f8f8f6] px-4 py-4 shadow-2xl sm:px-6 lg:hidden"
-          aria-label="モバイルナビゲーション"
-        >
+        <nav className="border-t border-black/5 bg-[#f8f8f6] px-4 py-4 shadow-2xl sm:px-6 lg:hidden">
           <Link
             href="/company#contact"
             className="mb-3 flex items-center justify-center rounded-full bg-amber-500 px-4 py-4 text-center text-sm font-bold text-white shadow-lg active:scale-95"
