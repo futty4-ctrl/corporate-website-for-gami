@@ -6,13 +6,10 @@ import { useEffect, useState } from "react"
 import { Menu, X } from "lucide-react"
 
 const navLinks = [
-  { href: "/", label: "ホーム" },
-  { href: "/logistics", label: "物流運送事業" },
-  { href: "https://www.yuheadspa.net/", label: "ヘッドスパ事業" },
-  { href: "/headspa-franchise", label: "ヘッドスパFC" },
-  { href: "https://styling-garage.jp", label: "車事業" },
-  { href: "https://gamistore.base.shop/", label: "オンラインショップ" },
+  { href: "/", label: "物流トップ" },
+  { href: "/logistics", label: "物流サービス" },
   { href: "/company", label: "会社概要" },
+  { href: "/other-business", label: "その他事業" },
 ]
 
 const mobileLinkClass =
@@ -26,14 +23,9 @@ export function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
 
   useEffect(() => {
-    const onScroll = () => {
-      setIsScrolled(window.scrollY > 12)
-    }
-
+    const onScroll = () => setIsScrolled(window.scrollY > 12)
     onScroll()
-
     window.addEventListener("scroll", onScroll, { passive: true })
-
     return () => window.removeEventListener("scroll", onScroll)
   }, [])
 
@@ -53,7 +45,7 @@ export function Header() {
         <Link
           href="/"
           className="group flex items-center gap-2.5 transition-opacity hover:opacity-90"
-          aria-label="GAMI ホーム"
+          aria-label="GAMI 物流トップ"
         >
           <div className="overflow-hidden rounded-full border border-black/5 bg-white p-1 shadow-sm transition-all duration-300 group-hover:scale-[1.03] group-hover:shadow-md">
             <img
@@ -72,12 +64,11 @@ export function Header() {
             </span>
 
             <span className="mt-1 block text-[9px] tracking-[0.08em] text-black/50 sm:text-[10px] sm:tracking-[0.14em]">
-              未来より先に動く。
+              大阪の物流倉庫・発送代行
             </span>
           </div>
         </Link>
 
-        {/* Desktop */}
         <nav
           className="hidden items-center gap-5 lg:flex"
           aria-label="メインナビゲーション"
@@ -87,14 +78,10 @@ export function Header() {
               pathname === link.href ||
               (link.href !== "/" && pathname.startsWith(link.href))
 
-            const external = link.href.startsWith("http")
-
             return (
               <Link
                 key={link.href}
                 href={link.href}
-                target={external ? "_blank" : undefined}
-                rel={external ? "noreferrer" : undefined}
                 className={`relative text-sm tracking-[0.04em] transition-all duration-300 ${
                   active
                     ? "font-semibold text-black"
@@ -112,17 +99,21 @@ export function Header() {
             )
           })}
 
+          <a
+            href="tel:0661159935"
+            className="rounded-full border border-black/10 px-5 py-3 text-xs font-bold tracking-[0.08em] text-black transition-all duration-300 hover:bg-black hover:text-white"
+          >
+            電話相談
+          </a>
+
           <Link
             href="/company#contact"
             className="group relative overflow-hidden rounded-full bg-amber-500 px-5 py-3 text-xs font-bold tracking-[0.08em] text-white shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:bg-amber-600 hover:shadow-xl active:scale-95"
           >
-            <span className="relative z-10">物流を相談する</span>
-
-            <span className="absolute inset-0 bg-white/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+            <span className="relative z-10">物流を無料相談</span>
           </Link>
         </nav>
 
-        {/* Mobile button */}
         <button
           type="button"
           className="flex h-10 w-10 touch-manipulation items-center justify-center rounded-full border border-black/5 bg-white text-black shadow-sm transition-all duration-300 hover:bg-white hover:shadow-md lg:hidden"
@@ -130,15 +121,10 @@ export function Header() {
           aria-label={isOpen ? "メニューを閉じる" : "メニューを開く"}
           aria-expanded={isOpen}
         >
-          {isOpen ? (
-            <X className="h-5 w-5" />
-          ) : (
-            <Menu className="h-5 w-5" />
-          )}
+          {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
         </button>
       </div>
 
-      {/* Mobile Menu */}
       {isOpen && (
         <nav
           className="border-t border-black/5 bg-[#f8f8f6] px-4 py-4 shadow-2xl backdrop-blur-2xl sm:px-6 lg:hidden"
@@ -146,42 +132,43 @@ export function Header() {
         >
           <Link
             href="/company#contact"
-            className="mb-4 flex items-center justify-center rounded-full bg-amber-500 px-4 py-4 text-center text-sm font-bold tracking-[0.04em] text-white shadow-lg transition-all duration-300 hover:bg-amber-600 active:scale-95"
+            className="mb-3 flex items-center justify-center rounded-full bg-amber-500 px-4 py-4 text-center text-sm font-bold tracking-[0.04em] text-white shadow-lg transition-all duration-300 hover:bg-amber-600 active:scale-95"
             onClick={() => setIsOpen(false)}
           >
-            物流を相談する
+            物流を無料相談する
           </Link>
 
+          <a
+            href="tel:0661159935"
+            className="mb-4 flex items-center justify-center rounded-full border border-black/10 bg-white px-4 py-4 text-center text-sm font-bold tracking-[0.04em] text-black shadow-sm active:scale-95"
+            onClick={() => setIsOpen(false)}
+          >
+            電話で相談する
+          </a>
+
           <ul className="flex flex-col gap-3">
-            {navLinks.map((link) => {
-              const external = link.href.startsWith("http")
-
-              return (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    target={external ? "_blank" : undefined}
-                    rel={external ? "noreferrer" : undefined}
-                    className={mobileLinkClass}
-                    onClick={() => setIsOpen(false)}
+            {navLinks.map((link) => (
+              <li key={link.href}>
+                <Link
+                  href={link.href}
+                  className={mobileLinkClass}
+                  onClick={() => setIsOpen(false)}
+                >
+                  <span>{link.label}</span>
+                  <span
+                    aria-hidden="true"
+                    className="text-base transition-transform duration-300 group-hover:translate-x-1"
                   >
-                    <span>{link.label}</span>
-
-                    <span
-                      aria-hidden="true"
-                      className="text-base transition-transform duration-300 group-hover:translate-x-1"
-                    >
-                      →
-                    </span>
-                  </Link>
-                </li>
-              )
-            })}
+                    →
+                  </span>
+                </Link>
+              </li>
+            ))}
           </ul>
 
           <div className="mt-8 flex justify-center">
             <div className="rounded-full bg-white px-5 py-2.5 text-xs font-semibold tracking-[0.08em] text-black shadow-sm">
-              gamigami.net
+              発送代行・流通加工・内職作業
             </div>
           </div>
         </nav>
