@@ -9,12 +9,7 @@ export const metadata = {
     "大阪府守口市大日町の約100坪物流倉庫。発送代行・倉庫保管・検品・梱包・シール貼り・セット組み・内職作業・流通加工まで対応。福岡・神戸の提携倉庫あり。化粧品製造業許可・第一種貨物利用運送事業にも対応。",
 }
 
-const heroBadges = [
-  "発送代行",
-  "倉庫保管",
-  "流通加工",
-  "内職作業",
-]
+const heroBadges = ["発送代行", "倉庫保管", "流通加工", "内職作業"]
 
 const problems = [
   "発送作業が追いつかない",
@@ -89,7 +84,7 @@ export default function HomePage() {
       <Header />
 
       <main>
-        <section className="relative min-h-[650px] overflow-hidden bg-zinc-900 text-white sm:min-h-[720px]">
+        <section className="relative min-h-[620px] overflow-hidden bg-zinc-900 text-white sm:min-h-[720px]">
           <video
             autoPlay
             loop
@@ -100,78 +95,76 @@ export default function HomePage() {
             <source src="/video/hero-logistics.mp4" type="video/mp4" />
           </video>
 
-          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/45 to-black/80" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/72 via-black/48 to-black/82" />
 
-          <div className="relative z-10 mx-auto flex min-h-[650px] max-w-6xl items-center justify-center px-5 py-20 text-center sm:min-h-[720px] sm:px-6 lg:justify-start lg:text-left">
+          <div className="relative z-10 mx-auto flex min-h-[620px] max-w-6xl items-center justify-center px-5 py-16 text-center sm:min-h-[720px] sm:px-6 sm:py-20 lg:justify-start lg:text-left">
             <div className="mx-auto max-w-4xl lg:mx-0">
-              <p className="text-[10px] font-semibold tracking-[0.22em] text-amber-300 sm:text-sm sm:tracking-[0.28em]">
-                LOGISTICS WAREHOUSE / OSAKA MORIGUCHI
+              <p className="text-[10px] font-semibold tracking-[0.18em] text-amber-300 sm:text-sm sm:tracking-[0.28em]">
+                LOGISTICS WAREHOUSE / OSAKA
               </p>
 
-              <h1 className="mt-5 text-[clamp(2rem,6vw,5rem)] font-bold leading-tight tracking-[-0.06em] text-white">
-                大阪の物流倉庫・
-                <br />
-                発送代行ならGAMI
+              <h1 className="mt-5 text-[2.15rem] font-bold leading-[1.18] tracking-[-0.04em] text-white sm:text-5xl sm:leading-tight lg:text-[5rem] lg:leading-[1.05]">
+                <span className="block">大阪の物流倉庫・</span>
+                <span className="block">発送代行なら</span>
+                <span className="block">GAMI</span>
               </h1>
 
-              <p className="mx-auto mt-7 max-w-[42rem] text-[15px] leading-8 text-white/86 sm:text-lg sm:leading-9 lg:mx-0">
-                守口市大日町の約100坪倉庫を拠点に、保管・発送代行・検品・梱包・
-                シール貼り・セット組み・内職作業・流通加工まで一括対応。
+              <p className="mx-auto mt-6 max-w-[22rem] text-[14px] leading-7 text-white/86 sm:max-w-[42rem] sm:text-lg sm:leading-9 lg:mx-0">
+                守口市大日町の約100坪倉庫を拠点に、保管・発送代行・検品・梱包・シール貼り・セット組み・内職作業・流通加工まで一括対応。
               </p>
 
-              <div className="mx-auto mt-8 grid max-w-[24rem] grid-cols-2 gap-3 sm:max-w-xl sm:grid-cols-4 lg:mx-0">
+              <div className="mx-auto mt-7 grid max-w-[21rem] grid-cols-2 gap-2.5 sm:max-w-xl sm:grid-cols-4 sm:gap-3 lg:mx-0">
                 {heroBadges.map((item) => (
                   <div
                     key={item}
-                    className="rounded-full border border-white/15 bg-white/12 px-4 py-3 text-center text-xs font-bold tracking-wide text-white/90 backdrop-blur"
+                    className="rounded-full border border-white/15 bg-white/12 px-3 py-2.5 text-center text-xs font-bold tracking-wide text-white/90 backdrop-blur sm:px-4 sm:py-3"
                   >
                     {item}
                   </div>
                 ))}
               </div>
 
-              <div className="mx-auto mt-9 flex max-w-[22rem] flex-col gap-3 sm:max-w-none sm:flex-row sm:justify-center lg:mx-0 lg:justify-start">
+              <div className="mx-auto mt-8 flex max-w-[21rem] flex-col gap-3 sm:max-w-none sm:flex-row sm:justify-center lg:mx-0 lg:justify-start">
                 <Link
                   href="/company#contact"
-                  className="rounded-full bg-amber-500 px-8 py-4 text-center text-sm font-bold tracking-wide text-white shadow-lg transition hover:-translate-y-0.5 hover:bg-amber-400"
+                  className="rounded-full bg-amber-500 px-7 py-4 text-center text-sm font-bold tracking-wide text-white shadow-lg transition hover:-translate-y-0.5 hover:bg-amber-400 sm:px-8"
                 >
                   物流を無料相談する
                 </Link>
 
                 <a
                   href="tel:0661159935"
-                  className="rounded-full border border-white/40 bg-white/10 px-8 py-4 text-center text-sm font-bold tracking-wide text-white backdrop-blur transition hover:bg-white/20"
+                  className="rounded-full border border-white/40 bg-white/10 px-7 py-4 text-center text-sm font-bold tracking-wide text-white backdrop-blur transition hover:bg-white/20 sm:px-8"
                 >
                   電話で相談する
                 </a>
               </div>
 
-              <p className="mx-auto mt-5 max-w-[34rem] text-xs leading-6 text-white/65 lg:mx-0">
+              <p className="mx-auto mt-5 max-w-[21rem] text-xs leading-6 text-white/65 sm:max-w-[34rem] lg:mx-0">
                 小ロット・スポット案件・細かな手作業も、まずは内容をお聞かせください。
               </p>
             </div>
           </div>
         </section>
 
-        <section className="section-gradient py-20 sm:py-28">
+        <section className="section-gradient py-16 sm:py-28">
           <div className="mx-auto max-w-6xl px-5 sm:px-6">
             <div className="text-center lg:text-left">
-              <p className="text-sm font-semibold tracking-[0.2em] text-gold sm:tracking-[0.24em]">
+              <p className="text-xs font-semibold tracking-[0.18em] text-gold sm:text-sm sm:tracking-[0.24em]">
                 PROBLEM
               </p>
 
-              <h2 className="mt-4 text-[1.9rem] font-bold leading-[1.38] tracking-[-0.03em] sm:text-5xl sm:leading-tight">
-                こんな物流作業で
-                <br />
-                困っていませんか？
+              <h2 className="mt-4 text-[1.75rem] font-bold leading-[1.35] tracking-[-0.03em] sm:text-5xl sm:leading-tight">
+                <span className="block">こんな物流作業で</span>
+                <span className="block">困っていませんか？</span>
               </h2>
             </div>
 
-            <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="mt-9 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
               {problems.map((item) => (
                 <div
                   key={item}
-                  className="rounded-3xl border border-border bg-white/80 p-6 text-left shadow-sm"
+                  className="rounded-3xl border border-border bg-white/80 p-5 text-left shadow-sm sm:p-6"
                 >
                   <p className="text-sm font-bold leading-7">{item}</p>
                 </div>
@@ -180,31 +173,29 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section className="bg-zinc-950 py-20 text-white sm:py-28">
+        <section className="bg-zinc-950 py-16 text-white sm:py-28">
           <div className="mx-auto max-w-6xl px-5 sm:px-6">
             <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
               <div className="text-center lg:text-left">
-                <p className="text-sm font-semibold tracking-[0.2em] text-amber-300 sm:tracking-[0.24em]">
+                <p className="text-xs font-semibold tracking-[0.18em] text-amber-300 sm:text-sm sm:tracking-[0.24em]">
                   SERVICE
                 </p>
 
-                <h2 className="mt-4 text-[1.9rem] font-bold leading-[1.38] tracking-[-0.03em] sm:text-5xl sm:leading-tight">
-                  保管から加工、
-                  <br />
-                  発送まで一括対応。
+                <h2 className="mt-4 text-[1.75rem] font-bold leading-[1.35] tracking-[-0.03em] sm:text-5xl sm:leading-tight">
+                  <span className="block">保管から加工、</span>
+                  <span className="block">発送まで一括対応。</span>
                 </h2>
 
-                <p className="mx-auto mt-6 max-w-[34rem] text-[15px] leading-8 text-white/70 sm:max-w-3xl sm:text-base lg:mx-0">
-                  GAMIは物流運送事業を主軸に、倉庫保管・発送代行・検品・梱包・流通加工まで対応。
-                  特に、シール貼り・セット組み・封入作業などの細かな作業を増やしていきたいと考えています。
+                <p className="mx-auto mt-6 max-w-[22rem] text-[14px] leading-7 text-white/70 sm:max-w-3xl sm:text-base sm:leading-8 lg:mx-0">
+                  GAMIは物流運送事業を主軸に、倉庫保管・発送代行・検品・梱包・流通加工まで対応。特に、シール貼り・セット組み・封入作業などの細かな作業を増やしていきたいと考えています。
                 </p>
               </div>
 
-              <div className="grid gap-3 text-left sm:grid-cols-2">
+              <div className="grid gap-2.5 text-left sm:grid-cols-2 sm:gap-3">
                 {services.map((item) => (
                   <div
                     key={item}
-                    className="rounded-2xl border border-white/10 bg-white/[0.06] px-5 py-4 text-sm font-bold leading-6 text-white/85"
+                    className="rounded-2xl border border-white/10 bg-white/[0.06] px-4 py-3.5 text-sm font-bold leading-6 text-white/85 sm:px-5 sm:py-4"
                   >
                     {item}
                   </div>
@@ -214,31 +205,30 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section className="py-20 sm:py-28">
+        <section className="py-16 sm:py-28">
           <div className="mx-auto max-w-6xl px-5 sm:px-6">
             <div className="text-center lg:text-left">
-              <p className="text-sm font-semibold tracking-[0.2em] text-gold sm:tracking-[0.24em]">
+              <p className="text-xs font-semibold tracking-[0.18em] text-gold sm:text-sm sm:tracking-[0.24em]">
                 STRENGTH
               </p>
 
-              <h2 className="mt-4 text-[1.9rem] font-bold leading-[1.38] tracking-[-0.03em] sm:text-5xl sm:leading-tight">
-                GAMIが物流で
-                <br />
-                選ばれる理由
+              <h2 className="mt-4 text-[1.75rem] font-bold leading-[1.35] tracking-[-0.03em] sm:text-5xl sm:leading-tight">
+                <span className="block">GAMIが物流で</span>
+                <span className="block">選ばれる理由</span>
               </h2>
             </div>
 
-            <div className="mt-12 grid gap-5 text-left sm:grid-cols-2 lg:grid-cols-3">
+            <div className="mt-10 grid gap-4 text-left sm:grid-cols-2 lg:grid-cols-3">
               {strengths.map((item) => (
                 <div
                   key={item.title}
-                  className="rounded-[2rem] border border-border bg-card p-7 shadow-glass"
+                  className="rounded-[1.75rem] border border-border bg-card p-6 shadow-glass sm:rounded-[2rem] sm:p-7"
                 >
-                  <h3 className="text-xl font-bold leading-snug">
+                  <h3 className="text-lg font-bold leading-snug sm:text-xl">
                     {item.title}
                   </h3>
 
-                  <p className="mt-4 text-sm leading-8 text-muted-foreground">
+                  <p className="mt-4 text-sm leading-7 text-muted-foreground sm:leading-8">
                     {item.body}
                   </p>
                 </div>
@@ -247,49 +237,45 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section className="section-gradient py-20 sm:py-28">
+        <section className="section-gradient py-16 sm:py-28">
           <div className="mx-auto max-w-6xl px-5 sm:px-6">
             <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
               <div className="text-center lg:text-left">
-                <p className="text-sm font-semibold tracking-[0.2em] text-gold sm:tracking-[0.24em]">
+                <p className="text-xs font-semibold tracking-[0.18em] text-gold sm:text-sm sm:tracking-[0.24em]">
                   WAREHOUSE
                 </p>
 
-                <h2 className="mt-4 text-[1.9rem] font-bold leading-[1.38] tracking-[-0.03em] sm:text-5xl sm:leading-tight">
-                  大阪府守口市の
-                  <br />
-                  約100坪倉庫。
+                <h2 className="mt-4 text-[1.75rem] font-bold leading-[1.35] tracking-[-0.03em] sm:text-5xl sm:leading-tight">
+                  <span className="block">大阪府守口市の</span>
+                  <span className="block">約100坪倉庫。</span>
                 </h2>
 
-                <p className="mx-auto mt-6 max-w-[34rem] text-[15px] leading-8 text-muted-foreground sm:text-base lg:mx-0">
-                  住所：大阪府守口市大日町1-8-18。
-                  大阪を中心に、保管・出荷・検品・梱包・流通加工まで対応します。
-                  福岡と神戸にも提携倉庫があるため、案件に応じた物流体制をご提案できます。
+                <p className="mx-auto mt-6 max-w-[22rem] text-[14px] leading-7 text-muted-foreground sm:max-w-3xl sm:text-base sm:leading-8 lg:mx-0">
+                  住所：大阪府守口市大日町1-8-18。大阪を中心に、保管・出荷・検品・梱包・流通加工まで対応します。福岡と神戸にも提携倉庫があるため、案件に応じた物流体制をご提案できます。
                 </p>
               </div>
 
               <div className="grid gap-4">
-                <div className="rounded-[2rem] border border-border bg-white p-7 shadow-glass">
-                  <p className="text-xs font-bold tracking-[0.2em] text-gold">
+                <div className="rounded-[1.75rem] border border-border bg-white p-6 shadow-glass sm:rounded-[2rem] sm:p-7">
+                  <p className="text-xs font-bold tracking-[0.18em] text-gold sm:tracking-[0.2em]">
                     MORIGUCHI WAREHOUSE
                   </p>
                   <h3 className="mt-4 text-2xl font-bold">守口倉庫</h3>
-                  <p className="mt-4 text-sm leading-8 text-muted-foreground">
-                    約100坪の倉庫で、細かな管理が必要な商品や流通加工案件に対応。
-                    小ロットから継続案件までご相談ください。
+                  <p className="mt-4 text-sm leading-7 text-muted-foreground sm:leading-8">
+                    約100坪の倉庫で、細かな管理が必要な商品や流通加工案件に対応。小ロットから継続案件までご相談ください。
                   </p>
                 </div>
 
                 <div className="grid gap-4 sm:grid-cols-2">
-                  <div className="rounded-[2rem] border border-border bg-white p-7 shadow-sm">
-                    <p className="text-xs font-bold tracking-[0.2em] text-gold">
+                  <div className="rounded-[1.75rem] border border-border bg-white p-6 shadow-sm sm:rounded-[2rem] sm:p-7">
+                    <p className="text-xs font-bold tracking-[0.18em] text-gold">
                       PARTNER
                     </p>
                     <h3 className="mt-4 text-xl font-bold">福岡提携倉庫</h3>
                   </div>
 
-                  <div className="rounded-[2rem] border border-border bg-white p-7 shadow-sm">
-                    <p className="text-xs font-bold tracking-[0.2em] text-gold">
+                  <div className="rounded-[1.75rem] border border-border bg-white p-6 shadow-sm sm:rounded-[2rem] sm:p-7">
+                    <p className="text-xs font-bold tracking-[0.18em] text-gold">
                       PARTNER
                     </p>
                     <h3 className="mt-4 text-xl font-bold">神戸提携倉庫</h3>
@@ -300,26 +286,25 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section className="py-20 sm:py-28">
+        <section className="py-16 sm:py-28">
           <div className="mx-auto max-w-6xl px-5 text-center sm:px-6 lg:text-left">
-            <p className="text-sm font-semibold tracking-[0.2em] text-gold sm:tracking-[0.24em]">
+            <p className="text-xs font-semibold tracking-[0.18em] text-gold sm:text-sm sm:tracking-[0.24em]">
               CASE
             </p>
 
-            <h2 className="mt-4 text-[1.9rem] font-bold leading-[1.38] tracking-[-0.03em] sm:text-5xl sm:leading-tight">
+            <h2 className="mt-4 text-[1.75rem] font-bold leading-[1.35] tracking-[-0.03em] sm:text-5xl sm:leading-tight">
               物流対応実例
             </h2>
 
-            <p className="mx-auto mt-6 max-w-[34rem] text-[15px] leading-8 text-muted-foreground sm:max-w-3xl sm:text-base lg:mx-0">
-              美容商材、EC商品、食品、返礼品、スポット案件まで対応。
-              メーカー名は伏せたうえで、対応イメージをご紹介します。
+            <p className="mx-auto mt-6 max-w-[22rem] text-[14px] leading-7 text-muted-foreground sm:max-w-3xl sm:text-base sm:leading-8 lg:mx-0">
+              美容商材、EC商品、食品、返礼品、スポット案件まで対応。メーカー名は伏せたうえで、対応イメージをご紹介します。
             </p>
 
-            <div className="mt-10 grid gap-4 text-left sm:grid-cols-2 lg:grid-cols-3">
+            <div className="mt-9 grid gap-3 text-left sm:grid-cols-2 lg:grid-cols-3">
               {cases.map((item) => (
                 <div
                   key={item}
-                  className="rounded-3xl border border-border bg-card p-6 shadow-glass"
+                  className="rounded-3xl border border-border bg-card p-5 shadow-glass sm:p-6"
                 >
                   <p className="text-sm font-bold leading-7">{item}</p>
                 </div>
@@ -328,31 +313,29 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section className="bg-zinc-950 py-20 text-white sm:py-28">
+        <section className="bg-zinc-950 py-16 text-white sm:py-28">
           <div className="mx-auto max-w-6xl px-5 sm:px-6">
             <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
               <div className="text-center lg:text-left">
-                <p className="text-sm font-semibold tracking-[0.2em] text-amber-300 sm:tracking-[0.24em]">
+                <p className="text-xs font-semibold tracking-[0.18em] text-amber-300 sm:text-sm sm:tracking-[0.24em]">
                   LICENSE
                 </p>
 
-                <h2 className="mt-4 text-[1.9rem] font-bold leading-[1.38] tracking-[-0.03em] sm:text-5xl sm:leading-tight">
-                  許認可を活かした
-                  <br />
-                  安心の物流対応。
+                <h2 className="mt-4 text-[1.75rem] font-bold leading-[1.35] tracking-[-0.03em] sm:text-5xl sm:leading-tight">
+                  <span className="block">許認可を活かした</span>
+                  <span className="block">安心の物流対応。</span>
                 </h2>
 
-                <p className="mx-auto mt-6 max-w-[34rem] text-[15px] leading-8 text-white/70 sm:max-w-3xl sm:text-base lg:mx-0">
-                  化粧品関連商材や配送まわりも含めて相談できる体制があります。
-                  保管・加工・発送まで、まずは案件内容をお聞かせください。
+                <p className="mx-auto mt-6 max-w-[22rem] text-[14px] leading-7 text-white/70 sm:max-w-3xl sm:text-base sm:leading-8 lg:mx-0">
+                  化粧品関連商材や配送まわりも含めて相談できる体制があります。保管・加工・発送まで、まずは案件内容をお聞かせください。
                 </p>
               </div>
 
-              <div className="grid gap-4 text-left sm:grid-cols-2">
+              <div className="grid gap-3 text-left sm:grid-cols-2">
                 {licenses.map((item) => (
                   <div
                     key={item}
-                    className="rounded-3xl border border-white/10 bg-white/[0.06] p-6"
+                    className="rounded-3xl border border-white/10 bg-white/[0.06] p-5 sm:p-6"
                   >
                     <p className="text-sm font-bold leading-7 text-white/85">
                       {item}
@@ -364,24 +347,22 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section className="py-20 sm:py-28">
+        <section className="py-16 sm:py-28">
           <div className="mx-auto max-w-5xl px-5 text-center sm:px-6">
-            <p className="text-sm font-semibold tracking-[0.2em] text-gold sm:tracking-[0.24em]">
+            <p className="text-xs font-semibold tracking-[0.18em] text-gold sm:text-sm sm:tracking-[0.24em]">
               CONTACT
             </p>
 
-            <h2 className="mt-4 text-[1.9rem] font-bold leading-[1.38] tracking-[-0.03em] sm:text-5xl sm:leading-tight">
-              物流のご相談は、
-              <br />
-              まずはGAMIへ。
+            <h2 className="mt-4 text-[1.75rem] font-bold leading-[1.35] tracking-[-0.03em] sm:text-5xl sm:leading-tight">
+              <span className="block">物流のご相談は、</span>
+              <span className="block">まずはGAMIへ。</span>
             </h2>
 
-            <p className="mx-auto mt-6 max-w-[34rem] text-[15px] leading-8 text-muted-foreground sm:max-w-2xl sm:text-base">
-              発送代行、倉庫保管、検品、梱包、シール貼り、セット組み、内職作業、流通加工まで。
-              小ロット・スポット案件もお気軽にご相談ください。
+            <p className="mx-auto mt-6 max-w-[22rem] text-[14px] leading-7 text-muted-foreground sm:max-w-2xl sm:text-base sm:leading-8">
+              発送代行、倉庫保管、検品、梱包、シール貼り、セット組み、内職作業、流通加工まで。小ロット・スポット案件もお気軽にご相談ください。
             </p>
 
-            <div className="mx-auto mt-9 flex max-w-[22rem] flex-col justify-center gap-3 sm:max-w-none sm:flex-row">
+            <div className="mx-auto mt-8 flex max-w-[21rem] flex-col justify-center gap-3 sm:max-w-none sm:flex-row">
               <Link
                 href="/company#contact"
                 className="rounded-full bg-amber-500 px-8 py-4 text-sm font-bold text-white shadow-lg transition hover:-translate-y-0.5 hover:bg-amber-600"
