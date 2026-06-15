@@ -199,8 +199,9 @@ export default function WarehousePage() {
           </h2>
 
           <p className="mx-auto mt-5 max-w-[22rem] text-sm leading-7 text-white/65 sm:max-w-2xl">
-            倉庫外観・内観・作業風景の写真を追加予定です。写真を入れると、問い合わせ前の安心感が大きく上がります。
-          </p>
+  大阪府守口市大日町の約100坪倉庫。
+  保管・発送代行・流通加工・内職作業に対応しています。
+</p>
 
           <div className="mt-9 grid gap-4 sm:grid-cols-3">
             <div className="aspect-video rounded-2xl border border-white/10 bg-white/10" />
