@@ -74,19 +74,26 @@ export function Footer() {
                 </Link>
               </li>
 
-              <li>
-                <Link href="/company" className={footerLinkClass}>
-                  <span>会社概要</span>
-                  <span>→</span>
-                </Link>
-              </li>
+             <li>
+  <Link href="/warehouse" className={footerLinkClass}>
+    <span>倉庫紹介</span>
+    <span>→</span>
+  </Link>
+</li>
 
-              <li>
-                <Link href="/other-business" className={footerLinkClass}>
-                  <span>その他事業</span>
-                  <span>→</span>
-                </Link>
-              </li>
+<li>
+  <Link href="/company" className={footerLinkClass}>
+    <span>会社概要</span>
+    <span>→</span>
+  </Link>
+</li>
+
+<li>
+  <Link href="/other-business" className={footerLinkClass}>
+    <span>その他事業</span>
+    <span>→</span>
+  </Link>
+</li>
             </ul>
           </div>
 
