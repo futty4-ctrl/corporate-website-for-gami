@@ -137,7 +137,7 @@ export function Footer() {
               </Link>
 
               <a href="tel:0661159935" className={footerLinkClass}>
-                <span>06-6115-9935</span>
+                <span>電話で相談する</span>
                 <span>→</span>
               </a>
 
