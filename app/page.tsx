@@ -255,7 +255,7 @@ export default function HomePage() {
 
         <section className="section-gradient py-16 sm:py-28">
           <div className="mx-auto max-w-6xl px-5 sm:px-6">
-            <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+            <div className="grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
               <div className="text-center lg:text-left">
                 <p className="text-xs font-semibold tracking-[0.18em] text-gold sm:text-sm sm:tracking-[0.24em]">
                   WAREHOUSE
@@ -267,37 +267,64 @@ export default function HomePage() {
                 </h2>
 
                 <p className="mx-auto mt-6 max-w-[22rem] text-[14px] leading-7 text-muted-foreground sm:max-w-3xl sm:text-base sm:leading-8 lg:mx-0">
-                  住所：大阪府守口市大日町1-8-18。大阪を中心に、保管・出荷・検品・梱包・流通加工まで対応します。福岡と神戸にも提携倉庫があるため、案件に応じた物流体制をご提案できます。
+                  住所：大阪府守口市大日町1-8-18。大阪を中心に、保管・出荷・検品・梱包・流通加工まで対応します。
+                  福岡と神戸にも提携倉庫があるため、案件に応じた物流体制をご提案できます。
                 </p>
 
-                <Link
-                  href="/warehouse"
-                  className="mt-8 inline-flex items-center justify-center rounded-full bg-amber-500 px-8 py-4 text-sm font-bold text-white shadow-lg transition hover:bg-amber-600"
-                >
-                  倉庫紹介を見る
-                </Link>
+                <div className="mx-auto mt-8 flex max-w-[21rem] flex-col gap-3 sm:max-w-none sm:flex-row lg:mx-0">
+                  <Link
+                    href="/warehouse"
+                    className="inline-flex items-center justify-center rounded-full bg-amber-500 px-8 py-4 text-sm font-bold text-white shadow-lg transition hover:bg-amber-600"
+                  >
+                    倉庫紹介を見る
+                  </Link>
+
+                  <Link
+                    href="/company#contact"
+                    className="inline-flex items-center justify-center rounded-full border border-border bg-white px-8 py-4 text-sm font-bold text-foreground transition hover:bg-muted"
+                  >
+                    倉庫作業を相談する
+                  </Link>
+                </div>
               </div>
 
               <div className="grid gap-4">
-                <div className="rounded-[1.75rem] border border-border bg-white p-6 shadow-glass sm:rounded-[2rem] sm:p-7">
-                  <p className="text-xs font-bold tracking-[0.18em] text-gold sm:tracking-[0.2em]">
-                    MORIGUCHI WAREHOUSE
-                  </p>
-                  <h3 className="mt-4 text-2xl font-bold">守口倉庫</h3>
-                  <p className="mt-4 text-sm leading-7 text-muted-foreground sm:leading-8">
-                    約100坪の倉庫で、細かな管理が必要な商品や流通加工案件に対応。小ロットから継続案件までご相談ください。
-                  </p>
+                <div className="overflow-hidden rounded-[1.75rem] border border-border bg-white shadow-glass sm:rounded-[2rem]">
+                  <img
+                    src="/images/warehouse-moriguchi.jpg"
+                    alt="GAMI守口倉庫外観"
+                    className="aspect-[4/3] w-full object-cover sm:aspect-[16/10]"
+                  />
+                  <div className="p-5 sm:p-6">
+                    <p className="text-xs font-bold tracking-[0.18em] text-gold">
+                      MORIGUCHI WAREHOUSE
+                    </p>
+                    <h3 className="mt-3 text-xl font-bold sm:text-2xl">
+                      守口倉庫
+                    </h3>
+                    <p className="mt-3 text-sm leading-7 text-muted-foreground">
+                      約100坪の倉庫で、保管・発送代行・流通加工・内職作業まで対応します。
+                    </p>
+                  </div>
+                </div>
+
+                <div className="overflow-hidden rounded-[1.75rem] border border-border bg-white shadow-sm sm:rounded-[2rem]">
+                  <img
+                    src="/images/warehouse-moriguchi-inside.jpg"
+                    alt="GAMI守口倉庫内観"
+                    className="aspect-[4/3] w-full object-cover sm:aspect-[16/10]"
+                  />
                 </div>
 
                 <div className="grid gap-4 sm:grid-cols-2">
-                  <div className="rounded-[1.75rem] border border-border bg-white p-6 shadow-sm sm:rounded-[2rem] sm:p-7">
+                  <div className="rounded-[1.75rem] border border-border bg-white p-6 shadow-sm sm:rounded-[2rem]">
                     <p className="text-xs font-bold tracking-[0.18em] text-gold">
                       PARTNER
                     </p>
                     <h3 className="mt-4 text-xl font-bold">福岡提携倉庫</h3>
                   </div>
 
-                  <div className="rounded-[1.75rem] border border-border bg-white p-6 shadow-sm sm:rounded-[2rem] sm:p-7">
+                  <div className="rounded-[1.75rem] border border-border bg-white p-6 shadow-sm sm:rounded-[2rem]">
                     <p className="text-xs font-bold tracking-[0.18em] text-gold">
                       PARTNER
                     </p>
