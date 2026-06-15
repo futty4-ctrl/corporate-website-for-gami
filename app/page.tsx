@@ -63,12 +63,12 @@ const strengths = [
 ]
 
 const cases = [
-  "美容メーカー商品の発送代行",
-  "ECブランド商品の全国発送",
-  "ふるさと納税返礼品の発送",
-  "食品・スパイス商品の発送",
-  "化粧品関連商品のスポット対応",
-  "セット組み・シール貼り・封入作業",
+  "EC商品の発送代行",
+  "Amazon・楽天商品の出荷対応",
+  "シール貼り・セット組み",
+  "化粧品関連物流",
+  "スポット出荷対応",
+  "小ロット案件対応",
 ]
 
 const licenses = [
@@ -130,6 +130,13 @@ export default function HomePage() {
                   className="rounded-full bg-amber-500 px-7 py-4 text-center text-sm font-bold tracking-wide text-white shadow-lg transition hover:-translate-y-0.5 hover:bg-amber-400 sm:px-8"
                 >
                   物流を無料相談する
+                </Link>
+
+                <Link
+                  href="/warehouse"
+                  className="rounded-full border border-white/40 bg-white/10 px-7 py-4 text-center text-sm font-bold tracking-wide text-white backdrop-blur transition hover:bg-white/20 sm:px-8"
+                >
+                  倉庫紹介を見る
                 </Link>
 
                 <a
@@ -231,6 +238,15 @@ export default function HomePage() {
                   <p className="mt-4 text-sm leading-7 text-muted-foreground sm:leading-8">
                     {item.body}
                   </p>
+
+                  {item.title.includes("守口") && (
+                    <Link
+                      href="/warehouse"
+                      className="mt-5 inline-flex rounded-full bg-amber-500 px-5 py-3 text-xs font-bold text-white transition hover:bg-amber-600"
+                    >
+                      倉庫紹介を見る
+                    </Link>
+                  )}
                 </div>
               ))}
             </div>
@@ -253,6 +269,13 @@ export default function HomePage() {
                 <p className="mx-auto mt-6 max-w-[22rem] text-[14px] leading-7 text-muted-foreground sm:max-w-3xl sm:text-base sm:leading-8 lg:mx-0">
                   住所：大阪府守口市大日町1-8-18。大阪を中心に、保管・出荷・検品・梱包・流通加工まで対応します。福岡と神戸にも提携倉庫があるため、案件に応じた物流体制をご提案できます。
                 </p>
+
+                <Link
+                  href="/warehouse"
+                  className="mt-8 inline-flex items-center justify-center rounded-full bg-amber-500 px-8 py-4 text-sm font-bold text-white shadow-lg transition hover:bg-amber-600"
+                >
+                  倉庫紹介を見る
+                </Link>
               </div>
 
               <div className="grid gap-4">
@@ -297,7 +320,8 @@ export default function HomePage() {
             </h2>
 
             <p className="mx-auto mt-6 max-w-[22rem] text-[14px] leading-7 text-muted-foreground sm:max-w-3xl sm:text-base sm:leading-8 lg:mx-0">
-              美容商材、EC商品、食品、返礼品、スポット案件まで対応。メーカー名は伏せたうえで、対応イメージをご紹介します。
+              EC商品、化粧品関連商材、スポット出荷、小ロット案件まで対応。
+              発送代行や流通加工を外注したい企業様からのご相談をお待ちしています。
             </p>
 
             <div className="mt-9 grid gap-3 text-left sm:grid-cols-2 lg:grid-cols-3">
@@ -368,6 +392,13 @@ export default function HomePage() {
                 className="rounded-full bg-amber-500 px-8 py-4 text-sm font-bold text-white shadow-lg transition hover:-translate-y-0.5 hover:bg-amber-600"
               >
                 物流を無料相談する
+              </Link>
+
+              <Link
+                href="/warehouse"
+                className="rounded-full border border-border px-8 py-4 text-sm font-bold text-foreground transition hover:bg-muted"
+              >
+                倉庫紹介を見る
               </Link>
 
               <a
