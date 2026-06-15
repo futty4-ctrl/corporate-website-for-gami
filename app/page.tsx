@@ -82,7 +82,7 @@ export default function HomePage() {
       <Header />
 
       <main>
-        <section className="relative min-h-[480px] overflow-hidden bg-zinc-900 text-white sm:min-h-[720px]">
+        <section className="relative min-h-[420px] overflow-hidden bg-zinc-900 text-white sm:min-h-[720px]">
           <video
             autoPlay
             loop
@@ -93,49 +93,42 @@ export default function HomePage() {
             <source src="/video/hero-logistics.mp4" type="video/mp4" />
           </video>
 
-          <div className="absolute inset-0 bg-gradient-to-b from-black/72 via-black/48 to-black/82" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/75 via-black/55 to-black/80" />
 
-          <div className="relative z-10 mx-auto flex min-h-[480px] max-w-6xl items-center justify-center px-5 py-12 text-center sm:min-h-[720px] sm:px-6 sm:py-20 lg:justify-start lg:text-left">
+          <div className="relative z-10 mx-auto flex min-h-[420px] max-w-6xl items-center justify-center px-5 py-10 text-center sm:min-h-[720px] sm:px-6 sm:py-20 lg:justify-start lg:text-left">
             <div className="mx-auto max-w-4xl lg:mx-0">
-              <p className="text-[10px] font-semibold tracking-[0.18em] text-amber-300 sm:text-sm sm:tracking-[0.28em]">
+              <p className="text-[10px] font-semibold tracking-[0.18em] text-amber-300 sm:text-sm">
                 LOGISTICS WAREHOUSE / OSAKA
               </p>
 
-              <h1 className="mt-5 text-[2.05rem] font-bold leading-[1.18] tracking-[-0.04em] text-white sm:text-5xl sm:leading-tight lg:text-[5rem] lg:leading-[1.05]">
-                <span className="block">大阪の物流倉庫・</span>
-                <span className="block">発送代行なら</span>
-                <span className="block">GAMI</span>
+              <h1 className="mt-4 text-[1.85rem] font-bold leading-[1.15] tracking-[-0.04em] text-white sm:text-5xl lg:text-[5rem] lg:leading-[1.05]">
+                <span className="block">大阪の物流倉庫・発送代行なら</span>
+                <span className="mt-2 block">GAMI</span>
               </h1>
 
-              <p className="mx-auto mt-6 max-w-[22rem] text-[14px] leading-7 text-white/86 sm:max-w-[42rem] sm:text-lg sm:leading-9 lg:mx-0">
-                守口市大日町の約100坪倉庫を拠点に、保管・発送代行・検品・梱包・シール貼り・セット組み・内職作業・流通加工まで一括対応。
+              <p className="mx-auto mt-5 max-w-[20rem] text-[13px] leading-6 text-white/85 sm:max-w-[42rem] sm:text-lg sm:leading-9 lg:mx-0">
+                守口市大日町の約100坪倉庫を拠点に、
+                発送代行・倉庫保管・流通加工・内職作業まで対応。
               </p>
 
-              <div className="mx-auto mt-8 flex max-w-[21rem] flex-col gap-3 sm:max-w-none sm:flex-row sm:justify-center lg:mx-0 lg:justify-start">
+              <div className="mx-auto mt-7 flex max-w-[20rem] flex-col gap-3 sm:max-w-none sm:flex-row sm:justify-center lg:mx-0 lg:justify-start">
                 <Link
                   href="/company#contact"
-                  className="rounded-full bg-amber-500 px-7 py-4 text-center text-sm font-bold tracking-wide text-white shadow-lg transition hover:-translate-y-0.5 hover:bg-amber-400 sm:px-8"
+                  className="rounded-full bg-amber-500 px-7 py-4 text-center text-sm font-bold text-white shadow-lg transition hover:bg-amber-600"
                 >
                   物流を無料相談する
                 </Link>
 
                 <Link
                   href="/warehouse"
-                  className="rounded-full border border-white/40 bg-white/10 px-7 py-4 text-center text-sm font-bold tracking-wide text-white backdrop-blur transition hover:bg-white/20 sm:px-8"
+                  className="rounded-full border border-white/40 bg-white/10 px-7 py-4 text-center text-sm font-bold text-white backdrop-blur transition hover:bg-white/20"
                 >
                   倉庫紹介を見る
                 </Link>
-
-                <a
-                  href="tel:0661159935"
-                  className="hidden rounded-full border border-white/40 bg-white/10 px-7 py-4 text-center text-sm font-bold tracking-wide text-white backdrop-blur transition hover:bg-white/20 sm:inline-flex sm:items-center sm:justify-center sm:px-8"
-                >
-                  電話で相談する
-                </a>
               </div>
 
-              <p className="mx-auto mt-5 max-w-[21rem] text-xs leading-6 text-white/65 sm:max-w-[34rem] lg:mx-0">
-                小ロット・スポット案件・細かな手作業も、まずは内容をお聞かせください。
+              <p className="mx-auto mt-4 max-w-[20rem] text-xs leading-6 text-white/60 sm:max-w-[34rem] lg:mx-0">
+                小ロット・スポット案件・細かな手作業も対応しています。
               </p>
             </div>
           </div>
