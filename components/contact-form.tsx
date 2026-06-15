@@ -2,8 +2,6 @@
 
 import { useState } from "react"
 
-const CONTACT_EMAIL = "k_fuchigami@gamigami.email"
-
 const inquiryTypes = [
   "物流・発送代行の相談",
   "倉庫保管・流通加工の相談",
@@ -14,65 +12,59 @@ const inquiryTypes = [
 
 export function ContactForm() {
   const [submitted, setSubmitted] = useState(false)
+  const [isSending, setIsSending] = useState(false)
+  const [error, setError] = useState("")
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
+    setIsSending(true)
+    setError("")
 
     const form = e.currentTarget
     const formData = new FormData(form)
 
-    const name = String(formData.get("name") || "")
-    const company = String(formData.get("company") || "")
-    const email = String(formData.get("email") || "")
-    const phone = String(formData.get("phone") || "")
-    const type = String(formData.get("type") || "")
-    const message = String(formData.get("message") || "")
+    const payload = {
+      name: String(formData.get("name") || ""),
+      company: String(formData.get("company") || ""),
+      email: String(formData.get("email") || ""),
+      phone: String(formData.get("phone") || ""),
+      type: String(formData.get("type") || ""),
+      message: String(formData.get("message") || ""),
+    }
 
-    const subject = `【物流相談】${company || name}様よりお問い合わせ`
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      })
 
-    const body = `
-株式会社GAMI お問い合わせ
+      if (!res.ok) {
+        throw new Error("送信に失敗しました")
+      }
 
-■ お問い合わせ種別
-${type}
-
-■ お名前
-${name}
-
-■ 会社名 / 屋号
-${company || "未入力"}
-
-■ メールアドレス
-${email}
-
-■ 電話番号
-${phone || "未入力"}
-
-■ お問い合わせ内容
-${message}
-`.trim()
-
-    const mailtoUrl = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(
-      subject,
-    )}&body=${encodeURIComponent(body)}`
-
-    window.location.href = mailtoUrl
-    setSubmitted(true)
+      setSubmitted(true)
+      form.reset()
+    } catch {
+      setError("送信できませんでした。お手数ですが、メールまたはお電話でご連絡ください。")
+    } finally {
+      setIsSending(false)
+    }
   }
 
   if (submitted) {
     return (
       <div className="rounded-[2rem] border border-black/5 bg-white p-6 text-center shadow-[0_18px_50px_rgba(0,0,0,0.06)] sm:p-10">
-        <p className="text-2xl font-bold text-black">メール画面を開きました</p>
+        <p className="text-2xl font-bold text-black">送信ありがとうございます</p>
 
         <p className="mt-4 text-sm leading-8 text-black/60">
-          メール内容を確認して、そのまま送信してください。
+          内容を確認のうえ、担当よりご連絡します。
         </p>
 
         <div className="mt-6 rounded-2xl bg-[#fbfaf7] p-5">
           <p className="text-xs leading-7 text-black/55">
-            送信先：{CONTACT_EMAIL}
-            <br />
             TEL：06-6115-9935
           </p>
         </div>
@@ -196,15 +188,22 @@ ${message}
           />
         </div>
 
+        {error && (
+          <p className="rounded-2xl bg-red-50 px-4 py-3 text-center text-xs font-bold leading-6 text-red-600">
+            {error}
+          </p>
+        )}
+
         <button
           type="submit"
-          className="mt-2 inline-flex w-full items-center justify-center rounded-full bg-amber-500 px-8 py-4 text-sm font-bold text-white shadow-lg transition hover:bg-amber-400 active:scale-95"
+          disabled={isSending}
+          className="mt-2 inline-flex w-full items-center justify-center rounded-full bg-amber-500 px-8 py-4 text-sm font-bold text-white shadow-lg transition hover:bg-amber-400 active:scale-95 disabled:cursor-not-allowed disabled:opacity-60"
         >
-          メールを作成する
+          {isSending ? "送信中..." : "送信する"}
         </button>
 
         <p className="text-center text-xs leading-6 text-black/45">
-          ※ボタンを押すとメールアプリが開きます。内容を確認して送信してください。
+          ※送信できない場合は、直接メールまたはお電話でご連絡ください。
         </p>
       </div>
     </form>
