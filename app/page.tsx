@@ -9,8 +9,6 @@ export const metadata = {
     "大阪府守口市大日町の約100坪物流倉庫。発送代行・倉庫保管・検品・梱包・シール貼り・セット組み・内職作業・流通加工まで対応。福岡・神戸の提携倉庫あり。化粧品製造業許可・第一種貨物利用運送事業にも対応。",
 }
 
-const heroBadges = ["発送代行", "倉庫保管", "流通加工", "内職作業"]
-
 const problems = [
   "発送作業が追いつかない",
   "保管場所が足りない",
@@ -84,7 +82,7 @@ export default function HomePage() {
       <Header />
 
       <main>
-        <section className="relative min-h-[620px] overflow-hidden bg-zinc-900 text-white sm:min-h-[720px]">
+        <section className="relative min-h-[560px] overflow-hidden bg-zinc-900 text-white sm:min-h-[720px]">
           <video
             autoPlay
             loop
@@ -97,13 +95,13 @@ export default function HomePage() {
 
           <div className="absolute inset-0 bg-gradient-to-b from-black/72 via-black/48 to-black/82" />
 
-          <div className="relative z-10 mx-auto flex min-h-[620px] max-w-6xl items-center justify-center px-5 py-16 text-center sm:min-h-[720px] sm:px-6 sm:py-20 lg:justify-start lg:text-left">
+          <div className="relative z-10 mx-auto flex min-h-[560px] max-w-6xl items-center justify-center px-5 py-12 text-center sm:min-h-[720px] sm:px-6 sm:py-20 lg:justify-start lg:text-left">
             <div className="mx-auto max-w-4xl lg:mx-0">
               <p className="text-[10px] font-semibold tracking-[0.18em] text-amber-300 sm:text-sm sm:tracking-[0.28em]">
                 LOGISTICS WAREHOUSE / OSAKA
               </p>
 
-              <h1 className="mt-5 text-[2.15rem] font-bold leading-[1.18] tracking-[-0.04em] text-white sm:text-5xl sm:leading-tight lg:text-[5rem] lg:leading-[1.05]">
+              <h1 className="mt-5 text-[2.05rem] font-bold leading-[1.18] tracking-[-0.04em] text-white sm:text-5xl sm:leading-tight lg:text-[5rem] lg:leading-[1.05]">
                 <span className="block">大阪の物流倉庫・</span>
                 <span className="block">発送代行なら</span>
                 <span className="block">GAMI</span>
@@ -112,17 +110,6 @@ export default function HomePage() {
               <p className="mx-auto mt-6 max-w-[22rem] text-[14px] leading-7 text-white/86 sm:max-w-[42rem] sm:text-lg sm:leading-9 lg:mx-0">
                 守口市大日町の約100坪倉庫を拠点に、保管・発送代行・検品・梱包・シール貼り・セット組み・内職作業・流通加工まで一括対応。
               </p>
-
-              <div className="mx-auto mt-7 grid max-w-[21rem] grid-cols-2 gap-2.5 sm:max-w-xl sm:grid-cols-4 sm:gap-3 lg:mx-0">
-                {heroBadges.map((item) => (
-                  <div
-                    key={item}
-                    className="rounded-full border border-white/15 bg-white/12 px-3 py-2.5 text-center text-xs font-bold tracking-wide text-white/90 backdrop-blur sm:px-4 sm:py-3"
-                  >
-                    {item}
-                  </div>
-                ))}
-              </div>
 
               <div className="mx-auto mt-8 flex max-w-[21rem] flex-col gap-3 sm:max-w-none sm:flex-row sm:justify-center lg:mx-0 lg:justify-start">
                 <Link
@@ -141,7 +128,7 @@ export default function HomePage() {
 
                 <a
                   href="tel:0661159935"
-                  className="rounded-full border border-white/40 bg-white/10 px-7 py-4 text-center text-sm font-bold tracking-wide text-white backdrop-blur transition hover:bg-white/20 sm:px-8"
+                  className="hidden rounded-full border border-white/40 bg-white/10 px-7 py-4 text-center text-sm font-bold tracking-wide text-white backdrop-blur transition hover:bg-white/20 sm:inline-flex sm:items-center sm:justify-center sm:px-8"
                 >
                   電話で相談する
                 </a>
