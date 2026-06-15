@@ -203,11 +203,19 @@ export default function WarehousePage() {
   保管・発送代行・流通加工・内職作業に対応しています。
 </p>
 
-          <div className="mt-9 grid gap-4 sm:grid-cols-3">
-            <div className="aspect-video rounded-2xl border border-white/10 bg-white/10" />
-            <div className="aspect-video rounded-2xl border border-white/10 bg-white/10" />
-            <div className="aspect-video rounded-2xl border border-white/10 bg-white/10" />
-          </div>
+          <div className="mt-10 grid gap-4 lg:grid-cols-2">
+  <img
+    src="/images/warehouse-moriguchi.jpg"
+    alt="GAMI守口倉庫外観"
+    className="h-full w-full rounded-3xl object-cover"
+  />
+
+  <img
+    src="/images/warehouse-moriguchi-inside.jpg"
+    alt="GAMI守口倉庫内観"
+    className="h-full w-full rounded-3xl object-cover"
+  />
+</div>
         </div>
       </section>
 
