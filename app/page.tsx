@@ -82,7 +82,7 @@ export default function HomePage() {
       <Header />
 
       <main>
-        <section className="relative min-h-[560px] overflow-hidden bg-zinc-900 text-white sm:min-h-[720px]">
+        <section className="relative min-h-[480px] overflow-hidden bg-zinc-900 text-white sm:min-h-[720px]">
           <video
             autoPlay
             loop
