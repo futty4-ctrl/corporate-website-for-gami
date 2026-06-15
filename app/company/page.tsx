@@ -38,11 +38,11 @@ const companyInfo = [
   { label: "設立", value: "2025年6月17日" },
   {
     label: "主要事業",
-    value: "物流運送事業\n倉庫保管\n発送代行\n流通加工\n内職作業",
+    value: "物流運送事業・倉庫保管・発送代行・流通加工・内職作業",
   },
   {
     label: "関連事業",
-    value: "ヘッドスパ事業\n車事業\nオンラインショップ運営",
+    value: "ヘッドスパ事業・ヘッドスパFC事業・車事業・整理・買取事業",
   },
   { label: "メールアドレス", value: "k_fuchigami@gamigami.email" },
   { label: "TEL", value: "06-6115-9935" },
@@ -142,7 +142,7 @@ export default function CompanyPage() {
       <Header />
 
       <main>
-        <section className="relative overflow-hidden bg-[#111111] px-5 py-16 pt-24 text-white sm:px-6 sm:py-24 sm:pt-36">
+        <section className="relative overflow-hidden bg-[#111111] px-5 py-14 pt-24 text-white sm:px-6 sm:py-24 sm:pt-36">
           <div className="absolute inset-0 opacity-40">
             <div className="absolute -left-16 top-0 h-72 w-72 rounded-full bg-amber-500 blur-3xl" />
             <div className="absolute right-0 top-10 h-96 w-96 rounded-full bg-orange-400 blur-3xl" />
@@ -153,21 +153,20 @@ export default function CompanyPage() {
               COMPANY
             </p>
 
-            <h1 className="mx-auto mt-5 max-w-[11em] text-[2.05rem] font-bold leading-[1.2] tracking-[-0.045em] text-white sm:max-w-none sm:text-6xl sm:leading-[1.08] lg:mx-0">
+            <h1 className="mx-auto mt-5 max-w-[11em] text-[2rem] font-bold leading-[1.18] tracking-[-0.045em] text-white sm:max-w-none sm:text-6xl sm:leading-[1.08] lg:mx-0">
               <span className="block">大阪の物流会社</span>
               <span className="block">株式会社GAMI</span>
             </h1>
 
-            <p className="mx-auto mt-6 max-w-[22rem] text-[14px] leading-7 text-white/80 sm:max-w-2xl sm:text-base sm:leading-8 lg:mx-0">
-              大阪府守口市大日町の約100坪倉庫を拠点に、
-              発送代行・倉庫保管・流通加工・内職作業まで対応しています。
+            <p className="mx-auto mt-5 max-w-[20rem] text-[14px] leading-7 text-white/80 sm:max-w-2xl sm:text-base sm:leading-8 lg:mx-0">
+              大阪府守口市大日町の約100坪倉庫を拠点に、発送代行・倉庫保管・流通加工・内職作業まで対応しています。
             </p>
 
-            <div className="mx-auto mt-8 grid max-w-[21rem] grid-cols-2 gap-2.5 sm:max-w-xl sm:grid-cols-4 sm:gap-3 lg:mx-0">
+            <div className="mx-auto mt-7 grid max-w-[20rem] grid-cols-2 gap-2.5 sm:max-w-xl sm:grid-cols-4 sm:gap-3 lg:mx-0">
               {["発送代行", "倉庫保管", "流通加工", "内職作業"].map((item) => (
                 <div
                   key={item}
-                  className="rounded-full border border-white/10 bg-white/10 px-3 py-3 text-center text-xs font-bold leading-5 tracking-[0.03em] text-white/85 backdrop-blur sm:px-4"
+                  className="rounded-full border border-white/10 bg-white/10 px-3 py-2.5 text-center text-xs font-bold leading-5 tracking-[0.03em] text-white/85 backdrop-blur sm:px-4"
                 >
                   {item}
                 </div>
@@ -176,37 +175,37 @@ export default function CompanyPage() {
           </div>
         </section>
 
-        <section className="mx-auto max-w-5xl px-5 py-16 sm:px-6 sm:py-28">
-          <div className="mb-10 text-center sm:mb-16">
+        <section className="mx-auto max-w-5xl px-5 py-14 sm:px-6 sm:py-24">
+          <div className="mb-8 text-center sm:mb-14">
             <SectionHeading
               sub="COMPANY INFO"
               title="企業情報"
-              className="mb-6"
+              className="mb-5"
             />
 
-            <p className="text-sm leading-8 text-muted-foreground sm:text-base">
+            <p className="text-sm leading-7 text-muted-foreground sm:text-base sm:leading-8">
               株式会社GAMIの会社概要です。
               <br className="hidden sm:block" />
               物流のご相談は下部フォームよりお問い合わせください。
             </p>
           </div>
 
-          <dl className="overflow-hidden rounded-[1.75rem] border border-black/5 bg-white shadow-[0_8px_32px_rgba(0,0,0,0.04)] sm:rounded-[2rem]">
+          <dl className="overflow-hidden rounded-[1.5rem] border border-black/5 bg-white shadow-[0_8px_32px_rgba(0,0,0,0.04)] sm:rounded-[2rem]">
             {companyInfo.map((row, index) => (
               <div
                 key={row.label}
-                className={`flex flex-col gap-2 px-5 py-5 sm:flex-row sm:gap-10 sm:px-8 sm:py-6 ${
+                className={`flex flex-col gap-1 px-5 py-4 sm:flex-row sm:gap-10 sm:px-8 sm:py-5 ${
                   index !== companyInfo.length - 1
                     ? "border-b border-black/5"
                     : ""
                 }`}
               >
                 <dt
-                  className={`w-full shrink-0 text-xs leading-6 tracking-[0.04em] sm:w-48 sm:text-sm ${
+                  className={`w-full shrink-0 text-xs leading-5 tracking-[0.04em] sm:w-48 sm:text-sm ${
                     row.label === "主要事業"
                       ? "font-bold text-black"
                       : row.label === "関連事業"
-                        ? "font-medium text-zinc-400"
+                        ? "font-semibold text-zinc-500"
                         : "font-medium text-black/50"
                   }`}
                 >
@@ -214,12 +213,12 @@ export default function CompanyPage() {
                 </dt>
 
                 <dd
-                  className={`whitespace-pre-line break-words ${
+                  className={`break-words ${
                     row.label === "主要事業"
-                      ? "text-[15px] font-bold leading-8 text-black sm:text-base"
+                      ? "text-[15px] font-bold leading-7 text-black sm:text-base"
                       : row.label === "関連事業"
-                        ? "text-sm leading-8 text-zinc-500"
-                        : "text-sm leading-8 text-black/70"
+                        ? "text-[15px] font-medium leading-7 text-zinc-700"
+                        : "text-sm leading-7 text-black/70"
                   }`}
                 >
                   {row.value}
@@ -229,16 +228,16 @@ export default function CompanyPage() {
           </dl>
         </section>
 
-        <section className="border-t border-black/5 bg-[#f8f8f6] px-5 py-16 sm:px-6 sm:py-28">
+        <section className="border-t border-black/5 bg-[#f8f8f6] px-5 py-14 sm:px-6 sm:py-24">
           <div className="mx-auto max-w-3xl text-center">
-            <div className="mb-8 sm:mb-10">
+            <div className="mb-8">
               <SectionHeading
                 sub="PHILOSOPHY"
                 title="物流を、もっと動きやすく。"
-                className="mb-6"
+                className="mb-5"
               />
 
-              <p className="text-sm leading-8 text-muted-foreground sm:text-base">
+              <p className="text-sm leading-7 text-muted-foreground sm:text-base sm:leading-8">
                 レスポンスと現場対応力で、企業の物流を前へ進めます。
               </p>
             </div>
@@ -257,24 +256,24 @@ export default function CompanyPage() {
 
         <section
           id="contact"
-          className="overflow-hidden px-4 py-16 sm:px-6 sm:py-28"
+          className="overflow-hidden px-4 py-14 sm:px-6 sm:py-24"
         >
           <div className="mx-auto w-full max-w-3xl">
-            <div className="mb-10 text-center sm:mb-16">
+            <div className="mb-8 text-center sm:mb-14">
               <SectionHeading
                 sub="CONTACT"
                 title="物流を相談する"
-                className="mb-6"
+                className="mb-5"
               />
 
-              <p className="text-sm leading-8 text-muted-foreground sm:text-base">
+              <p className="text-sm leading-7 text-muted-foreground sm:text-base sm:leading-8">
                 倉庫保管、発送代行、スポット出荷、流通加工、内職作業まで。
                 <br className="hidden sm:block" />
                 まずはお気軽にご相談ください。
               </p>
             </div>
 
-            <div className="w-full overflow-hidden rounded-[1.75rem] sm:rounded-[2rem]">
+            <div className="w-full overflow-hidden rounded-[1.5rem] sm:rounded-[2rem]">
               <ContactForm />
             </div>
           </div>
