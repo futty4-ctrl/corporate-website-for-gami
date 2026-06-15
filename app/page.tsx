@@ -95,7 +95,7 @@ export default function HomePage() {
 
           <div className="absolute inset-0 bg-gradient-to-b from-black/72 via-black/48 to-black/82" />
 
-          <div className="relative z-10 mx-auto flex min-h-[560px] max-w-6xl items-center justify-center px-5 py-12 text-center sm:min-h-[720px] sm:px-6 sm:py-20 lg:justify-start lg:text-left">
+          <div className="relative z-10 mx-auto flex min-h-[480px] max-w-6xl items-center justify-center px-5 py-12 text-center sm:min-h-[720px] sm:px-6 sm:py-20 lg:justify-start lg:text-left">
             <div className="mx-auto max-w-4xl lg:mx-0">
               <p className="text-[10px] font-semibold tracking-[0.18em] text-amber-300 sm:text-sm sm:tracking-[0.28em]">
                 LOGISTICS WAREHOUSE / OSAKA
