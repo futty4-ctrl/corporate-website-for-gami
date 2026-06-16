@@ -326,11 +326,17 @@ export default function HomePage() {
             </p>
 
             <h3 className="mt-3 text-xl font-bold sm:text-2xl">
-              守口倉庫
+              大阪守口物流センター
             </h3>
 
             <p className="mt-3 text-sm leading-7 text-muted-foreground">
-              約100坪の物流倉庫。保管・発送代行・流通加工・検品・梱包・内職作業までワンストップ対応。
+              約100坪の物流倉庫。
+
+  全国対応・365日稼働。
+
+  発送代行・倉庫保管・流通加工・
+  検品・梱包・シール貼り・セット組み・
+  内職作業まで一括対応します。
             </p>
           </div>
         </div>
