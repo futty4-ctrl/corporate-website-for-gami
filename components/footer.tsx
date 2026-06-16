@@ -134,10 +134,11 @@ export function Footer() {
               CONTACT
             </h3>
 
-            <p className="mt-4 text-sm leading-7 text-black/60">
-  大阪府守口市の物流倉庫を拠点に全国対応。
-  発送代行・倉庫保管・流通加工・内職作業まで
-  ワンストップで対応しています。
+            <p className="mx-auto mt-4 max-w-[22rem] text-sm leading-7 text-black/60 lg:mx-0">
+  全国対応・365日稼働。
+  <br />
+  大阪府守口市の物流倉庫を拠点に、
+  発送代行・倉庫保管・流通加工・内職作業まで対応しています。
 </p>
 
             <div className="mt-5 space-y-3">
