@@ -11,12 +11,12 @@ const serviceTags = ["発送代行", "倉庫保管", "流通加工", "内職作�
 const areas = [
   "全国対応",
   "365日稼働",
+  "小ロット歓迎",
+  "スポット対応",
   "発送代行",
   "倉庫保管",
   "流通加工",
   "内職作業",
-  "検品",
-  "梱包",
 ]
 
 export function Footer() {
@@ -113,7 +113,7 @@ export function Footer() {
 
             <div className="mt-6 rounded-2xl border border-black/5 bg-white p-4 shadow-sm">
               <p className="text-xs font-bold tracking-[0.16em] text-amber-500">
-                AREA
+                GAMI LOGISTICS
               </p>
 
               <div className="mt-3 flex flex-wrap gap-2">
@@ -134,10 +134,11 @@ export function Footer() {
               CONTACT
             </h3>
 
-            <p className="mx-auto max-w-[22rem] text-sm leading-7 text-black/60 lg:mx-0">
-              発送代行・倉庫保管・検品・梱包・シール貼り・セット組み・内職作業・流通加工まで。
-              小ロット案件もお気軽にご相談ください。
-            </p>
+            <p className="mt-4 text-sm leading-7 text-black/60">
+  大阪府守口市の物流倉庫を拠点に全国対応。
+  発送代行・倉庫保管・流通加工・内職作業まで
+  ワンストップで対応しています。
+</p>
 
             <div className="mt-5 space-y-3">
               <Link href="/company#contact" className={footerLinkClass}>
