@@ -417,7 +417,7 @@ export default function HomePage() {
                 {licenses.map((item) => (
                   <div
                     key={item}
-                    className="rounded-3xl border border-white/10 bg-white/[0.06] p-5 sm:p-6"
+                    className="rounded-3xl border border-white/10 bg-white/[0.06] px-5 py-4"
                   >
                     <p className="flex items-center gap-2 text-sm font-bold leading-7 text-white">
   <span className="text-amber-400">✓</span>
