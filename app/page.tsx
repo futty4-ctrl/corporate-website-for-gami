@@ -6,7 +6,7 @@ export const metadata = {
   title:
     "大阪の発送代行・物流倉庫・流通加工なら株式会社GAMI｜守口100坪倉庫",
   description:
-    "大阪府守口市大日町の約100坪物流倉庫。発送代行・倉庫保管・検品・梱包・シール貼り・セット組み・内職作業・流通加工まで対応。福岡・神戸の提携倉庫あり。化粧品製造業許可・第一種貨物利用運送事業にも対応。",
+    "大阪府守口市大日町の約100坪物流倉庫。365日稼働・全国対応。発送代行・倉庫保管・検品・梱包・シール貼り・セット組み・内職作業・流通加工まで対応。",
 }
 
 const problems = [
@@ -28,29 +28,29 @@ const services = [
   "梱包",
   "シール貼り",
   "セット組み",
-  "アッセンブリ",
   "封入作業",
   "内職作業",
   "流通加工",
   "化粧品関連作業",
+  "スポット出荷",
 ]
 
 const strengths = [
   {
-    title: "全国対応・365日稼働",
+    title: "全国対応",
     body: "大阪を拠点に全国対応。発送代行・倉庫保管・流通加工・内職作業まで対応します。",
   },
   {
-    title: "365日稼働",
+    title: "365日稼働倉庫",
     body: "土日祝や繁忙期も柔軟対応。急な出荷やスポット案件もご相談ください。",
   },
   {
     title: "約100坪の物流倉庫",
-    body: "大阪府守口市大日町の倉庫を拠点に保管から出荷まで一括対応。",
+    body: "大阪府守口市大日町の倉庫を拠点に、保管から出荷まで一括対応します。",
   },
   {
     title: "細かな手作業に強い",
-    body: "シール貼り・セット組み・封入・検品・梱包などの作業に対応。",
+    body: "シール貼り・セット組み・封入・検品・梱包などの作業に対応します。",
   },
   {
     title: "小ロット・スポット歓迎",
@@ -103,24 +103,16 @@ export default function HomePage() {
                 LOGISTICS WAREHOUSE / OSAKA
               </p>
 
-              <h1 className="mx-auto mt-4 max-w-[11em] text-[2rem] font-bold leading-[1.15] tracking-[-0.04em] text-white sm:max-w-none sm:text-5xl lg:mx-0 lg:text-[5rem] lg:leading-[1.05]">
-  <span className="block">
-    365日稼働の物流倉庫
-  </span>
+              <h1 className="mx-auto mt-4 max-w-[10em] text-[2rem] font-bold leading-[1.15] tracking-[-0.04em] text-white sm:max-w-none sm:text-5xl lg:mx-0 lg:text-[5rem] lg:leading-[1.05]">
+                <span className="block">365日稼働倉庫</span>
+                <span className="mt-2 block">発送代行ならGAMI</span>
+              </h1>
 
-  <span className="mt-2 block">
-    発送代行ならGAMI
-  </span>
-</h1>
-
-              <p className="mx-auto mt-6 max-w-[22rem] text-[14px] leading-8 text-white/85 sm:max-w-[42rem] sm:text-lg sm:leading-9 lg:mx-0">
-  全国対応・365日稼働。
-
-  <br />
-
-  守口市大日町の約100坪物流倉庫を拠点に、
-  発送代行・倉庫保管・流通加工・検品・梱包・内職作業まで一括対応。
-</p>
+              <p className="mx-auto mt-5 max-w-[22rem] text-[14px] leading-7 text-white/85 sm:max-w-[42rem] sm:text-lg sm:leading-9 lg:mx-0">
+                全国対応・365日稼働。
+                <br />
+                守口市大日町の約100坪物流倉庫を拠点に、発送代行・倉庫保管・流通加工・内職作業まで一括対応。
+              </p>
 
               <div className="mx-auto mt-5 flex max-w-[20rem] flex-col gap-3 sm:max-w-none sm:flex-row sm:justify-center lg:mx-0 lg:justify-start">
                 <Link
@@ -138,9 +130,8 @@ export default function HomePage() {
                 </Link>
               </div>
 
-             <p className="mx-auto mt-3 max-w-[22rem] text-xs leading-6 text-white/60 sm:max-w-[34rem] lg:mx-0">
-                全国対応・365日稼働。
-小ロット案件・スポット出荷もお気軽にご相談ください。
+              <p className="mx-auto mt-3 max-w-[22rem] text-xs leading-6 text-white/60 sm:max-w-[34rem] lg:mx-0">
+                小ロット案件・スポット出荷もお気軽にご相談ください。
               </p>
             </div>
           </div>
@@ -154,25 +145,10 @@ export default function HomePage() {
               </p>
 
               <h2 className="mt-4 text-[1.75rem] font-bold leading-[1.25] tracking-[-0.03em] sm:text-5xl sm:leading-tight">
-  <span className="block">発送代行・倉庫保管で</span>
-  <span className="block">こんなお悩みありませんか？</span>
-</h2>
+                <span className="block">物流業務を外注して</span>
+                <span className="block">本業に集中しませんか？</span>
+              </h2>
             </div>
-
-            <div className="mt-10 text-center">
-  <p className="mb-6 text-sm leading-7 text-muted-foreground">
-    全国対応・365日稼働。
-    <br />
-    発送代行から倉庫保管・流通加工・内職作業までワンストップ対応。
-  </p>
-
-  <Link
-    href="/company#contact"
-    className="inline-flex items-center justify-center rounded-full bg-amber-500 px-8 py-4 text-sm font-bold text-white shadow-lg transition hover:bg-amber-600"
-  >
-    まずは無料相談する
-  </Link>
-</div>
 
             <div className="mt-9 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
               {problems.map((item) => (
@@ -183,6 +159,21 @@ export default function HomePage() {
                   <p className="text-sm font-bold leading-7">{item}</p>
                 </div>
               ))}
+            </div>
+
+            <div className="mt-10 text-center">
+              <p className="mb-6 text-sm leading-7 text-muted-foreground">
+                全国対応・365日稼働。
+                <br />
+                発送代行から倉庫保管・流通加工・内職作業までワンストップ対応。
+              </p>
+
+              <Link
+                href="/company#contact"
+                className="inline-flex items-center justify-center rounded-full bg-amber-500 px-8 py-4 text-sm font-bold text-white shadow-lg transition hover:bg-amber-600"
+              >
+                まずは無料相談する
+              </Link>
             </div>
           </div>
         </section>
@@ -201,7 +192,7 @@ export default function HomePage() {
                 </h2>
 
                 <p className="mx-auto mt-6 max-w-[22rem] text-[14px] leading-7 text-white/70 sm:max-w-3xl sm:text-base sm:leading-8 lg:mx-0">
-                  GAMIは物流運送事業を主軸に、倉庫保管・発送代行・検品・梱包・流通加工まで対応。特に、シール貼り・セット組み・封入作業などの細かな作業を増やしていきたいと考えています。
+                  GAMIは物流運送事業を主軸に、倉庫保管・発送代行・検品・梱包・流通加工まで対応。シール貼り・セット組み・封入作業などの細かな作業もご相談ください。
                 </p>
               </div>
 
@@ -246,7 +237,7 @@ export default function HomePage() {
                     {item.body}
                   </p>
 
-                  {item.title.includes("守口") && (
+                  {item.title.includes("倉庫") && (
                     <Link
                       href="/warehouse"
                       className="mt-5 inline-flex rounded-full bg-amber-500 px-5 py-3 text-xs font-bold text-white transition hover:bg-amber-600"
@@ -274,11 +265,11 @@ export default function HomePage() {
                 </h2>
 
                 <p className="mx-auto mt-6 max-w-[22rem] text-[14px] leading-7 text-muted-foreground sm:max-w-3xl sm:text-base sm:leading-8 lg:mx-0">
-                  住所：大阪府守口市大日町1-8-18。全国対応可能。
-
-発送代行・倉庫保管・流通加工・検品・梱包・内職作業まで一括対応。
-
-365日稼働体制でスポット案件や急な出荷にも柔軟に対応しています。
+                  住所：大阪府守口市大日町1-8-18。
+                  <br />
+                  全国対応可能。発送代行・倉庫保管・流通加工・検品・梱包・内職作業まで一括対応。
+                  <br />
+                  365日稼働体制でスポット案件や急な出荷にも柔軟に対応しています。
                 </p>
 
                 <div className="mx-auto mt-8 flex max-w-[21rem] flex-col gap-3 sm:max-w-none sm:flex-row lg:mx-0">
@@ -421,10 +412,10 @@ export default function HomePage() {
 
             <p className="mx-auto mt-6 max-w-[22rem] text-[14px] leading-7 text-muted-foreground sm:max-w-2xl sm:text-base sm:leading-8">
               全国対応・365日稼働。
-
-発送代行・倉庫保管・流通加工・検品・梱包・シール貼り・セット組み・内職作業まで一括対応。
-
-小ロット案件やスポット案件もお気軽にご相談ください。
+              <br />
+              発送代行・倉庫保管・流通加工・検品・梱包・シール貼り・セット組み・内職作業まで一括対応。
+              <br />
+              小ロット案件やスポット案件もお気軽にご相談ください。
             </p>
 
             <div className="mx-auto mt-8 flex max-w-[21rem] flex-col justify-center gap-3 sm:max-w-none sm:flex-row">
