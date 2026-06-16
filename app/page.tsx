@@ -267,18 +267,23 @@ export default function HomePage() {
                   WAREHOUSE
                 </p>
 
-                <h2 className="mt-4 text-[1.75rem] font-bold leading-[1.35] tracking-[-0.03em] sm:text-5xl sm:leading-tight">
-                  <span className="block">大阪府守口市の</span>
-                  <span className="block">約100坪倉庫。</span>
-                </h2>
+                <h2 className="mt-4 text-[1.75rem] font-bold leading-[1.3] tracking-[-0.03em] sm:text-5xl sm:leading-tight">
+  <span className="block">365日稼働の</span>
+  <span className="block">物流倉庫。</span>
+</h2>
 
                 <p className="mx-auto mt-6 max-w-[22rem] text-[14px] leading-7 text-muted-foreground sm:max-w-3xl sm:text-base sm:leading-8 lg:mx-0">
-                  住所：大阪府守口市大日町1-8-18。
-                  <br />
-                  全国対応可能。発送代行・倉庫保管・流通加工・検品・梱包・内職作業まで一括対応。
-                  <br />
-                  365日稼働体制でスポット案件や急な出荷にも柔軟に対応しています。
-                </p>
+  大阪府守口市大日町の約100坪物流倉庫。
+
+  <br />
+  全国対応・365日稼働。
+
+  <br />
+  発送代行・倉庫保管・流通加工・検品・梱包・シール貼り・セット組み・内職作業まで一括対応しています。
+
+  <br />
+  小ロット案件やスポット出荷もお気軽にご相談ください。
+</p>
 
                 <div className="mx-auto mt-8 flex max-w-[21rem] flex-col gap-3 sm:max-w-none sm:flex-row lg:mx-0">
                   <Link
