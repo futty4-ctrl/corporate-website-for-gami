@@ -73,9 +73,9 @@ const cases = [
 
 const licenses = [
   "化粧品製造業許可",
-  "第一種貨物利用運送事業登録",
+  "第一種貨物利用運送事業",
   "古物商許可",
-  "インボイス登録",
+  "インボイス登録事業者",
 ]
 
 export default function HomePage() {
@@ -179,44 +179,44 @@ export default function HomePage() {
         </section>
 
         <section className="bg-zinc-950 py-16 text-white sm:py-28">
-  <div className="mx-auto max-w-6xl px-5 sm:px-6">
-    <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
-      <div className="text-center lg:text-left">
-        <p className="text-xs font-semibold tracking-[0.18em] text-amber-300 sm:text-sm sm:tracking-[0.24em]">
-          SERVICE
-        </p>
+          <div className="mx-auto max-w-6xl px-5 sm:px-6">
+            <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
+              <div className="text-center lg:text-left">
+                <p className="text-xs font-semibold tracking-[0.18em] text-amber-300 sm:text-sm sm:tracking-[0.24em]">
+                  SERVICE
+                </p>
 
-        <h2 className="mt-4 text-[1.75rem] font-bold leading-[1.3] tracking-[-0.03em] sm:text-5xl sm:leading-tight">
-          <span className="block">365日稼働で、</span>
-          <span className="block">物流業務を一括対応。</span>
-        </h2>
+                <h2 className="mt-4 text-[1.75rem] font-bold leading-[1.3] tracking-[-0.03em] sm:text-5xl sm:leading-tight">
+                  <span className="block">365日稼働で、</span>
+                  <span className="block">物流業務を一括対応。</span>
+                </h2>
 
-        <p className="mx-auto mt-6 max-w-[22rem] text-[14px] leading-7 text-white/70 sm:max-w-3xl sm:text-base sm:leading-8 lg:mx-0">
-          発送代行・倉庫保管・流通加工・内職作業まで。
-          全国対応で、小ロット案件や急なスポット出荷にも柔軟に対応します。
-        </p>
+                <p className="mx-auto mt-6 max-w-[22rem] text-[14px] leading-7 text-white/70 sm:max-w-3xl sm:text-base sm:leading-8 lg:mx-0">
+                  発送代行・倉庫保管・流通加工・内職作業まで。
+                  全国対応で、小ロット案件や急なスポット出荷にも柔軟に対応します。
+                </p>
 
-        <Link
-          href="/company#contact"
-          className="mt-8 inline-flex items-center justify-center rounded-full bg-amber-500 px-8 py-4 text-sm font-bold text-white shadow-lg transition hover:bg-amber-600"
-        >
-          物流を無料相談する
-        </Link>
-      </div>
+                <Link
+                  href="/company#contact"
+                  className="mt-8 inline-flex items-center justify-center rounded-full bg-amber-500 px-8 py-4 text-sm font-bold text-white shadow-lg transition hover:bg-amber-600"
+                >
+                  物流を無料相談する
+                </Link>
+              </div>
 
-      <div className="grid gap-2.5 text-left sm:grid-cols-2 sm:gap-3">
-        {services.map((item) => (
-          <div
-            key={item}
-            className="rounded-2xl border border-white/10 bg-white/[0.06] px-4 py-3.5 text-sm font-bold leading-6 text-white/85 sm:px-5 sm:py-4"
-          >
-            {item}
+              <div className="grid gap-2.5 text-left sm:grid-cols-2 sm:gap-3">
+                {services.map((item) => (
+                  <div
+                    key={item}
+                    className="rounded-2xl border border-white/10 bg-white/[0.06] px-4 py-3.5 text-sm font-bold leading-6 text-white/85 sm:px-5 sm:py-4"
+                  >
+                    {item}
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
-        ))}
-      </div>
-    </div>
-  </div>
-</section>
+        </section>
 
         <section className="py-16 sm:py-28">
           <div className="mx-auto max-w-6xl px-5 sm:px-6">
@@ -268,22 +268,19 @@ export default function HomePage() {
                 </p>
 
                 <h2 className="mt-4 text-[1.75rem] font-bold leading-[1.3] tracking-[-0.03em] sm:text-5xl sm:leading-tight">
-  <span className="block">365日稼働の</span>
-  <span className="block">物流倉庫。</span>
-</h2>
+                  <span className="block">365日稼働の</span>
+                  <span className="block">物流倉庫。</span>
+                </h2>
 
                 <p className="mx-auto mt-6 max-w-[22rem] text-[14px] leading-7 text-muted-foreground sm:max-w-3xl sm:text-base sm:leading-8 lg:mx-0">
-  大阪府守口市大日町の約100坪物流倉庫。
-
-  <br />
-  全国対応・365日稼働。
-
-  <br />
-  発送代行・倉庫保管・流通加工・検品・梱包・シール貼り・セット組み・内職作業まで一括対応しています。
-
-  <br />
-  小ロット案件やスポット出荷もお気軽にご相談ください。
-</p>
+                  大阪府守口市大日町の約100坪物流倉庫。
+                  <br />
+                  全国対応・365日稼働。
+                  <br />
+                  発送代行・倉庫保管・流通加工・検品・梱包・シール貼り・セット組み・内職作業まで一括対応しています。
+                  <br />
+                  小ロット案件やスポット出荷もお気軽にご相談ください。
+                </p>
 
                 <div className="mx-auto mt-8 flex max-w-[21rem] flex-col gap-3 sm:max-w-none sm:flex-row lg:mx-0">
                   <Link
@@ -309,17 +306,19 @@ export default function HomePage() {
                     alt="GAMI守口倉庫外観"
                     className="aspect-[4/3] w-full object-cover sm:aspect-[16/10]"
                   />
+
                   <div className="p-5 sm:p-6">
                     <p className="text-xs font-bold tracking-[0.18em] text-gold">
                       MORIGUCHI WAREHOUSE
                     </p>
+
                     <h3 className="mt-3 text-xl font-bold sm:text-2xl">
                       守口倉庫
                     </h3>
+
                     <p className="mt-3 text-sm leading-7 text-muted-foreground">
-  約100坪の物流倉庫。
-  保管・発送代行・流通加工・検品・梱包・内職作業までワンストップ対応。
-</p>
+                      約100坪の物流倉庫。保管・発送代行・流通加工・検品・梱包・内職作業までワンストップ対応。
+                    </p>
                   </div>
                 </div>
 
@@ -332,36 +331,29 @@ export default function HomePage() {
                 </div>
 
                 <div className="grid gap-4 sm:grid-cols-2">
-  <div className="rounded-[1.75rem] border border-border bg-white p-6 shadow-sm sm:rounded-[2rem]">
-    <p className="text-xs font-bold tracking-[0.18em] text-gold">
-      PARTNER
-    </p>
+                  <div className="rounded-[1.75rem] border border-border bg-white p-6 shadow-sm sm:rounded-[2rem]">
+                    <p className="text-xs font-bold tracking-[0.18em] text-gold">
+                      PARTNER
+                    </p>
 
-    <h3 className="mt-4 text-xl font-bold">
-      福岡提携倉庫
-    </h3>
+                    <h3 className="mt-4 text-xl font-bold">福岡提携倉庫</h3>
 
-    <p className="mt-3 text-sm leading-7 text-muted-foreground">
-      九州エリアの物流をサポート。
-      保管・発送代行・スポット出荷に対応しています。
-    </p>
-  </div>
+                    <p className="mt-3 text-sm leading-7 text-muted-foreground">
+                      九州エリアの物流をサポート。保管・発送代行・スポット出荷に対応しています。
+                    </p>
+                  </div>
 
-  <div className="rounded-[1.75rem] border border-border bg-white p-6 shadow-sm sm:rounded-[2rem]">
-    <p className="text-xs font-bold tracking-[0.18em] text-gold">
-      PARTNER
-    </p>
+                  <div className="rounded-[1.75rem] border border-border bg-white p-6 shadow-sm sm:rounded-[2rem]">
+                    <p className="text-xs font-bold tracking-[0.18em] text-gold">
+                      PARTNER
+                    </p>
 
-    <h3 className="mt-4 text-xl font-bold">
-      神戸提携倉庫
-    </h3>
+                    <h3 className="mt-4 text-xl font-bold">神戸提携倉庫</h3>
 
-    <p className="mt-3 text-sm leading-7 text-muted-foreground">
-      関西エリアの物流をサポート。
-      保管・発送代行・流通加工に対応しています。
-    </p>
-  </div>
-</div>
+                    <p className="mt-3 text-sm leading-7 text-muted-foreground">
+                      関西エリアの物流をサポート。保管・発送代行・流通加工に対応しています。
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -404,13 +396,14 @@ export default function HomePage() {
                   LICENSE
                 </p>
 
-                <h2 className="mt-4 text-[1.75rem] font-bold leading-[1.35] tracking-[-0.03em] sm:text-5xl sm:leading-tight">
+                <h2 className="mt-4 text-[1.75rem] font-bold leading-[1.3] tracking-[-0.03em] sm:text-5xl sm:leading-tight">
                   <span className="block">許認可を活かした</span>
-                  <span className="block">安心の物流対応。</span>
+                  <span className="block">物流ワンストップ対応。</span>
                 </h2>
 
                 <p className="mx-auto mt-6 max-w-[22rem] text-[14px] leading-7 text-white/70 sm:max-w-3xl sm:text-base sm:leading-8 lg:mx-0">
-                  化粧品関連商材や配送まわりも含めて相談できる体制があります。保管・加工・発送まで、まずは案件内容をお聞かせください。
+                  化粧品製造業許可・第一種貨物利用運送事業・古物商許可を取得。
+                  保管・流通加工・発送代行までワンストップで対応しています。
                 </p>
               </div>
 
