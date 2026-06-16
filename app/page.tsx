@@ -78,6 +78,13 @@ const licenses = [
   "インボイス登録事業者",
 ]
 
+const warehousePoints = [
+  "全国対応",
+  "365日稼働",
+  "小ロット歓迎",
+  "スポット出荷対応",
+]
+
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-background text-foreground">
