@@ -154,9 +154,12 @@ export default function HomePage() {
               {problems.map((item) => (
                 <div
                   key={item}
-                  className="rounded-3xl border border-border bg-white/80 p-5 text-left shadow-sm sm:p-6"
+                  className="rounded-3xl border border-border bg-white/80 px-5 text-left shadow-sm py-4"
                 >
-                  <p className="text-sm font-bold leading-7">{item}</p>
+                  <p className="flex items-center gap-2 text-sm font-bold leading-7">
+  <span className="text-amber-500">✓</span>
+  {item}
+</p>
                 </div>
               ))}
             </div>
