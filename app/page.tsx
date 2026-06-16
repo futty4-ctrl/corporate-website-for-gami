@@ -331,34 +331,36 @@ export default function HomePage() {
                   />
                 </div>
 
-                <div className="rounded-[1.75rem] border border-border bg-white p-6 shadow-sm sm:rounded-[2rem]">
-  <p className="text-xs font-bold tracking-[0.18em] text-gold">
-    PARTNER
-  </p>
+                <div className="grid gap-4 sm:grid-cols-2">
+  <div className="rounded-[1.75rem] border border-border bg-white p-6 shadow-sm sm:rounded-[2rem]">
+    <p className="text-xs font-bold tracking-[0.18em] text-gold">
+      PARTNER
+    </p>
 
-  <h3 className="mt-4 text-xl font-bold">
-    福岡提携倉庫
-  </h3>
+    <h3 className="mt-4 text-xl font-bold">
+      福岡提携倉庫
+    </h3>
 
-  <p className="mt-3 text-sm leading-7 text-muted-foreground">
-    九州エリアの物流をサポート。
-    保管・発送代行・スポット出荷に対応しています。
-  </p>
-</div>
+    <p className="mt-3 text-sm leading-7 text-muted-foreground">
+      九州エリアの物流をサポート。
+      保管・発送代行・スポット出荷に対応しています。
+    </p>
+  </div>
 
-                 <div className="rounded-[1.75rem] border border-border bg-white p-6 shadow-sm sm:rounded-[2rem]">
-  <p className="text-xs font-bold tracking-[0.18em] text-gold">
-    PARTNER
-  </p>
+  <div className="rounded-[1.75rem] border border-border bg-white p-6 shadow-sm sm:rounded-[2rem]">
+    <p className="text-xs font-bold tracking-[0.18em] text-gold">
+      PARTNER
+    </p>
 
-  <h3 className="mt-4 text-xl font-bold">
-    神戸提携倉庫
-  </h3>
+    <h3 className="mt-4 text-xl font-bold">
+      神戸提携倉庫
+    </h3>
 
-  <p className="mt-3 text-sm leading-7 text-muted-foreground">
-    関西エリアの物流をサポート。
-    保管・発送代行・流通加工に対応しています。
-  </p>
+    <p className="mt-3 text-sm leading-7 text-muted-foreground">
+      関西エリアの物流をサポート。
+      保管・発送代行・流通加工に対応しています。
+    </p>
+  </div>
 </div>
                 </div>
               </div>
