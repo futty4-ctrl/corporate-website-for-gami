@@ -37,7 +37,7 @@ const services = [
 
 const strengths = [
   {
-    title: "全国対応可能",
+    title: "全国対応・365日稼働",
     body: "大阪を拠点に全国対応。発送代行・倉庫保管・流通加工・内職作業まで対応します。",
   },
   {
@@ -153,11 +153,26 @@ export default function HomePage() {
                 PROBLEM
               </p>
 
-              <h2 className="mt-4 text-[1.75rem] font-bold leading-[1.35] tracking-[-0.03em] sm:text-5xl sm:leading-tight">
-                <span className="block">こんな物流作業で</span>
-                <span className="block">困っていませんか？</span>
-              </h2>
+              <h2 className="mt-4 text-[1.75rem] font-bold leading-[1.25] tracking-[-0.03em] sm:text-5xl sm:leading-tight">
+  <span className="block">発送代行・倉庫保管で</span>
+  <span className="block">こんなお悩みありませんか？</span>
+</h2>
             </div>
+
+            <div className="mt-10 text-center">
+  <p className="mb-6 text-sm leading-7 text-muted-foreground">
+    全国対応・365日稼働。
+    <br />
+    発送代行から倉庫保管・流通加工・内職作業までワンストップ対応。
+  </p>
+
+  <Link
+    href="/company#contact"
+    className="inline-flex items-center justify-center rounded-full bg-amber-500 px-8 py-4 text-sm font-bold text-white shadow-lg transition hover:bg-amber-600"
+  >
+    まずは無料相談する
+  </Link>
+</div>
 
             <div className="mt-9 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
               {problems.map((item) => (
