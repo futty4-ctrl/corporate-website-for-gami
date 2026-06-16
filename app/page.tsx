@@ -82,7 +82,7 @@ export default function HomePage() {
       <Header />
 
       <main>
-        <section className="relative min-h-[420px] overflow-hidden bg-zinc-900 text-white sm:min-h-[720px]">
+        <section className="relative min-h-[350px] overflow-hidden bg-zinc-900 text-white sm:min-h-[720px]">
           <video
             autoPlay
             loop
@@ -95,7 +95,7 @@ export default function HomePage() {
 
           <div className="absolute inset-0 bg-gradient-to-b from-black/75 via-black/55 to-black/80" />
 
-          <div className="relative z-10 mx-auto flex min-h-[420px] max-w-6xl items-center justify-center px-5 py-10 text-center sm:min-h-[720px] sm:px-6 sm:py-20 lg:justify-start lg:text-left">
+          <div className="relative z-10 mx-auto flex min-h-[350px] max-w-6xl items-center justify-center px-5 py-8 text-center sm:min-h-[720px] sm:px-6 sm:py-20 lg:justify-start lg:text-left">
             <div className="mx-auto max-w-4xl lg:mx-0">
               <p className="text-[10px] font-semibold tracking-[0.18em] text-amber-300 sm:text-sm">
                 LOGISTICS WAREHOUSE / OSAKA
