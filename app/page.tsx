@@ -101,7 +101,7 @@ export default function HomePage() {
                 LOGISTICS WAREHOUSE / OSAKA
               </p>
 
-              <h1 className="mx-auto mt-4 max-w-[8.5em] text-[2rem] font-bold leading-[1.15] tracking-[-0.05em] text-white sm:max-w-none sm:text-5xl lg:mx-0 lg:text-[5rem] lg:leading-[1.05]">
+              <h1 className="mx-auto mt-3 max-w-[9em] text-[1.75rem] font-bold leading-[1.2] tracking-[-0.05em] text-white sm:max-w-none sm:text-5xl lg:mx-0 lg:text-[5rem] lg:leading-[1.05]">
   <span className="block">大阪の物流倉庫</span>
   <span className="block">発送代行なら</span>
   <span className="block">GAMI</span>
@@ -112,7 +112,7 @@ export default function HomePage() {
                 発送代行・倉庫保管・流通加工・内職作業まで対応。
               </p>
 
-              <div className="mx-auto mt-7 flex max-w-[20rem] flex-col gap-3 sm:max-w-none sm:flex-row sm:justify-center lg:mx-0 lg:justify-start">
+              <div className="mx-auto mt-5 flex max-w-[20rem] flex-col gap-3 sm:max-w-none sm:flex-row sm:justify-center lg:mx-0 lg:justify-start">
                 <Link
                   href="/company#contact"
                   className="rounded-full bg-amber-500 px-7 py-4 text-center text-sm font-bold text-white shadow-lg transition hover:bg-amber-600"
