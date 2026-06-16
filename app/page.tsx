@@ -436,41 +436,41 @@ export default function HomePage() {
               CONTACT
             </p>
 
-            <h2 className="mt-4 text-[1.75rem] font-bold leading-[1.35] tracking-[-0.03em] sm:text-5xl sm:leading-tight">
-              <span className="block">物流のご相談は、</span>
-              <span className="block">まずはGAMIへ。</span>
-            </h2>
+            <h2 className="mt-4 text-[1.75rem] font-bold leading-[1.3] tracking-[-0.03em] sm:text-5xl sm:leading-tight">
+  <span className="block">発送代行・倉庫保管を</span>
+  <span className="block">無料相談する</span>
+</h2>
 
             <p className="mx-auto mt-6 max-w-[22rem] text-[14px] leading-7 text-muted-foreground sm:max-w-2xl sm:text-base sm:leading-8">
-              全国対応・365日稼働。
-              <br />
-              発送代行・倉庫保管・流通加工・検品・梱包・シール貼り・セット組み・内職作業まで一括対応。
-              <br />
-              小ロット案件やスポット案件もお気軽にご相談ください。
-            </p>
+  全国対応・365日稼働。
+  <br />
+  発送代行・倉庫保管・流通加工・検品・梱包・シール貼り・セット組み・内職作業まで対応しています。
+  <br />
+  まずはお気軽にご相談ください。
+</p>
 
-            <div className="mx-auto mt-8 flex max-w-[21rem] flex-col justify-center gap-3 sm:max-w-none sm:flex-row">
-              <Link
-                href="/company#contact"
-                className="rounded-full bg-amber-500 px-8 py-4 text-sm font-bold text-white shadow-lg transition hover:-translate-y-0.5 hover:bg-amber-600"
-              >
-                物流を無料相談する
-              </Link>
+           <div className="mx-auto mt-8 flex max-w-[21rem] flex-col justify-center gap-3 sm:max-w-none sm:flex-row">
+  <Link
+    href="/company#contact"
+    className="rounded-full bg-amber-500 px-8 py-4 text-sm font-bold text-white shadow-lg transition hover:-translate-y-0.5 hover:bg-amber-600"
+  >
+    フォームで相談する
+  </Link>
 
-              <Link
-                href="/warehouse"
-                className="rounded-full border border-border px-8 py-4 text-sm font-bold text-foreground transition hover:bg-muted"
-              >
-                倉庫紹介を見る
-              </Link>
+  <a
+    href="tel:0661159935"
+    className="rounded-full border border-border px-8 py-4 text-sm font-bold text-foreground transition hover:bg-muted"
+  >
+    電話で相談する
+  </a>
 
-              <a
-                href="tel:0661159935"
-                className="rounded-full border border-border px-8 py-4 text-sm font-bold text-foreground transition hover:bg-muted"
-              >
-                電話で相談する
-              </a>
-            </div>
+  <a
+    href="mailto:k_fuchigami@gamigami.email"
+    className="rounded-full border border-border px-8 py-4 text-sm font-bold text-foreground transition hover:bg-muted"
+  >
+    メールで相談する
+  </a>
+</div>
           </div>
         </section>
       </main>
