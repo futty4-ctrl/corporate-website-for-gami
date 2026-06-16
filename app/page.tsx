@@ -396,7 +396,11 @@ export default function HomePage() {
             </h2>
 
             <p className="mx-auto mt-6 max-w-[22rem] text-[14px] leading-7 text-muted-foreground sm:max-w-2xl sm:text-base sm:leading-8">
-              発送代行、倉庫保管、検品、梱包、シール貼り、セット組み、内職作業、流通加工まで。小ロット・スポット案件もお気軽にご相談ください。
+              全国対応・365日稼働。
+
+発送代行・倉庫保管・流通加工・検品・梱包・シール貼り・セット組み・内職作業まで一括対応。
+
+小ロット案件やスポット案件もお気軽にご相談ください。
             </p>
 
             <div className="mx-auto mt-8 flex max-w-[21rem] flex-col justify-center gap-3 sm:max-w-none sm:flex-row">
