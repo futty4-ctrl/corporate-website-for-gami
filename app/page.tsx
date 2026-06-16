@@ -330,18 +330,21 @@ export default function HomePage() {
                   />
                 </div>
 
-                <div className="grid gap-4 sm:grid-cols-2">
-                  <div className="rounded-[1.75rem] border border-border bg-white p-6 shadow-sm sm:rounded-[2rem]">
-                    <p className="text-xs font-bold tracking-[0.18em] text-gold">
-                      PARTNER
-                    </p>
-
-                    <h3 className="mt-4 text-xl font-bold">福岡提携倉庫</h3>
-
-                    <p className="mt-3 text-sm leading-7 text-muted-foreground">
-                      九州エリアの物流をサポート。保管・発送代行・スポット出荷に対応しています。
-                    </p>
-                  </div>
+                <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+  {[
+    "全国対応",
+    "365日稼働",
+    "小ロット歓迎",
+    "スポット出荷対応",
+  ].map((item) => (
+    <div
+      key={item}
+      className="rounded-[1.75rem] border border-border bg-white p-5 text-center shadow-sm"
+    >
+      <p className="text-base font-bold">{item}</p>
+    </div>
+  ))}
+</div>
 
                   <div className="rounded-[1.75rem] border border-border bg-white p-6 shadow-sm sm:rounded-[2rem]">
                     <p className="text-xs font-bold tracking-[0.18em] text-gold">
