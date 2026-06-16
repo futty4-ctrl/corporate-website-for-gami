@@ -44,7 +44,7 @@ export function Footer() {
 
             <p className="mx-auto mt-5 max-w-[22rem] text-sm leading-7 text-black/60 lg:mx-0">
               <span className="font-semibold text-black">
-                大阪の物流倉庫・発送代行ならGAMI
+                365日稼働の物流倉庫・発送代行ならGAMI
               </span>
               <br />
               守口市大日町の約100坪倉庫を拠点に、保管・発送代行・流通加工・内職作業まで対応します。
