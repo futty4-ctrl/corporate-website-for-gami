@@ -317,8 +317,9 @@ export default function HomePage() {
                       守口倉庫
                     </h3>
                     <p className="mt-3 text-sm leading-7 text-muted-foreground">
-                      約100坪の倉庫で、保管・発送代行・流通加工・内職作業まで対応します。
-                    </p>
+  約100坪の物流倉庫。
+  保管・発送代行・流通加工・検品・梱包・内職作業までワンストップ対応。
+</p>
                   </div>
                 </div>
 
