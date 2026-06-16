@@ -8,7 +8,16 @@ const footerLinkClass =
 
 const serviceTags = ["発送代行", "倉庫保管", "流通加工", "内職作業"]
 
-const areas = ["大阪", "守口", "京都", "兵庫", "奈良", "滋賀", "和歌山", "福岡"]
+const areas = [
+  "全国対応",
+  "365日稼働",
+  "発送代行",
+  "倉庫保管",
+  "流通加工",
+  "内職作業",
+  "検品",
+  "梱包",
+]
 
 export function Footer() {
   const [logoError, setLogoError] = useState(false)
