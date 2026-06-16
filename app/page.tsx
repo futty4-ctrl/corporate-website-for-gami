@@ -103,16 +103,24 @@ export default function HomePage() {
                 LOGISTICS WAREHOUSE / OSAKA
               </p>
 
-              <h1 className="mx-auto mt-3 max-w-[9em] text-[1.75rem] font-bold leading-[1.2] tracking-[-0.05em] text-white sm:max-w-none sm:text-5xl lg:mx-0 lg:text-[5rem] lg:leading-[1.05]">
-  <span className="block">大阪の物流倉庫</span>
-  <span className="block">発送代行なら</span>
-  <span className="block">GAMI</span>
+              <h1 className="mx-auto mt-4 max-w-[11em] text-[2rem] font-bold leading-[1.15] tracking-[-0.04em] text-white sm:max-w-none sm:text-5xl lg:mx-0 lg:text-[5rem] lg:leading-[1.05]">
+  <span className="block">
+    365日稼働の物流倉庫
+  </span>
+
+  <span className="mt-2 block">
+    発送代行ならGAMI
+  </span>
 </h1>
 
-              <p className="mx-auto mt-5 max-w-[20rem] text-[13px] leading-6 text-white/85 sm:max-w-[42rem] sm:text-lg sm:leading-9 lg:mx-0">
-                守口市大日町の約100坪倉庫を拠点に、
-                発送代行・倉庫保管・流通加工・内職作業まで対応。
-              </p>
+              <p className="mx-auto mt-6 max-w-[22rem] text-[14px] leading-8 text-white/85 sm:max-w-[42rem] sm:text-lg sm:leading-9 lg:mx-0">
+  全国対応・365日稼働。
+
+  <br />
+
+  守口市大日町の約100坪物流倉庫を拠点に、
+  発送代行・倉庫保管・流通加工・検品・梱包・内職作業まで一括対応。
+</p>
 
               <div className="mx-auto mt-5 flex max-w-[20rem] flex-col gap-3 sm:max-w-none sm:flex-row sm:justify-center lg:mx-0 lg:justify-start">
                 <Link
@@ -131,7 +139,8 @@ export default function HomePage() {
               </div>
 
              <p className="mx-auto mt-3 max-w-[22rem] text-xs leading-6 text-white/60 sm:max-w-[34rem] lg:mx-0">
-                小ロット・スポット案件・細かな手作業も対応しています。
+                全国対応・365日稼働。
+小ロット案件・スポット出荷もお気軽にご相談ください。
               </p>
             </div>
           </div>
