@@ -101,10 +101,11 @@ export default function HomePage() {
                 LOGISTICS WAREHOUSE / OSAKA
               </p>
 
-              <h1 className="mt-4 text-[1.85rem] font-bold leading-[1.15] tracking-[-0.04em] text-white sm:text-5xl lg:text-[5rem] lg:leading-[1.05]">
-                <span className="block">大阪の物流倉庫・発送代行なら</span>
-                <span className="mt-2 block">GAMI</span>
-              </h1>
+              <h1 className="mx-auto mt-4 max-w-[8.5em] text-[2rem] font-bold leading-[1.15] tracking-[-0.05em] text-white sm:max-w-none sm:text-5xl lg:mx-0 lg:text-[5rem] lg:leading-[1.05]">
+  <span className="block">大阪の物流倉庫</span>
+  <span className="block">発送代行なら</span>
+  <span className="block">GAMI</span>
+</h1>
 
               <p className="mx-auto mt-5 max-w-[20rem] text-[13px] leading-6 text-white/85 sm:max-w-[42rem] sm:text-lg sm:leading-9 lg:mx-0">
                 守口市大日町の約100坪倉庫を拠点に、
