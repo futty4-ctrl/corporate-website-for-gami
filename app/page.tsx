@@ -103,10 +103,13 @@ export default function HomePage() {
                 LOGISTICS WAREHOUSE / OSAKA
               </p>
 
-              <h1 className="mx-auto mt-4 max-w-[10em] text-[2rem] font-bold leading-[1.15] tracking-[-0.04em] text-white sm:max-w-none sm:text-5xl lg:mx-0 lg:text-[5rem] lg:leading-[1.05]">
-                <span className="block">365日稼働倉庫</span>
-                <span className="mt-2 block">発送代行ならGAMI</span>
-              </h1>
+              <h1 className="mx-auto mt-4 max-w-[11em] text-[2rem] font-bold leading-[1.15] tracking-[-0.04em] text-white sm:max-w-none sm:text-5xl lg:mx-0 lg:text-[5rem] lg:leading-[1.05]">
+  <span className="block">発送代行・倉庫保管</span>
+  <span className="block">流通加工なら</span>
+  <span className="mt-2 block text-amber-300">
+    GAMI
+  </span>
+</h1>
 
               <p className="mx-auto mt-5 max-w-[22rem] text-[14px] leading-7 text-white/85 sm:max-w-[42rem] sm:text-lg sm:leading-9 lg:mx-0">
                 全国対応・365日稼働。
