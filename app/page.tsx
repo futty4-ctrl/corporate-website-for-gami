@@ -403,14 +403,14 @@ export default function HomePage() {
                 </p>
 
                 <h2 className="mt-4 text-[1.75rem] font-bold leading-[1.3] tracking-[-0.03em] sm:text-5xl sm:leading-tight">
-                  <span className="block">許認可を活かした</span>
-                  <span className="block">物流ワンストップ対応。</span>
-                </h2>
+  <span className="block">安心して任せられる</span>
+  <span className="block">物流パートナー。</span>
+</h2>
 
                 <p className="mx-auto mt-6 max-w-[22rem] text-[14px] leading-7 text-white/70 sm:max-w-3xl sm:text-base sm:leading-8 lg:mx-0">
-                  化粧品製造業許可・第一種貨物利用運送事業・古物商許可を取得。
-                  保管・流通加工・発送代行までワンストップで対応しています。
-                </p>
+  化粧品製造業許可・第一種貨物利用運送事業・古物商許可を取得。
+  保管・発送代行・流通加工までワンストップで対応します。
+</p>
               </div>
 
               <div className="grid gap-3 text-left sm:grid-cols-2">
