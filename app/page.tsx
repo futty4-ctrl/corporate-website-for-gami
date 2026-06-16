@@ -128,7 +128,7 @@ export default function HomePage() {
                 </Link>
               </div>
 
-              <p className="mx-auto mt-4 max-w-[20rem] text-xs leading-6 text-white/60 sm:max-w-[34rem] lg:mx-0">
+             <p className="mx-auto mt-3 max-w-[22rem] text-xs leading-6 text-white/60 sm:max-w-[34rem] lg:mx-0">
                 小ロット・スポット案件・細かな手作業も対応しています。
               </p>
             </div>
