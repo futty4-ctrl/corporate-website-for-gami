@@ -250,8 +250,11 @@ export default function HomePage() {
                 </h2>
 
                 <p className="mx-auto mt-6 max-w-[22rem] text-[14px] leading-7 text-muted-foreground sm:max-w-3xl sm:text-base sm:leading-8 lg:mx-0">
-                  住所：大阪府守口市大日町1-8-18。大阪を中心に、保管・出荷・検品・梱包・流通加工まで対応します。
-                  福岡と神戸にも提携倉庫があるため、案件に応じた物流体制をご提案できます。
+                  住所：大阪府守口市大日町1-8-18。全国対応可能。
+
+発送代行・倉庫保管・流通加工・検品・梱包・内職作業まで一括対応。
+
+365日稼働体制でスポット案件や急な出荷にも柔軟に対応しています。
                 </p>
 
                 <div className="mx-auto mt-8 flex max-w-[21rem] flex-col gap-3 sm:max-w-none sm:flex-row lg:mx-0">
