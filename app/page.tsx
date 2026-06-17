@@ -129,7 +129,7 @@ export default function HomePage() {
                   href="/company#contact"
                   className="rounded-full bg-amber-500 px-7 py-4 text-center text-sm font-bold text-white shadow-lg transition hover:bg-amber-600"
                 >
-                  物流を無料相談する
+                  見積りを依頼する
                 </Link>
 
                 <Link
@@ -213,7 +213,7 @@ export default function HomePage() {
                   href="/company#contact"
                   className="mt-8 inline-flex items-center justify-center rounded-full bg-amber-500 px-8 py-4 text-sm font-bold text-white shadow-lg transition hover:bg-amber-600"
                 >
-                  物流を無料相談する
+                  見積りを依頼する
                 </Link>
               </div>
 
