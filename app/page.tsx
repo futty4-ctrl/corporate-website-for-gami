@@ -528,6 +528,26 @@ export default function HomePage() {
     </div>
   </div>
 </section>
+        <section className="section-gradient py-16 sm:py-24">
+  <div className="mx-auto max-w-6xl px-5 sm:px-6">
+    <div className="grid gap-4 text-center md:grid-cols-3">
+      <div className="rounded-3xl border border-border bg-white p-8 shadow-sm">
+        <p className="text-5xl font-bold text-amber-500">365</p>
+        <p className="mt-2 font-bold">365日稼働</p>
+      </div>
+
+      <div className="rounded-3xl border border-border bg-white p-8 shadow-sm">
+        <p className="text-5xl font-bold text-amber-500">100坪</p>
+        <p className="mt-2 font-bold">大阪守口物流センター</p>
+      </div>
+
+      <div className="rounded-3xl border border-border bg-white p-8 shadow-sm">
+        <p className="text-5xl font-bold text-amber-500">全国</p>
+        <p className="mt-2 font-bold">発送対応</p>
+      </div>
+    </div>
+  </div>
+</section>
         <section className="py-16 sm:py-28">
           <div className="mx-auto max-w-5xl px-5 text-center sm:px-6">
             <p className="text-xs font-semibold tracking-[0.18em] text-gold sm:text-sm sm:tracking-[0.24em]">
