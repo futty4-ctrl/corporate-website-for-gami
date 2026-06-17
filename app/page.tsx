@@ -106,9 +106,9 @@ export default function HomePage() {
 
           <div className="relative z-10 mx-auto flex min-h-[350px] max-w-6xl items-center justify-center px-5 py-8 text-center sm:min-h-[720px] sm:px-6 sm:py-20 lg:justify-start lg:text-left">
             <div className="mx-auto max-w-4xl lg:mx-0">
-              <p className="text-[10px] font-semibold tracking-[0.18em] text-amber-300 sm:text-sm">
-                LOGISTICS WAREHOUSE / OSAKA
-              </p>
+              <p className="text-[10px] font-semibold tracking-[0.25em] text-amber-300 sm:text-sm sm:tracking-[0.35em]">
+  上へ、前へ。
+</p>
 
               <h1 className="mx-auto mt-4 max-w-[11em] text-[2rem] font-bold leading-[1.15] tracking-[-0.04em] text-white sm:max-w-none sm:text-5xl lg:mx-0 lg:text-[5rem] lg:leading-[1.05]">
   <span className="block">発送代行・倉庫保管</span>
