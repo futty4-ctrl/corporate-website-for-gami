@@ -276,7 +276,20 @@ export default function LogisticsPage() {
   <br />
   小ロット案件やスポット出荷もお気軽にご相談ください。
 </p>
-
+<div className="mx-auto mt-6 flex max-w-[22rem] flex-wrap justify-center gap-2 sm:max-w-none lg:mx-0 lg:justify-start">
+  {[
+    "全国対応",
+    "365日稼働",
+    "最短即日対応",
+  ].map((item) => (
+    <span
+      key={item}
+      className="rounded-full border border-white/20 bg-white/10 px-4 py-2 text-xs font-bold text-white backdrop-blur"
+    >
+      {item}
+    </span>
+  ))}
+</div>
             <div className="mt-10 flex flex-wrap justify-center gap-3 lg:justify-start">
               {achievements.map((item) => (
                 <span
