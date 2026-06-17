@@ -335,6 +335,48 @@ export default function LogisticsPage() {
     </div>
   </div>
 </section>
+        <section className="section-gradient py-16 sm:py-24">
+  <div className="mx-auto max-w-6xl px-5 sm:px-6">
+    <div className="text-center">
+      <p className="text-xs font-semibold tracking-[0.18em] text-gold sm:text-sm">
+        SUPPORT
+      </p>
+
+      <h2 className="mt-4 text-[1.75rem] font-bold leading-[1.3] tracking-[-0.03em] sm:text-5xl">
+        こんな物流作業に対応
+      </h2>
+
+      <p className="mx-auto mt-6 max-w-2xl text-sm leading-8 text-muted-foreground">
+        保管から出荷までワンストップ対応。
+        小ロット案件やスポット案件もお気軽にご相談ください。
+      </p>
+    </div>
+
+    <div className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+      {[
+        "発送代行",
+        "倉庫保管",
+        "検品作業",
+        "梱包作業",
+        "シール貼り",
+        "セット組み",
+        "封入作業",
+        "流通加工",
+        "内職作業",
+        "EC物流",
+        "化粧品関連作業",
+        "スポット出荷",
+      ].map((item) => (
+        <div
+          key={item}
+          className="rounded-3xl border border-border bg-white px-5 py-4 text-center shadow-sm"
+        >
+          <p className="font-bold">{item}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
         <section className="section-gradient py-16 sm:py-28">
           <div className="mx-auto max-w-7xl px-5 text-center sm:px-6 lg:px-12 lg:text-left">
             <p className="text-xs font-semibold tracking-[0.18em] text-gold sm:text-sm">
