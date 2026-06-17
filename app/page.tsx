@@ -478,7 +478,27 @@ export default function HomePage() {
             </div>
           </div>
         </section>
-
+<section className="py-10">
+  <div className="mx-auto max-w-5xl px-5 sm:px-6">
+    <div className="flex flex-wrap justify-center gap-3">
+      {[
+        "ご相談無料",
+        "お見積り無料",
+        "最短即日対応",
+        "全国対応",
+        "365日稼働",
+        "小ロット歓迎",
+      ].map((item) => (
+        <div
+          key={item}
+          className="rounded-full border border-border bg-white px-5 py-3 text-sm font-bold shadow-sm"
+        >
+          {item}
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
         <section className="py-16 sm:py-28">
           <div className="mx-auto max-w-5xl px-5 text-center sm:px-6">
             <p className="text-xs font-semibold tracking-[0.18em] text-gold sm:text-sm sm:tracking-[0.24em]">
