@@ -554,21 +554,21 @@ export default function HomePage() {
     href="/company#contact"
     className="rounded-full bg-amber-500 px-8 py-4 text-sm font-bold text-white shadow-lg transition hover:-translate-y-0.5 hover:bg-amber-600"
   >
-    フォームで相談する
+    無料見積りを依頼する
   </Link>
 
   <a
     href="tel:0661159935"
     className="rounded-full border border-border px-8 py-4 text-sm font-bold text-foreground transition hover:bg-muted"
   >
-    電話で相談する
+    今すぐ電話する
   </a>
 
   <a
     href="mailto:k_fuchigami@gamigami.email"
     className="rounded-full border border-border px-8 py-4 text-sm font-bold text-foreground transition hover:bg-muted"
   >
-    メールで相談する
+    メールで問い合わせる
   </a>
 </div>
           </div>
