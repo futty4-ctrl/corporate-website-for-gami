@@ -415,7 +415,7 @@ export default function LogisticsPage() {
             </p>
 
             <h2 className="mt-4 text-[1.75rem] font-bold leading-[1.35] tracking-[-0.03em] sm:text-5xl sm:leading-tight">
-              対応エリア
+              全国対応・365日稼働
             </h2>
 
             <div className="mt-10 flex flex-wrap justify-center gap-3">
