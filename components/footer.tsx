@@ -41,7 +41,9 @@ export function Footer() {
                 GAMI
               </span>
             </Link>
-
+<p className="mb-2 text-xs font-bold tracking-[0.2em] text-amber-500">
+  上へ、前へ。
+</p>
             <p className="mx-auto mt-5 max-w-[22rem] text-sm leading-7 text-black/60 lg:mx-0">
               <span className="font-semibold text-black">
                 365日稼働の物流倉庫・発送代行ならGAMI
