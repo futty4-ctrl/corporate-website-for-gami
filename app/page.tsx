@@ -395,7 +395,54 @@ export default function HomePage() {
             </div>
           </div>
         </section>
+<section className="section-gradient py-16 sm:py-28">
+  <div className="mx-auto max-w-5xl px-5 sm:px-6">
+    <div className="text-center">
+      <p className="text-xs font-semibold tracking-[0.18em] text-gold sm:text-sm">
+        FAQ
+      </p>
 
+      <h2 className="mt-4 text-[1.75rem] font-bold leading-[1.3] tracking-[-0.03em] sm:text-5xl">
+        よくあるご質問
+      </h2>
+    </div>
+
+    <div className="mt-10 space-y-4">
+      {[
+        {
+          q: "小ロットでも依頼できますか？",
+          a: "はい。小ロット案件やスタートアップ企業様の物流も対応しています。",
+        },
+        {
+          q: "全国対応していますか？",
+          a: "はい。大阪守口物流センターを拠点に全国対応しています。",
+        },
+        {
+          q: "スポット出荷は可能ですか？",
+          a: "可能です。繁忙期や急な出荷案件もお気軽にご相談ください。",
+        },
+        {
+          q: "シール貼りやセット組みだけでも依頼できますか？",
+          a: "はい。流通加工・内職作業のみのご相談も歓迎しています。",
+        },
+        {
+          q: "見積りは無料ですか？",
+          a: "はい。ご相談・お見積りは無料です。",
+        },
+      ].map((item) => (
+        <div
+          key={item.q}
+          className="rounded-3xl border border-border bg-white p-6 shadow-sm"
+        >
+          <p className="font-bold">{item.q}</p>
+          <p className="mt-3 text-sm leading-7 text-muted-foreground">
+            {item.a}
+          </p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
         <section className="bg-zinc-950 py-16 text-white sm:py-28">
           <div className="mx-auto max-w-6xl px-5 sm:px-6">
             <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
