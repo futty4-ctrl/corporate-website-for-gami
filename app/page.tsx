@@ -286,7 +286,8 @@ export default function HomePage() {
         </h2>
 
         <p className="mx-auto mt-6 max-w-[22rem] text-[14px] leading-7 text-muted-foreground sm:max-w-3xl sm:text-base sm:leading-8 lg:mx-0">
-          大阪府守口市大日町の約100坪物流倉庫。
+          365日稼働の
+          大阪守口物流センター
           <br />
           全国対応・365日稼働。
           <br />
