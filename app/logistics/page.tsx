@@ -261,12 +261,14 @@ export default function LogisticsPage() {
         <section className="py-16 sm:py-28">
           <div className="mx-auto max-w-7xl px-5 text-center sm:px-6 lg:px-12 lg:text-left">
             <p className="text-xs font-semibold tracking-[0.18em] text-gold sm:text-sm">
-              ACHIEVEMENTS
-            </p>
+  ACHIEVEMENTS
+</p>
 
-            <h2 className="mt-4 text-[1.75rem] font-bold leading-[1.35] tracking-[-0.03em] sm:text-5xl sm:leading-tight">
-              取扱実績・対応分野
-            </h2>
+<h2 className="mt-4 text-[1.75rem] font-bold leading-[1.35] tracking-[-0.03em] sm:text-5xl sm:leading-tight">
+  こんな物流業務に
+  <br />
+  対応しています
+</h2>
 
             <p className="mx-auto mt-6 max-w-[22rem] text-[14px] leading-7 text-muted-foreground sm:max-w-3xl sm:text-base sm:leading-8 lg:mx-0">
               EC発送、美容商材、化粧品関連商品、食品、返礼品など、商材に合わせた物流対応が可能です。
