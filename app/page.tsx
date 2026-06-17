@@ -506,7 +506,7 @@ export default function HomePage() {
             </p>
 
             <h2 className="mt-4 text-[1.75rem] font-bold leading-[1.3] tracking-[-0.03em] sm:text-5xl sm:leading-tight">
-  <span className="block">発送代行・倉庫保管を</span>
+  <span className="block">物流のお悩みを</span>
   <span className="block">無料相談する</span>
 </h2>
 
