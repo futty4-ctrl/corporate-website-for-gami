@@ -233,7 +233,7 @@ export default function CompanyPage() {
             <div className="mb-8">
               <SectionHeading
                 sub="PHILOSOPHY"
-                title="物流を、もっと動きやすく。"
+                title="上へ、前へ。"
                 className="mb-5"
               />
 
