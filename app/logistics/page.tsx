@@ -132,15 +132,15 @@ export default function LogisticsPage() {
                 </p>
 
                 <h1 className="mx-auto mt-5 max-w-[9.5em] text-[2rem] font-bold leading-[1.16] tracking-[-0.05em] sm:max-w-none sm:text-6xl sm:leading-[1.05] lg:mx-0">
-  <span className="block">365日稼働倉庫</span>
-  <span className="block">発送代行ならGAMI</span>
-</h1>
+                  <span className="block">365日稼働倉庫</span>
+                  <span className="block">発送代行ならGAMI</span>
+                </h1>
 
                 <p className="mx-auto mt-5 max-w-[19rem] text-[14px] leading-7 text-white/82 sm:max-w-3xl sm:text-lg sm:leading-9 lg:mx-0">
                   全国対応・365日稼働。
-
-守口市大日町の約100坪物流倉庫を拠点に、
-発送代行・倉庫保管・流通加工・内職作業までワンストップ対応。
+                  <br />
+                  守口市大日町の約100坪物流倉庫を拠点に、
+                  発送代行・倉庫保管・流通加工・内職作業までワンストップ対応。
                 </p>
 
                 <div className="mx-auto mt-7 flex max-w-[21rem] flex-col gap-3 sm:max-w-none sm:flex-row sm:justify-center lg:mx-0 lg:justify-start">
@@ -356,11 +356,12 @@ export default function LogisticsPage() {
                   </p>
 
                   <h3 className="mt-4 text-2xl font-bold leading-snug">
-                    福岡・神戸の提携倉庫
+                    全国物流ネットワーク
                   </h3>
 
                   <p className="mt-4 text-sm leading-8 text-muted-foreground">
-                    案件内容・物量・配送エリアに応じて、福岡・神戸の提携倉庫も活用できます。
+                    案件内容・配送エリアに応じて、福岡・神戸の提携倉庫も活用。
+                    全国発送にも柔軟に対応しています。
                   </p>
                 </div>
               </div>
@@ -421,6 +422,12 @@ export default function LogisticsPage() {
               全国対応・365日稼働
             </h2>
 
+            <p className="mx-auto mt-6 max-w-2xl text-sm leading-8 text-muted-foreground">
+              大阪守口の物流倉庫を拠点に、
+              全国の発送代行・倉庫保管・流通加工に対応。
+              小ロット案件やスポット案件も歓迎しています。
+            </p>
+
             <div className="mt-10 flex flex-wrap justify-center gap-3">
               {areas.map((area) => (
                 <span
@@ -441,14 +448,16 @@ export default function LogisticsPage() {
             </p>
 
             <h2 className="mt-4 text-[1.75rem] font-bold leading-[1.35] tracking-[-0.03em] sm:text-5xl sm:leading-tight">
-              物流のご相談は、
+              発送代行・倉庫保管の
               <br />
-              まずはGAMIへ。
+              ご相談はこちら
             </h2>
 
             <p className="mx-auto mt-6 max-w-[22rem] text-[14px] leading-7 text-white/70 sm:max-w-2xl sm:text-base sm:leading-8">
-              発送代行、倉庫保管、流通加工、スポット配送まで一括対応。
-              まずは現在の課題や状況をご相談ください。
+              全国対応・365日稼働。
+              <br />
+              発送代行・倉庫保管・流通加工・内職作業まで
+              ワンストップで対応しています。
             </p>
 
             <div className="mx-auto mt-10 flex max-w-[21rem] flex-col gap-3 sm:max-w-none sm:flex-row sm:justify-center">
