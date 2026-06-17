@@ -405,6 +405,25 @@ export default function HomePage() {
             </div>
           </div>
         </section>
+        <div className="mt-8 flex flex-wrap justify-center gap-3 lg:justify-start">
+  {[
+    "EC通販",
+    "美容商材",
+    "化粧品関連",
+    "食品",
+    "ふるさと納税返礼品",
+    "アパレル",
+    "雑貨",
+    "輸入商材",
+  ].map((item) => (
+    <span
+      key={item}
+      className="rounded-full border border-border bg-white px-4 py-2 text-sm font-bold shadow-sm"
+    >
+      {item}
+    </span>
+  ))}
+</div>
 <section className="section-gradient py-16 sm:py-28">
   <div className="mx-auto max-w-5xl px-5 sm:px-6">
     <div className="text-center">
