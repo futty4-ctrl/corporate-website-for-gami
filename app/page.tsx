@@ -381,12 +381,16 @@ export default function HomePage() {
             </p>
 
             <h2 className="mt-4 text-[1.75rem] font-bold leading-[1.35] tracking-[-0.03em] sm:text-5xl sm:leading-tight">
-              物流対応実例
-            </h2>
+  こんな物流業務に
+  <br />
+  対応しています
+</h2>
 
             <p className="mx-auto mt-6 max-w-[22rem] text-[14px] leading-7 text-muted-foreground sm:max-w-3xl sm:text-base sm:leading-8 lg:mx-0">
-              EC商品、化粧品関連商材、スポット出荷、小ロット案件まで対応。
-              発送代行や流通加工を外注したい企業様からのご相談をお待ちしています。
+              発送代行・倉庫保管・流通加工・検品・梱包・
+シール貼り・セット組み・封入作業まで対応。
+
+小ロット案件やスポット案件もお気軽にご相談ください。
             </p>
 
             <div className="mt-9 grid gap-3 text-left sm:grid-cols-2 lg:grid-cols-3">
