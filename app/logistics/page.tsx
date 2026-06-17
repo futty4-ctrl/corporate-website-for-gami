@@ -553,6 +553,8 @@ export default function LogisticsPage() {
   シール貼りやセット組みを外注したい。
   <br />
   そんな物流のお悩みをお気軽にご相談ください。
+
+ご相談・お見積りは無料です。
 </p>
 
             <div className="mx-auto mt-10 flex max-w-[21rem] flex-col gap-3 sm:max-w-none sm:flex-row sm:justify-center">
