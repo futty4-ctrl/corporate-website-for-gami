@@ -286,15 +286,16 @@ export default function HomePage() {
         </h2>
 
         <p className="mx-auto mt-6 max-w-[22rem] text-[14px] leading-7 text-muted-foreground sm:max-w-3xl sm:text-base sm:leading-8 lg:mx-0">
-          365日稼働の
-          大阪守口物流センター
-          <br />
-          全国対応・365日稼働。
-          <br />
-          発送代行・倉庫保管・流通加工・検品・梱包・シール貼り・セット組み・内職作業まで一括対応しています。
-          <br />
-          小ロット案件やスポット出荷もお気軽にご相談ください。
-        </p>
+  大阪府守口市大日町の約100坪物流倉庫。
+  <br />
+  全国対応・365日稼働。
+  <br />
+  発送代行・倉庫保管・流通加工・検品・梱包・
+  シール貼り・セット組み・内職作業まで
+  ワンストップ対応しています。
+  <br />
+  小ロット案件やスポット出荷もお気軽にご相談ください。
+</p>
 
         <div className="mx-auto mt-8 flex max-w-[21rem] flex-col gap-3 sm:max-w-none sm:flex-row lg:mx-0">
           <Link
