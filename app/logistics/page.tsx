@@ -132,12 +132,15 @@ export default function LogisticsPage() {
                 </p>
 
                 <h1 className="mx-auto mt-5 max-w-[9.5em] text-[2rem] font-bold leading-[1.16] tracking-[-0.05em] sm:max-w-none sm:text-6xl sm:leading-[1.05] lg:mx-0">
-                  <span className="block">大阪の物流倉庫・</span>
-                  <span className="block">発送代行ならGAMI</span>
-                </h1>
+  <span className="block">365日稼働倉庫</span>
+  <span className="block">発送代行ならGAMI</span>
+</h1>
 
                 <p className="mx-auto mt-5 max-w-[19rem] text-[14px] leading-7 text-white/82 sm:max-w-3xl sm:text-lg sm:leading-9 lg:mx-0">
-                  守口市大日町の約100坪倉庫を拠点に、倉庫保管・発送代行・流通加工・内職作業まで一括対応します。
+                  全国対応・365日稼働。
+
+守口市大日町の約100坪物流倉庫を拠点に、
+発送代行・倉庫保管・流通加工・内職作業までワンストップ対応。
                 </p>
 
                 <div className="mx-auto mt-7 flex max-w-[21rem] flex-col gap-3 sm:max-w-none sm:flex-row sm:justify-center lg:mx-0 lg:justify-start">
