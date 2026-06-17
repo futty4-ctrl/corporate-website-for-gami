@@ -451,25 +451,28 @@ export default function LogisticsPage() {
               CONTACT
             </p>
 
-            <h2 className="mt-4 text-[1.75rem] font-bold leading-[1.35] tracking-[-0.03em] sm:text-5xl sm:leading-tight">
-              発送代行・倉庫保管の
-              <br />
-              ご相談はこちら
-            </h2>
+            <h2 className="mt-4 text-[1.75rem] font-bold leading-[1.3] tracking-[-0.03em] sm:text-5xl sm:leading-tight">
+  物流業務を
+  <br />
+  無料相談する
+</h2>
 
             <p className="mx-auto mt-6 max-w-[22rem] text-[14px] leading-7 text-white/70 sm:max-w-2xl sm:text-base sm:leading-8">
-              全国対応・365日稼働。
-              <br />
-              発送代行・倉庫保管・流通加工・内職作業まで
-              ワンストップで対応しています。
-            </p>
+  保管場所が足りない。
+  <br />
+  発送作業が追いつかない。
+  <br />
+  シール貼りやセット組みを外注したい。
+  <br />
+  そんな物流のお悩みをお気軽にご相談ください。
+</p>
 
             <div className="mx-auto mt-10 flex max-w-[21rem] flex-col gap-3 sm:max-w-none sm:flex-row sm:justify-center">
               <Link
                 href="/company#contact"
                 className="rounded-full bg-amber-500 px-8 py-4 text-sm font-bold text-white transition hover:bg-amber-400"
               >
-                物流を相談する
+                見積りを依頼する
               </Link>
 
               <a
