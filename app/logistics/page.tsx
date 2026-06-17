@@ -271,8 +271,10 @@ export default function LogisticsPage() {
 </h2>
 
             <p className="mx-auto mt-6 max-w-[22rem] text-[14px] leading-7 text-muted-foreground sm:max-w-3xl sm:text-base sm:leading-8 lg:mx-0">
-              EC発送、美容商材、化粧品関連商品、食品、返礼品など、商材に合わせた物流対応が可能です。
-            </p>
+  発送代行・倉庫保管・流通加工・シール貼り・セット組み・検品作業まで対応。
+  <br />
+  小ロット案件やスポット出荷もお気軽にご相談ください。
+</p>
 
             <div className="mt-10 flex flex-wrap justify-center gap-3 lg:justify-start">
               {achievements.map((item) => (
