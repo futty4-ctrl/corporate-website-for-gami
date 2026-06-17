@@ -123,7 +123,7 @@ export function Header() {
             className="mb-3 flex items-center justify-center rounded-full bg-amber-500 px-4 py-4 text-center text-sm font-bold text-white shadow-lg active:scale-95"
             onClick={() => setIsOpen(false)}
           >
-            物流を無料相談する
+            見積りを依頼する
           </Link>
 
           <a
