@@ -284,7 +284,7 @@ export default function LogisticsPage() {
   ].map((item) => (
     <span
       key={item}
-      className="rounded-full border border-white/20 bg-white/10 px-4 py-2 text-xs font-bold text-white backdrop-blur"
+      className="rounded-full border border-border bg-card px-4 py-2 text-xs font-bold text-foreground shadow-sm"
     >
       {item}
     </span>
