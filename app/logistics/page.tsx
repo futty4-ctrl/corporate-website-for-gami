@@ -149,7 +149,7 @@ export default function LogisticsPage() {
                     href="/company#contact"
                     className="rounded-full bg-amber-500 px-7 py-4 text-center text-sm font-bold text-white shadow-lg transition hover:bg-amber-400"
                   >
-                    物流を相談する
+                    見積りを依頼する
                   </Link>
 
                   <Link
