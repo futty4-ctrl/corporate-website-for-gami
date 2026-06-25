@@ -469,6 +469,53 @@ export default function LogisticsPage() {
           </div>
         </section>
 
+                <section className="py-16 sm:py-28">
+          <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-12">
+            <div className="text-center">
+              <p className="text-xs font-semibold tracking-[0.18em] text-gold sm:text-sm">
+                GALLERY
+              </p>
+
+              <h2 className="mt-4 text-[1.75rem] font-bold leading-[1.35] tracking-[-0.03em] sm:text-5xl sm:leading-tight">
+                実際の倉庫・作業風景
+              </h2>
+
+              <p className="mx-auto mt-6 max-w-2xl text-sm leading-8 text-muted-foreground">
+                保管・梱包・流通加工・出荷作業まで、実際の現場で丁寧に対応しています。
+              </p>
+            </div>
+
+            <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {[
+                { src: "/images/hero-logistics.png", alt: "GAMI物流倉庫" },
+                { src: "/images/warehouse-osaka-inside.jpg", alt: "倉庫内観" },
+                { src: "/images/warehouse-osaka.jpg", alt: "倉庫外観" },
+                { src: "/images/moriguchi-warehouse.jpg", alt: "保管スペース" },
+                { src: "/images/moriguchi-inside.jpg", alt: "梱包作業" },
+                { src: "/images/S_22388746_0.jpg", alt: "パレット保管" },
+                { src: "/images/S_22388747_0.jpg", alt: "出荷前商品" },
+                { src: "/images/S_22388748_0.jpg", alt: "箱詰め作業" },
+                { src: "/images/S_22388749_0.jpg", alt: "段ボール組立" },
+              ].map((image) => (
+                <div
+                  key={image.src}
+                  className="overflow-hidden rounded-[1.75rem] border border-border bg-white shadow-sm"
+                >
+                  <div className="relative aspect-[4/3]">
+                    <Image
+                      src={image.src}
+                      alt={image.alt}
+                      fill
+                      sizes="(max-width: 1024px) 100vw, 33vw"
+                      className="object-cover"
+                    />
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         <section className="py-16 sm:py-28">
           <div className="mx-auto max-w-7xl px-5 text-center sm:px-6 lg:px-12 lg:text-left">
             <p className="text-xs font-semibold tracking-[0.18em] text-gold sm:text-sm">
