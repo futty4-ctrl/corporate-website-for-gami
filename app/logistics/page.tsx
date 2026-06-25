@@ -167,7 +167,18 @@ export default function LogisticsPage() {
                   </a>
                 </div>
               </div>
-
+<div className="overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.08] p-2 shadow-2xl">
+  <div className="relative aspect-[16/10] overflow-hidden rounded-[1.5rem]">
+    <Image
+      src="/images/hero-logistics.png"
+      alt="GAMIの物流倉庫・梱包・発送代行"
+      fill
+      priority
+      sizes="(max-width: 1024px) 100vw, 45vw"
+      className="object-cover"
+    />
+  </div>
+</div>
               <div className="rounded-[1.75rem] border border-white/10 bg-white/[0.08] p-5 text-left backdrop-blur sm:rounded-[2rem] sm:p-6">
                 <p className="text-sm font-bold tracking-[0.12em] text-amber-300 sm:tracking-[0.18em]">
                   こんなご相談に対応
