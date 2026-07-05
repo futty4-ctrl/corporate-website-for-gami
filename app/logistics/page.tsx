@@ -515,7 +515,7 @@ export default function LogisticsPage() {
     src={image.src}
     alt={image.alt}
     fill
-    className="object-cover scale-105"
+    className="object-cover scale-110"
   />
 </div>
                 </div>
