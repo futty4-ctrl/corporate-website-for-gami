@@ -510,15 +510,14 @@ export default function LogisticsPage() {
                   key={image.src}
                   className="overflow-hidden rounded-[1.75rem] border border-border bg-white shadow-sm"
                 >
-                  <div className="relative aspect-[4/3]">
-                    <Image
-                      src={image.src}
-                      alt={image.alt}
-                      fill
-                      sizes="(max-width: 1024px) 100vw, 33vw"
-                      className="object-contain p-2 bg-white"
-                    />
-                  </div>
+                 <div className="relative aspect-[4/3] overflow-hidden">
+  <Image
+    src={image.src}
+    alt={image.alt}
+    fill
+    className="object-cover scale-105"
+  />
+</div>
                 </div>
               ))}
             </div>
