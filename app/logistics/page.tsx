@@ -517,7 +517,7 @@ export default function LogisticsPage() {
                       alt={image.alt}
                       fill
                       sizes="(max-width: 1024px) 100vw, 33vw"
-                      className="object-cover"
+                      className="object-contain p-2 bg-white"
                     />
                   </div>
                 </div>
