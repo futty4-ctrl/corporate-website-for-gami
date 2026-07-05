@@ -505,10 +505,6 @@ export default function LogisticsPage() {
                 { src: "/images/moriguchi-inside.jpg", alt: "梱包作業" },
                 { src: "/images/warehouse-working.jpg", alt: "発送代行の作業風景" },
 { src: "/images/warehouse-exterior.jpg", alt: "倉庫外観" },
-{ src: "/images/warehouse-osaka-inside.jpg", alt: "パレット保管" },
-{ src: "/images/moriguchi-inside.jpg", alt: "箱詰め・流通加工" },
-{ src: "/images/moriguchi-warehouse.jpg", alt: "保管スペース" },
-{ src: "/images/warehouse-osaka.jpg", alt: "倉庫全景" },
               ].map((image) => (
                 <div
                   key={image.src}
