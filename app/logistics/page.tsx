@@ -498,14 +498,15 @@ export default function LogisticsPage() {
 
             <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {[
-                { src: "/images/hero-logistics.png", alt: "GAMI物流倉庫" },
-                { src: "/images/warehouse-osaka-inside.jpg", alt: "倉庫内観" },
-                { src: "/images/warehouse-osaka.jpg", alt: "倉庫外観" },
-                { src: "/images/moriguchi-warehouse.jpg", alt: "保管スペース" },
-                { src: "/images/moriguchi-inside.jpg", alt: "梱包作業" },
-                { src: "/images/warehouse-working.jpg", alt: "発送代行の作業風景" },
-{ src: "/images/warehouse-exterior.jpg", alt: "倉庫外観" },
-              ].map((image) => (
+  { src: "/images/warehouse-01.png", alt: "倉庫全景" },
+  { src: "/images/warehouse-02.png", alt: "スタッフ作業風景" },
+  { src: "/images/warehouse-03.png", alt: "梱包作業スペース" },
+  { src: "/images/warehouse-04.png", alt: "倉庫内通路" },
+  { src: "/images/warehouse-05.png", alt: "出荷前商品の保管" },
+  { src: "/images/warehouse-06.png", alt: "テープ貼り作業" },
+  { src: "/images/warehouse-07.png", alt: "箱組立作業" },
+  { src: "/images/warehouse-08.png", alt: "倉庫外観" },
+].map((image) => (
                 <div
                   key={image.src}
                   className="overflow-hidden rounded-[1.75rem] border border-border bg-white shadow-sm"
