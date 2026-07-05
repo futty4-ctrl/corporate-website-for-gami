@@ -501,7 +501,6 @@ export default function LogisticsPage() {
   { src: "/images/warehouse-01.png", alt: "倉庫全景" },
   { src: "/images/warehouse-02.png", alt: "スタッフ作業風景" },
   { src: "/images/warehouse-03.png", alt: "梱包作業スペース" },
-  { src: "/images/warehouse-04.png", alt: "倉庫内通路" },
   { src: "/images/warehouse-05.png", alt: "出荷前商品の保管" },
   { src: "/images/warehouse-06.png", alt: "テープ貼り作業" },
   { src: "/images/warehouse-07.png", alt: "箱組立作業" },
